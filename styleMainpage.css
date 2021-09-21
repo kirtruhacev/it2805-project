@@ -1,0 +1,204 @@
+header {
+  background-color: black;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+html, body  {
+  position: relative;
+  min-width: 650px;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+
+}
+
+footer {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  bottom: 0;
+}
+
+footer h4 {
+  opacity: 0.5;
+  position: center;
+}
+
+
+
+.imgBody {
+  margin-right: 10px;
+  border-radius: 2%;
+  height: 200px;
+  min-width: auto;
+
+}
+
+.mainpart a:hover{
+  opacity: 0.7;
+}
+
+
+.navigation-bottom img {
+  height: 20px;
+}
+
+.navigation-bottom {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.main-logo {
+  height: 100px;
+  margin-left: 50px;
+}
+
+.middle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 290px;
+  position: relative;
+}
+
+.time {
+  color: white;
+  position: absolute;
+  display: inline-block;
+  background-color: green;
+
+}
+.time ul {
+  margin: 0;
+}
+
+.time li {
+  display: block;
+  font-size: 22px;
+}
+
+.middleRightContent {
+  position: absolute;
+  background-color: white;
+  display: inline-block;
+
+}
+
+.middleRightContent ul {
+  display: block;
+  margin: 0;
+  top:0;
+}
+
+
+
+
+
+
+ header ul {
+  margin-top: 55px;
+  list-style-type: none;
+  position: absolute;
+  background-color: none;
+  display: inline;
+  float: right;
+  right: 0;
+  margin-right: 70px;
+
+
+
+}
+li{
+  margin: 10px;
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  font: serif;
+}
+
+li a:hover {
+  color: beige;
+}
+
+
+
+header img{
+  margin-top: 10px;
+  margin-left: 30px;
+  position: absolute;
+  height: 100px;
+}
+
+.mainpart {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: auto;
+
+}
+
+.imgBox {
+
+}
+
+
+
+.instaLogo {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5%;
+}
+
+.fbLogo {
+  background-color: black;
+  position: absolute;
+  right: 0;
+
+  bottom: 0;
+  margin-right: 5%;
+}
+
+.fbLogo a:hover, .instaLogo a:hover{
+  opacity: 0.7;
+}
+
+.bottomPart {
+  width: 80%;
+  height: 260px;
+  background-color: black;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.map {
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  height: 250px;
+
+  float: left;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation-button {margin-right: 10px;}
+  .map {width: 50%}
+  .fbLogo, .instaLogo {margin-right: 20%;}
+
+}
