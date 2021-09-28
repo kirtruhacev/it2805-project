@@ -1,0 +1,39 @@
+html {
+  background-color: black;
+}
+
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+
+}
+
+header {
+  width: auto;
+  position: relative;
+  height: 150px;
+}
+header ul {
+  position: absolute;
+  right: 0;
+  margin: 62px 0px 62px 0px;
+}
+header li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 22px;
+
+}
+.navigation {
+  color: white;
+  font: serif;
+  text-decoration: none;
+
+}
+
+#logo {
+  height: 100px;
+  position: absolute;
+  margin: 20px 0px 0px 20px;
+}
