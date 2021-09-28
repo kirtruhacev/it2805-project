@@ -1,0 +1,35 @@
+html, body {
+    background-color: #292021; /* #e1d9ce; ? */
+    color: #ffffff;
+    margin: auto;
+    width: 80%;
+    min-width: 650px;
+    position: relative;
+
+  }
+  img {
+    border-color: #ffffff;
+    height: 350px;
+    float: left;
+    border-radius: 10%;
+  }
+
+  #info {
+    border-color: blue;
+    float: right;
+    width: 50%;
+    margin-left: 350px;
+    position: absolute;
+  }
+  article{
+    float: left;
+    width: 80%
+
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+  }
