@@ -12,12 +12,16 @@ html, body {
 div {
   border-style: dashed;
   margin: 1em 0em 1em;
-  border-color: #886750; 
+  border-color: #886750;
   border-width: 5px;
   padding: 1em;
 }
 img{
   max-width: 100%;
+}
+
+p ,ul {
+  font-size: 20px;
 }
 
 
@@ -28,4 +32,3 @@ img{
     background-color: #292021;
     width: 100%;
   }
-
