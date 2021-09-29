@@ -26,3 +26,11 @@ div {
 .hide {
   list-style: none;
 }
+
+#nav{
+  position: relative;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
