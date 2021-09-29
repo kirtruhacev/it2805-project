@@ -16,6 +16,9 @@ div {
   border-width: 5px;
   padding: 1em;
 }
+img{
+  max-width: 100%;
+}
 
 
   footer {
