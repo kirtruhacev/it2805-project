@@ -126,26 +126,21 @@
         <h3>Vi tenker å oppfylle krav til JS på følgende måte:</h3>
         <p> Fryd ønsker at det blir litt animasjon/ dynamikken på nettsiden, og
           vi tenkte å realisere dette ved å lage en pop-up header. Vi skal ha
-          en pop-up header som kommer opp når man blar ned nettsiden. Pop-up рeaderen skal inneholde
+          en pop-up header som kommer opp når man blar ned nettsiden. Pop-up headeren skal inneholde
           navigasjonsbar og logoen til Fryd.
           </p>
 
-          <p>For å gi litt mer animasjon og dynamikken når man ikke bare blar ned nettsiden,
-            men også peker på objekter, som f.eks. bilder, skal vi lage en funksjon
-            som forstørrer bilde når man peker på den. Slik funksjon vil bli brukt
-            på det fleste bildene.</p>
-
-          <p>På meny siden blir det flere bilder av menyen. Disse bildene skal ha
-          "vanlig" størrelse i forhold til skjermstørrelse. Vi skal lage en funskjon
-          som åpner bilde av menyen i fullskjerm når man klikker på den, ikke peker.</p>
+          <p>På meny siden blir det bilder med "menygruppe", som mat, kaffe osv. Nå du klikker
+            på de bildene vil en liste med produkter som hører til denne gruppen komme opp. Vi skal
+            bruke JS liste/hashmap for å implementere dette.</p>
 
           <p> Ned i footer skal vi ha en div med åpningstid den dagen du besøker nettsiden.
             Vi lager en funksjon som oppdaterer åpningstid automatisk, klokkeslettet og "Har åpent"
             når Fryd har åpent, og ordet "Stengt" når de har stengt. </p>
 
-            <p>Vi har møte med klienten den 15. oktober der det skal diskuteres flere mulige JS
-            funksjoner. Muligens det blir en funksjons som skal sende en melding til Fryd sin facebook
-            konto, istedenfor å ha eget kontakt vindu i html filen. </p>
+          <p>Det blir en google map på nettsiden. Den skal implementeres med JS.</p>
+          <p>På hovedsiden skal vi ha en dynamisk banner, som skal bla gjennom fryd sine
+          bilder, automatisk eller ved klikk.</p>
     </div>
     <div>
         <h2>8. Plan</h2>
@@ -181,9 +176,10 @@
             </li>
             <li>scripts
               <ul>
-                <li>img.js</li>
-                <li>backgroundImg.js</li>
-                <li>media.js</li>
+                <li>popupheader.js</li>
+                <li>menufilter.js</li>
+                <li>openingtime.js</li>
+                <li>openingtime.js</li>
               </ul>
             </li>
             <li>style.css</li>
@@ -209,13 +205,52 @@
             Følgende personer skal ha hovedansvar for sin del og leveringsfristen er satt
             til den 1.november.
           </p>
-          <ul>
-            <li>Eva: homepage.html</li>
-            <li>Ida: menu.html</li>
-            <li>Andreas: gallery.html</li>
-            <li>Jonas: about.html</li>
-            <li>Kir: contact.html</li>
-          </ul>
+          <table>
+          <tr>
+            <th>Filnavn</th>
+            <th>Beskrivelse</th>
+            <th>Ansvarlig</th>
+            <th>Frist</th>
+          </tr>
+
+          <tr>
+            <td>homepage.html</td>
+            <td>Homepage til nettsiden</td>
+            <td>Eva</td>
+            <td>1.november</td>
+          </tr>
+
+          <tr>
+            <td>menu.html</td>
+            <td>Side med meny til fryd</td>
+            <td>Ida</td>
+            <td>1.november</td>
+          </tr>
+
+          <tr>
+            <td>gallery.html</td>
+            <td>Side med bilder fra Fryd cafe, produkter osv. I tillegg til
+            bilder fra Fryd sine sosiale medier.</td>
+            <td>Andreas</td>
+            <td>1.november</td>
+          </tr>
+
+          <tr>
+            <td>about.html</td>
+            <td>Side med informasjon om Fryd, når de grunnlagt osv.</td>
+            <td>Jonas</td>
+            <td>1.november</td>
+          </tr>
+
+          <tr>
+            <td>contact.html</td>
+            <td>Side med kontakt informasjon til Fryd, telefonnummeret,
+            link til facebooksiden osv. </td>
+            <td>Kir</td>
+            <td>1.november</td>
+          </tr>
+        </table>
+
           <p>Den 10.november er fristen for å gjøre ferdig style.css som vil brukes for
             hele prosjektet, samme gjelder JS filer.</p>
     </div>

@@ -32,3 +32,16 @@ p ,ul {
     background-color: #292021;
     width: 100%;
   }
+
+table, th, td {
+  border: 1px;
+  border-style: ridge;
+  color: white;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+td {
+  margin:0 3px 0 3px;
+}
