@@ -33,9 +33,9 @@ p ,ul {
     width: 100%;
   }
 
-table, th, td {
+table, td {
   border: 1px;
-  border-style: ridge;
+  border-style:   groove;
   color: white;
   font-size: 20px;
   margin-left: 5%;
