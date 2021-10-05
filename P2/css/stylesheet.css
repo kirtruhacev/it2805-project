@@ -45,3 +45,24 @@ table, th, td {
 td {
   margin:0 3px 0 3px;
 }
+.innhold p{
+  float: left;
+  width: 50%;
+  height: 400px;
+  margin: 0px;
+}
+.innhold figure{
+  float: right;
+  width: 50%;
+  max-height: 400px;
+  margin: 0px;
+}
+.innhold img{
+  height: 400px;
+  float: left;
+  padding-left: 50px;
+}
+.innhold{
+  margin-top: 2px;
+}
+
