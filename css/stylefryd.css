@@ -1,9 +1,9 @@
 html {
   margin: auto;
+
 }
 
 body {
-  display: table;
   background-color: black;
   width: 1024px;
   margin:0 auto;
@@ -48,20 +48,25 @@ li a:hover {
   padding: 30px 0px;
   height: 400px;
   background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-direction: row;
   color: white;
   font-size: 25px;
+  background-color: white;
 }
 
 #grid-container img {
   height: 400px;
+  margin: 10px;
+  text-align: center;
+
 }
 
 #grid-container ul{
   list-style-type: none;
   font-size: 25px;
   text-align: center;
+
 }
 
 #grid-container li {
