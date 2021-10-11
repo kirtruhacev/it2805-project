@@ -150,3 +150,18 @@ footer img {
   margin: 10px;
 
 }
+
+.stort-galleribilde {
+  object-fit: cover;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.lite-galleribilde {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#galleri{
+  text-align: center;
+}
