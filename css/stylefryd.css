@@ -52,7 +52,7 @@ li a:hover {
   flex-direction: row;
   color: white;
   font-size: 25px;
-  background-color: white;
+  background-color: black;
 }
 
 #grid-container img {
@@ -71,6 +71,7 @@ li a:hover {
 
 #grid-container li {
   margin-bottom: 20px;
+
 }
 
 #parallax {
@@ -155,6 +156,7 @@ footer img {
 
 }
 
+/* Kontakt */
 #menyene{
   color: white;
   display: flex;
@@ -163,3 +165,29 @@ footer img {
 .menyside{
   padding: 1em;
 }
+
+.vl {
+  height: 300px;
+  border-left: 2px solid white;
+  position: absolute;
+  left: 50%;
+}
+
+* {
+  margin:0;
+  padding:0;
+  border:none;
+  }
+  body {
+  height:100%;
+  }
+  .left-col {
+  border-right: 1px solid #CCC;
+  }
+  .left-col,
+  .right-col {
+  float:left;
+  height:93%;
+  margin:2% 0;
+  padding:0 16px;
+  }
