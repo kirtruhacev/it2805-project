@@ -10,9 +10,9 @@ body {
 }
 
 header {
-  background-image: url("file:///D:/Documents/Skole/ÅR3/img/headerImage.png");
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
   background-size: 1024px;
-  height: 100px;
+  height: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -70,14 +70,20 @@ li a:hover {
 }
 
 #parallax {
-  background-image: url("https://images.pexels.com/photos/4109745/pexels-photo-4109745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  min-height: 200px;
+  display: grid;
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 150px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 50px;
+}
+
+#parallax h1 {
+  mix-blend-mode:  color-burn;
+  text-align: center;
 }
 
 #grid-container-menu {
