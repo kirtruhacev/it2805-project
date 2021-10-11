@@ -156,8 +156,6 @@ footer img {
 
 }
 
-/* Kontakt */
-<<<<<<< Updated upstream
 #menyene{
   color: white;
   display: flex;
@@ -165,10 +163,13 @@ footer img {
 
 .menyside{
   padding: 1em;
-=======
 * {
   box-sizing: border-box;
->>>>>>> Stashed changes
+}
+
+/* Kontakt */
+* {
+  box-sizing: border-box;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -204,17 +205,7 @@ ul.no-bullets {
   .column {
     width: 100%;
   }
-<<<<<<< Updated upstream
-  .left-col,
-  .right-col {
-  float:left;
-  height:93%;
-  margin:2% 0;
-  padding:0 16px;
-  }
-=======
   
   .vl {
   display: none;
 }
->>>>>>> Stashed changes
