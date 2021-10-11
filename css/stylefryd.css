@@ -149,3 +149,12 @@ footer img {
   margin: 10px;
 
 }
+
+#menyene{
+  color: white;
+  display: flex;
+}
+
+.menyside{
+  padding: 1em;
+}
