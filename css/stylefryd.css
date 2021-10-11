@@ -168,23 +168,21 @@ footer img {
 }
 
 /* Kontakt */
-* {
-  box-sizing: border-box;
-}
 
 /* Create two equal columns that floats next to each other */
 .column {
+  box-sizing: border-box;
   float: left;
   width: 50%;
   padding: 10px;
   height: auto; /* Should be removed. Only for demonstration */
   
   /* box */
-  background-color: black;
+ 
   
   /* text */
   text-align: center;
-  color: white;
+  
 }
   
 .vl {
@@ -194,18 +192,12 @@ footer img {
   left: 50%;
 }
 
-ul.no-bullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+.column {
     width: 100%;
   }
   
-  .vl {
+.vl {
   display: none;
 }
