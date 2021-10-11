@@ -70,8 +70,9 @@ li a:hover {
 }
 
 #parallax {
-  background-image: url("https://images.pexels.com/photos/4109745/pexels-photo-4109745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  min-height: 150px;
+  display: grid;
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 150px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,6 +83,7 @@ li a:hover {
 
 #parallax h1 {
   mix-blend-mode:  color-burn;
+  text-align: center;
 }
 
 #grid-container-menu {
