@@ -8,6 +8,39 @@ html {
     width: 100%;
     margin: auto;
   }
+  
+  /* Overskrifter */
+  
+  h1 {
+    font-size: 40pkt;
+    font-family: 'Georgia', serif;
+    color: blue;  
+  
+  }
+  
+  h2 {
+    font-family: 'Georgia', serif;
+    color: #886750;
+    font-size: 14pkt;
+  }
+  
+  h3 {
+    font-family: 'Calibri Light', sans-serif; 
+    color: #ffffff;
+    font-size; 10pkt;
+  }
+  
+  h4 {
+    font-family: 'Georgia', serif;
+    color: #886750;
+  }
+  
+  p {
+    font-family: 'Calibri Light', sans-serif; 
+    color: #ffffff;
+    font-size; 8pkt;
+  }
+  
   /* Header */
   
   #logo{ 
@@ -31,6 +64,7 @@ html {
   
   ul#menu {
     list-style: none;
+    color: #886750;
   }
   ul#menu li {
     display: inline-block;
@@ -50,18 +84,21 @@ html {
     background-color: #886750;
   }
   
-  #menu {
-    color: #ffffff;
-  
-  }
-  
   ul#menu li.active::before,
   ul#menu li:hover::before {
     left:0%;
   }
   ul#menu li a {
     text-decoration: none;
+    color: #ffffff; /* Farge på navigasjon */
+    font-family: 'Georgia', serif;
+    font-size:;
   }
+  
+  /* Åpningstid */
+  
+  
+  /* Bakgrunneffekt */
   
   #parallax {
     display: grid;
@@ -85,6 +122,8 @@ html {
     height: 300px;
   }
   
+  /* Footer */
+  
   footer {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -96,14 +135,7 @@ html {
   
   }
   
-  footer p {
-    font-size: 20px;
-  }
-  footer {
-    font-size: 20px;
-  }
   footer ul {
-  
     font-size: 20px;
     list-style-type: none;
   }
@@ -121,6 +153,13 @@ html {
     height: 100px;
     margin: 10px;
   
+  }
+
+  hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0.5px;
   }
   
   /* Kontakt */
@@ -145,6 +184,7 @@ html {
     height: 300px;
     border-left: 2px solid white;
     position: absolute;
+    top: 40%;
     left: 50%;
   }
   
