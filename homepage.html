@@ -5,18 +5,8 @@
     <link rel="stylesheet" href="./css/stylefryd.css">
     <title>Hjem</title>
   </head>
-  <body>
-
-    <header>
-      <img src="./image/logotrans.png" alt="">
-      <ul>
-        <li><a href="homepage.html">Hjem</a></li>
-        <li><a href="meny.html">Meny</a></li>
-        <li><a href="gallery.html">Galleri</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </header>
+  <body onload="headerInsert()">
+    <header id="header"></header> <!-- Header blir hentet fra js-fil -->
 
     <div id ="grid-container">
 
@@ -86,5 +76,7 @@
       </div>
 
     </footer>
+
+    <script src="./js/header.js"></script>
   </body>
 </html>
