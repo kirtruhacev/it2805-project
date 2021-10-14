@@ -1,32 +1,31 @@
-console.log('Hello World');
 const header = document.getElementById('header');
 
 function headerInsert(){
-    var img = document.createElement('img'); //Oppretter <img>
+    const img = document.createElement('img'); //Oppretter <img>
     img.src = "./image/logotrans.png"; //Legger til src i <img>
     img.alt = "Fryd Cafe logo" //Legger til alt-tekst i <img>
     header.appendChild(img); //Legger til <img> i <header>
 
-    var ul = document.createElement('ul'); //Oppretter <ul>
+    const ul = document.createElement('ul'); //Oppretter <ul>
     header.appendChild(ul); //Legger til <ul> i <header>
 
-    var lihomepage = document.createElement('li'); //Oppretter <li>
+    const lihomepage = document.createElement('li'); //Oppretter <li>
     ul.appendChild(lihomepage); //Legger til <li> i <ul>
-    var ahomepage = document.createElement('a'); //Oppretter <a> til homepage
+    const ahomepage = document.createElement('a'); //Oppretter <a> til homepage
     ahomepage.href = "homepage.html"; //Linker <a> til homepage
     ahomepage.innerText = 'Hjem'; //Legger til "Hjem"-tekst i <a>
     lihomepage.appendChild(ahomepage); //Legger til <a> i <li>
 
-    var limeny = document.createElement('li'); //Oppretter <li>
+    const limeny = document.createElement('li'); //Oppretter <li>
     ul.appendChild(limeny); //Legger til <li> i <ul>
-    var ameny = document.createElement('a'); //Oppretter <a> til meny
+    const ameny = document.createElement('a'); //Oppretter <a> til meny
     ameny.href = "meny.html"; //Linker <a> til meny
     ameny.innerText = 'Meny'; //Legger til "Meny"-tekst i <a>
     limeny.appendChild(ameny); //Legger til <a> i <li>
     
-    var ligallery = document.createElement('li'); //Oppretter <li>
+    const ligallery = document.createElement('li'); //Oppretter <li>
     ul.appendChild(ligallery); //Legger til <li> i <ul>
-    var agallery = document.createElement('a'); //Oppretter <a> til gallery
+    const agallery = document.createElement('a'); //Oppretter <a> til gallery
     agallery.href = "gallery.html"; //Linker <a> til gallery
     agallery.innerText = 'Gallery'; //Legger til "Gallery"-tekst i <a>
     ligallery.appendChild(agallery); //Legger til <a> i <li>

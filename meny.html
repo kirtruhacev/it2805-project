@@ -7,7 +7,7 @@
     <link rel='stylesheet' href="./css/stylefryd.css">
     <title>Meny</title>
 </head>
-<body onload="headerInsert()">
+<body onload="headerInsert();footerInsert()">
     <header id='header'></header> <!-- Header blir hentet fra js-fil -->
 
     <div id='menyene'>
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    <footer>
+    <!-- <footer>
         <div class="footer-item1">
           <h1>Fryd Cafe</h1>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -127,9 +127,11 @@
   
         </div>
   
-      </footer>
+      </footer> -->
 
+      <footer id='footer'></footer> <!-- Footer blir hentet fra js-fil -->
 
+    <script src='./js/footer.js'></script>
     <script src='./js/header.js'></script>
 </body>
 </html>
