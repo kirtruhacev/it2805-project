@@ -19,6 +19,13 @@ function footerInsert(){
 
     //Åpningstider skal få egen js-funksjon. Bli implementert senere. Derfor står div2 tom nå.
 
+    
+    let openStatus = document.createElement('p'); //Oppretter <p>
+    openStatus.id = 'openstatus';
+    div2.appendChild(openStatus);
+    openingHours(); //Legger til tekst om åpningstid
+    //Legger til åpningstid idag
+
     const img1 = document.createElement('img'); //Oppretter <img>
     img1.src = './image/logotrans.png' //Legger til src i <img>
     img1.alt = 'Fryd Cafe logo' //Legger til alt i <img>
@@ -41,5 +48,81 @@ function footerInsert(){
     img3.src = './image/instagram.png' //Legger til src i <img>
     img3.alt = 'Instagram-logo' //Legger til alt i <img>
     div4.appendChild(img3); //Legger til <img> i <div>
-    
+
+}
+
+function openingHours(){
+    let date = new Date(); 
+    let day = date.getDay(); //Definerer dag-verdi (1-7)
+    let hour = date.getHours(); //Definerer time-verdi (1-24)
+
+    let åpent = new Boolean(false); //Standardverdi = false (stengt)
+    let åpentSnart = new Boolean(false); //Cafeen åpner innen 1 time
+    let stengerSnart = new Boolean(false); //Cafeen stenger innen 1 time
+
+    åpent = openNow(åpent,åpentSnart,stengerSnart,day,hour)[0]; //True hvis cafeen er åpen nå
+    åpentSnart = openNow(åpent,åpentSnart,stengerSnart,day,hour)[1]; //True hvis cafeen åpner innen 1 time
+    stengerSnart = openNow(åpent,åpentSnart,stengerSnart,day,hour)[2]; //True hvis cafeen stenger innen 1 time
+
+    let openStatus = document.getElementById('openstatus'); //Definerer <p>-variabel
+
+    if (stengerSnart == true){
+        openStatus.innerText = 'Åpent, men stenger snart';
+    }
+
+    else if (åpent == true){ 
+        openStatus.innerText = 'Åpent';
+        //Skal endres litt her
+    }
+    else if (åpentSnart == true){
+        openStatus.innerText = 'Åpner snart';
+    }
+
+
+    console.log(date);
+    console.log(åpent);
+    console.log(åpentSnart);
+    console.log(stengerSnart);
+
+
+}
+
+function openNow(åpent,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen nå?
+
+    if (day == 1 || day == 7){ //Mandag eller søndag (lik åpningstid)
+        if (hour >= 10 && hour <= 18){ //Mellom 10-19
+            åpent = true;
+        }
+        if (hour == 18){
+            stengerSnart = true;
+        }
+        if (hour == 9){
+            åpentSnart = true;
+        }
+    }
+    if (day >= 2 && day <= 5){ //Tirsdag-fredag (lik åpningstid)
+        if (hour >= 7 && hour <= 18){ //Mellom 7-19
+            åpent = true;
+            console.log('ja');
+        } 
+        if (hour == 18){
+            stengerSnart = true;
+        }
+        if (hour == 6){
+            åpentSnart = true;
+        }
+    }
+
+    if (day == 6){ //Fredag
+        if (hour >= 8 && hour <= 18){ //Mellom 8-19
+            åpent = true;
+        }
+        if (hour == 18){
+            stengerSnart = true;
+        }
+        if (hour == 7){
+            åpentSnart = true;
+        }
+    }
+    return([åpent, åpentSnart, stengerSnart]); //Returnerer true/false
 }
