@@ -99,7 +99,6 @@ function openNow(책pent,책pentSnart,stengerSnart,day,hour){ //Er cafeen 책pen n�
     if (day >= 2 && day <= 5){ //Tirsdag-fredag (lik 책pningstid)
         if (hour >= 7 && hour <= 18){ //Mellom 7-19
             책pent = true;
-            console.log('ja');
         } 
         if (hour == 18){
             stengerSnart = true;
