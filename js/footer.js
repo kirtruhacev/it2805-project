@@ -51,7 +51,7 @@ function footerInsert(){
 
 }
 
-function openingHours(){
+function openingHours(){ //Endrer 
     let date = new Date(); 
     let day = date.getDay(); //Definerer dag-verdi (1-7)
     let hour = date.getHours(); //Definerer time-verdi (1-24)
@@ -72,19 +72,15 @@ function openingHours(){
 
     else if (åpent == true){ 
         openStatus.innerText = 'Åpent';
-        //Skal endres litt her
     }
+
     else if (åpentSnart == true){
         openStatus.innerText = 'Åpner snart';
     }
-
-
-    console.log(date);
-    console.log(åpent);
-    console.log(åpentSnart);
-    console.log(stengerSnart);
-
-
+    else{
+        openStatus.innerText = 'Stengt';
+    }
+    //Skal endre på presentasjon av åpningstider. Men js-funker nå :)
 }
 
 function openNow(åpent,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen nå?
