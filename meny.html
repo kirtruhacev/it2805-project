@@ -7,12 +7,11 @@
     <link rel='stylesheet' href="./css/stylefryd.css">
     <title>Meny</title>
 </head>
-<body>
-    <header>
+<body onload="headerInsert();footerInsert()">
+    <header id='header'></header> <!-- Header blir hentet fra js-fil -->
 
-    </header>
     <div id='menyene'>
-        <div id='kafedrikke'>
+        <div class='menyside'>
             <h4>Kaffe og drikke</h4>
             <ul>
                 <li>Svart Kaffe</li>
@@ -40,7 +39,7 @@
                 <li>Mineralvann</li>
             </ul>
         </div>
-        <div>
+        <div class='menyside'>
             <h4>Kake og søtsaker</h4>
             <ul>
                 <li>Bringebær/Sjokolade Bavarois</li>
@@ -59,7 +58,7 @@
                 <li>Makroner 6 pk</li>
             </ul>
         </div>
-        <div>
+        <div class='menyside'>
             <h4>Mat</h4>
             <ul>
                 <li>Baguette Reke</li>
@@ -81,29 +80,22 @@
                 <li>Premium Crossaint Ost & Skinke</li>
             </ul>
         </div>
-        <div>
+        <div class='menyside'>
             <h4>Bake-off</h4>
             <ul>
                 <li>Luksus Kanelsnurr</li>
-                <li>Stor </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Stor Kanelsnutt</li>
+                <li>Flettbakst Kanel/Pistasj</li>
+                <li>Scones</li>
+                <li>Crossaint Plain/Vanilje/Sjokolade</li>
+                <li>Belgisk Vaffel med/uten Sjokolade</li>
+                <li>Cookie Mørk/Lys Sjokolade</li>
+                <li>Vaffel med ost</li>
             </ul>
         </div>
     </div>
 
-    <footer>
+    <!-- <footer>
         <div class="footer-item1">
           <h1>Fryd Cafe</h1>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -126,18 +118,20 @@
         </ul>
         </div>
   
-        <img src="./img/logotrans.png" alt="">
+        <img src="./image/logotrans.png" alt="Fryd logo">
   
         <div id="footer-item4">
           <h2>Sosiale medier:</h2>
-          <img src="./img/facebook.png" alt="">
-          <img src="./img/instagram.png" alt="">
+          <img src="./image/facebook.png" alt="Facebook-logo">
+          <img src="./image/instagram.png" alt="Instagram-logo">
   
         </div>
   
-      </footer>
+      </footer> -->
 
+      <footer id='footer'></footer> <!-- Footer blir hentet fra js-fil -->
 
-    <script></script>
+    <script src='./js/footer.js'></script>
+    <script src='./js/header.js'></script>
 </body>
 </html>
