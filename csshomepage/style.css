@@ -1,9 +1,9 @@
 html {
   margin: auto;
-
 }
 
 body {
+  display: table;
   background-color: black;
   width: 1024px;
   margin:0 auto;
@@ -48,25 +48,20 @@ li a:hover {
   padding: 30px 0px;
   height: 400px;
   background-color: black;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   color: white;
   font-size: 25px;
-  background-color: black;
 }
 
 #grid-container img {
   height: 400px;
-  margin: 10px;
-  text-align: center;
-
 }
 
 #grid-container ul{
   list-style-type: none;
   font-size: 25px;
   text-align: center;
-
 }
 
 #grid-container li {
@@ -75,9 +70,8 @@ li a:hover {
 }
 
 #parallax {
-  display: grid;
-  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 150px;
+  background-image: url("https://images.pexels.com/photos/4109745/pexels-photo-4109745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  min-height: 150px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +82,6 @@ li a:hover {
 
 #parallax h1 {
   mix-blend-mode:  color-burn;
-  text-align: center;
 }
 
 #grid-container-menu {
@@ -154,48 +147,4 @@ footer img {
   height: 100px;
   margin: 10px;
 
-}
-
-#menyene{
-  color: white;
-  display: flex;
-}
-
-.menyside{
-  padding: 1em;
-* {
-  box-sizing: border-box;
-}
-
-/* Kontakt */
-
-/* Create two equal columns that floats next to each other */
-.column {
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: auto; /* Should be removed. Only for demonstration */
-
-  /* box */
-
-  /* text */
-  text-align: center;
-}
-
-.vl {
-  height: 300px;
-  border-left: 5px solid white;
-  position: absolute;
-  left: 50%;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.column {
-    width: 100%;
-  }
-
-.vl {
-  display: none;
 }
