@@ -62,13 +62,13 @@ ul#menu li a {
 
 /* Header slutt */
 
-
-#om{
+/*Diverse styling about.html:*/
+#om{ /* Paragraf om Fryd (om oss), about.html */ 
   color: white;
   margin-bottom: 50%;
 }
 
-#over{
+#over{ /*Overskriften over om paragrafen, about.html*/
   color: white;
   text-align: center;
   margin-top: 50px;
@@ -77,12 +77,12 @@ ul#menu li a {
 
 }
 
-#inside{
+#inside{ /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
   max-width: 45%;
   height: 250px;
 }
-.aboutpic{
+.aboutpic{ /*Klasse til bildene i about.html */
   border-radius: 8px;
   float: left;
 margin-right: 20%;
@@ -90,7 +90,7 @@ margin-top: 50px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
  }
 
- #vid{
+ #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
    margin-bottom: 150px;
    max-width: 60%;
@@ -100,14 +100,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
  }
 
- #aboutOut{
+ #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
    margin-top: -350px;
    margin-right: 40px;
    height: 350px;
    max-width: 35%;
    margin-bottom: 50px;
  }
-
+/* -----------------------About.html styling slutt----------------------------------------------------------------------*/
 
 header img {
   height: 140px;
@@ -310,7 +310,6 @@ footer img {
   float: left;
   width: 50%;
   padding: 10px;
-<<<<<<< Updated upstream
   height:; /* Should be removed. Only for demonstration */
   
   /* box */
@@ -319,14 +318,6 @@ footer img {
   /* text */
   text-align: center;
   color: white;
-=======
-  height: auto; /* Should be removed. Only for demonstration */
-
-  /* box */
-
-  /* text */
-  text-align: center;
->>>>>>> Stashed changes
 }
   
 .vl {
@@ -345,4 +336,5 @@ footer img {
   
 .vl {
   display: none;
+}
 }
