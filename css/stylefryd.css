@@ -155,16 +155,45 @@ footer img {
 
 }
 
+.page-title {
+  text-align: center;
+  color: white;
+}
+
+.bilde-rad {
+  display: flex; /* Sentrerer bildene på midten av siden vha flexbox */
+  justify-content: center;
+  background-color: #7e6858;
+  margin-bottom: 20px;
+}
+
 .stort-galleribilde {
   object-fit: cover;
   max-width: 250px;
   max-height: 250px;
+  margin: 10px;
+  border: 2px solid #886750;
+  flex-grow: 1;
 }
 
 .lite-galleribilde {
   max-width: 120px;
   max-height: 120px;
+  margin: 10px;
+  border: 2px solid #886750;
 }
+
+.bilde-kolonne {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #bilde-2 {
+  align-self: flex-start;
+}
+#bilde-3 {
+  align-self: flex-end;
+} */
 
 #galleri{
   text-align: center;

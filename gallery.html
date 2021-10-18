@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <link rel="stylesheet" href="css/stylefryd.css">
-            <title>Galleri</title>
+            <title>Gallery</title>
           </head>
         <body onload="headerInsert()">
             <header id="header"></header> <!-- Header blir hentet fra js-fil -->
@@ -12,19 +12,28 @@
             <!-- Make page-title in css; white font, middle of background pic-->
 
               <div id="galleri">
-                <div id="ovre-rad">
-                    <img src="image/bilde2.png" alt="" class="stort-galleribilde"/>
-                    <img src="image/bilde3.png" alt="" class="lite-galleribilde"/>
-                    <img src="image/bilde4.png" alt="" class="lite-galleribilde"/>
-                    <img src="image/bilde5.png" alt="" class="lite-galleribilde"/>
-                    <img src="image/bilde6.png" alt="" class="lite-galleribilde"/>
+                <div class="bilde-rad">
+                    <img src="image/bilde2.png" alt="" class="stort-galleribilde" id="bilde-1"/>
+                    <div class="bilde-kolonne">
+                      <img src="image/bilde3.png" alt="" class="lite-galleribilde" id="bilde-2"/>
+                      <img src="image/bilde4.png" alt="" class="lite-galleribilde" id="bilde-3"/>
+                    </div>
+                    <div class="bilde-kolonne">
+                      <img src="image/bilde5.png" alt="" class="lite-galleribilde" id="bilde-4"/>
+                      <img src="image/bilde6.png" alt="" class="lite-galleribilde" id="bilde-5"/>
+                    </div>
                 </div>
-                <div id="nedre-rad">
+
+                <div class="bilde-rad">
+                    <div class="bilde-kolonne">
+                      <img src="image/bilde7.png" alt="" class="lite-galleribilde"/>
+                      <img src="image/header.png" alt="" class="lite-galleribilde"/>
+                    </div>
+                    <div class="bilde-kolonne">
+                      <img src="image/headerImage.png" alt="" class="lite-galleribilde"/>
+                      <img src="image/bilde2.png" alt="" class="lite-galleribilde"/>
+                    </div>
                     <img src="image/bilde8.png" alt="" class="stort-galleribilde"/>
-                    <img src="image/bilde7.png" alt="" class="lite-galleribilde"/>
-                    <img src="image/header.png" alt="" class="lite-galleribilde"/>
-                    <img src="image/headerImage.png" alt="" class="lite-galleribilde"/>
-                    <img src="image/bilde2.png" alt="" class="lite-galleribilde"/>
                 </div>
             </div>
               
@@ -38,16 +47,7 @@
           
                 <div id="footer-item2">
           
-            <img src="image/bilde2.png" alt="" class="stort-galleribilde"/>
-            <img src="image/bilde3.png" alt="" class="lite-galleribilde"/>
-            <img src="image/bilde4.png" alt="" class="lite-galleribilde"/>
-            <img src="image/bilde5.png" alt="" class="lite-galleribilde"/>
-            <img src="image/bilde6.png" alt="" class="lite-galleribilde"/>
-            <img src="image/bilde7.png" alt="" class="stort-galleribilde"/>
-            <img src="image/bilde8.png" alt="" class="lite-galleribilde"/>
-            <img src="image/header.png" alt="" class="lite-galleribilde"/>
-            <img src="image/headerImage.png" alt="" class="lite-galleribilde"/>
-            <img src="image/bilde2.png" alt="" class="lite-galleribilde"/>
+            
 
             
             <footer>
