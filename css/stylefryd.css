@@ -210,7 +210,7 @@ li a:hover {
 }
 
 footer {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   padding: 30px 30px;
   grid-gap: 30px;
@@ -310,6 +310,7 @@ footer img {
   float: left;
   width: 50%;
   padding: 10px;
+<<<<<<< Updated upstream
   height:; /* Should be removed. Only for demonstration */
   
   /* box */
@@ -318,6 +319,14 @@ footer img {
   /* text */
   text-align: center;
   color: white;
+=======
+  height: auto; /* Should be removed. Only for demonstration */
+
+  /* box */
+
+  /* text */
+  text-align: center;
+>>>>>>> Stashed changes
 }
   
 .vl {
