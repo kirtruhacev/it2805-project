@@ -325,21 +325,13 @@ footer img {
   float: left;
   width: 50%;
   padding: 10px;
-<<<<<<< HEAD
   
   /* boks */
   background-color: black; 
   
   /* tekst */
-=======
-  height: auto; /* Should be removed. Only for demonstration */
-
-  /* box */
-  background-color: black;
-
-  /* text */
->>>>>>> 4c1f55f3c284387a6eee9897c5562e6d872c7d1f
   text-align: center;
+  color: white;
 }
 
 .vl {
