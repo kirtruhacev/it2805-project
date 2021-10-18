@@ -17,6 +17,11 @@ header {
   text-align: center;
 }
 
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+}
+
 /* Header */
 
 header img {
@@ -55,20 +60,20 @@ ul#menu li a {
   font-family: 'Georgia', serif;
 }
 
-#menu{ 
+#menu{
   font-size: 20px;
   padding-right: 40px;
 }
 
 /* Header slutt */
 
-
-#om{
+/*Diverse styling about.html:*/
+#om{ /* Paragraf om Fryd (om oss), about.html */ 
   color: white;
   margin-bottom: 50%;
 }
 
-#over{
+#over{ /*Overskriften over om paragrafen, about.html*/
   color: white;
   text-align: center;
   margin-top: 50px;
@@ -77,20 +82,19 @@ ul#menu li a {
 
 }
 
-#inside{
+#inside{ /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
   max-width: 45%;
   height: 250px;
 }
-.aboutpic{
-  border-radius: 8px;
+.aboutpic{ /*Klasse til bildene i about.html */
   float: left;
 margin-right: 20%;
 margin-top: 50px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+
  }
 
- #vid{
+ #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
    margin-bottom: 150px;
    max-width: 60%;
@@ -100,14 +104,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
  }
 
- #aboutOut{
+ #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
    margin-top: -350px;
    margin-right: 40px;
    height: 350px;
    max-width: 35%;
    margin-bottom: 50px;
  }
-
+/* -----------------------About.html styling slutt----------------------------------------------------------------------*/
 
 header img {
   height: 140px;
@@ -134,7 +138,8 @@ li a {
 li a:hover {
   color: red;
 }
-
+/* HJEM */
+/* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
   padding: 30px 0px;
   height: 400px;
@@ -164,6 +169,7 @@ li a:hover {
   margin-bottom: 20px;
 
 }
+/* Parallax med bilde av bakgrunn  */
 
 #parallax {
   display: grid;
@@ -264,7 +270,6 @@ footer img {
   max-width: 403px;
   max-height: 404px;
   margin: 10px;
-  border: 2px solid #886750;
   flex-grow: 1;
 
 }
@@ -273,13 +278,21 @@ footer img {
   max-width: 190px;
   max-height: 190px;
   margin: 10px;
-  border: 2px solid #886750;
   flex-grow: 1;
 }
 
 .bilde-kolonne {
   display: flex;
   flex-direction: column;
+}
+
+/* Gjør bildene større ved hover */
+#galleri img {
+  transition: transform .2s;
+}
+
+#galleri img:hover {
+  transform: scale(1.5);
 }
 
 /* #bilde-2 {
@@ -310,15 +323,23 @@ footer img {
   float: left;
   width: 50%;
   padding: 10px;
+<<<<<<< HEAD
   
   /* boks */
   background-color: black; 
   
   /* tekst */
+=======
+  height: auto; /* Should be removed. Only for demonstration */
+
+  /* box */
+  background-color: black;
+
+  /* text */
+>>>>>>> 4c1f55f3c284387a6eee9897c5562e6d872c7d1f
   text-align: center;
-  color: white;
 }
-  
+
 .vl {
   height: 300px;
   border-left: 2px solid white;
@@ -332,7 +353,8 @@ footer img {
 .column {
     width: 100%;
   }
-  
+
 .vl {
   display: none;
+}
 }
