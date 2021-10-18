@@ -17,6 +17,11 @@ header {
   text-align: center;
 }
 
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+}
+
 /* Header */
 
 header img {
@@ -83,11 +88,10 @@ ul#menu li a {
   height: 250px;
 }
 .aboutpic{ /*Klasse til bildene i about.html */
-  border-radius: 8px;
   float: left;
 margin-right: 20%;
 margin-top: 50px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+
  }
 
  #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
@@ -266,7 +270,6 @@ footer img {
   max-width: 403px;
   max-height: 404px;
   margin: 10px;
-  border: 2px solid #886750;
   flex-grow: 1;
 
 }
@@ -275,7 +278,6 @@ footer img {
   max-width: 190px;
   max-height: 190px;
   margin: 10px;
-  border: 2px solid #886750;
   flex-grow: 1;
 }
 
