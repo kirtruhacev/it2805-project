@@ -19,7 +19,7 @@ function footerInsert(){
 
     //Åpningstider skal få egen js-funksjon. Bli implementert senere. Derfor står div2 tom nå.
 
-    
+
     let openStatus = document.createElement('p'); //Oppretter <p>
     openStatus.id = 'openstatus';
     div2.appendChild(openStatus);
@@ -42,17 +42,24 @@ function footerInsert(){
     const img2 = document.createElement('img'); //Oppretter <img>
     img2.src = './image/facebook.png' //Legger til src i <img>
     img2.alt = 'Facebook-logo' //Legger til alt i <img>
+    img2.style.width = "100px";
+    img2.style.height = "100px";
+    img2.style.margin = "10px";
     div4.appendChild(img2); //Legger til <img> i <div>
+
 
     const img3 = document.createElement('img'); //Oppretter <img>
     img3.src = './image/instagram.png' //Legger til src i <img>
     img3.alt = 'Instagram-logo' //Legger til alt i <img>
+    img3.style.width = "100px";
+    img3.style.height = "100px";
+    img3.style.margin = "10px";
     div4.appendChild(img3); //Legger til <img> i <div>
 
 }
 
-function openingHours(){ //Endrer 
-    let date = new Date(); 
+function openingHours(){ //Endrer
+    let date = new Date();
     let day = date.getDay(); //Definerer dag-verdi (1-7)
     let hour = date.getHours(); //Definerer time-verdi (1-24)
 
@@ -70,7 +77,7 @@ function openingHours(){ //Endrer
         openStatus.innerText = 'Åpent, men stenger snart';
     }
 
-    else if (åpent == true){ 
+    else if (åpent == true){
         openStatus.innerText = 'Åpent';
     }
 
@@ -99,7 +106,7 @@ function openNow(åpent,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen n�
     if (day >= 2 && day <= 5){ //Tirsdag-fredag (lik åpningstid)
         if (hour >= 7 && hour <= 18){ //Mellom 7-19
             åpent = true;
-        } 
+        }
         if (hour == 18){
             stengerSnart = true;
         }
