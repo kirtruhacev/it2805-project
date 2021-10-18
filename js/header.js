@@ -14,7 +14,6 @@ myMenu.onclick=e=>  // JS event delegation
   LI.classList.add('active');
   }
 
-
 var da = new Date();
 document.getElementById("display").innerHTML = da.toDateString(); */
 
