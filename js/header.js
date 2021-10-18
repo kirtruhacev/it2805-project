@@ -15,8 +15,8 @@ myMenu.onclick=e=>  // JS event delegation
   }
 
 var da = new Date();
-document.getElementById("display").innerHTML = da.toDateString(); */
-
+document.getElementById("display").innerHTML = da.toDateString();
+ */
 /* Navigasjon slutt */
 
 
