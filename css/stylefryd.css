@@ -26,6 +26,7 @@ img {
 
 header img {
   height: 140px;
+  box-shadow: none;
 }
 
 ul#menu {
@@ -244,6 +245,7 @@ footer img {
   margin-right: auto;
   width: 100%;
   vertical-align:middle;
+  box-shadow: none;
 }
 
 #footer-item4 img{
