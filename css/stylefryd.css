@@ -55,20 +55,20 @@ ul#menu li a {
   font-family: 'Georgia', serif;
 }
 
-#menu{ 
+#menu{
   font-size: 20px;
   padding-right: 40px;
 }
 
 /* Header slutt */
 
-
-#om{
+/*Diverse styling about.html:*/
+#om{ /* Paragraf om Fryd (om oss), about.html */ 
   color: white;
   margin-bottom: 50%;
 }
 
-#over{
+#over{ /*Overskriften over om paragrafen, about.html*/
   color: white;
   text-align: center;
   margin-top: 50px;
@@ -77,12 +77,12 @@ ul#menu li a {
 
 }
 
-#inside{
+#inside{ /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
   max-width: 45%;
   height: 250px;
 }
-.aboutpic{
+.aboutpic{ /*Klasse til bildene i about.html */
   border-radius: 8px;
   float: left;
 margin-right: 20%;
@@ -90,7 +90,7 @@ margin-top: 50px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
  }
 
- #vid{
+ #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
    margin-bottom: 150px;
    max-width: 60%;
@@ -100,14 +100,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
  }
 
- #aboutOut{
+ #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
    margin-top: -350px;
    margin-right: 40px;
    height: 350px;
    max-width: 35%;
    margin-bottom: 50px;
  }
-
+/* -----------------------About.html styling slutt----------------------------------------------------------------------*/
 
 header img {
   height: 140px;
@@ -134,7 +134,8 @@ li a {
 li a:hover {
   color: red;
 }
-
+/* HJEM */
+/* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
   padding: 30px 0px;
   height: 400px;
@@ -164,6 +165,7 @@ li a:hover {
   margin-bottom: 20px;
 
 }
+/* Parallax med bilde av bakgrunn  */
 
 #parallax {
   display: grid;
@@ -322,6 +324,7 @@ footer img {
   height: auto; /* Should be removed. Only for demonstration */
 
   /* box */
+  background-color: black;
 
   /* text */
   text-align: center;
@@ -343,4 +346,5 @@ footer img {
 
 .vl {
   display: none;
+}
 }
