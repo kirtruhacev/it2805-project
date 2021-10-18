@@ -85,7 +85,7 @@ function openingHours(){ //Endrer
 
 function openNow(åpent,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen nå?
 
-    if (day == 1 || day == 7){ //Mandag eller søndag (lik åpningstid)
+    if (day == 1 || day == 0){ //Mandag eller søndag (lik åpningstid)
         if (hour >= 10 && hour <= 18){ //Mellom 10-19
             åpent = true;
         }
