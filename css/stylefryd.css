@@ -1,6 +1,5 @@
 html {
   margin: auto;
-
 }
 
 body {
@@ -17,6 +16,52 @@ header {
   padding-bottom: 50px;
   text-align: center;
 }
+#om{
+  color: white;
+  margin-bottom: 50%;
+}
+
+#over{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 300px;
+  display: inline-block;
+ 
+  
+}
+
+#inside{
+  margin-right: 10%;
+  max-width: 45%;
+  height: 250px;
+}
+.aboutpic{
+  border-radius: 8px;
+  float: left;
+margin-right: 20%;
+margin-top: 50px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+ }
+
+ #vid{
+   height: 350px;
+   margin-bottom: 150px;
+   max-width: 60%;
+   float: right;
+   margin-top: -350px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+ }
+
+ #aboutOut{
+   margin-top: -350px;
+   margin-right: 40px;
+   height: 350px;
+   max-width: 35%;
+   margin-bottom: 50px;
+ }
+
 
 header img {
   height: 140px;
@@ -156,6 +201,51 @@ footer img {
 
 }
 
+.page-title {
+  text-align: center;
+  color: white;
+}
+
+.bilde-rad {
+  height: 500px;
+  display: flex; /* Sentrerer bildene på midten av siden vha flexbox */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stort-galleribilde {
+  object-fit: cover;
+  max-width: 403px;
+  max-height: 404px;
+  margin: 10px;
+  border: 2px solid #886750;
+  flex-grow: 1;
+  
+}
+
+.lite-galleribilde {
+  max-width: 190px;
+  max-height: 190px;
+  margin: 10px;
+  border: 2px solid #886750;
+  flex-grow: 1;
+}
+
+.bilde-kolonne {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #bilde-2 {
+  align-self: flex-start;
+}
+#bilde-3 {
+  align-self: flex-end;
+} */
+
+#galleri{
+  text-align: center;
+}
 #menyene{
   color: white;
   display: flex;
@@ -163,9 +253,8 @@ footer img {
 
 .menyside{
   padding: 1em;
-* {
   box-sizing: border-box;
-}
+  }
 
 /* Kontakt */
 
@@ -175,18 +264,30 @@ footer img {
   float: left;
   width: 50%;
   padding: 10px;
+<<<<<<< HEAD
   height: auto; /* Should be removed. Only for demonstration */
 
   /* box */
 
   /* text */
   text-align: center;
+=======
+  height:; /* Should be removed. Only for demonstration */
+  
+  /* box */
+  background-color: black;
+  
+  /* text */
+  text-align: center;
+  color: white;
+>>>>>>> 4fd55e0fe975e1021cd39a986dd598802c2bb85f
 }
 
 .vl {
   height: 300px;
-  border-left: 5px solid white;
+  border-left: 2px solid white;
   position: absolute;
+  top: 40%;
   left: 50%;
 }
 
@@ -199,3 +300,7 @@ footer img {
 .vl {
   display: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4fd55e0fe975e1021cd39a986dd598802c2bb85f
