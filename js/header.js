@@ -1,5 +1,5 @@
 /* Navigasjon */
-const myMenu = document.getElementById('menu');
+/* const myMenu = document.getElementById('menu');
 
 myMenu.onclick=e=>  // JS event delegation
   {
@@ -16,7 +16,7 @@ myMenu.onclick=e=>  // JS event delegation
 
 
 var da = new Date();
-document.getElementById("display").innerHTML = da.toDateString();
+document.getElementById("display").innerHTML = da.toDateString(); */
 
 /* Navigasjon slutt */
 
@@ -31,6 +31,7 @@ function headerInsert(){
     header.appendChild(img); //Legger til <img> i <header>
 
     const ul = document.createElement('ul'); //Oppretter <ul>
+    ul.id = 'menu'; //Legger til meny-id
     header.appendChild(ul); //Legger til <ul> i <header>
 
     const lihomepage = document.createElement('li'); //Oppretter <li>
