@@ -304,18 +304,17 @@ footer img {
 
 /* Kontakt */
 
-/* Create two equal columns that floats next to each other */
+/* To kolonner som flyter ved siden av hverandre */
 .column {
   box-sizing: border-box;
   float: left;
   width: 50%;
   padding: 10px;
-  height:; /* Should be removed. Only for demonstration */
   
-  /* box */
-  background-color: black;
+  /* boks */
+  background-color: black; 
   
-  /* text */
+  /* tekst */
   text-align: center;
   color: white;
 }
@@ -328,7 +327,7 @@ footer img {
   left: 50%;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media screen and (max-width: 600px) {
 .column {
     width: 100%;
