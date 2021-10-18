@@ -16,6 +16,52 @@ header {
   padding-bottom: 50px;
   text-align: center;
 }
+#om{
+  color: white;
+  margin-bottom: 50%;
+}
+
+#over{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 300px;
+  display: inline-block;
+ 
+  
+}
+
+#inside{
+  margin-right: 10%;
+  max-width: 45%;
+  height: 250px;
+}
+.aboutpic{
+  border-radius: 8px;
+  float: left;
+margin-right: 20%;
+margin-top: 50px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+ }
+
+ #vid{
+   height: 350px;
+   margin-bottom: 150px;
+   max-width: 60%;
+   float: right;
+   margin-top: -350px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+ }
+
+ #aboutOut{
+   margin-top: -350px;
+   margin-right: 40px;
+   height: 350px;
+   max-width: 35%;
+   margin-bottom: 50px;
+ }
+
 
 header img {
   height: 140px;
@@ -207,9 +253,8 @@ footer img {
 
 .menyside{
   padding: 1em;
-* {
   box-sizing: border-box;
-}
+  }
 
 /* Kontakt */
 
@@ -245,3 +290,4 @@ footer img {
 .vl {
   display: none;
 }
+
