@@ -74,8 +74,8 @@ function openingHours(){ //Endrer
     let åpningsTid = '';
 
     åpent = openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour)[0]; //True hvis cafeen er åpen nå
-    åpentSnart = openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour)[1]; //True hvis cafeen åpner innen 1 time
-    stengerSnart = openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour)[2]; //True hvis cafeen stenger innen 1 time
+    åpentSnart = openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour)[2]; //True hvis cafeen åpner innen 1 time
+    stengerSnart = openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour)[3]; //True hvis cafeen stenger innen 1 time
 
     let openStatus = document.getElementById('openstatus'); //Definerer <p>-variabel
 
