@@ -107,7 +107,7 @@ ul#menu li a {
 #header {
   padding: 90px 10px; /* padding som vil krympe ved JS */
   transition: 0.4s; /* lager en overgang når krympes */
-  position: fixed; /* Sticky/fixed header */
+  /*position: fixed; /* Sticky/fixed header */
   
 }
 
