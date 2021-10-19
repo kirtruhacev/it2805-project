@@ -24,10 +24,13 @@ document.getElementById("display").innerHTML = da.toDateString();
 const header = document.getElementById('header');
 
 function headerInsert(){
+    const a = document.createElement('a'); //Oppretter <a>
     const img = document.createElement('img'); //Oppretter <img>
     img.src = "./image/logotrans.png"; //Legger til src i <img>
     img.alt = "Fryd Cafe logo" //Legger til alt-tekst i <img>
-    header.appendChild(img); //Legger til <img> i <header>
+    a.href = "homepage.html" //legger til link til hovedside i logo
+    a.appendChild(img); //Legger til <img> i <a>
+    header.appendChild(a); //Legger til <a> i <header>
 
     const ul = document.createElement('ul'); //Oppretter <ul>
     ul.id = 'menu'; //Legger til meny-id

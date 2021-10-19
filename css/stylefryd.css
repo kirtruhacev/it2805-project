@@ -8,6 +8,15 @@ body {
   margin:0 auto;
 }
 
+
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+}
+
+/* ######### Header start ######### */
+
 header {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
   background-size: 1024px;
@@ -16,13 +25,6 @@ header {
   padding-bottom: 50px;
   text-align: center;
 }
-
-img {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
-}
-
-/* Header */
 
 header img {
   height: 140px;
@@ -66,7 +68,47 @@ ul#menu li a {
   padding-right: 40px;
 }
 
-/* Header slutt */
+/* ######### Header slutt #########*/
+
+/* ######### Footer start ######### */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 30px 30px;
+  grid-gap: 30px;
+  color: white;
+  height: auto;
+  list-style-type: none;
+}
+
+footer p {
+  font-size: 20px;
+}
+footer {
+  font-size: 20px;
+}
+#openstatus{ /* Styler åpningstider-tekst */
+  font-size: 25px;;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+footer img {
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  vertical-align:middle;
+  box-shadow: none;
+}
+#footer-item4 img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* ######### Footer slutt ######### */
 
 /*Diverse styling about.html:*/
 #om{ /* Paragraf om Fryd (om oss), about.html */ 
@@ -216,44 +258,6 @@ li a:hover {
   height: 300px;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding: 30px 30px;
-  grid-gap: 30px;
-  color: white;
-  height: auto;
-  list-style-type: none;
-
-}
-
-footer p {
-  font-size: 20px;
-}
-footer {
-  font-size: 20px;
-}
-footer ul {
-
-  font-size: 20px;
-  list-style-type: none;
-}
-
-footer img {
-  height: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  vertical-align:middle;
-  box-shadow: none;
-}
-
-#footer-item4 img{
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-
-}
 
 .page-title {
   text-align: center;
