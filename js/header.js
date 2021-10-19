@@ -1,12 +1,66 @@
+/* ######### Understreking i navbar ######### */
+/* const myMenu = document.getElementById('menu');
+
+myMenu.onclick=e=>  // JS event delegation
+  {
+  if (e.target.tagName.toLowerCase() != 'a' ) return; // only
+  e.preventDefault;
+  let LI = e.target.parentElement;
+
+  if (!LI.classList.contains('active'))
+    {
+    myMenu.querySelector('li.active').classList.remove('active');
+    }
+  LI.classList.add('active');
+  }
+
+var da = new Date();
+document.getElementById("display").innerHTML = da.toDateString();
+ */
+/* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
+
+/* ######### navbar endrer størrelse når scroller ######### */
+/* window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.padding = "5px";
+  } else {
+    document.getElementById("header").style.padding = "80px";
+  }
+} */
+
+/* window.addEventListener('scroll', stickyNavbar);
+
+const navBar = document.querySelector('header');
+const navBarHeigth = navBar.offsetHeight;
+var body = document.querySelector('body');
+
+function stickyNavbar(){
+  if (window.scrollY >= navBarHeigth){
+    body.style.paddingTop = navBar.offsetHeight + 'px';
+    body.classList = 'fixedNav';
+  }
+  else{
+    body.style.paddingTop = 0;
+    body.classList.remove('fixedNav');
+  }
+} */
+
+/* ######### navigasjon menyene ######### */
 const header = document.getElementById('header');
 
 function headerInsert(){
+    const a = document.createElement('a'); //Oppretter <a>
     const img = document.createElement('img'); //Oppretter <img>
     img.src = "./image/logotrans.png"; //Legger til src i <img>
     img.alt = "Fryd Cafe logo" //Legger til alt-tekst i <img>
-    header.appendChild(img); //Legger til <img> i <header>
+    a.href = "homepage.html" //legger til link til hovedside i logo
+    a.appendChild(img); //Legger til <img> i <a>
+    header.appendChild(a); //Legger til <a> i <header>
 
     const ul = document.createElement('ul'); //Oppretter <ul>
+    ul.id = 'menu'; //Legger til meny-id
     header.appendChild(ul); //Legger til <ul> i <header>
 
     const lihomepage = document.createElement('li'); //Oppretter <li>

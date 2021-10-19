@@ -8,6 +8,45 @@ body {
   margin:0 auto;
 }
 
+/* ######### Overskrifter #########*/
+
+h1 {
+  font-size: 40pkt;
+  font-family: 'Georgia', serif;
+  color: white;
+
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  color: #886750;
+  font-size: 14pkt;
+}
+
+h3 {
+  font-family: 'Calibri Light', sans-serif;
+  color: #ffffff;
+  font-size; 10pkt;
+}
+
+h4 {
+  font-family: 'Georgia', serif;
+  color: #886750;
+}
+
+p {
+  font-family: 'Calibri Light', sans-serif;
+  color: #ffffff;
+  font-size; 8pkt;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+}
+
+/* ######### Header start ######### */
+
 header {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
   background-size: 1024px;
@@ -15,7 +54,154 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  box-shadow: none;
 }
+
+header img {
+  height: 140px;
+  box-shadow: none;
+  position: relative;
+}
+
+ul#menu {
+  list-style: none;
+  color: #886750;
+
+}
+ul#menu li {
+  display: inline-block;
+  padding: .3em .5em;
+  position:relative;
+  overflow: hidden;
+}
+ul#menu li::before {
+  position: absolute;
+  display: block;
+  content: '';
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  transition: 0.4s;
+  background-color: #886750;
+}
+
+ul#menu li.active::before,
+ul#menu li:hover::before {
+  left:0%;
+
+}
+ul#menu li a {
+  text-decoration: none;
+  color: #ffffff; /* Farge på navigasjon */
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+#menu{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 40px;
+  position: relative;
+}
+
+/* Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
+
+/* header scroll*/
+#header {
+  padding: 90px 10px; /* padding som vil krympe ved JS */
+  transition: 0.4s; /* lager en overgang når krympes */
+  /*position: fixed; /* Sticky/fixed header */
+
+}
+
+/* ######### Header slutt #########*/
+
+/* ######### Footer start ######### */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 30px 30px;
+  grid-gap: 30px;
+  color: white;
+  height: auto;
+  list-style-type: none;
+}
+
+footer p {
+  font-size: 20px;
+}
+footer {
+  font-size: 20px;
+}
+#openstatus{ /* Styler åpningstider-tekst */
+  font-size: 25px;;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+footer img {
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  vertical-align:middle;
+  box-shadow: none;
+}
+#footer-item4 img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* ######### Footer slutt ######### */
+
+/*Diverse styling about.html:*/
+#om{ /* Paragraf om Fryd (om oss), about.html */
+  color: white;
+  margin-bottom: 50%;
+}
+
+#over{ /*Overskriften over om paragrafen, about.html*/
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 300px;
+  display: inline-block;
+
+}
+
+#inside{ /*Bilde av fryd innendørs, about.html */
+  margin-right: 10%;
+  max-width: 45%;
+  height: 250px;
+}
+.aboutpic{ /*Klasse til bildene i about.html */
+  float: left;
+margin-right: 20%;
+margin-top: 50px;
+
+ }
+
+ #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
+   height: 350px;
+   margin-bottom: 150px;
+   max-width: 60%;
+   float: right;
+   margin-top: -350px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+ }
+
+ #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
+   margin-top: -350px;
+   margin-right: 40px;
+   height: 350px;
+   max-width: 35%;
+   margin-bottom: 50px;
+ }
+/* -----------------------About.html styling slutt----------------------------------------------------------------------*/
 
 header img {
   height: 140px;
@@ -42,13 +228,14 @@ li a {
 li a:hover {
   color: red;
 }
-
+/* ######### HJEM #########*/
+/* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
   padding: 30px 0px;
   height: 400px;
   background-color: black;
   display: grid;
-  grid-template-columns: 343px auto 343px;
+  grid-template-columns: 343px 338px 343px;
   color: white;
   font-size: 25px;
   background-color: black;
@@ -56,11 +243,12 @@ li a:hover {
 
 #grid-container img {
   height: 400px;
-  width: 343px;
-
+  text-align: center;
 }
 
 #grid-container ul{
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   font-size: 25px;
   text-align: center;
@@ -71,6 +259,7 @@ li a:hover {
   margin-bottom: 20px;
 
 }
+/* Parallax med bilde av bakgrunn  */
 
 #parallax {
   display: grid;
@@ -116,44 +305,61 @@ li a:hover {
   height: 300px;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding: 30px 30px;
-  grid-gap: 30px;
+
+.page-title {
+  text-align: center;
   color: white;
-  height: auto;
-  list-style-type: none;
-
 }
 
-footer p {
-  font-size: 20px;
-}
-footer {
-  font-size: 20px;
-}
-footer ul {
+/*######### Galleri??? ######### */
 
-  font-size: 20px;
-  list-style-type: none;
+.bilde-rad {
+  height: 500px;
+  display: flex; /* Sentrerer bildene på midten av siden vha flexbox */
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-footer img {
-  height: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  vertical-align:middle;
-}
-
-#footer-item4 img{
-  width: 100px;
-  height: 100px;
+.stort-galleribilde {
+  object-fit: cover;
+  max-width: 403px;
+  max-height: 404px;
   margin: 10px;
+  flex-grow: 1;
 
 }
 
+.lite-galleribilde {
+  max-width: 190px;
+  max-height: 190px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.bilde-kolonne {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gjør bildene større ved hover */
+#galleri img {
+  transition: transform .2s;
+}
+
+#galleri img:hover {
+  transform: scale(1.5);
+}
+
+/* #bilde-2 {
+  align-self: flex-start;
+}
+#bilde-3 {
+  align-self: flex-end;
+} */
+
+#galleri{
+  text-align: center;
+}
 #menyene{
   color: white;
   display: flex;
@@ -161,36 +367,50 @@ footer img {
 
 .menyside{
   padding: 1em;
-* {
   box-sizing: border-box;
-}
+  }
 
-/* Kontakt */
+/*######### Kontakt ######### */
 
-/* Create two equal columns that floats next to each other */
+/* To kolonner som flyter ved siden av hverandre */
 .column {
   box-sizing: border-box;
   float: left;
   width: 50%;
   padding: 10px;
-  height: auto; /* Should be removed. Only for demonstration */
 
-  /* box */
+  /* boks */
+  background-color: black;
 
-
-  /* text */
+  /* tekst */
   text-align: center;
+  color: white;
+}
 
+/* Styling til link epost, telefon og facebook */
+a.contact:link {
+  text-decoration: none;
+  color: white;
+}
+
+a.contact:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+a.contact:visited {
+  color: white;
 }
 
 .vl {
   height: 300px;
-  border-left: 5px solid white;
+  border-left: 2px solid white;
   position: absolute;
+  top: 40%;
   left: 50%;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media screen and (max-width: 600px) {
 .column {
     width: 100%;
@@ -198,4 +418,5 @@ footer img {
 
 .vl {
   display: none;
+}
 }

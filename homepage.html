@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./css/stylefryd.css">
     <title>Hjem</title>
   </head>
-  <body onload="headerInsert()">
+  <body onload="headerInsert();footerInsert()">
     <header id="header"></header> <!-- Header blir hentet fra js-fil -->
 
     <div id ="grid-container">
@@ -14,13 +14,11 @@
       <ul>
 
 
-        <li>Åpningstider</li>
+        <h4>Åpningstider</h4>
         <li>Mandag-Fredag</li>
         <li>07:00-19:00</li>
-        <br>
         <li>Mandag-Fredag</li>
         <li>08:00-19:00</li>
-        <br>
         <li>Mandag-Fredag</li>
         <li>10:00-19:00</li>
       </ul>
@@ -29,9 +27,7 @@
 
     </div>
 
-    <div id ="parallax">
-      <h1>Kaffe, mat og kos</h1>
-    </div>
+    <div id ="parallax"></div>
 
     <div id ="grid-container-menu">
       <img src="./image/bilde5.png" alt="">
@@ -43,40 +39,9 @@
 
     <iframe id = "map" src="https://maps.google.com/maps?q=cafe%20fryd&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
-    <footer>
-      <div class="footer-item1">
-        <h1>Fryd Cafe</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <div id="footer-item2">
-
-        <ul>
-          </li>Åpningstider
-          <ul>
-          <li>Mandag-Fredag: 07:00-19:00</li>
-          <br>
-          <li>Mandag-Fredag: 08:00-19:00</li>
-          <br>
-          <li>Mandag-Fredag: 10:00-19:00</li>
-        </ul>
-        </li>
-      </ul>
-      </div>
-
-      <img src="./image/logotrans.png" alt="">
-
-      <div id="footer-item4">
-        <h2>Sosiale medier:</h2>
-        <img src="./image/facebook.png" alt="">
-        <img src="./image/instagram.png" alt="">
-
-      </div>
-
-    </footer>
+    <footer id='footer'></footer> <!-- Footer blir hentet fra js-fil -->
 
     <script src="./js/header.js"></script>
+    <script src='./js/footer.js'></script>
   </body>
 </html>
