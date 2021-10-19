@@ -17,10 +17,10 @@ myMenu.onclick=e=>  // JS event delegation
 var da = new Date();
 document.getElementById("display").innerHTML = da.toDateString();
  */
-/* Navigasjon slutt */
+/* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
 
-
+/* Åpningstider */
 const header = document.getElementById('header');
 
 function headerInsert(){
