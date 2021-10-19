@@ -20,7 +20,7 @@ document.getElementById("display").innerHTML = da.toDateString();
 /* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
 /* ######### navbar endrer størrelse når scroller ######### */
-window.onscroll = function() {scrollFunction()};
+/* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -28,7 +28,24 @@ function scrollFunction() {
   } else {
     document.getElementById("header").style.padding = "80px";
   }
-}
+} */
+
+/* window.addEventListener('scroll', stickyNavbar);
+
+const navBar = document.querySelector('header');
+const navBarHeigth = navBar.offsetHeight;
+var body = document.querySelector('body');
+
+function stickyNavbar(){
+  if (window.scrollY >= navBarHeigth){
+    body.style.paddingTop = navBar.offsetHeight + 'px';
+    body.classList = 'fixedNav';
+  }
+  else{
+    body.style.paddingTop = 0;
+    body.classList.remove('fixedNav');
+  }
+} */
 
 /* ######### navigasjon menyene ######### */
 const header = document.getElementById('header');
