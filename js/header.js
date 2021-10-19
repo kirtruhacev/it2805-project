@@ -1,4 +1,4 @@
-/* Navigasjon */
+/* ######### Understreking i navbar ######### */
 /* const myMenu = document.getElementById('menu');
 
 myMenu.onclick=e=>  // JS event delegation
@@ -19,8 +19,19 @@ document.getElementById("display").innerHTML = da.toDateString();
  */
 /* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
+/* ######### navbar endrer størrelse når scroller ######### */
+window.onscroll = function() {scrollFunction()};
 
-/* Åpningstider */
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.padding = "5px";
+    document.getElementById("header").style.color = "black";
+  } else {
+    document.getElementById("header").style.padding = "80px";
+  }
+}
+
+/* ######### navigasjon menyene ######### */
 const header = document.getElementById('header');
 
 function headerInsert(){

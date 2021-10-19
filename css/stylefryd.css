@@ -57,12 +57,6 @@ header {
   box-shadow: none;
 }
 
-/*#logo{  eva prøve 
-  position:absolute; 
-	top:0; 
-	left:0;
-}*/
-
 header img {
   height: 140px;
   box-shadow: none;
@@ -107,8 +101,15 @@ ul#menu li a {
   padding-right: 40px;
 }
 
-
 /* Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
+
+/* header scroll*/
+#header {
+  padding: 90px 10px; /* padding som vil krympe ved JS */
+  transition: 0.4s; /* lager en overgang når krympes */
+  position: fixed; /* Sticky/fixed header */
+  
+}
 
 /* ######### Header slutt #########*/
 
@@ -390,7 +391,11 @@ a.contact:link {
 
 a.contact:hover {
   text-decoration: underline;
-  color: #886750;
+  color: white;
+}
+
+a.contact:visited {
+  color: white;
 }
 
 .vl {

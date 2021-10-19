@@ -32,10 +32,6 @@ footer {
   width: 100%;
 }
 
-#tabell {
-  margin:50%;
-  }
-
 table, td {
 border: 1px;
 border-style:   groove;
