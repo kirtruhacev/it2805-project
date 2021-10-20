@@ -14,7 +14,7 @@ body {
 h1 {
   font-size: 40pkt;
   font-family: 'Georgia', serif;
-  color: white;  
+  color: white;
 
 }
 
@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Calibri Light', sans-serif; 
+  font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
   font-size; 10pkt;
 }
@@ -36,7 +36,7 @@ h4 {
 }
 
 p {
-  font-family: 'Calibri Light', sans-serif; 
+  font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
   font-size; 8pkt;
 }
@@ -67,7 +67,7 @@ header img {
 ul#menu {
   list-style: none;
   color: #886750;
-  
+
 }
 ul#menu li {
   display: inline-block;
@@ -213,7 +213,7 @@ footer img {
 
 
 /* ######### Diverse styling about.html: ######### */
-#om{ /* Paragraf om Fryd (om oss), about.html */ 
+#om{ /* Paragraf om Fryd (om oss), about.html */
   color: white;
   margin-bottom: 50%;
 }
@@ -314,7 +314,7 @@ li a:hover {
   margin-bottom: 20px;
 
 }
-/* Parallax med bilde av bakgrunn  */
+/* Parallax med bilde i bakgrunn  */
 
 #parallax {
   display: grid;
@@ -433,10 +433,10 @@ li a:hover {
   float: left;
   width: 50%;
   padding: 10px;
-  
+
   /* boks */
-  background-color: black; 
-  
+  background-color: black;
+
   /* tekst */
   text-align: center;
   color: white;
@@ -467,6 +467,83 @@ a.contact:visited {
 
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media screen and (max-width: 600px) {
+
+  /*Homepage*/
+  #grid-container {
+    padding: 30px 0px;
+    height: 400px;
+    width: 80%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+  }
+
+  #grid-container img {
+    height: 400px;
+    text-align: center;
+  }
+
+  #grid-container ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 25px;
+    text-align: center;
+
+  }
+
+  #grid-container li {
+    margin-bottom: 20px;
+
+  }
+  /* Parallax med bilde i bakgrunn  */
+
+  #parallax {
+    display: grid;
+    background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #parallax h1 {
+    mix-blend-mode:  color-burn;
+    text-align: center;
+  }
+
+  #grid-container-menu {
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 10px;
+    height: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  #grid-container-menu img{
+    height: 210px;
+  }
+
+
+
+  #grid-container-menu p {
+    font-size: 25px;
+    padding: 60px 0px;
+  }
+
+  #map {
+    width: 100%;
+    height: 300px;
+  }
 .column {
     width: 100%;
   }
@@ -475,4 +552,3 @@ a.contact:visited {
   display: none;
 }
 }
-
