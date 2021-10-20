@@ -20,7 +20,7 @@ document.getElementById("display").innerHTML = da.toDateString();
 /* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
 /* ######### navbar endrer størrelse når scroller ######### */
-<<<<<<< HEAD
+
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
@@ -29,9 +29,9 @@ document.getElementById("display").innerHTML = da.toDateString();
     } else {
       document.getElementById("header").style.padding = "80px 10px"; /* 10px betyr hvordan animasjonen vil se ut når du blar */
     }
-  } 
+  }
     // inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp//
-=======
+
 /* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -58,7 +58,6 @@ function stickyNavbar(){
     body.classList.remove('fixedNav');
   }
 } */
->>>>>>> bddf85cc9d8e08d46a718115367185ce7164c968
 
 /* ######### navigasjon menyene ######### */
 const header = document.getElementById('header');
@@ -89,7 +88,7 @@ function headerInsert(){
     ameny.href = "meny.html"; //Linker <a> til meny
     ameny.innerText = 'Meny'; //Legger til "Meny"-tekst i <a>
     limeny.appendChild(ameny); //Legger til <a> i <li>
-    
+
     const ligallery = document.createElement('li'); //Oppretter <li>
     ul.appendChild(ligallery); //Legger til <li> i <ul>
     const agallery = document.createElement('a'); //Oppretter <a> til gallery
