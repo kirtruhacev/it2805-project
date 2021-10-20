@@ -7,10 +7,14 @@
     <link rel='stylesheet' href="./css/stylefryd.css">
     <title>Contact</title>
 </head>
-<body onload="headerInsert();footerInsert()">
-    <header id="header"></header> <!-- Header blir hentet fra js-fil -->
 
-    <body>
+<body onload="headerInsert();footerInsert()">
+    
+  <header id="header"></header> <!-- Header blir hentet fra js-fil -->
+    
+    <div class="load_page">
+    <img src="image/logo_nb.png" alt="Logo">
+    </div>
 
         <!-- <header>
           <div id="logo">
@@ -30,13 +34,13 @@
         <div class="column">
 
             <h2>Send oss en epost</h2>
-            <h3><a href="mailto:frydcafe@gmail.com">frydcafe@gmail.com</a></h3>
+            <h3><a class="contact" href="mailto:frydcafe@gmail.com">frydcafe@gmail.com</a></h3>
             <br>
             <h2>Ring oss</h2>
-            <h3>400 45 686</h3>
+            <h3><a class="contact" href="tel:400 45 686">400 45 686</a></h3>
             <br>
             <h2>Facebook</h2>
-            <h3>frydcafé</h3>
+            <h3><a class="contact" href="https://www.facebook.com/FrydCafe/" target="_blank">frydcafé</a></h3>
 
            </div>
 
@@ -55,10 +59,6 @@
         </div>
         </div>
 
-        <div id ="parallax">
-          <h1>Kontakt</h1>
-        </div>
-
         <iframe id = "map" src="https://maps.google.com/maps?q=cafe%20fryd&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
         <div id ="parallax"></div>
@@ -68,4 +68,5 @@
     <script src='./js/footer.js'></script>
     <script src="./js/header.js"></script>
 </body>
+
 </html>

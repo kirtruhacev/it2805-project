@@ -6,7 +6,47 @@ body {
   background-color: black;
   width: 1024px;
   margin:0 auto;
+  margin-top: 360px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
+
+/* ######### Overskrifter #########*/
+
+h1 {
+  font-size: 40pkt;
+  font-family: 'Georgia', serif;
+  color: white;  
+
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  color: #886750;
+  font-size: 14pkt;
+}
+
+h3 {
+  font-family: 'Calibri Light', sans-serif; 
+  color: #ffffff;
+  font-size; 10pkt;
+}
+
+h4 {
+  font-family: 'Georgia', serif;
+  color: #886750;
+}
+
+p {
+  font-family: 'Calibri Light', sans-serif; 
+  color: #ffffff;
+  font-size; 8pkt;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+}
+
+/* ######### Header start ######### */
 
 header {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
@@ -15,23 +55,19 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  box-shadow: none;
 }
-
-img {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
-}
-
-/* Header */
 
 header img {
   height: 140px;
   box-shadow: none;
+  position: relative;
 }
 
 ul#menu {
   list-style: none;
   color: #886750;
+  
 }
 ul#menu li {
   display: inline-block;
@@ -54,21 +90,129 @@ ul#menu li::before {
 ul#menu li.active::before,
 ul#menu li:hover::before {
   left:0%;
+
 }
 ul#menu li a {
   text-decoration: none;
   color: #ffffff; /* Farge på navigasjon */
   font-family: 'Georgia', serif;
+  position: relative;
 }
 
 #menu{
   font-size: 20px;
+  padding-top: 10px;
   padding-right: 40px;
+  position: relative;
 }
 
-/* Header slutt */
+/* Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
-/*Diverse styling about.html:*/
+/* header scroll, lager fixed header*/
+#header {
+  overflow: hidden;
+  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  height: ?;
+}
+
+/* inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp*/
+
+/* ######### Header slutt #########*/
+
+/* ######### Footer start ######### */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 30px 30px;
+  grid-gap: 30px;
+  color: white;
+  height: auto;
+  list-style-type: none;
+}
+
+footer p {
+  font-size: 20px;
+}
+footer {
+  font-size: 20px;
+}
+#openstatus{ /* Styler åpningstider-tekst */
+  font-size: 25px;;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+footer img {
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  vertical-align:middle;
+  box-shadow: none;
+}
+#footer-item4 img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* ######### Footer slutt ######### */
+
+/* ######### Loading side ######### */
+
+.load_page {
+  position: fixed;
+  text-align: center;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  left: 0;
+  z-index: 1;
+  box-shadow: none;
+}
+
+.load_page {
+  -webkit-animation: load-out 1s;
+  animation: load-out 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+@keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+/* inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
+
+
+/* ######### Diverse styling about.html: ######### */
 #om{ /* Paragraf om Fryd (om oss), about.html */ 
   color: white;
   margin-bottom: 50%;
@@ -139,7 +283,7 @@ li a {
 li a:hover {
   color: red;
 }
-/* HJEM */
+/* ######### HJEM #########*/
 /* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
   padding: 30px 0px;
@@ -216,49 +360,13 @@ li a:hover {
   height: 300px;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding: 30px 30px;
-  grid-gap: 30px;
-  color: white;
-  height: auto;
-  list-style-type: none;
-
-}
-
-footer p {
-  font-size: 20px;
-}
-footer {
-  font-size: 20px;
-}
-footer ul {
-
-  font-size: 20px;
-  list-style-type: none;
-}
-
-footer img {
-  height: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  vertical-align:middle;
-  box-shadow: none;
-}
-
-#footer-item4 img{
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-
-}
 
 .page-title {
   text-align: center;
   color: white;
 }
+
+/*######### Galleri??? ######### */
 
 .bilde-rad {
   height: 500px;
@@ -317,7 +425,7 @@ footer img {
   box-sizing: border-box;
   }
 
-/* Kontakt */
+/*######### Kontakt ######### */
 
 /* To kolonner som flyter ved siden av hverandre */
 .column {
@@ -331,6 +439,21 @@ footer img {
   
   /* tekst */
   text-align: center;
+  color: white;
+}
+
+/* Styling til link epost, telefon og facebook */
+a.contact:link {
+  text-decoration: none;
+  color: white;
+}
+
+a.contact:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+a.contact:visited {
   color: white;
 }
 
@@ -352,3 +475,4 @@ footer img {
   display: none;
 }
 }
+

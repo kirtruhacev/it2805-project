@@ -1,4 +1,4 @@
-/* Navigasjon */
+/* ######### Understreking i navbar ######### */
 /* const myMenu = document.getElementById('menu');
 
 myMenu.onclick=e=>  // JS event delegation
@@ -17,17 +17,60 @@ myMenu.onclick=e=>  // JS event delegation
 var da = new Date();
 document.getElementById("display").innerHTML = da.toDateString();
  */
-/* Navigasjon slutt */
+/* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
+/* ######### navbar endrer størrelse når scroller ######### */
+<<<<<<< HEAD
+  window.onscroll = function() {scrollFunction()};
 
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* endrer størrelse når den når man har bladd 80px */
+      document.getElementById("header").style.padding = "2px 10px";  /* 10px betyr hvordan animasjonen vil se ut når du blar */
+    } else {
+      document.getElementById("header").style.padding = "80px 10px"; /* 10px betyr hvordan animasjonen vil se ut når du blar */
+    }
+  } 
+    // inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp//
+=======
+/* window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.padding = "5px";
+  } else {
+    document.getElementById("header").style.padding = "80px";
+  }
+} */
+
+/* window.addEventListener('scroll', stickyNavbar);
+
+const navBar = document.querySelector('header');
+const navBarHeigth = navBar.offsetHeight;
+var body = document.querySelector('body');
+
+function stickyNavbar(){
+  if (window.scrollY >= navBarHeigth){
+    body.style.paddingTop = navBar.offsetHeight + 'px';
+    body.classList = 'fixedNav';
+  }
+  else{
+    body.style.paddingTop = 0;
+    body.classList.remove('fixedNav');
+  }
+} */
+>>>>>>> bddf85cc9d8e08d46a718115367185ce7164c968
+
+/* ######### navigasjon menyene ######### */
 const header = document.getElementById('header');
 
 function headerInsert(){
+    const a = document.createElement('a'); //Oppretter <a>
     const img = document.createElement('img'); //Oppretter <img>
     img.src = "./image/logotrans.png"; //Legger til src i <img>
     img.alt = "Fryd Cafe logo" //Legger til alt-tekst i <img>
-    header.appendChild(img); //Legger til <img> i <header>
+    a.href = "homepage.html" //legger til link til hovedside i logo
+    a.appendChild(img); //Legger til <img> i <a>
+    header.appendChild(a); //Legger til <a> i <header>
 
     const ul = document.createElement('ul'); //Oppretter <ul>
     ul.id = 'menu'; //Legger til meny-id
