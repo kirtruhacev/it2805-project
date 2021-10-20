@@ -61,11 +61,13 @@ header {
 header img {
   height: 140px;
   box-shadow: none;
+  position: relative;
 }
 
 ul#menu {
   list-style: none;
   color: #886750;
+  
 }
 ul#menu li {
   display: inline-block;
@@ -94,12 +96,14 @@ ul#menu li a {
   text-decoration: none;
   color: #ffffff; /* Farge på navigasjon */
   font-family: 'Georgia', serif;
+  position: relative;
 }
 
 #menu{
   font-size: 20px;
   padding-top: 10px;
   padding-right: 40px;
+  position: relative;
 }
 
 /* Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
