@@ -6,6 +6,7 @@ body {
   background-color: black;
   width: 1024px;
   margin:0 auto;
+  margin-top: 360px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
 /* ######### Overskrifter #########*/
@@ -103,13 +104,19 @@ ul#menu li a {
 
 /* Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
-/* header scroll*/
+/* header scroll, lager fixed header*/
 #header {
-  padding: 90px 10px; /* padding som vil krympe ved JS */
-  transition: 0.4s; /* lager en overgang når krympes */
-  /*position: fixed; /* Sticky/fixed header */
-  
+  overflow: hidden;
+  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  height: ?;
 }
+
+/* inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp*/
 
 /* ######### Header slutt #########*/
 
@@ -153,7 +160,55 @@ footer img {
 
 /* ######### Footer slutt ######### */
 
-/*Diverse styling about.html:*/
+/* ######### Loading side ######### */
+
+.load_page {
+  position: fixed;
+  text-align: center;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  left: 0;
+  z-index: 1;
+  box-shadow: none;
+}
+
+.load_page {
+  -webkit-animation: load-out 1s;
+  animation: load-out 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+@keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+/* inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
+
+
+/* ######### Diverse styling about.html: ######### */
 #om{ /* Paragraf om Fryd (om oss), about.html */ 
   color: white;
   margin-bottom: 50%;
@@ -416,3 +471,4 @@ a.contact:visited {
   display: none;
 }
 }
+
