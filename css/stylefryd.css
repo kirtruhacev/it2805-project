@@ -51,6 +51,7 @@ img {
 header {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
   background-size: 1024px;
+  width: 1024px;
   height: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
