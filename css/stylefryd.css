@@ -306,36 +306,35 @@ li a:hover {
 }
 
 
-.page-title {
-  text-align: center;
-  color: white;
-}
 
 /*######### GALLERI ######### */
 
+/* Sentrerer bildene på midten av siden vha flexbox */
 .bilde-rad {
   height: 500px;
-  display: flex; /* Sentrerer bildene på midten av siden vha flexbox */
+  display: flex; 
   justify-content: center;
   margin-bottom: 20px;
 }
 
+/*Velger første element av klasse bilde-rad og øker marginen så den kommer lenger unna header*/
+.bilde-rad:first-of-type {
+  margin-top: 85px;
+}
+
+/*Velger passende str for de små og store bildene*/
 .stort-galleribilde {
-  object-fit: cover;
   max-width: 340px;
   max-height: 395px;
   margin: 10px;
-  flex-grow: 1;
-
 }
-
 .lite-galleribilde {
   max-width: 163px;
   max-height: 185px;
   margin: 10px;
-  flex-grow: 1;
 }
 
+/*Omgjør flex-box retning til å være kolonne. Gjør at vi får to og to småbilder over hverandre*/
 .bilde-kolonne {
   display: flex;
   flex-direction: column;
@@ -345,7 +344,6 @@ li a:hover {
 #galleri .stort-galleribilde:hover {
   transform: scale(1.2);
 }
-
 #galleri .lite-galleribilde:hover {
   transform: scale(1.5);
 }
@@ -356,7 +354,7 @@ li a:hover {
   transition: transform .2s;
 }
 
-
+/*Sentrerer hele galleri-siden mot midten*/
 #galleri{
   text-align: center;
 }
