@@ -311,7 +311,7 @@ li a:hover {
   color: white;
 }
 
-/*######### Galleri??? ######### */
+/*######### GALLERI ######### */
 
 .bilde-rad {
   height: 500px;
@@ -322,16 +322,16 @@ li a:hover {
 
 .stort-galleribilde {
   object-fit: cover;
-  max-width: 403px;
-  max-height: 404px;
+  max-width: 395px;
+  max-height: 395px;
   margin: 10px;
   flex-grow: 1;
 
 }
 
 .lite-galleribilde {
-  max-width: 190px;
-  max-height: 190px;
+  max-width: 163px;
+  max-height: 185px;
   margin: 10px;
   flex-grow: 1;
 }
@@ -349,13 +349,6 @@ li a:hover {
 #galleri img:hover {
   transform: scale(1.5);
 }
-
-/* #bilde-2 {
-  align-self: flex-start;
-}
-#bilde-3 {
-  align-self: flex-end;
-} */
 
 #galleri{
   text-align: center;
