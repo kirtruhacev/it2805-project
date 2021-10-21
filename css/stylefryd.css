@@ -6,7 +6,7 @@ body {
   background-color: black;
   width: 1024px;
   margin:0 auto;
-  margin-top: 360px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
+  margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
 /* ######### Overskrifter #########*/
@@ -15,24 +15,36 @@ h1 {
   font-size: 40px;
   font-family: 'Georgia', serif;
   color: white;
-
 }
 
 h2 {
   font-family: 'Georgia', serif;
   color: #886750;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 h3 {
   font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 20px;
 }
 
+/* Hovedskriften*/
 h4 {
+  font-size: 40px;
   font-family: 'Georgia', serif;
-  color: #886750;
+  color: white;
+  position: absolute; /* Formaterer så hovedskriften kommer under menyen*/
+  text-align: center;
+  padding-top: 10%;
+  left:0; /* For å få hovedskriften i senter */
+  right:0; /* For å få hovedskriften i senter */
+}
+
+h5 {
+  font-size: 10px;
+  font-family: 'Georgia', serif;
+  color: white;
 }
 
 p {
@@ -112,13 +124,11 @@ ul#menu li a {
 /* header scroll, lager fixed header*/
 #header {
   overflow: hidden;
-  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
-  width: 1024px;
-  top: 0; /* At the top */
+  padding-right: 10px; /* padding som vil krympe ved bruk av JS */
+  transition: 0.2s; /* lagen en overgang når man scroller */
+  position: fixed; /* Sticky/fixed header */
+  top: 0; 
   z-index: 99;
-  height: 200px;
 }
 
 /* inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp*/
@@ -161,6 +171,11 @@ footer img {
   width: 100px;
   height: 100px;
   margin: 10px;
+}
+
+#year{
+color:white;
+
 }
 
 /* ######### Footer slutt ######### */
@@ -276,14 +291,6 @@ header li {
   font-family: Serif;
 }
 
-li a {
-  color: white;
-  text-decoration: none;
-}
-
-li a:hover {
-  color: red;
-}
 /* ######### HJEM #########*/
 /* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
@@ -432,7 +439,8 @@ li a:hover {
   box-sizing: border-box;
   float: left;
   width: 50%;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 
   /* boks */
   background-color: black;
@@ -457,15 +465,14 @@ a.contact:visited {
   color: white;
 }
 
-.vl {
-  height: 300px;
+.line_contact {
+  height: 350px;
   border-left: 2px solid white;
   position: absolute;
-  top: 40%;
+  top: 37%;
   left: 50%;
 }
 
-/* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 1000px) {
 
   /*Homepage*/
@@ -544,6 +551,10 @@ a.contact:visited {
     width: 100%;
     height: 300px;
   }
+
+
+/* Kontakt */
+/* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 .column {
     width: 100%;
   }

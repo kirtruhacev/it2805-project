@@ -1,3 +1,5 @@
+/* ######### Footer ######### */
+
 const footer = document.getElementById('footer');
 
 function footerInsert(){
@@ -29,7 +31,6 @@ function footerInsert(){
     div2.appendChild(openStatus);
     openingHours(); //Legger til tekst om åpningstid
 
-   
     //Sosiale medier div-box
     const div4 = document.createElement('div'); //Oppretter <div>
     div4.id = "footer-item4"; //Legger til id på <div>
@@ -62,6 +63,8 @@ function footerInsert(){
     div4.appendChild(a3); //Legger til <a> i <div>
 
 }
+
+/* ######### Åpningstider ######### */
 
 function openingHours(){ //Endrer
     let date = new Date();

@@ -25,9 +25,9 @@ document.getElementById("display").innerHTML = da.toDateString();
 
   function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* endrer størrelse når den når man har bladd 80px */
-      document.getElementById("header").style.padding = "2px 10px";  /* 10px betyr hvordan animasjonen vil se ut når du blar */
+      document.getElementById("header").style.padding = "10px 10px";  /* 10px betyr hvordan animasjonen vil se ut når du blar */
     } else {
-      document.getElementById("header").style.padding = "80px 10px"; /* 10px betyr hvordan animasjonen vil se ut når du blar */
+      document.getElementById("header").style.padding = "65px 10px"; /* 10px betyr hvordan animasjonen vil se ut når du blar */
     }
   }
     // inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp//
