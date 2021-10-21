@@ -217,7 +217,7 @@ header li {
   display: inline-grid;
   margin-right: 30px;
   font-weight: bold;
-  font: Serif;
+
 }
 
 li a {
@@ -412,17 +412,80 @@ a.contact:visited {
 }
 
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
-@media only screen and (max-width: 600px) {
-  #grid-container {
-    padding: 30px 0px;
-    height: 400px;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 343px 338px 343px;
+@media only screen and (max-width: 700px) {
+  * {
+  box-sizing: border-box;
+  }
+
+  body {
+    background-color: black;
+    max-width: 700px;
+    margin:0 auto;
+  }
+
+  header {
+    background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
+    background-size: 1024px;
+    height: 200px;
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  header img {
+    height: 140px;
+    box-shadow: none;
+    position: relative;
+  }
+
+#grid-container {
+    padding: 30px 20px;
+    display: table;
+    grid-template-columns: auto;
+    width: 90%;
     color: white;
     font-size: 25px;
     background-color: black;
-  }
+}
+
+
+
+#grid-container img {
+  width: 90%;
+  height: auto;
+  display: table-row;
+  margin: 0 auto;
+}
+
+#grid-container ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+#grid-container li {
+  margin-bottom: 20px;
+
+}
+
+#grid-container-menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content:  center;
+
+}
+
+#grid-container-menu img{
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
 
 .column {
     width: 100%;
