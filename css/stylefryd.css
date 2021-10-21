@@ -322,7 +322,7 @@ li a:hover {
 
 .stort-galleribilde {
   object-fit: cover;
-  max-width: 395px;
+  max-width: 340px;
   max-height: 395px;
   margin: 10px;
   flex-grow: 1;
@@ -341,18 +341,28 @@ li a:hover {
   flex-direction: column;
 }
 
-/* Gjør bildene større ved hover */
+/* Gjør bildene større ved hover. De små bildene skaleres 1,5 ganger egen str, mens de store 1,2 */
+#galleri .stort-galleribilde:hover {
+  transform: scale(1.2);
+}
+
+#galleri .lite-galleribilde:hover {
+  transform: scale(1.5);
+}
+
+
+/*Hvor lang tid skalering ved hover skal ta*/
 #galleri img {
   transition: transform .2s;
 }
 
-#galleri img:hover {
-  transform: scale(1.5);
-}
 
 #galleri{
   text-align: center;
 }
+
+/*---------GALLERI FERDIG-------------*/
+
 #menyene{
   color: white;
   display: flex;
