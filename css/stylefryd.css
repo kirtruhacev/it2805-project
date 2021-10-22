@@ -111,7 +111,6 @@ img {
 /* ######### Header start ######### */
 
 header {
-  background-image: url("D:/Documents/Skole/ÅR3/Web/it2805-project/image/header_img.jpg");
   /* laste ned bilde å sette inn? fikk det ikke til url(image/header_img.jpg); */
   background-size: 1024px;
   height: 200px;
