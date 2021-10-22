@@ -24,40 +24,16 @@ document.getElementById("display").innerHTML = da.toDateString();
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
-    document.getElementById("header").style.backgroundColor = "yellow";   /* anna farge bare for å se forskjellen foreløpig */
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
+    document.getElementById("header").style.padding = "10px 10px"; /* padding rundt header etter man scroller */
+    /*document.getElementById("logo").style.fontSize = "20px";*/ /* størrelse på logo etter man scroller */
+    document.getElementById("header").style.backgroundColor = "black"; /* farge på header etter man scroller */
   } else {
+    document.getElementById("header").style.padding = "80px 10px";
+    /*document.getElementById("logo").style.fontSize = "30px";*/
     document.getElementById("header").style.backgroundColor = "transparent"; 
   }
 }
-    // inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp//
-
-/* window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("header").style.padding = "5px";
-  } else {
-    document.getElementById("header").style.padding = "80px";
-  }
-} */
-
-/* window.addEventListener('scroll', stickyNavbar);
-
-const navBar = document.querySelector('header');
-const navBarHeigth = navBar.offsetHeight;
-var body = document.querySelector('body');
-
-function stickyNavbar(){
-  if (window.scrollY >= navBarHeigth){
-    body.style.paddingTop = navBar.offsetHeight + 'px';
-    body.classList = 'fixedNav';
-  }
-  else{
-    body.style.paddingTop = 0;
-    body.classList.remove('fixedNav');
-  }
-} */
 
 /* ######### navigasjon menyene ######### */
 const header = document.getElementById('header');
