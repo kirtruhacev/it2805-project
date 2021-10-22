@@ -3,8 +3,12 @@
 }
 
 body {
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1024px 400px; /* Størrelse på bilde*/
   background-color: black;
-  width: 1024px;
+  width: 1024px; /* Størrelse på body */
   margin:0 auto;
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
@@ -111,14 +115,8 @@ img {
 /* ######### Header start ######### */
 
 header {
-  /* laste ned bilde å sette inn? fikk det ikke til url(image/header_img.jpg); */
-  background-size: 1024px;
-  height: 200px;
-  width: 1024px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  box-shadow: none;
+  padding: 10px;
+
 }
 
 header img {
@@ -174,10 +172,11 @@ ul#menu li a {
 /* header scroll*/
 #header {
   overflow: hidden;
-  padding-right: 10px; /* padding som vil krympe ved bruk av JS */
-  transition: 0.2s; /* lagen en overgang når man scroller */
-  position: fixed; /* Sticky/fixed header */
-  top: 0;
+  padding: 80px 10px; /* vil krympe når man scroller ved JS */
+  transition: 0.4s; /* Lager effkten når siden blir scrollet */
+  position: fixed; /* fixed posisjon */
+  width: 100%; /* strekker seg over hele skjermen til bruker */
+  top: 0; /* Plassert på toppen */
   z-index: 99;
 }
 
@@ -588,10 +587,6 @@ a.contact:visited {
   width: 80%;
   height: auto;
   margin: auto auto;
-}
-
-#map {
-  width: 100%
 }
 
 header {
