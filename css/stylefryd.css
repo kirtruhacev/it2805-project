@@ -6,7 +6,7 @@ body {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1024px 400px; /* Størrelse på bilde*/
+  background-size: 1024px 500px; /* Størrelse på bilde*/
   background-color: black;
   width: 1024px; /* Størrelse på body */
   margin:0 auto;
@@ -14,7 +14,7 @@ body {
 }
 
 
-/* ######### Overskrifter #########*/
+/* ---------------------------------------- ######### overskrifter ######### ----------------------------------------*/
 
 h1 {
   font-size: 30px;
@@ -64,7 +64,7 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
 }
 
-/* ######### Loading side ######### */
+/* ---------------------------------------- ######### loading side ######### ----------------------------------------*/
 
 .load_page {
   position: fixed;
@@ -112,19 +112,35 @@ img {
 /* inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
 
 
-/* ######### Header start ######### */
+/* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
-  padding: 10px;
+  padding: 100px;
 
 }
 
 header img {
   height: 140px;
   box-shadow: none;
-  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 
+header ul {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+header li {
+  display: inline-grid;
+  margin-right: 30px; /* Åpning mellom menyene*/
+  
+}
+
+/* ######### Del av understrekinga på header ######### */
 ul#menu {
   list-style: none;
   color: #886750;
@@ -172,17 +188,19 @@ ul#menu li a {
 /* header scroll*/
 #header {
   overflow: hidden;
-  padding: 80px 10px; /* vil krympe når man scroller ved JS */
+  padding: 50px; /* vil krympe når man scroller ved JS */
   transition: 0.4s; /* Lager effkten når siden blir scrollet */
   position: fixed; /* fixed posisjon */
   width: 100%; /* strekker seg over hele skjermen til bruker */
   top: 0; /* Plassert på toppen */
   z-index: 99;
+  font-size: 20px; /* Big font size */
+  font-weight: bold;
 }
 
-/* ######### Header slutt #########*/
+/* ---------------------------------------- ######### header slutt ######### ----------------------------------------*/
 
-/* ######### Footer start ######### */
+/* ---------------------------------------- ######### footer start ######### ----------------------------------------*/
 
 footer {
   display: grid;
@@ -220,9 +238,9 @@ footer img {
   margin: 10px;
 }
 
-/* ######### Footer slutt ######### */
+/* ---------------------------------------- ######### footer slutt ######### ----------------------------------------*/
 
-/*Diverse styling about.html:*/
+/* ---------------------------------------- ######### om oss start ######### ----------------------------------------*/
 #om{ /* Paragraf om Fryd (om oss), about.html */
   color: white;
   margin-bottom: 50%;
@@ -266,34 +284,10 @@ margin-top: 50px;
    max-width: 35%;
    margin-bottom: 50px;
  }
-/* -----------------------About.html styling slutt----------------------------------------------------------------------*/
+/* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
-header img {
-  height: 140px;
-}
 
-header ul {
-  float: right;
-  list-style-type: none;
-  font-size: 30px;
-}
-
-header li {
-  display: inline-grid;
-  margin-right: 30px;
-  font-weight: bold;
-
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-}
-
-li a:hover {
-  color: red;
-}
-/* ######### HJEM #########*/
+/* ---------------------------------------- ######### hjem start ######### ----------------------------------------*/
 /* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
   padding: 30px 0px;
@@ -374,7 +368,7 @@ li a:hover {
 
 
 
-/*######### GALLERI ######### */
+/* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
 /* Sentrerer bildene på midten av siden vha flexbox */
 .bilde-rad {
@@ -426,9 +420,9 @@ li a:hover {
   text-align: center;
 }
 
-/*---------GALLERI FERDIG-------------*/
+/* ---------------------------------------- ######### galleri slutt ######### ----------------------------------------*/
 
-/*######### Meny start #########*/
+/* ---------------------------------------- ######### meny start ######### ----------------------------------------*/
 #menyene{
   color: white;
   display: flex;
@@ -462,9 +456,9 @@ li a:hover {
 }
 
 
-/*######### Meny slutt #########*/
+/* ---------------------------------------- ######### meny slutt ######### ----------------------------------------*/
 
-/*######### Kontakt ######### */
+/* ---------------------------------------- ######### Kontakt start ######### ----------------------------------------*/
 
 /* To kolonner som flyter ved siden av hverandre */
 .column {
@@ -505,9 +499,12 @@ a.contact:visited {
   left: 50%;
 }
 
+/* ---------------------------------------- ######### Kontakt slutt ######### ----------------------------------------*/
+
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
   * {
+    
   box-sizing: border-box;
   }
 
@@ -516,6 +513,8 @@ a.contact:visited {
     max-width: 700px;
     margin:0 auto;
   }
+
+/* header */
 
   header {
     background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
@@ -534,6 +533,12 @@ a.contact:visited {
     position: relative;
   }
 
+  #header {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+
+
+/* Hjem */
 #grid-container {
     padding: 30px 20px;
     display: flex;

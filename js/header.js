@@ -25,12 +25,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
-    document.getElementById("header").style.padding = "10px 10px"; /* padding rundt header etter man scroller */
+    document.getElementById("header").style.padding = "5px 40px"; /* padding rundt header etter man scroller */
     /*document.getElementById("logo").style.fontSize = "20px";*/ /* størrelse på logo etter man scroller */
+    document.getElementById("header").style.fontWeight = "normal"; /* endrer font type etter man scroller */
     document.getElementById("header").style.backgroundColor = "black"; /* farge på header etter man scroller */
   } else {
-    document.getElementById("header").style.padding = "80px 10px";
-    /*document.getElementById("logo").style.fontSize = "30px";*/
+    document.getElementById("header").style.padding = "50px 10px";
+    /*document.getElementById("header").style.fontSize = "30px";*/
+    document.getElementById("header").style.fontWeight = "bold";
     document.getElementById("header").style.backgroundColor = "transparent"; 
   }
 }
