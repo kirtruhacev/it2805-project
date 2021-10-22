@@ -328,7 +328,7 @@ li a:hover {
 
 #parallax {
   display: grid;
-  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://scontent.ftrd3-1.fna.fbcdn.net/v/t39.30808-6/237068793_10219139644552884_2994596445181168571_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=AaG9hQ5x0IgAX_4tOC_&_nc_ht=scontent.ftrd3-1.fna&oh=65174d877c78a5f9209db2d5789700dd&oe=617844C6");
   height: 150px;
   background-attachment: fixed;
   background-position: center;
@@ -336,6 +336,8 @@ li a:hover {
   background-size: cover;
   text-align: center;
   font-size: 50px;
+  background-size: 1024px;
+
 }
 
 #parallax h1 {
