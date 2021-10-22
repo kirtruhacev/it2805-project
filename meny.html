@@ -11,13 +11,90 @@
 <body onload="headerInsert();footerInsert()">
 
     <div class="load_page">
-        <img src="image/logo_nb.png" alt="Logo">
-        </div>
+        <img src="./image/logo_nb.png" alt="Logo">
+    </div>
         
     <header id='header'></header> <!-- Header blir hentet fra js-fil -->
 
-    <div id='menyene'>
-        <div class='menyside'>
+    <div id='menybilder'>
+        <div class='menyside' id='matBilde'>
+            <h3>Mat</h3>
+            <img src="./image/menyBilder/mat.png" alt="mat">
+        </div>
+
+        <div class='menyside' id='matListe' style="display: none;">
+            <h2>Mat</h2>
+            <ul>
+                <li>Baguette Reke</li>
+                <li>Baguette Kylling</li>
+                <li>Baguette Ost & Skinke</li>
+                <li>Baguette Vegetar</li>
+                <li>Baguette Vegan</li>
+                <li>Longbread Cheddarost & Skinke</li>
+                <li>Longbread Kylling Mango Chillimajo</li>
+                <li>Bagel Salami & Brie</li>
+                <li>Bagel Laks & Kremost</li>
+                <li>Panini Ost & Skinke</li>
+                <li>Panini Chorizo</li>
+                <li>Trekantbrød Reker</li>
+                <li>Stor Toast Ost & Skinke</li>
+                <li>Toast Cheddar & Skinke</li>
+                <li>Focaccia Kylling & Pesto</li>
+                <li>Focaccia Ost & Skinke</li>
+                <li>Premium Crossaint Ost & Skinke</li>
+            </ul>
+        </div>
+
+        <div class='menyside' id='kakerSøtsakerBilde'>
+            <h3>Kaker og søtsaker</h3>
+            <img src="./image/menyBilder/kakeSøtsaker.png" alt="Kaker og søtsaker">
+        </div>
+
+        <div class='menyside' id='kakeSøtsakerListe' style="display: none;" >
+            <h2>Kake og søtsaker</h2>
+            <ul>
+                <li>Bringebær/Sjokolade Bavarois</li>
+                <li>Raspberry/Chocolate Delight</li>
+                <li>Jordbær Vegan</li>
+                <li>Jordbær & Mandarin Glutenfri</li>
+                <li>Eplekake</li>
+                <li>Ostekake New York</li>
+                <li>American Chocolate</li>
+                <li>Brownie Chrunch/Oreo</li>
+                <li>Amerikansk Gulrotkake</li>
+                <li>Napoleonskake</li>
+                <li>Belgisk Mousse</li>
+                <li>Sjokolade/Karamell Fondant</li>
+                <li>Bringebær/Sjokolade Tartless</li>
+                <li>Makroner 6 pk</li>
+            </ul>
+        </div>
+
+        <div class='menyside' id='bakeOffBilde'>
+            <h3>Bake-off</h3>
+            <img src="./image/menyBilder/bakeOff.png" alt="Bake-off">
+        </div>
+
+        <div class='menyside' id='bakeOffListe' style="display: none;">
+            <h2>Bake-off</h2>
+            <ul>
+                <li>Luksus Kanelsnurr</li>
+                <li>Stor Kanelsnutt</li>
+                <li>Flettbakst Kanel/Pistasj</li>
+                <li>Scones</li>
+                <li>Crossaint Plain/Vanilje/Sjokolade</li>
+                <li>Belgisk Vaffel med/uten Sjokolade</li>
+                <li>Cookie Mørk/Lys Sjokolade</li>
+                <li>Vaffel med ost</li>
+            </ul>
+        </div>
+
+        <div class='menyside' id='kaffeDrikkeBilde'>
+            <h3>Kaffe og drikke</h3>
+            <img src="./image/menyBilder/kaffeDrikke.png" alt="Kaffe og drikke">
+        </div>
+
+        <div class='menyside' id='kaffeDrikkeListe' style="display: none;"> 
             <h2>Kaffe og drikke</h2>
             <ul>
                 <li>Svart Kaffe</li>
@@ -45,60 +122,8 @@
                 <li>Mineralvann</li>
             </ul>
         </div>
-        <div class='menyside'>
-            <h2>Kake og søtsaker</h2>
-            <ul>
-                <li>Bringebær/Sjokolade Bavarois</li>
-                <li>Raspberry/Chocolate Delight</li>
-                <li>Jordbær Vegan</li>
-                <li>Jordbær & Mandarin Glutenfri</li>
-                <li>Eplekake</li>
-                <li>Ostekake New York</li>
-                <li>American Chocolate</li>
-                <li>Brownie Chrunch/Oreo</li>
-                <li>Amerikansk Gulrotkake</li>
-                <li>Napoleonskake</li>
-                <li>Belgisk Mousse</li>
-                <li>Sjokolade/Karamell Fondant</li>
-                <li>Bringebær/Sjokolade Tartless</li>
-                <li>Makroner 6 pk</li>
-            </ul>
-        </div>
-        <div class='menyside'>
-            <h2>Mat</h2>
-            <ul>
-                <li>Baguette Reke</li>
-                <li>Baguette Kylling</li>
-                <li>Baguette Ost & Skinke</li>
-                <li>Baguette Vegetar</li>
-                <li>Baguette Vegan</li>
-                <li>Longbread Cheddarost & Skinke</li>
-                <li>Longbread Kylling Mango Chillimajo</li>
-                <li>Bagel Salami & Brie</li>
-                <li>Bagel Laks & Kremost</li>
-                <li>Panini Ost & Skinke</li>
-                <li>Panini Chorizo</li>
-                <li>Trekantbrød Reker</li>
-                <li>Stor Toast Ost & Skinke</li>
-                <li>Toast Cheddar & Skinke</li>
-                <li>Focaccia Kylling & Pesto</li>
-                <li>Focaccia Ost & Skinke</li>
-                <li>Premium Crossaint Ost & Skinke</li>
-            </ul>
-        </div>
-        <div class='menyside'>
-            <h2>Bake-off</h2>
-            <ul>
-                <li>Luksus Kanelsnurr</li>
-                <li>Stor Kanelsnutt</li>
-                <li>Flettbakst Kanel/Pistasj</li>
-                <li>Scones</li>
-                <li>Crossaint Plain/Vanilje/Sjokolade</li>
-                <li>Belgisk Vaffel med/uten Sjokolade</li>
-                <li>Cookie Mørk/Lys Sjokolade</li>
-                <li>Vaffel med ost</li>
-            </ul>
-        </div>
+       
+        
     </div>
     <div id ="parallax"></div>
 
@@ -106,5 +131,6 @@
 
     <script src='./js/footer.js'></script>
     <script src='./js/header.js'></script>
+    <script src= './js/meny.js'></script>
 </body>
 </html>
