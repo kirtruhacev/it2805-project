@@ -555,12 +555,23 @@ a.contact:visited {
   margin: 0 auto;
 }
 
-/* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
+#map {
+  width: 100%
+}
+
+header {
+  width: 100%
+}
+
+/*######### Kontakt ######### */
+
+/* Får kolonnene til å være over hverandre i kontakt, istedenfor vedsidenav */
 .column {
     width: 100%;
   }
 
-.vl {
+/* Gjemmer den hvite linja */
+.line_contact {
   display: none;
 }
 }
