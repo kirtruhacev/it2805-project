@@ -1,11 +1,19 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="css/stylefryd.css">
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel='stylesheet' href="./css/stylefryd.css">
+          <link rel="icon" type="image/png" href="image/beans_nb.png"/>
             <title>Gallery</title>
           </head>
         <body onload="headerInsert();footerInsert()">
+
+          <div class="load_page">
+            <img src="image/logo_nb.png" alt="Logo">
+            </div>
+
             <header id="header"></header> <!-- Header blir hentet fra js-fil -->
 
               <!-- Legger inn bilder til galleriet i ulike dividers og med klasser og id-er for å formatere i css -->
@@ -56,6 +64,8 @@
                 </div>
             </div>
               
+            <div id ="parallax"></div>
+            
                 <footer id='footer'></footer> <!-- Footer blir hentet fra js-fil -->
 
               <script src="./js/header.js"></script>

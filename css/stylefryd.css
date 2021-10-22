@@ -6,12 +6,14 @@ body {
   background-color: black;
   width: 1024px;
   margin:0 auto;
+  margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
+}
 }
 
 /* ######### Overskrifter #########*/
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Georgia', serif;
   color: white;
 
@@ -20,18 +22,31 @@ h1 {
 h2 {
   font-family: 'Georgia', serif;
   color: #886750;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 h3 {
   font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 20px;
 }
 
+/* Hovedskriften*/
 h4 {
+  font-size: 40px;
   font-family: 'Georgia', serif;
-  color: #886750;
+  color: white;
+  position: absolute; /* Formaterer så hovedskriften kommer under menyen*/
+  text-align: center;
+  padding-top: 10%;
+  left:0; /* For å få hovedskriften i senter */
+  right:0; /* For å få hovedskriften i senter */
+}
+
+h5 {
+  font-size: 10px;
+  font-family: 'Georgia', serif;
+  color: white;
 }
 
 p {
@@ -45,10 +60,59 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
 }
 
+/* ######### Loading side ######### */
+
+.load_page {
+  position: fixed;
+  text-align: center;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  left: 0;
+  z-index: 1;
+  box-shadow: none;
+}
+
+.load_page {
+  -webkit-animation: load-out 1s;
+  animation: load-out 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+@keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+/* inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
+
+
 /* ######### Header start ######### */
 
 header {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
+  /* laste ned bilde å sette inn? fikk det ikke til url(image/header_img.jpg); */
   background-size: 1024px;
   height: 200px;
   padding-top: 50px;
@@ -109,10 +173,12 @@ ul#menu li a {
 
 /* header scroll*/
 #header {
-  padding: 90px 10px; /* padding som vil krympe ved JS */
-  transition: 0.4s; /* lager en overgang når krympes */
-  /*position: fixed; /* Sticky/fixed header */
-
+  overflow: hidden;
+  padding-right: 10px; /* padding som vil krympe ved bruk av JS */
+  transition: 0.2s; /* lagen en overgang når man scroller */
+  position: fixed; /* Sticky/fixed header */
+  top: 0;
+  z-index: 99;
 }
 
 /* ######### Header slutt #########*/
@@ -378,7 +444,8 @@ li a:hover {
   box-sizing: border-box;
   float: left;
   width: 50%;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 
   /* boks */
   background-color: black;
@@ -403,11 +470,11 @@ a.contact:visited {
   color: white;
 }
 
-.vl {
-  height: 300px;
+.line_contact {
+  height: 350px;
   border-left: 2px solid white;
   position: absolute;
-  top: 40%;
+  top: 37%;
   left: 50%;
 }
 
@@ -495,11 +562,23 @@ a.contact:visited {
   margin: auto auto;
 }
 
+#map {
+  width: 100%
+}
+
+header {
+  width: 100%
+}
+
+/*######### Kontakt ######### */
+
+/* Får kolonnene til å være over hverandre i kontakt, istedenfor vedsidenav */
 .column {
     width: 100%;
 }
 
-.vl {
+/* Gjemmer den hvite linja */
+.line_contact {
   display: none;
 }
 }
