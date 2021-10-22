@@ -2,7 +2,7 @@
 
     //Meny-listene
     const matListe = document.getElementById('matListe');
-    const kakeSøtsakerListe = document.getElementById('kakerSøtsakerListe');
+    const kakeSøtsakerListe = document.getElementById('kakeSøtsakerListe');
     const bakeOffListe = document.getElementById('bakeOffListe');
     const kaffeDrikkeListe = document.getElementById('kaffeDrikkeListe');
 
@@ -26,7 +26,7 @@ function showObject(object){
         matBilde.style.display = 'none';
         matListe.style.display = 'inline';
     }
-    else if (object == "kakerSøtsakerListe"){
+    else if (object == "kakeSøtsakerListe"){
         kakeSøtsakerListe.style.display = 'none';
         kakeSøtsakerBilde.style.display = 'inline';
     }
@@ -60,9 +60,3 @@ menySide.forEach(object => {
         console.log(object);
         showObject(object.id);
     })})
-
-
-
-
-
-
