@@ -8,7 +8,7 @@ body {
   margin:0 auto;
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
-}
+
 
 /* ######### Overskrifter #########*/
 
@@ -427,6 +427,7 @@ li a:hover {
 
 /*---------GALLERI FERDIG-------------*/
 
+/*######### Meny start #########*/
 #menyene{
   color: white;
   display: flex;
@@ -435,7 +436,32 @@ li a:hover {
 .menyside{
   padding: 1em;
   box-sizing: border-box;
-  }
+  width: 256px;
+}
+
+#menybilder{ /* Div med bildene du trykker på for å komme til menyene */
+  display: flex;
+}
+
+#menybilder div img { /* Bilder inne i div-box */
+  max-width: 200px;
+  box-shadow: none;
+}
+
+#menybilder div{
+  width: auto;
+  background-color: #886750;
+  padding: 1em;
+  margin: 12px;
+  height: 518px;
+
+}
+#menybilder h3{
+  text-align: center;
+}
+
+
+/*######### Meny slutt #########*/
 
 /*######### Kontakt ######### */
 
