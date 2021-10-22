@@ -210,18 +210,20 @@ footer {
   color: white;
   height: auto;
   list-style-type: none;
+  font-size: 20px;
 }
 
 footer p {
   font-size: 20px;
 }
-footer {
-  font-size: 20px;
-}
+
 #openstatus{ /* Styler åpningstider-tekst */
   font-size: 25px;;
   text-align: center;
   line-height: 1.5em;
+  font-family: 'Georgia', serif;
+  color: #886750;
+  font-weight: bold;
 }
 
 footer img {
@@ -238,6 +240,15 @@ footer img {
   margin: 10px;
 }
 
+/*  ######### copyright ######### */
+#copyright{
+  
+}
+
+.line_footer {
+
+
+}
 /* ---------------------------------------- ######### footer slutt ######### ----------------------------------------*/
 
 /* ---------------------------------------- ######### om oss start ######### ----------------------------------------*/
