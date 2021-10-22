@@ -21,15 +21,15 @@ document.getElementById("display").innerHTML = da.toDateString();
 
 /* ######### navbar endrer størrelse når scroller ######### */
 
-  window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* endrer størrelse når den når man har bladd 80px */
-      document.getElementById("header").style.padding = "10px 0px";  /* 10px betyr hvordan animasjonen vil se ut når du blar */
-    } else {
-      document.getElementById("header").style.padding = "65px 0px"; /* 10px betyr hvordan animasjonen vil se ut når du blar */
-    }
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
+    document.getElementById("header").style.backgroundColor = "yellow";   /* anna farge bare for å se forskjellen foreløpig */
+  } else {
+    document.getElementById("header").style.backgroundColor = "transparent"; 
   }
+}
     // inspo: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp//
 
 /* window.onscroll = function() {scrollFunction()};
