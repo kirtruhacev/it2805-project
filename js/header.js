@@ -33,7 +33,7 @@ function scrollFunction() {
     document.getElementById("header").style.padding = "50px 10px";
     /*document.getElementById("header").style.fontSize = "30px";*/
     document.getElementById("header").style.fontWeight = "bold";
-    document.getElementById("header").style.backgroundColor = "transparent"; 
+    document.getElementById("header").style.backgroundColor = "transparent";
   }
 }
 

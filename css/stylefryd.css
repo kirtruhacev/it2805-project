@@ -3,7 +3,6 @@
 }
 
 body {
-  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 1024px 500px; /* Størrelse på bilde*/
@@ -127,6 +126,8 @@ header img {
   left: 0;
 }
 
+
+
 header ul {
   position: absolute;
   margin-left: 350px;
@@ -137,7 +138,7 @@ header ul {
 header li {
   display: inline-grid;
   margin-right: 30px; /* Åpning mellom menyene*/
-  
+
 }
 
 /* ######### Del av understrekinga på header ######### */
@@ -242,7 +243,7 @@ footer img {
 
 /*  ######### copyright ######### */
 #copyright{
-  
+
 }
 
 .line_footer {
@@ -515,7 +516,7 @@ a.contact:visited {
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
   * {
-    
+
   box-sizing: border-box;
   }
 
