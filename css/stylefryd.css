@@ -59,11 +59,15 @@ p {
 }
 
 img {
-  border-radius: 8px;
+  border-radius: 8px; /* avrunding på hjørnene */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
 }
 
 /* ---------------------------------------- ######### loading side ######### ----------------------------------------*/
+
+.load_page img{
+  box-shadow: none;
+}
 
 .load_page {
   position: fixed;
@@ -74,7 +78,6 @@ img {
   margin-top: 200px;
   left: 0;
   z-index: 1;
-  box-shadow: none;
 }
 
 .load_page {
@@ -195,7 +198,7 @@ ul#menu li a {
   width: 100%; /* strekker seg over hele skjermen til bruker */
   top: 0; /* Plassert på toppen */
   z-index: 99;
-  font-size: 20px; /* Big font size */
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -242,13 +245,18 @@ footer img {
 }
 
 /*  ######### copyright ######### */
-#copyright{
-
+.copyright{
+  font-size: 10px;
+  font-family: 'Calibri Light', sans-serif;
+  position: absolute;
+  bottom: 0;  /* plasserer den nederst */
 }
 
-.line_footer {
-
-
+hr.line_footer {
+  position: absolute;
+  bottom: 20px; /* plasserer den over copyright teksten */
+  color: white;
+  width: 100%;
 }
 /* ---------------------------------------- ######### footer slutt ######### ----------------------------------------*/
 
