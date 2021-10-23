@@ -3,6 +3,7 @@
 }
 
 body {
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 1024px 500px; /* Størrelse på bilde*/
@@ -125,8 +126,6 @@ header img {
   top: 10px;
   left: 0;
 }
-
-
 
 header ul {
   position: absolute;
