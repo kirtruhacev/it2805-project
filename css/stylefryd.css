@@ -621,4 +621,17 @@ header {
 .line_contact {
   display: none;
 }
+
+/*####### Galleri #######*/
+.stort-galleribilde {
+  max-width: 50vw;
+  max-height: 50vw;
+  margin: 10px;
+}
+.lite-galleribilde {
+  max-width: 23vw;
+  max-height: 23vw;
+  margin: 10px;
+}
+
 }
