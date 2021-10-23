@@ -211,6 +211,7 @@ footer {
   height: auto;
   list-style-type: none;
   font-size: 20px;
+  position: relative;
 }
 
 footer p {
@@ -235,20 +236,27 @@ footer img {
   box-shadow: none;
 }
 #footer-item4 img{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin: 10px;
 }
 
 /*  ######### copyright ######### */
-#copyright{
-  
+
+.copyright{
+  font-size: 10px;
+  font-family: 'Calibri Light', sans-serif;
+  position: absolute;
+  bottom: 0;
 }
 
-.line_footer {
-
-
+hr.line_footer {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  width: 100%;
 }
+
 /* ---------------------------------------- ######### footer slutt ######### ----------------------------------------*/
 
 /* ---------------------------------------- ######### om oss start ######### ----------------------------------------*/
