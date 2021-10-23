@@ -62,6 +62,11 @@ function footerInsert(){
     a3.appendChild(img3);
     div4.appendChild(a3); //Legger til <a> i <div>
 
+    const copyRight = document.createElement("p") /*Lagde bare en p nederst i footeren for å sjekke hvordan copyrighten så ut der */
+   copyRight.innerText ="© Fryd Café (Gruppe 10) 2021"
+   copyRight.style.fontSize = "10px"
+   div1.appendChild(copyRight) 
+    
 }
 
 /* ######### Åpningstider ######### */

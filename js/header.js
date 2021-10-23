@@ -26,14 +26,27 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
     document.getElementById("header").style.padding = "5px 40px"; /* padding rundt header etter man scroller */
-    /*document.getElementById("logo").style.fontSize = "20px";*/ /* størrelse på logo etter man scroller */
+    document.getElementById("logo").style.height = "50px"; /* størrelse på logo etter man scroller */
     document.getElementById("header").style.fontWeight = "normal"; /* endrer font type etter man scroller */
     document.getElementById("header").style.backgroundColor = "black"; /* farge på header etter man scroller */
+    document.getElementById("header").style.height = "60px" /*endrer høyden på headeren ved scrolling */
+    document.getElementById("knappHome").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
+    document.getElementById("knappMeny").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
+    document.getElementById("knappGallery").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
+    document.getElementById("knappOmoss").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
+    document.getElementById("knappKontakt").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
+    
   } else {
     document.getElementById("header").style.padding = "50px 10px";
     /*document.getElementById("header").style.fontSize = "30px";*/
     document.getElementById("header").style.fontWeight = "bold";
     document.getElementById("header").style.backgroundColor = "transparent";
+    document.getElementById("logo").style.height = "150px" /*tilbakestiller logo når øverst på side */
+    document.getElementById("knappHome").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
+    document.getElementById("knappMeny").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */ 
+    document.getElementById("knappGallery").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
+    document.getElementById("knappOmoss").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
+    document.getElementById("knappKontakt").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
   }
 }
 
@@ -48,6 +61,7 @@ function headerInsert(){
     a.href = "homepage.html" //legger til link til hovedside i logo
     a.appendChild(img); //Legger til <img> i <a>
     header.appendChild(a); //Legger til <a> i <header>
+    img.setAttribute("id", "logo") /*lager id på bilde i headeren */
 
     const ul = document.createElement('ul'); //Oppretter <ul>
     ul.id = 'menu'; //Legger til meny-id
@@ -59,6 +73,7 @@ function headerInsert(){
     ahomepage.href = "homepage.html"; //Linker <a> til homepage
     ahomepage.innerText = 'Hjem'; //Legger til "Hjem"-tekst i <a>
     lihomepage.appendChild(ahomepage); //Legger til <a> i <li>
+    lihomepage.setAttribute("id", "knappHome") /*lager id på knapp i header */
 
     const limeny = document.createElement('li'); //Oppretter <li>
     ul.appendChild(limeny); //Legger til <li> i <ul>
@@ -66,6 +81,7 @@ function headerInsert(){
     ameny.href = "meny.html"; //Linker <a> til meny
     ameny.innerText = 'Meny'; //Legger til "Meny"-tekst i <a>
     limeny.appendChild(ameny); //Legger til <a> i <li>
+    limeny.setAttribute("id", "knappMeny") /*lager id på knapp i header */
 
     const ligallery = document.createElement('li'); //Oppretter <li>
     ul.appendChild(ligallery); //Legger til <li> i <ul>
@@ -73,6 +89,7 @@ function headerInsert(){
     agallery.href = "gallery.html"; //Linker <a> til gallery
     agallery.innerText = 'Gallery'; //Legger til "Gallery"-tekst i <a>
     ligallery.appendChild(agallery); //Legger til <a> i <li>
+    ligallery.setAttribute("id", "knappGallery") /*lager id på knapp i header */
 
     var liomoss = document.createElement('li'); //Oppretter <li>
     ul.appendChild(liomoss); //Legger til <li> i <ul>
@@ -80,6 +97,7 @@ function headerInsert(){
     aomoss.href = "about.html"; //Linker <a> til about
     aomoss.innerText = 'Om oss'; //Legger til "Om oss"-tekst i <a>
     liomoss.appendChild(aomoss); //Legger til <a> i <li>
+    liomoss.setAttribute("id", "knappOmoss") /*lager id på knapp i header */
 
     var likontakt = document.createElement('li'); //Oppretter <li>
     ul.appendChild(likontakt); //Legger til <li> i <ul>
@@ -87,6 +105,7 @@ function headerInsert(){
     akontakt.href = "contact.html"; //Linker <a> til contact
     akontakt.innerText = 'Kontakt'; //Legger til "Kontakt"-tekst i <a>
     likontakt.appendChild(akontakt); //Legger til <a> i <li>
+    likontakt.setAttribute("id", "knappKontakt") /*lager id på knapp i header */
 
     header.appendChild(ul); //Legger til <ul>
 }
