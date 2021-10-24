@@ -196,6 +196,8 @@ ul#menu li a {
   width: 100%; /* strekker seg over hele skjermen til bruker */
   top: 0; /* Plassert på toppen */
   z-index: 99;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #logo {
