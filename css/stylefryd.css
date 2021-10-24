@@ -143,7 +143,7 @@ header li {
 
 }
 
-/* ######### Del av understrekinga på header ######### */
+/* ######### Understrekinga på header ######### */
 ul#menu {
   list-style: none;
   color: #886750;
@@ -180,7 +180,6 @@ ul#menu li a {
 }
 
 #menu{
-  font-size: 20px;
   padding-top: 10px;
   padding-right: 40px;
   position: relative;
@@ -192,13 +191,15 @@ ul#menu li a {
 #header {
   overflow: hidden;
   padding: 50px; /* vil krympe når man scroller ved JS */
-  transition: 0.4s; /* Lager effkten når siden blir scrollet */
+  transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
   position: fixed; /* fixed posisjon */
   width: 100%; /* strekker seg over hele skjermen til bruker */
   top: 0; /* Plassert på toppen */
   z-index: 99;
-  font-size: 20px;
-  font-weight: bold;
+}
+
+#logo {
+  transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
 }
 
 /* ---------------------------------------- ######### header slutt ######### ----------------------------------------*/
