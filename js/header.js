@@ -35,6 +35,7 @@ function scrollFunction() {
     document.getElementById("knappGallery").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
     document.getElementById("knappOmoss").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
     document.getElementById("knappKontakt").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
+    document.getElementById("header").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904)"
     
   } else {
     document.getElementById("header").style.padding = "50px 10px";
@@ -47,6 +48,7 @@ function scrollFunction() {
     document.getElementById("knappGallery").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
     document.getElementById("knappOmoss").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
     document.getElementById("knappKontakt").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
+    document.getElementById("header").style.boxShadow = "none"
   }
 }
 

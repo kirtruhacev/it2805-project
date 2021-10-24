@@ -262,25 +262,43 @@ hr.line_footer {
 /* ---------------------------------------- ######### om oss start ######### ----------------------------------------*/
 #om{ /* Paragraf om Fryd (om oss), about.html */
   color: white;
-  margin-bottom: 50%;
-}
+  margin-bottom: 0; 
+  font-size: 15px; 
+  text-align: center;
+} 
 
 #over{ /*Overskriften over om paragrafen, about.html*/
   color: white;
   text-align: center;
-  margin-top: 50px;
-  margin-left: 300px;
-  display: inline-block;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
 
+.flex-containerAbout{ /*flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexbox-item{ /*de ulike items i første flexbox */
+  margin: 50px;
+  max-width: 500px;
+}
+
+.flexbox-item-1{
+  min-height: 100px;
+}
+.flexbox-item-2{
+  max-height: 200px;
 }
 
 #inside{ /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
-  max-width: 45%;
+  max-width: 100%;
   height: 250px;
 }
 .aboutpic{ /*Klasse til bildene i about.html */
-  float: left;
 margin-right: 20%;
 margin-top: 50px;
 
@@ -288,20 +306,16 @@ margin-top: 50px;
 
  #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
-   margin-bottom: 150px;
-   max-width: 60%;
-   float: right;
-   margin-top: -350px;
+   margin-bottom: 0px;
+   margin-top: 160px;
    border-radius: 8px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+   width: 500px;
  }
 
  #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
-   margin-top: -350px;
-   margin-right: 40px;
-   height: 350px;
-   max-width: 35%;
-   margin-bottom: 50px;
+  width: 350px;
+  height: 280px;
+  margin-bottom: 20px;
  }
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
