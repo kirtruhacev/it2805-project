@@ -367,11 +367,6 @@ margin-top: 50px;
 
 }
 
-#parallax h1 {
-  mix-blend-mode:  color-burn;
-  text-align: center;
-}
-
 #grid-container-menu {
   padding: 30px 0px;
   display: grid;
