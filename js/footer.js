@@ -62,10 +62,16 @@ function footerInsert(){
     a3.appendChild(img3);
     div4.appendChild(a3); //Legger til <a> i <div>
 
+    //Copyright, burde flyttes til å være nederst til høyre likt med body with og hr på 100% av skjerm, hvordan?
+    const div5 = document.createElement('div'); //Oppretter <div>
     const copyRight = document.createElement("p") /*Lagde bare en p nederst i footeren for å sjekke hvordan copyrighten så ut der */
-   copyRight.innerText ="© Fryd Café (Gruppe 10) 2021"
-   copyRight.style.fontSize = "10px"
-   div1.appendChild(copyRight) 
+    const line_footer = document.createElement("hr")
+    copyRight.innerText ="© Fryd Café (Gruppe 10) 2021"
+    copyRight.setAttribute("id", "line_footer") /*lager id på knapp i header */ 
+    copyRight.setAttribute("id", "copyright") /*lager id på knapp i header */
+    footer.appendChild(div5); //Legger til <div> i <footer>
+    div5.appendChild(line_footer)
+    div5.appendChild(copyRight)
     
 }
 
