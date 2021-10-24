@@ -631,10 +631,16 @@ a.contact:visited {
   margin: 0;
 }
 
+#grid-map-container {
+  display: grid;
+  width: 90%;
+  height: 300px;
+  justify-content: center;
+}
+
 #map {
-  width: 80%;
-  height: auto;
-  margin: auto auto;
+  max-width: 900px;
+  width: 500px;
 }
 
 header {
