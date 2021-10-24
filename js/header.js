@@ -1,35 +1,14 @@
-/* ######### Understreking i navbar ######### */
-/* const myMenu = document.getElementById('menu');
-
-myMenu.onclick=e=>  // JS event delegation
-  {
-  if (e.target.tagName.toLowerCase() != 'a' ) return; // only
-  e.preventDefault;
-  let LI = e.target.parentElement;
-
-  if (!LI.classList.contains('active'))
-    {
-    myMenu.querySelector('li.active').classList.remove('active');
-    }
-  LI.classList.add('active');
-  }
-
-var da = new Date();
-document.getElementById("display").innerHTML = da.toDateString();
- */
-/* Navigasjon slutt  Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
-
 /* ######### navbar endrer størrelse når scroller ######### */
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
-    document.getElementById("header").style.padding = "5px 200px"; /* padding rundt header etter man scroller */
-    document.getElementById("header").style.fontSize = "15px"; /* størrelse på logo etter man scroller */
+    document.getElementById("header").style.padding = "40px 200px"; /* padding rundt header etter man scroller */
+    document.getElementById("header").style.fontSize = "15px"; /* størrelse på tekst etter man scroller */
     document.getElementById("header").style.fontWeight = "normal"; /* endrer font type etter man scroller */
     document.getElementById("header").style.backgroundColor = "black"; /* farge på header etter man scroller */
-    document.getElementById("logo").style.height = "50px"; /* størrelse på logo etter man scroller */
+    document.getElementById("logo").style.height = "60px"; /* størrelse på logo etter man scroller */
 
     /* Fjern dette? Ordnet med fontsize som gjelder alle */
     /*document.getElementById("header").style.height = "60px" /*endrer høyden på headeren ved scrolling */
@@ -41,7 +20,7 @@ function scrollFunction() {
     /*document.getElementById("header").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904)"*/
     
   } else {
-    document.getElementById("header").style.padding = "50px 10px";
+    document.getElementById("header").style.padding = "80px 80px";
     document.getElementById("header").style.fontSize = "20px"; /*tilbakestiller størrelse på menyknappene når øverst på side */
     document.getElementById("header").style.fontWeight = "bold";
     document.getElementById("header").style.backgroundColor = "transparent";

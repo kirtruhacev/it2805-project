@@ -135,62 +135,34 @@ header ul {
   margin-left: 350px;
   margin-top: 10px;
   list-style-type: none;
+  padding-left: 90px;
 }
 
 header li {
   display: inline-grid;
   margin-right: 30px; /* Åpning mellom menyene*/
+  position: relative;
+  overflow: hidden;
+}
 
+header li a { /* styling på headeren */
+  text-decoration: none;
+  color: #ffffff; /* Farge på navigasjon */
+  font-family: 'Georgia', serif; 
 }
 
 /* ######### Understrekinga på header ######### */
-ul#menu {
-  list-style: none;
-  color: #886750;
 
+header li a:hover { 
+    border-bottom: 2px solid #886750;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
-ul#menu li {
-  display: inline-block;
-  padding: .3em .5em;
-  position:relative;
-  overflow: hidden;
-}
-ul#menu li::before {
-  position: absolute;
-  display: block;
-  content: '';
-  bottom: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  transition: 0.4s;
-  background-color: #886750;
-}
-
-ul#menu li.active::before,
-ul#menu li:hover::before {
-  left:0%;
-
-}
-ul#menu li a {
-  text-decoration: none;
-  color: #ffffff; /* Farge på navigasjon */
-  font-family: 'Georgia', serif;
-  position: relative;
-}
-
-#menu{
-  padding-top: 10px;
-  padding-right: 40px;
-  position: relative;
-}
-
-/* Credit: https://stackoverflow.com/questions/59448836/how-to-underline-navbar-item-when-it-is-clicked */
 
 /* header scroll*/
 #header {
   overflow: hidden;
-  padding: 50px; /* vil krympe når man scroller ved JS */
+  padding: 80px; /* vil krympe når man scroller ved JS */
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
   position: fixed; /* fixed posisjon */
   width: 100%; /* strekker seg over hele skjermen til bruker */
@@ -198,6 +170,7 @@ ul#menu li a {
   z-index: 99;
   font-size: 20px;
   font-weight: bold;
+
 }
 
 #logo {
