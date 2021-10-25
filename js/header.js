@@ -1,20 +1,12 @@
-/* ######### navbar endrer størrelse når scroller ######### */
+//Har en funksjon som først bygger headeren ved innlastning av siden, og så har vi en funksjon som endrer størrelse ved bevegelse av siden.
 
-const headeren = document.querySelector('header');
-window.onscroll = function() {scrollFunction()};
+const header = document.getElementById('top'); //Henter id på header
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
-    headeren.id = 'scroll';
-  } else {
-    headeren.id = 'top';
-  }
-}
+/* ######### Bygging av header ######### */
 
-/* ######### navigasjon-menyene ######### */
-const header = document.getElementById('top');
+function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
 
-function headerInsert(){
+    //Lager logoen
     const a = document.createElement('a'); //Oppretter <a>
     const img = document.createElement('img'); //Oppretter <img>
     img.src = "./image/logotrans.png"; //Legger til src i <img>
@@ -22,13 +14,14 @@ function headerInsert(){
     a.href = "homepage.html" //legger til link til hovedside i logo
     a.appendChild(img); //Legger til <img> i <a>
     header.appendChild(a); //Legger til <a> i <header>
-    img.setAttribute("id", "logo") /*lager id på bilde i headeren */
+    img.id = "logo"; //lager id på bilde i headeren
     
-
+    //Lager liste
     const ul = document.createElement('ul'); //Oppretter <ul>
     ul.id = 'menu'; //Legger til meny-id
     header.appendChild(ul); //Legger til <ul> i <header>
 
+    //Lager homepage-knapp
     const lihomepage = document.createElement('li'); //Oppretter <li>
     ul.appendChild(lihomepage); //Legger til <li> i <ul>
     const ahomepage = document.createElement('a'); //Oppretter <a> til homepage
@@ -37,6 +30,7 @@ function headerInsert(){
     lihomepage.appendChild(ahomepage); //Legger til <a> i <li>
     lihomepage.className = 'knapp';
 
+    //Lager meny-knapp
     const limeny = document.createElement('li'); //Oppretter <li>
     ul.appendChild(limeny); //Legger til <li> i <ul>
     const ameny = document.createElement('a'); //Oppretter <a> til meny
@@ -45,6 +39,7 @@ function headerInsert(){
     limeny.appendChild(ameny); //Legger til <a> i <li>
     limeny.className = 'knapp';
 
+    //Lager galleri-knapp
     const ligallery = document.createElement('li'); //Oppretter <li>
     ul.appendChild(ligallery); //Legger til <li> i <ul>
     const agallery = document.createElement('a'); //Oppretter <a> til gallery
@@ -53,21 +48,35 @@ function headerInsert(){
     ligallery.appendChild(agallery); //Legger til <a> i <li>
     ligallery.className = 'knapp';
 
-    var liomoss = document.createElement('li'); //Oppretter <li>
+    //Lager om oss-knapp
+    const liomoss = document.createElement('li'); //Oppretter <li>
     ul.appendChild(liomoss); //Legger til <li> i <ul>
-    var aomoss = document.createElement('a'); //Oppretter <a> til about
+    const aomoss = document.createElement('a'); //Oppretter <a> til about
     aomoss.href = "about.html"; //Linker <a> til about
     aomoss.innerText = 'Om oss'; //Legger til "Om oss"-tekst i <a>
     liomoss.appendChild(aomoss); //Legger til <a> i <li>
     liomoss.className = 'knapp';
 
-    var likontakt = document.createElement('li'); //Oppretter <li>
+    //Lager kontakt-knapp
+    const likontakt = document.createElement('li'); //Oppretter <li>
     ul.appendChild(likontakt); //Legger til <li> i <ul>
-    var akontakt = document.createElement('a'); //Oppretter <a> til contact
+    const akontakt = document.createElement('a'); //Oppretter <a> til contact
     akontakt.href = "contact.html"; //Linker <a> til contact
     akontakt.innerText = 'Kontakt'; //Legger til "Kontakt"-tekst i <a>
     likontakt.appendChild(akontakt); //Legger til <a> i <li>
     likontakt.className = 'knapp';
 
     header.appendChild(ul); //Legger til <ul>
+}
+
+/* ######### Scrolle-funksjon ######### */
+
+window.onscroll = function() {scrollFunction()}; //Kjøres hver gang man scroller
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
+    header.id = 'scroll';
+  } else {
+    header.id = 'top';
+  }
 }
