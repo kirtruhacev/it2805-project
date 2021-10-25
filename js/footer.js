@@ -27,29 +27,26 @@ function footerInsert(){
     div2.id = "footer-item2"; //Legger til id på <div>
     footer.appendChild(div2); //Legger til <div> i <footer>
 
-
-    //Åpningstid
-    let openStatus = document.createElement('p'); //Oppretter <p>
-    openStatus.id = 'openstatus';
-    div2.appendChild(openStatus);
-    openingHours(); //Legger til tekst om åpningstid
+    //Fryd Cafe logo
+    const img1 = document.createElement('img'); //Oppretter <img>
+    img1.src = './image/beans_nb.png' //Legger til src i <img>  BEANS ISTEDEFOR LOGO?
+    img1.alt = 'Fryd Cafe logo' //Legger til alt i <img>
+    div2.appendChild(img1); //Legger til <img> i <footer>
 
     //Sosiale medier div-box
     const div4 = document.createElement('div'); //Oppretter <div>
     div4.id = "footer-item4"; //Legger til id på <div>
     footer.appendChild(div4); //Legger til <div> i <footer>
 
-    //Fryd Cafe logo LAG STØRRE?
-    const img1 = document.createElement('img'); //Oppretter <img>
-    img1.src = './image/logotrans.png' //Legger til src i <img>
-    img1.alt = 'Fryd Cafe logo' //Legger til alt i <img>
-    div4.appendChild(img1); //Legger til <img> i <footer>
-    img1.setAttribute("id", "footer-logo") /*lager id på knapp i header */
-    
+    //Åpningstid
+    let openStatus = document.createElement('p'); //Oppretter <p>
+    openStatus.id = 'openstatus';
+    div4.appendChild(openStatus);
+    openingHours(); //Legger til tekst om åpningstid
 
-    const h2 = document.createElement('h2'); //Oppretter <h2>
-    h2.innerText = 'Sosiale medier:'; //Legger til tekst på <h2>
-    div4.appendChild(h2); //Legger til <h2> i <div>
+    const h6 = document.createElement('h6'); //Oppretter <h2>
+    h6.innerText = 'Sosiale medier'; //Legger til tekst på <h2>
+    div4.appendChild(h6); //Legger til <h2> i <div>
 
     //Facebook-logo
     const a2 = document.createElement('a'); //Oppretter <a>
