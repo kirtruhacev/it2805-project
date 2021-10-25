@@ -182,12 +182,15 @@ header {
   font-size: 15px;
   font-weight: normal;
   background-color: black;
+  height: 20px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);  */
+}
+#scroll #logo{
   height: 60px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904); */
+
 }
 #scroll .knapp{
   font-size: 15px;
-
 }
 
 #top{
@@ -196,6 +199,10 @@ header {
   font-weight: bold;
   background-color: transparent;
   height: 150px;
+}
+#top #logo{
+  height: 150px;
+
 }
 #top .knapp{
   font-size: 20px;;

@@ -5,46 +5,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
-
     headeren.id = 'scroll';
-
-    document.getElementById("header").style.padding = "40px 200px"; /* padding rundt header etter man scroller */
-    document.getElementById("header").style.fontSize = "15px"; /* størrelse på tekst etter man scroller */
-    document.getElementById("header").style.fontWeight = "normal"; /* endrer font type etter man scroller */
-    document.getElementById("header").style.backgroundColor = "black"; /* farge på header etter man scroller */
-    document.getElementById("logo").style.height = "60px"; /* størrelse på logo etter man scroller */
-
-    /* Fjern dette? Ordnet med fontsize som gjelder alle */
-    /*document.getElementById("header").style.height = "60px" /*endrer høyden på headeren ved scrolling */
-    /*document.getElementById("knappHome").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
-    /*document.getElementById("knappMeny").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
-    /*document.getElementById("knappGallery").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
-    /*document.getElementById("knappOmoss").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
-    /*document.getElementById("knappKontakt").style.fontSize = "15px" /*endrer størrelsen på menyknappene i headeren */
-    /*document.getElementById("header").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904)"*/
-    
   } else {
-
     headeren.id = 'top';
-
-    document.getElementById("header").style.padding = "80px 80px";
-    document.getElementById("header").style.fontSize = "20px"; /*tilbakestiller størrelse på menyknappene når øverst på side */
-    document.getElementById("header").style.fontWeight = "bold";
-    document.getElementById("header").style.backgroundColor = "transparent";
-    document.getElementById("logo").style.height = "150px" /*tilbakestiller logo når øverst på side */
-
-    /* Fjern dette? Ordnet med fontsize som gjelder alle */
-    /*document.getElementById("knappHome").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
-    /*document.getElementById("knappMeny").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */ 
-    /*document.getElementById("knappGallery").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
-    /*document.getElementById("knappOmoss").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
-    /*document.getElementById("knappKontakt").style.fontSize = "20px" /*tilbakestiller størrelse på menyknappene når øverst på side */
-    /*document.getElementById("header").style.boxShadow = "none" */
   }
 }
 
 /* ######### navigasjon-menyene ######### */
-const header = document.getElementById('header');
+const header = document.getElementById('top');
 
 function headerInsert(){
     const a = document.createElement('a'); //Oppretter <a>
@@ -67,7 +35,6 @@ function headerInsert(){
     ahomepage.href = "homepage.html"; //Linker <a> til homepage
     ahomepage.innerText = 'Hjem'; //Legger til "Hjem"-tekst i <a>
     lihomepage.appendChild(ahomepage); //Legger til <a> i <li>
-    //lihomepage.setAttribute("id", "knappHome") /*lager id på knapp i header */
     lihomepage.className = 'knapp';
 
     const limeny = document.createElement('li'); //Oppretter <li>
@@ -76,7 +43,6 @@ function headerInsert(){
     ameny.href = "meny.html"; //Linker <a> til meny
     ameny.innerText = 'Meny'; //Legger til "Meny"-tekst i <a>
     limeny.appendChild(ameny); //Legger til <a> i <li>
-    //limeny.setAttribute("id", "knappMeny") /*lager id på knapp i header */
     limeny.className = 'knapp';
 
     const ligallery = document.createElement('li'); //Oppretter <li>
@@ -85,7 +51,6 @@ function headerInsert(){
     agallery.href = "gallery.html"; //Linker <a> til gallery
     agallery.innerText = 'Gallery'; //Legger til "Gallery"-tekst i <a>
     ligallery.appendChild(agallery); //Legger til <a> i <li>
-    //ligallery.setAttribute("id", "knappGallery") /*lager id på knapp i header */
     ligallery.className = 'knapp';
 
     var liomoss = document.createElement('li'); //Oppretter <li>
@@ -94,7 +59,6 @@ function headerInsert(){
     aomoss.href = "about.html"; //Linker <a> til about
     aomoss.innerText = 'Om oss'; //Legger til "Om oss"-tekst i <a>
     liomoss.appendChild(aomoss); //Legger til <a> i <li>
-    //liomoss.setAttribute("id", "knappOmoss") /*lager id på knapp i header */
     liomoss.className = 'knapp';
 
     var likontakt = document.createElement('li'); //Oppretter <li>
@@ -103,7 +67,6 @@ function headerInsert(){
     akontakt.href = "contact.html"; //Linker <a> til contact
     akontakt.innerText = 'Kontakt'; //Legger til "Kontakt"-tekst i <a>
     likontakt.appendChild(akontakt); //Legger til <a> i <li>
-    //likontakt.setAttribute("id", "knappKontakt") /*lager id på knapp i header */
     likontakt.className = 'knapp';
 
     header.appendChild(ul); //Legger til <ul>
