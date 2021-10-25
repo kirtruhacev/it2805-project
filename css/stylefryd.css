@@ -198,7 +198,7 @@ footer {
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #openstatus{ /* Styler åpningstider-tekst */
@@ -224,16 +224,21 @@ footer img {
   margin: 10px;
 }
 
+#footer-logo{
+  
+}
+
 /*  ######### copyright ######### */
 #copyright{
   font-size: 10px;
   font-family: 'Calibri Light', sans-serif;
-  margin: -30px;
+  width: 100%;
 }
 
 #line_footer {
   color: white;
   width: 100%;
+  margin-top: -5px;
 }
 /* ---------------------------------------- ######### footer slutt ######### ----------------------------------------*/
 
