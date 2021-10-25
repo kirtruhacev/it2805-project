@@ -182,7 +182,7 @@ header {
   font-size: 15px;
   font-weight: normal;
   background-color: black;
-  height: 20px;
+  height: 0px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);  */
 }
 #scroll #logo{
