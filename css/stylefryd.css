@@ -119,7 +119,7 @@ img {
 
 header {
   overflow: hidden;
-  padding: 80px; /* vil krympe når man scroller ved JS */
+  
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
   position: fixed; /* fixed posisjon */
   width: 100%; /* strekker seg over hele skjermen til bruker */
@@ -172,25 +172,7 @@ header li a:hover:after{
   transform-origin:   0% 100%; /* effekt starter fra venstre */ 
 }
 
-/* ######### header scroll ######### */
-
-
-#scroll{
-  padding: 40px 200px;
-  font-size: 15px;
-  font-weight: normal;
-  background-color: black;
-  height: 0px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);  */
-}
-#scroll #logo{
-  height: 60px;
-
-}
-#scroll .knapp{
-  font-size: 15px;
-}
-
+/* ######### Header scroll ######### */
 #top{
   padding: 80px 80px;
   font-size: 20px;
@@ -205,6 +187,24 @@ header li a:hover:after{
 #top .knapp{
   font-size: 20px;;
 }
+
+#scroll{
+  padding: 40px 200px;
+  font-size: 15px;
+  font-weight: normal;
+  background-color: black;
+  height: 0px;
+}
+
+#scroll #logo{
+  height: 60px;
+}
+
+#scroll .knapp{
+  font-size: 15px;
+}
+
+
 
 #logo {
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
