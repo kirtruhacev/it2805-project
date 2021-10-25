@@ -172,7 +172,7 @@ header li a:hover:after{
   transform-origin:   0% 100%; /* effekt starter fra venstre */ 
 }
 
-/* ######### Header scroll ######### */
+/* ######### Header top (vanlig) ######### */
 #top{
   padding: 80px 80px;
   font-size: 20px;
@@ -182,12 +182,12 @@ header li a:hover:after{
 }
 #top #logo{
   height: 150px;
-
 }
 #top .knapp{
   font-size: 20px;;
 }
 
+/* ######### Header scroll ######### */
 #scroll{
   padding: 40px 200px;
   font-size: 15px;
@@ -203,7 +203,6 @@ header li a:hover:after{
 #scroll .knapp{
   font-size: 15px;
 }
-
 
 
 #logo {
@@ -458,6 +457,7 @@ margin-top: 50px;
 /* ---------------------------------------- ######### galleri slutt ######### ----------------------------------------*/
 
 /* ---------------------------------------- ######### meny start ######### ----------------------------------------*/
+
 #menyene{
   color: white;
   display: flex;
@@ -466,7 +466,18 @@ margin-top: 50px;
 .menyside{
   padding: 1em;
   box-sizing: border-box;
-  width: 256px;
+  max-width: 252px;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color: #3d2e24;
+  border-width: 0.25em;
+  
+
+}
+
+.menyside ul{
+  padding-left: 25px; /* Mindre padding på liste */
+  list-style-type: square;
 }
 
 #menybilder{ /* Div med bildene du trykker på for å komme til menyene */
@@ -479,11 +490,11 @@ margin-top: 50px;
 }
 
 #menybilder div{
-  width: auto;
   background-color: #886750;
   padding: 1em;
   margin: 12px;
-  height: 518px;
+  max-width: 232px;
+  height: 545px;
 
 }
 #menybilder h3{
@@ -572,7 +583,6 @@ a.contact:visited {
     padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
   }
 
-
 /* Hjem */
 #grid-container {
     padding: 30px 20px;
@@ -584,10 +594,7 @@ a.contact:visited {
     color: white;
     font-size: 25px;
     justify-content: center;
-
 }
-
-
 
 #grid-container img {
   width: auto;

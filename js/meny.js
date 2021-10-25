@@ -14,7 +14,7 @@
 
     //Generelt
     const menySide = document.querySelectorAll('.menyside');
-console.log(menySide)
+
 
 //Funksjon som tar inn object og om den skal vises (true/false)
 function showObject(object){
@@ -56,7 +56,5 @@ function showObject(object){
 
 menySide.forEach(object => {
     object.addEventListener('click', event => {
-        console.log(object.id);
-        console.log(object);
         showObject(object.id);
     })})
