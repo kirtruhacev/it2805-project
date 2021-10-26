@@ -582,6 +582,20 @@ a.contact:visited {
     margin:0 auto;
   }
 
+  /* funket ikke helt, noen som vet? */
+ header, #top .knapp, #scroll .knapp{
+    background-color: black;
+    width: 100%;
+    word-break: break-all;
+    }
+
+    #top, #scroll{
+      background-color: black;
+      height: fit-content;
+      block-size: fit-content
+      width: 100%;
+      }
+    
   
 /* Hjem */
 #grid-container {
