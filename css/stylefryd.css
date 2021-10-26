@@ -13,7 +13,6 @@ body {
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
-
 /* ---------------------------------------- ######### overskrifter ######### ----------------------------------------*/
 
 h1 {
@@ -26,13 +25,13 @@ h1 {
 h2 {
   font-family: 'Georgia', serif;
   color: #886750;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 h3 {
   font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 /* Hovedskriften*/
@@ -558,11 +557,12 @@ a.contact:visited {
   color: white;
 }
 
+/* Styling til strek */
 .line_contact {
   height: 350px;
   border-left: 2px solid white;
   position: absolute;
-  top: 37%;
+  top: 38.5%;
   left: 50%;
 }
 
@@ -570,6 +570,12 @@ a.contact:visited {
 
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
+  html{
+
+    width: 100%;
+  }
+    
+    
   * {
 
   box-sizing: border-box;
@@ -669,7 +675,7 @@ a.contact:visited {
 
 #map {
   max-width: 900px;
-  width: 500px;
+  width: 100%;
 }
 
 header {
