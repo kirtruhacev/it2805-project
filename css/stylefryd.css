@@ -121,7 +121,6 @@ img {
 
 header {
   overflow: hidden;
-  
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
   position: fixed; /* fixed posisjon */
   width: 100%; /* strekker seg over hele skjermen til bruker */
@@ -568,14 +567,10 @@ a.contact:visited {
 
 /* ---------------------------------------- ######### Kontakt slutt ######### ----------------------------------------*/
 
+
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
-  html{
 
-    width: 100%;
-  }
-    
-    
   * {
 
   box-sizing: border-box;
@@ -583,33 +578,11 @@ a.contact:visited {
 
   body {
     background-color: black;
-    max-width: 700px;
+    width: 100%;
     margin:0 auto;
   }
 
-/* header */
-
-  header {
-    background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
-    background-size: 1024px;
-    height: 200px;
-    max-width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    box-shadow: none;
-  }
-
-  header img {
-    height: 140px;
-    box-shadow: none;
-    position: relative;
-  }
-
-  #header {
-    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-  }
-
+  
 /* Hjem */
 #grid-container {
     padding: 30px 20px;
