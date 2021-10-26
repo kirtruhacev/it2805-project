@@ -13,50 +13,87 @@
     const kaffeDrikkeBilde = document.getElementById('kaffeDrikkeBilde');
 
     //Generelt
-    const menySide = document.querySelectorAll('.menyside');
-console.log(menySide)
+    const menyBilde = document.querySelectorAll('.menyBilde');
+    const menyListe = document.querySelectorAll('.menyListe');
+    let endret = false //Sjekker om man re-sizer "fra" liten til stor bredde
 
-//Funksjon som tar inn object og om den skal vises (true/false)
+//Funksjon som tar inn object og om den skal vises
 function showObject(object){
-    if (object == "matListe"){
-        matListe.style.display = 'none';
-        matBilde.style.display = 'inline';
+    const bredde = window.innerWidth;
+    if (bredde >= 900){
+        if (endret == true){ //Har hatt liten bredde. Resetter boksene
+            matBilde.style.display = 'inline';
+            matListe.style.display = 'none';
+            kakeSøtsakerBilde.style.display = 'inline';
+            kakeSøtsakerListe.style.display = 'none';
+            bakeOffBilde.style.display = 'inline';
+            bakeOffListe.style.display = 'none';
+            kaffeDrikkeBilde.style.display = 'inline';
+            kaffeDrikkeListe.style.display = 'none';
+            endret = false;
+        }
+        if (object == "matListe"){
+            matListe.style.display = 'none';
+            matBilde.style.display = 'inline';
+        }
+        else if (object == "matBilde"){
+            matBilde.style.display = 'none';
+            matListe.style.display = 'inline';
+        }
+        else if (object == "kakeSøtsakerListe"){
+            kakeSøtsakerListe.style.display = 'none';
+            kakeSøtsakerBilde.style.display = 'inline';
+        }
+        else if (object == "kakerSøtsakerBilde"){
+            kakeSøtsakerBilde.style.display = 'none';
+            kakeSøtsakerListe.style.display = 'inline';
+        }
+        else if (object == "bakeOffListe"){
+            bakeOffListe.style.display = 'none';
+            bakeOffBilde.style.display = 'inline';
+        }
+        else if (object == "bakeOffBilde"){
+            bakeOffBilde.style.display = 'none';
+            bakeOffListe.style.display = 'inline';
+        }
+        else if (object == "kaffeDrikkeListe"){
+            kaffeDrikkeListe.style.display = 'none';
+            kaffeDrikkeBilde.style.display = 'inline';
+        }
+        else if (object == "kaffeDrikkeBilde"){
+            kaffeDrikkeBilde.style.display = 'none';
+            kaffeDrikkeListe.style.display = 'inline';
+        }
     }
-    else if (object == "matBilde"){
+    else{
         matBilde.style.display = 'none';
         matListe.style.display = 'inline';
-    }
-    else if (object == "kakeSøtsakerListe"){
-        kakeSøtsakerListe.style.display = 'none';
-        kakeSøtsakerBilde.style.display = 'inline';
-    }
-    else if (object == "kakerSøtsakerBilde"){
         kakeSøtsakerBilde.style.display = 'none';
         kakeSøtsakerListe.style.display = 'inline';
-    }
-    else if (object == "bakeOffListe"){
-        bakeOffListe.style.display = 'none';
-        bakeOffBilde.style.display = 'inline';
-    }
-    else if (object == "bakeOffBilde"){
         bakeOffBilde.style.display = 'none';
         bakeOffListe.style.display = 'inline';
-    }
-    else if (object == "kaffeDrikkeListe"){
-        kaffeDrikkeListe.style.display = 'none';
-        kaffeDrikkeBilde.style.display = 'inline';
-    }
-    else if (object == "kaffeDrikkeBilde"){
         kaffeDrikkeBilde.style.display = 'none';
         kaffeDrikkeListe.style.display = 'inline';
+        endret = true //Liten bredde
     }
 }
 
-
-
-menySide.forEach(object => {
+menyListe.forEach(object => {
     object.addEventListener('click', event => {
-        console.log(object.id);
-        console.log(object);
         showObject(object.id);
     })})
+
+menyBilde.forEach(object => {
+    object.addEventListener('click', event => {
+        showObject(object.id);
+    })})
+
+window.addEventListener("resize", () => {
+    (showObject('none'));
+});
+
+window.addEventListener("onload", (showObject('none')));
+
+
+    
+

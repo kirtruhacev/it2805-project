@@ -13,7 +13,6 @@ body {
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
-
 /* ---------------------------------------- ######### overskrifter ######### ----------------------------------------*/
 
 h1 {
@@ -26,13 +25,13 @@ h1 {
 h2 {
   font-family: 'Georgia', serif;
   color: #886750;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 h3 {
   font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 /* Hovedskriften*/
@@ -47,8 +46,14 @@ h4 {
   right:0; /* For å få hovedskriften i senter */
 }
 
-h5 {
+h5 {  
   font-size: 10px;
+  font-family: 'Georgia', serif;
+  color: white;
+}
+
+h6 { /*  fotter sosiale medier*/
+  font-size: 20px;
   font-family: 'Georgia', serif;
   color: white;
 }
@@ -79,9 +84,6 @@ img {
   margin-top: 200px;
   left: 0;
   z-index: 1;
-}
-
-.load_page {
   -webkit-animation: load-out 1s;
   animation: load-out 2s;
   -webkit-animation-fill-mode: forwards;
@@ -118,8 +120,14 @@ img {
 /* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
-  padding: 100px;
-
+  overflow: hidden;
+  transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
+  position: fixed; /* fixed posisjon */
+  width: 100%; /* strekker seg over hele skjermen til bruker */
+  top: 0; /* Plassert på toppen */
+  z-index: 99;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header img {
@@ -165,18 +173,38 @@ header li a:hover:after{
   transform-origin:   0% 100%; /* effekt starter fra venstre */ 
 }
 
-/* ######### header scroll ######### */
-#header {
-  overflow: hidden;
-  padding: 80px; /* vil krympe når man scroller ved JS */
-  transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
-  position: fixed; /* fixed posisjon */
-  width: 100%; /* strekker seg over hele skjermen til bruker */
-  top: 0; /* Plassert på toppen */
-  z-index: 99;
+/* ######### Header top (vanlig) ######### */
+#top{
+  padding: 80px 80px;
   font-size: 20px;
   font-weight: bold;
+  background-color: transparent;
+  height: 150px;
 }
+#top #logo{
+  height: 150px;
+}
+#top .knapp{
+  font-size: 20px;;
+}
+
+/* ######### Header scroll ######### */
+#scroll{
+  padding: 40px 200px;
+  font-size: 15px;
+  font-weight: normal;
+  background-color: black;
+  height: 0px;
+}
+
+#scroll #logo{
+  height: 60px;
+}
+
+#scroll .knapp{
+  font-size: 15px;
+}
+
 
 #logo {
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -198,12 +226,11 @@ footer {
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #openstatus{ /* Styler åpningstider-tekst */
   font-size: 25px;;
-  text-align: center;
   line-height: 1.5em;
   font-family: 'Georgia', serif;
   color: #886750;
@@ -218,17 +245,32 @@ footer img {
   vertical-align:middle;
   box-shadow: none;
 }
+
+#footer-item4 {
+  text-align: left;
+  margin: auto; /*  fint? */
+}
+
 #footer-item4 img{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 10px;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(100%); /*  fint? */
+}
+
+#footer-item2{
+  display: inline-grid;
+  justify-self: center;
+  align-items: center;
 }
 
 /*  ######### copyright ######### */
 #copyright{
   font-size: 10px;
   font-family: 'Calibri Light', sans-serif;
-  margin: -30px;
+  width: 100%;
 }
 
 #line_footer {
@@ -342,7 +384,6 @@ margin-top: 50px;
   text-align: center;
   font-size: 50px;
   background-size: 1024px;
-
 }
 
 #grid-container-menu {
@@ -359,8 +400,6 @@ margin-top: 50px;
 #grid-container-menu img{
   height: 210px;
 }
-
-
 
 #grid-container-menu h2 {
   font-size: 40px;
@@ -430,15 +469,34 @@ margin-top: 50px;
 /* ---------------------------------------- ######### galleri slutt ######### ----------------------------------------*/
 
 /* ---------------------------------------- ######### meny start ######### ----------------------------------------*/
+
 #menyene{
   color: white;
   display: flex;
 }
 
-.menyside{
+.menyListe{
   padding: 1em;
   box-sizing: border-box;
-  width: 256px;
+  max-width: 200px;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color: #3d2e24;
+  border-width: 0.25em;
+}
+.menyBilde{
+  padding: 1em;
+  box-sizing: border-box;
+  max-width: 200px;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color: #3d2e24;
+  border-width: 0.25em;
+}
+
+.menyListe ul{
+  padding-left: 2em; /* Mindre padding på liste */
+  list-style-type: square;
 }
 
 #menybilder{ /* Div med bildene du trykker på for å komme til menyene */
@@ -446,16 +504,16 @@ margin-top: 50px;
 }
 
 #menybilder div img { /* Bilder inne i div-box */
-  max-width: 200px;
+  max-width: 100%;
   box-shadow: none;
 }
 
 #menybilder div{
-  width: auto;
   background-color: #886750;
   padding: 1em;
   margin: 12px;
-  height: 518px;
+  max-width: 232px;
+  height: 545px;
 
 }
 #menybilder h3{
@@ -498,18 +556,21 @@ a.contact:visited {
   color: white;
 }
 
+/* Styling til strek */
 .line_contact {
   height: 350px;
   border-left: 2px solid white;
   position: absolute;
-  top: 37%;
+  top: 38.5%;
   left: 50%;
 }
 
 /* ---------------------------------------- ######### Kontakt slutt ######### ----------------------------------------*/
 
+
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
+
   * {
 
   box-sizing: border-box;
@@ -517,34 +578,25 @@ a.contact:visited {
 
   body {
     background-color: black;
-    max-width: 700px;
+    width: 100%;
     margin:0 auto;
   }
 
-/* header */
+  /* funket ikke helt, noen som vet? */
+ header, #top .knapp, #scroll .knapp{
+    background-color: black;
+    width: 100%;
+    word-break: break-all;
+    }
 
-  header {
-    background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg");
-    background-size: 1024px;
-    height: 200px;
-    max-width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    box-shadow: none;
-  }
-
-  header img {
-    height: 140px;
-    box-shadow: none;
-    position: relative;
-  }
-
-  #header {
-    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-  }
-
-
+    #top, #scroll{
+      background-color: black;
+      height: fit-content;
+      block-size: fit-content
+      width: 100%;
+      }
+    
+  
 /* Hjem */
 #grid-container {
     padding: 30px 20px;
@@ -556,10 +608,7 @@ a.contact:visited {
     color: white;
     font-size: 25px;
     justify-content: center;
-
 }
-
-
 
 #grid-container img {
   width: auto;
@@ -613,7 +662,7 @@ a.contact:visited {
 
 #map {
   max-width: 900px;
-  width: 500px;
+  width: 100%;
 }
 
 header {
@@ -643,4 +692,50 @@ header {
   max-height: 23vw;
   margin: 10px;
 }
- }
+
+/* ####### Meny (mobil) ####### */
+
+#menyene{
+  color: white;
+}
+
+.menyListe{
+  border-style: none;
+}
+
+.menyListe ul{
+  padding-left: 25px; /* Mindre padding på liste */
+  list-style-type: square;
+  min-width: 200px;
+}
+
+#menybilder{ /* Div med bildene du trykker på for å komme til menyene */
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 0fr);
+  justify-content: center;
+}
+
+#menybilder div img { /* Bilder inne i div-box */
+  display: none;
+  min-width: 350px;
+  box-shadow: none;
+}
+
+#menybilder div{
+  background-color: transparent;
+  color: white;
+  padding: 1em;
+  margin: 12px;
+  max-width: 232px;
+  margin: 0px 12px 0px
+}
+.menyside div ul{
+  color: #ffffff !important;
+}
+
+#menybilder h3{
+  text-align: center;
+}
+
+}

@@ -12,8 +12,16 @@ function footerInsert(){
     div1.appendChild(h1); //Legger til <h1> i <div>
 
     const p = document.createElement('p'); //Oppretter <p>
-    p.innerText = '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."'; //Legger til tekst i <p>
+    p.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'; //Legger til tekst i <p>
     div1.appendChild(p); //Legger til <p> i <div>
+
+    const adresse = document.createElement('p'); //Oppretter <p>
+    adresse.innerText = 'Nordre gate 15, 7011 Trondheim'; //Legger til tekst i <p>
+    div1.appendChild(adresse); //Legger til <p> i <div>
+
+    const estd = document.createElement('p'); //Oppretter <p>
+    estd.innerText = 'ESTD 2021'; //Legger til tekst i <p>
+    div1.appendChild(estd); //Legger til <p> i <div>
 
     const div2 = document.createElement('div'); //Oppretter <div>
     div2.id = "footer-item2"; //Legger til id på <div>
@@ -21,24 +29,24 @@ function footerInsert(){
 
     //Fryd Cafe logo
     const img1 = document.createElement('img'); //Oppretter <img>
-    img1.src = './image/logotrans.png' //Legger til src i <img>
+    img1.src = './image/beans_nb.png' //Legger til src i <img>  BEANS ISTEDEFOR LOGO?
     img1.alt = 'Fryd Cafe logo' //Legger til alt i <img>
     div2.appendChild(img1); //Legger til <img> i <footer>
-
-    //Åpningstid
-    let openStatus = document.createElement('p'); //Oppretter <p>
-    openStatus.id = 'openstatus';
-    div2.appendChild(openStatus);
-    openingHours(); //Legger til tekst om åpningstid
 
     //Sosiale medier div-box
     const div4 = document.createElement('div'); //Oppretter <div>
     div4.id = "footer-item4"; //Legger til id på <div>
     footer.appendChild(div4); //Legger til <div> i <footer>
 
-    const h2 = document.createElement('h2'); //Oppretter <h2>
-    h2.innerText = 'Sosiale medier:'; //Legger til tekst på <h2>
-    div4.appendChild(h2); //Legger til <h2> i <div>
+    //Åpningstid
+    let openStatus = document.createElement('p'); //Oppretter <p>
+    openStatus.id = 'openstatus';
+    div4.appendChild(openStatus);
+    openingHours(); //Legger til tekst om åpningstid
+
+    const h6 = document.createElement('h6'); //Oppretter <h2>
+    h6.innerText = 'Sosiale medier'; //Legger til tekst på <h2>
+    div4.appendChild(h6); //Legger til <h2> i <div>
 
     //Facebook-logo
     const a2 = document.createElement('a'); //Oppretter <a>
@@ -62,17 +70,27 @@ function footerInsert(){
     a3.appendChild(img3);
     div4.appendChild(a3); //Legger til <a> i <div>
 
+    //Whatsapp-logo
+    const a4 = document.createElement('a'); //Oppretter <a>
+    const img4 = document.createElement('img'); //Oppretter <img>
+    img4.src = './image/whatsapp.png'; //Legger til src i <img>
+    img4.alt = 'Whatsapp-logo'; //Legger til alt i <img>
+    img4.class = 'sosialeMedier' //Lager class på bildet
+    a4.href = 'https://api.whatsapp.com/send?phone=4740046686&app=facebook&entry_point=page_cta&fbclid=IwAR2_EGwUbAeHzp8_ae96VF1Ubx34u_mW5IPYi-dsfc-nvadY78j1cUG2_Sk'; //Legger til link
+    a4.target = '_blank'; //Åpner link i ny fane
+    a4.appendChild(img4);
+    div4.appendChild(a4); //Legger til <a> i <div>
+
     //Copyright, burde flyttes til å være nederst til høyre likt med body with og hr på 100% av skjerm, hvordan?
     const div5 = document.createElement('div'); //Oppretter <div>
     const copyRight = document.createElement("p") /*Lagde bare en p nederst i footeren for å sjekke hvordan copyrighten så ut der */
     const line_footer = document.createElement("hr")
     copyRight.innerText ="© Fryd Café (Gruppe 10) 2021"
-    copyRight.setAttribute("id", "line_footer") /*lager id på knapp i header */ 
-    copyRight.setAttribute("id", "copyright") /*lager id på knapp i header */
+    copyRight.setAttribute("id", "copyright") /*lager id på knapp i header */ 
+    line_footer.setAttribute("id", "line_footer") /*lager id på knapp i header */
     footer.appendChild(div5); //Legger til <div> i <footer>
     div5.appendChild(line_footer)
     div5.appendChild(copyRight)
-    
 }
 
 /* ######### Åpningstider ######### */
