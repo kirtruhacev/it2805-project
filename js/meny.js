@@ -13,48 +13,76 @@
     const kaffeDrikkeBilde = document.getElementById('kaffeDrikkeBilde');
 
     //Generelt
-    const menySide = document.querySelectorAll('.menyside');
+    const menyBilde = document.querySelectorAll('.menyBilde');
+    const menyListe = document.querySelectorAll('.menyListe');
 
 
 //Funksjon som tar inn object og om den skal vises (true/false)
 function showObject(object){
-    if (object == "matListe"){
-        matListe.style.display = 'none';
-        matBilde.style.display = 'inline';
+    const bredde = window.innerWidth;
+    if (bredde >= 900){
+        if (object == "matListe"){
+            matListe.style.display = 'none';
+            matBilde.style.display = 'inline';
+        }
+        else if (object == "matBilde"){
+            matBilde.style.display = 'none';
+            matListe.style.display = 'inline';
+        }
+        else if (object == "kakeSøtsakerListe"){
+            kakeSøtsakerListe.style.display = 'none';
+            kakeSøtsakerBilde.style.display = 'inline';
+        }
+        else if (object == "kakerSøtsakerBilde"){
+            kakeSøtsakerBilde.style.display = 'none';
+            kakeSøtsakerListe.style.display = 'inline';
+        }
+        else if (object == "bakeOffListe"){
+            bakeOffListe.style.display = 'none';
+            bakeOffBilde.style.display = 'inline';
+        }
+        else if (object == "bakeOffBilde"){
+            bakeOffBilde.style.display = 'none';
+            bakeOffListe.style.display = 'inline';
+        }
+        else if (object == "kaffeDrikkeListe"){
+            kaffeDrikkeListe.style.display = 'none';
+            kaffeDrikkeBilde.style.display = 'inline';
+        }
+        else if (object == "kaffeDrikkeBilde"){
+            kaffeDrikkeBilde.style.display = 'none';
+            kaffeDrikkeListe.style.display = 'inline';
+        }
     }
-    else if (object == "matBilde"){
+    else{
         matBilde.style.display = 'none';
         matListe.style.display = 'inline';
-    }
-    else if (object == "kakeSøtsakerListe"){
-        kakeSøtsakerListe.style.display = 'none';
-        kakeSøtsakerBilde.style.display = 'inline';
-    }
-    else if (object == "kakerSøtsakerBilde"){
         kakeSøtsakerBilde.style.display = 'none';
         kakeSøtsakerListe.style.display = 'inline';
-    }
-    else if (object == "bakeOffListe"){
-        bakeOffListe.style.display = 'none';
-        bakeOffBilde.style.display = 'inline';
-    }
-    else if (object == "bakeOffBilde"){
         bakeOffBilde.style.display = 'none';
         bakeOffListe.style.display = 'inline';
-    }
-    else if (object == "kaffeDrikkeListe"){
-        kaffeDrikkeListe.style.display = 'none';
-        kaffeDrikkeBilde.style.display = 'inline';
-    }
-    else if (object == "kaffeDrikkeBilde"){
         kaffeDrikkeBilde.style.display = 'none';
         kaffeDrikkeListe.style.display = 'inline';
     }
+
 }
 
-
-
-menySide.forEach(object => {
+menyListe.forEach(object => {
     object.addEventListener('click', event => {
         showObject(object.id);
     })})
+
+menyBilde.forEach(object => {
+    object.addEventListener('click', event => {
+        showObject(object.id);
+    })})
+
+window.addEventListener("resize", () => {
+    (showObject('none'));
+});
+
+window.addEventListener("onload", (showObject('none')));
+
+
+    
+

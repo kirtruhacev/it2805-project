@@ -386,7 +386,6 @@ margin-top: 50px;
   text-align: center;
   font-size: 50px;
   background-size: 1024px;
-
 }
 
 #grid-container-menu {
@@ -403,8 +402,6 @@ margin-top: 50px;
 #grid-container-menu img{
   height: 210px;
 }
-
-
 
 #grid-container-menu h2 {
   font-size: 40px;
@@ -480,20 +477,27 @@ margin-top: 50px;
   display: flex;
 }
 
-.menyside{
+.menyListe{
   padding: 1em;
   box-sizing: border-box;
-  max-width: 252px;
+  max-width: 200px;
   border-radius: 1.5em;
   border-style: solid;
   border-color: #3d2e24;
   border-width: 0.25em;
-  
-
+}
+.menyBilde{
+  padding: 1em;
+  box-sizing: border-box;
+  max-width: 200px;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color: #3d2e24;
+  border-width: 0.25em;
 }
 
-.menyside ul{
-  padding-left: 25px; /* Mindre padding på liste */
+.menyListe ul{
+  padding-left: 2em; /* Mindre padding på liste */
   list-style-type: square;
 }
 
@@ -502,7 +506,7 @@ margin-top: 50px;
 }
 
 #menybilder div img { /* Bilder inne i div-box */
-  max-width: 200px;
+  max-width: 100%;
   box-shadow: none;
 }
 
@@ -695,4 +699,50 @@ header {
   max-height: 23vw;
   margin: 10px;
 }
- }
+
+/* ####### Meny (mobil) ####### */
+
+#menyene{
+  color: white;
+}
+
+.menyListe{
+  border-style: none;
+}
+
+.menyListe ul{
+  padding-left: 25px; /* Mindre padding på liste */
+  list-style-type: square;
+  min-width: 200px;
+}
+
+#menybilder{ /* Div med bildene du trykker på for å komme til menyene */
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 0fr);
+  justify-content: center;
+}
+
+#menybilder div img { /* Bilder inne i div-box */
+  display: none;
+  min-width: 350px;
+  box-shadow: none;
+}
+
+#menybilder div{
+  background-color: transparent;
+  color: white;
+  padding: 1em;
+  margin: 12px;
+  max-width: 232px;
+  margin: 0px 12px 0px
+}
+.menyside div ul{
+  color: #ffffff !important;
+}
+
+#menybilder h3{
+  text-align: center;
+}
+
+}
