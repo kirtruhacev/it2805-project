@@ -15,12 +15,23 @@
     //Generelt
     const menyBilde = document.querySelectorAll('.menyBilde');
     const menyListe = document.querySelectorAll('.menyListe');
+    let endret = false //Sjekker om man re-sizer "fra" liten til stor bredde
 
-
-//Funksjon som tar inn object og om den skal vises (true/false)
+//Funksjon som tar inn object og om den skal vises
 function showObject(object){
     const bredde = window.innerWidth;
     if (bredde >= 900){
+        if (endret == true){ //Har hatt liten bredde. Resetter boksene
+            matBilde.style.display = 'inline';
+            matListe.style.display = 'none';
+            kakeSøtsakerBilde.style.display = 'inline';
+            kakeSøtsakerListe.style.display = 'none';
+            bakeOffBilde.style.display = 'inline';
+            bakeOffListe.style.display = 'none';
+            kaffeDrikkeBilde.style.display = 'inline';
+            kaffeDrikkeListe.style.display = 'none';
+            endret = false;
+        }
         if (object == "matListe"){
             matListe.style.display = 'none';
             matBilde.style.display = 'inline';
@@ -63,8 +74,8 @@ function showObject(object){
         bakeOffListe.style.display = 'inline';
         kaffeDrikkeBilde.style.display = 'none';
         kaffeDrikkeListe.style.display = 'inline';
+        endret = true //Liten bredde
     }
-
 }
 
 menyListe.forEach(object => {
