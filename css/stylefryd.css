@@ -205,6 +205,7 @@ header li a:hover:after{
   font-size: 15px;
 }
 
+    
 
 #logo {
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -283,7 +284,7 @@ footer img {
 #om{ /* Paragraf om Fryd (om oss), about.html */
   color: white;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -316,27 +317,54 @@ footer img {
 #inside{ /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
   max-width: 100%;
-  height: 250px;
+  height: auto; 
 }
 .aboutpic{ /*Klasse til bildene i about.html */
 margin-right: 20%;
 margin-top: 50px;
-
  }
 
  #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
    margin-bottom: 0px;
-   margin-top: 160px;
+   margin-top: 130px;
    border-radius: 8px;
    width: 500px;
  }
 
  #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
-  width: 350px;
-  height: 280px;
-  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; 
  }
+
+ 
+
+ @media screen /*regler når skjerm mindre enn 940 px*/
+  and (max-width: 940px){
+    #vid{
+      display: none;
+    }
+    #aboutOut{
+      display: none;
+    }
+    .flex-containerAbout{
+      flex-direction: column-reverse;
+    }
+    
+    #om{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    #inside{
+      display: inline-block;
+      max-width: 100%;
+      
+    }
+     }
+    
+
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
 
