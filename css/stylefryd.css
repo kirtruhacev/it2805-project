@@ -640,10 +640,10 @@ a.contact:visited {
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
 
-  * {
+  *{
 
   box-sizing: border-box;
-  }
+  } 
 
   body {
     background-color: black;
@@ -653,19 +653,43 @@ a.contact:visited {
 
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
-    position: relative;
+    display: inline-grid;
     background-color: black;
     width: 100%;
-    word-break: break-all;
+    /*word-break: break-all;*/
+    font-size: 5px;
+    text-align: right;
     }
 
     #top, #scroll{
       background-color: black;
       height: fit-content;
-      block-size: fit-content
-      width: 100%;
+      block-size: fit-content;
+      padding: 25px 25px
       }
-
+      #top #logo{
+        height: 30px;  
+      }
+      #scroll #logo{
+        height: 30px;
+      }
+      
+      
+      header ul {
+        margin-left: 70%;
+        margin-right: 5%;
+        margin-top: 5px;
+        list-style-type: none;
+        font-size: 5px;
+      }
+      
+      header li {
+        display: inline-grid;
+        margin-right: 5px; /* Åpning mellom menyene*/
+        font-size: 5px;
+        overflow: hidden;
+      }
+      
 
 /* Hjem */
 #grid-container {
