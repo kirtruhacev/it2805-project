@@ -485,6 +485,14 @@ grid-area: contact;
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
+#galleri-tittel{
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+
 /* Sentrerer bildene på midten av siden vha flexbox */
 .bilde-rad {
   height: 500px;
@@ -666,6 +674,7 @@ a.contact:visited {
       height: fit-content;
       block-size: fit-content;
       padding: 25px 25px
+      /*width: 100%;*/
       }
       #top #logo{
         height: 30px;  
@@ -689,7 +698,7 @@ a.contact:visited {
         font-size: 5px;
         overflow: hidden;
       }
-      
+       
 
 /* Hjem */
 #grid-container {
