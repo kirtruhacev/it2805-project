@@ -205,7 +205,7 @@ header li a:hover:after{
   font-size: 15px;
 }
 
-    
+
 
 #logo {
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -317,7 +317,7 @@ footer img {
 #inside{ /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 .aboutpic{ /*Klasse til bildene i about.html */
 margin-right: 20%;
@@ -335,10 +335,10 @@ margin-top: 50px;
  #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
  }
 
- 
+
 
  @media screen /*regler når skjerm mindre enn 940 px*/
   and (max-width: 940px){
@@ -351,7 +351,7 @@ margin-top: 50px;
     .flex-containerAbout{
       flex-direction: column-reverse;
     }
-    
+
     #om{
         width: 90%;
         margin-left: 5%;
@@ -360,10 +360,10 @@ margin-top: 50px;
     #inside{
       display: inline-block;
       max-width: 100%;
-      
+
     }
      }
-    
+
 
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
@@ -463,18 +463,32 @@ margin-top: 50px;
 
 #homepage_contact_container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 35% 40% 25%;
   grid-template-rows: 100%;
   grid-template-areas: "contact image food";
   height: 500px;
   padding: 30px 0px;
 }
 
-#homepage_contact_container ul {
+#homepage_contact_container #homepage-contact-info {
 grid-area: contact;
+float: left;
+padding: 0;
+
 
 }
 
+#homepage_contact_container img {
+  grid-area: image;
+  height: 80%;
+
+}
+
+#homepage_contact_container #homepage-some-text {
+  padding: 0;
+  float: right;
+  grid-area: food;
+}
 
 #map {
   width: 1024px;
@@ -651,7 +665,7 @@ a.contact:visited {
   *{
 
   box-sizing: border-box;
-  } 
+  }
 
   body {
     background-color: black;
@@ -677,13 +691,13 @@ a.contact:visited {
       /*width: 100%;*/
       }
       #top #logo{
-        height: 30px;  
+        height: 30px;
       }
       #scroll #logo{
         height: 30px;
       }
-      
-      
+
+
       header ul {
         margin-left: 70%;
         margin-right: 5%;
@@ -691,14 +705,14 @@ a.contact:visited {
         list-style-type: none;
         font-size: 5px;
       }
-      
+
       header li {
         display: inline-grid;
         margin-right: 5px; /* Åpning mellom menyene*/
         font-size: 5px;
         overflow: hidden;
       }
-       
+
 
 /* Hjem */
 #grid-container {
