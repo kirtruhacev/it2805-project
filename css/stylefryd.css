@@ -4,9 +4,10 @@
 
 body {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1024px 500px; /* Størrelse på bilde*/
+  background-size: cover 500px; /* Størrelse på bilde*/
   background-color: black;
   width: 1024px; /* Størrelse på body */
   margin:0 auto;
@@ -474,8 +475,7 @@ margin-top: 50px;
 grid-area: contact;
 float: left;
 padding: 0;
-
-
+list-style-type: none;
 }
 
 #homepage_contact_container img {
@@ -488,6 +488,7 @@ padding: 0;
   padding: 0;
   float: right;
   grid-area: food;
+  list-style-type: none;
 }
 
 #map {
