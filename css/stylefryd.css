@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1024px 500px; /* Størrelse på bilde*/
+  background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
   width: 1024px; /* Størrelse på body */
   margin:0 auto;
@@ -378,7 +378,6 @@ margin-top: 50px;
   grid-template-columns: 343px 338px 343px;
   color: white;
   font-size: 25px;
-  background-color: black;
 }
 
 #grid-container img {
@@ -420,7 +419,6 @@ margin-top: 50px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-gap: 10px;
   height: auto;
-  background-color: black;
   color: white;
   text-align: center;
 }

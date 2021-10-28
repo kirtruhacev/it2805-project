@@ -15,7 +15,7 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
     a.appendChild(img); //Legger til <img> i <a>
     header.appendChild(a); //Legger til <a> i <header>
     img.id = "logo"; //lager id på bilde i headeren
-    
+
     //Lager liste
     const ul = document.createElement('ul'); //Oppretter <ul>
     ul.id = 'menu'; //Legger til meny-id
@@ -74,6 +74,7 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
 window.onscroll = function() {scrollFunction()}; //Kjøres hver gang man scroller
 
 function scrollFunction() {
+
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
     header.id = 'scroll';
   } else {
