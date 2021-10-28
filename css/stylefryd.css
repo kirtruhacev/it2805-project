@@ -19,6 +19,7 @@ h1 {
   font-size: 30px;
   font-family: 'Georgia', serif;
   color: white;
+  letter-spacing: 3px;
 
 }
 
@@ -499,11 +500,15 @@ padding: 0;
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
+#svart-bakgrunn {
+  background-color: black;
+}
+
+
+/*Styling av tittel på siden*/
 #galleri-tittel{
   text-align: center;
-  background-color: black;
-  padding: 10px;
-  letter-spacing: 3px;
+  padding-top: 50px;
 }
 
 
