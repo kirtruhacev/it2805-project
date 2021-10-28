@@ -53,6 +53,7 @@ header {
   height: 50px;
   width: 100%;
   padding-left: 15%;
+  text-align: center;
 }
 
 div {
@@ -91,4 +92,18 @@ margin-right: 5%;
 
 td {
 margin:0 3px 0 3px;
+}
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+#navbar {
+    height: fit-content;
+    block-size: fit-content;
+    padding: 25px 25px
 }

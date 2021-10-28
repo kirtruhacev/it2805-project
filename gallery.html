@@ -6,7 +6,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel='stylesheet' href="./css/stylefryd.css">
           <link rel="icon" type="image/png" href="image/beans_nb.png"/>
-            <title>Gallery</title>
+            <title>Galleri</title>
           </head>
         <body onload="headerInsert();footerInsert()">
 
@@ -16,54 +16,57 @@
 
             <header id="top"></header> <!-- Header blir hentet fra js-fil -->
 
-            <h1 id="galleri-tittel">Bildegalleri</h1>
+            <div id="svart-bakgrunn">
+              <h1 id="galleri-tittel">Bildegalleri</h1>
+              <hr>
 
-              <!-- Legger inn bilder til galleriet i ulike dividers og med klasser og id-er for å formatere i css -->
-              <!-- Legger også inn link på bildet som leder til instagrammen i ny fane -->
-              <div id="galleri">
-                <div class="bilde-rad">
-                    <a href="https://www.instagram.com/p/CTec5AUqnKI/" target="_blank">
-                      <img src="image/bilde2.png" alt="frappe lages" class="stort-galleribilde" id="bilde-1" />
-                    </a>
-                    <div class="bilde-kolonne">
-                      <a href="https://www.instagram.com/p/CTZQlXMIODk/" target="_blank">
-                        <img src="image/bilde3.png" alt="deilige baguetter" class="lite-galleribilde" id="bilde-2"/>
+                <!-- Legger inn bilder til galleriet i ulike dividers og med klasser og id-er for å formatere i css -->
+                <!-- Legger også inn link på bildet som leder til instagrammen i ny fane -->
+                <div id="galleri">
+                  <div class="bilde-rad">
+                      <a href="https://www.instagram.com/p/CTec5AUqnKI/" target="_blank">
+                        <img src="image/bilde2.png" alt="frappe lages" class="stort-galleribilde" id="bilde-1" />
                       </a>
-                      <a href="https://www.instagram.com/p/CSmPRaOosfh/" target="_blank">
-                        <img src="image/bilde10.PNG" alt="blid ansatt" class="lite-galleribilde" id="bilde-3"/>
-                      </a>
-                    </div>
-                    <div class="bilde-kolonne">
-                      <a href="https://www.instagram.com/p/CSb3Rq_N2hs/" target="_blank">
-                        <img src="image/bilde13.PNG" alt="kaffe til studiene" class="lite-galleribilde" id="bilde-5"/>
-                      </a>
-                      <a href="https://www.instagram.com/p/CSwbJRWoTRk/" target="_blank">
-                        <img src="image/bilde5.png" alt="bakst og kaffe" class="lite-galleribilde" id="bilde-4"/>
-                      </a>
-                    </div>
-                </div>
+                      <div class="bilde-kolonne">
+                        <a href="https://www.instagram.com/p/CTZQlXMIODk/" target="_blank">
+                          <img src="image/bilde3.png" alt="deilige baguetter" class="lite-galleribilde" id="bilde-2"/>
+                        </a>
+                        <a href="https://www.instagram.com/p/CSmPRaOosfh/" target="_blank">
+                          <img src="image/bilde10.PNG" alt="blid ansatt" class="lite-galleribilde" id="bilde-3"/>
+                        </a>
+                      </div>
+                      <div class="bilde-kolonne">
+                        <a href="https://www.instagram.com/p/CSb3Rq_N2hs/" target="_blank">
+                          <img src="image/bilde13.PNG" alt="kaffe til studiene" class="lite-galleribilde" id="bilde-5"/>
+                        </a>
+                        <a href="https://www.instagram.com/p/CSwbJRWoTRk/" target="_blank">
+                          <img src="image/bilde5.png" alt="bakst og kaffe" class="lite-galleribilde" id="bilde-4"/>
+                        </a>
+                      </div>
+                  </div>
 
-                <div class="bilde-rad">
-                    <div class="bilde-kolonne">
-                      <a href="https://www.instagram.com/p/CSzApy0o3Nz/" target="_blank">
-                        <img src="image/bilde9.PNG" alt="fristende napoleonskake" class="lite-galleribilde"/>
+                  <div class="bilde-rad">
+                      <div class="bilde-kolonne">
+                        <a href="https://www.instagram.com/p/CSzApy0o3Nz/" target="_blank">
+                          <img src="image/bilde9.PNG" alt="fristende napoleonskake" class="lite-galleribilde"/>
+                        </a>
+                        <a href="https://www.instagram.com/p/CSrb9OOIwEs/" target="_blank">
+                          <img src="image/bilde14.PNG" alt="fornøyde kunder" class="lite-galleribilde"/>
+                        </a>
+                      </div>
+                      <div class="bilde-kolonne">
+                        <a href="https://www.instagram.com/p/CS9gEv4onan/" target="_blank">
+                          <img src="image/bilde15.PNG" alt="gjester i sola på utebord" class="lite-galleribilde"/>
+                        </a>
+                        <a href="https://www.instagram.com/p/CS1LwpNor3T/" target="_blank">
+                          <img src="image/bilde12.PNG" alt="deilig kaffe latte" class="lite-galleribilde"/>
+                        </a>
+                      </div>
+                      <a href="https://www.instagram.com/p/CTZa-F2qU5H/" target="_blank">
+                        <img src="image/bilde11.PNG" alt="kaffemaskina lager kaffe" class="stort-galleribilde"/>
                       </a>
-                      <a href="https://www.instagram.com/p/CSrb9OOIwEs/" target="_blank">
-                        <img src="image/bilde14.PNG" alt="fornøyde kunder" class="lite-galleribilde"/>
-                      </a>
-                    </div>
-                    <div class="bilde-kolonne">
-                      <a href="https://www.instagram.com/p/CS9gEv4onan/" target="_blank">
-                        <img src="image/bilde15.PNG" alt="gjester i sola på utebord" class="lite-galleribilde"/>
-                      </a>
-                      <a href="https://www.instagram.com/p/CS1LwpNor3T/" target="_blank">
-                        <img src="image/bilde12.PNG" alt="deilig kaffe latte" class="lite-galleribilde"/>
-                      </a>
-                    </div>
-                    <a href="https://www.instagram.com/p/CTZa-F2qU5H/" target="_blank">
-                      <img src="image/bilde11.PNG" alt="kaffemaskina lager kaffe" class="stort-galleribilde"/>
-                    </a>
-                </div>
+                  </div>
+              </div>
             </div>
               
             <div id ="parallax"></div>

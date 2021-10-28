@@ -44,7 +44,7 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
     ul.appendChild(ligallery); //Legger til <li> i <ul>
     const agallery = document.createElement('a'); //Oppretter <a> til gallery
     agallery.href = "gallery.html"; //Linker <a> til gallery
-    agallery.innerText = 'Gallery'; //Legger til "Gallery"-tekst i <a>
+    agallery.innerText = 'Galleri'; //Legger til "Gallery"-tekst i <a>
     ligallery.appendChild(agallery); //Legger til <a> i <li>
     ligallery.className = 'knapp';
 
