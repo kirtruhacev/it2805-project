@@ -1,4 +1,4 @@
-html {
+  html {
   margin: auto;
 }
 
@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover 500px; /* Størrelse på bilde*/
+  background-size: 1024px 500px; /* Størrelse på bilde*/
   background-color: black;
   width: 1024px; /* Størrelse på body */
   margin:0 auto;
@@ -20,7 +20,6 @@ h1 {
   font-size: 30px;
   font-family: 'Georgia', serif;
   color: white;
-  letter-spacing: 3px;
 
 }
 
@@ -501,21 +500,11 @@ list-style-type: none;
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
-/*Kutter headeren fra overskrifta og nedover*/
-#svart-bakgrunn {
-  background-color: black;
-}
-
-
-/*Styling av tittel på siden*/
 #galleri-tittel{
   text-align: center;
-  padding-top: 50px;
-}
-
-hr {
-  border-top: 1px solid white;
-  margin-top: 50px;
+  background-color: black;
+  padding: 10px;
+  letter-spacing: 3px;
 }
 
 
@@ -693,7 +682,6 @@ a.contact:visited {
     /*word-break: break-all;*/
     font-size: 5px;
     text-align: right;
-    /*font-size: 20px;*/
     }
 
     #top, #scroll{
@@ -814,18 +802,16 @@ header {
 }
 
 /*####### Galleri #######*/
-
-/*Forminsker bildene til henholdsvis 50% og 23% av skjermens vidde*/
 .stort-galleribilde {
   max-width: 50vw;
   max-height: 50vw;
+  margin: 10px;
 }
 .lite-galleribilde {
   max-width: 23vw;
   max-height: 23vw;
+  margin: 10px;
 }
-
-
 
 /* ####### Meny (mobil) ####### */
 
@@ -865,7 +851,7 @@ header {
   margin: 0px 12px 0px
 }
 .menyside div ul{
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 #menybilder h3{
