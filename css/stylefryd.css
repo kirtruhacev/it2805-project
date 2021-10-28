@@ -500,6 +500,7 @@ padding: 0;
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
+/*Kutter headeren fra overskrifta og nedover*/
 #svart-bakgrunn {
   background-color: black;
 }
@@ -509,6 +510,11 @@ padding: 0;
 #galleri-tittel{
   text-align: center;
   padding-top: 50px;
+}
+
+hr {
+  border-top: 1px solid white;
+  margin-top: 50px;
 }
 
 
@@ -806,16 +812,18 @@ header {
 }
 
 /*####### Galleri #######*/
+
+/*Forminsker bildene til henholdsvis 50% og 23% av skjermens vidde*/
 .stort-galleribilde {
   max-width: 50vw;
   max-height: 50vw;
-  margin: 10px;
 }
 .lite-galleribilde {
   max-width: 23vw;
   max-height: 23vw;
-  margin: 10px;
 }
+
+
 
 /* ####### Meny (mobil) ####### */
 
