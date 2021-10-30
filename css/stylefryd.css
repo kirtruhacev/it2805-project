@@ -674,6 +674,7 @@ a.contact:visited {
 
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
+   position: relative;
     display: inline-grid;
     background-color: black;
     width: 100%;
@@ -751,6 +752,7 @@ a.contact:visited {
   position: relative;
   width: 90%;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(2, 0fr);
   grid-template-rows: repeat(3, 0fr);
   grid-gap: 40px;
@@ -772,10 +774,77 @@ a.contact:visited {
 }
 
 #grid-map-container {
+  position: relative;
   display: grid;
   width: 90%;
   height: 300px;
   justify-content: center;
+}
+
+#homepage_about_container {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: "title"
+                        "about"
+                        "image";
+  height: 500px;
+  padding: 30px 0px;
+}
+
+#homepage_about_container img {
+  grid-area: image;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#homepage_about_container h2 {
+  grid-area: title;
+  text-align: center;
+  margin: auto auto;
+}
+
+#homepage_about_container p {
+  grid-area: about;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+  line-height: 35px;
+}
+
+#homepage_contact_container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: "food"
+                        "image"
+                        "contact";
+  height: 500px;
+  padding: 30px 0px;
+}
+
+#homepage_contact_container #homepage-contact-info {
+grid-area: contact;
+float: left;
+padding: 0;
+list-style-type: none;
+}
+
+#homepage_contact_container img {
+  grid-area: image;
+  height: 80%;
+
+}
+
+#homepage_contact_container #homepage-some-text {
+  padding: 0;
+  float: right;
+  grid-area: food;
+  list-style-type: none;
 }
 
 #map {
