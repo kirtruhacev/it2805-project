@@ -716,32 +716,42 @@ a.contact:visited {
 
 /* Hjem */
 #grid-container {
-    position: relative;
-    padding: 30px 20px;
-    grid-template-columns: repeat(1, 0fr);
-    grid-template-rows: repeat(3, 0fr);
-    margin: 0 auto;
-    width: 90%;
-    height: auto;
-    color: white;
-    font-size: 25px;
-    justify-content: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: "slideshow"
+                        "opening-time"
+                        "image";
+  height: auto;
+  padding: 30px 0px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-#grid-container img {
+#slideshow {
+  grid-area: slideshow;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  text-align: center;
 
-  width: auto;
-  max-height: 500px;
-  display: table-row;
+}
+
+#grid-container  img{
+  grid-area: image;
+  width: 80%;
+  height: auto;
   margin: 30px auto;
 }
 
 #grid-container ul{
-  margin: 0;
-  padding: 0;
+  width: 80%;
+  grid-area: opening-time;
+  margin: 0 auto;
   list-style-type: none;
   font-size: 25px;
-  text-align: center;
+  justify-content: center;
 }
 
 #grid-container li {
@@ -749,28 +759,29 @@ a.contact:visited {
 }
 
 #grid-container-menu {
-  position: relative;
-  width: 90%;
   display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 0fr);
-  grid-template-rows: repeat(3, 0fr);
-  grid-gap: 40px;
-  justify-content: center;
-  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+
+  padding: 30px 0px;
+  padding: 30px 0px;
+  margin:0 10%;
+  justify-content:
+
 }
 
 #grid-container-menu img{
-  width: auto;
-  height: 250px;
+  grid-area: image;
+  width: 80%;
+  height: auto;
 
 }
 
 #grid-container-menu h2 {
-  grid-column: 1 / 3;
-  grid-row: 2 / 2;
+  grid-area: text;
   font-size: 100px;
-  margin: 0;
+  text-align: center;
 }
 
 #grid-map-container {
@@ -788,8 +799,10 @@ a.contact:visited {
   grid-template-areas: "title"
                         "about"
                         "image";
-  height: 500px;
+  height: auto;
   padding: 30px 0px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 #homepage_about_container img {
@@ -823,32 +836,47 @@ a.contact:visited {
   grid-template-areas: "food"
                         "image"
                         "contact";
-  height: 500px;
+  height: auto;
   padding: 30px 0px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 #homepage_contact_container #homepage-contact-info {
-grid-area: contact;
-float: left;
-padding: 0;
-list-style-type: none;
+  width: 80%;
+  grid-area: contact;
+  margin: 0 auto;
+  list-style-type: none;
+  font-size: 25px;
+  justify-content: center;
 }
 
 #homepage_contact_container img {
   grid-area: image;
-  height: 80%;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  text-align: center;
 
 }
 
 #homepage_contact_container #homepage-some-text {
-  padding: 0;
-  float: right;
+  width: 80%;
   grid-area: food;
+  margin: 0 auto;
   list-style-type: none;
+  font-size: 25px;
+  justify-content: center;
+}
+
+#grid-map-container {
+  display: grid;
+  width: 90%;
+  height: auto;
+  justify-content: center;
 }
 
 #map {
-  position: relative;
   width: auto;
 }
 
