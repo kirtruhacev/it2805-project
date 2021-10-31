@@ -26,7 +26,7 @@ h1 {
 h2 {
   font-family: 'Georgia', serif;
   color: #886750;
-  font-size: 2vw;
+  font-size: 25px;
 }
 
 h3 {
@@ -428,7 +428,6 @@ margin-top: 50px;
 }
 
 #grid-container-menu h2 {
-  font-size: 40px;
   text-align: center;
   margin: auto auto;
 }
@@ -506,7 +505,9 @@ list-style-type: none;
 }
 
 
-/* Sentrerer bildene på midten av siden vha flexbox */
+/* Sentrerer bildene på midten av siden
+
+a flexbox */
 .bilde-rad {
   height: 500px;
   display: flex;
@@ -661,6 +662,49 @@ a.contact:visited {
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
 
+  h1 {
+    font-size: 30px;
+    font-family: 'Georgia', serif;
+    color: white;
+
+  }
+
+  h2 {
+    font-family: 'Georgia', serif;
+    color: #886750;
+    font-size: 50px;
+  }
+
+  h3 {
+    font-family: 'Calibri Light', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  /* Hovedskriften*/
+  h4 {
+    font-size: 40px;
+    font-family: 'Georgia', serif;
+    color: white;
+    position: absolute; /* Formaterer så hovedskriften kommer under menyen*/
+    text-align: center;
+    padding-top: 10%;
+    left:0; /* For å få hovedskriften i senter */
+    right:0; /* For å få hovedskriften i senter */
+  }
+
+  h5 {
+    font-size: 10px;
+    font-family: 'Georgia', serif;
+    color: white;
+  }
+
+  h6 { /*  fotter sosiale medier*/
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: white;
+  }
+
   *{
 
   box-sizing: border-box;
@@ -761,7 +805,7 @@ a.contact:visited {
 #grid-container-menu {
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 40% 20% 40%;
+  grid-template-rows: 35% 30% 35%;
   grid-template-areas:   "image1 image2"
                           "menu menu"
                           "image3 image4";
@@ -786,7 +830,6 @@ a.contact:visited {
 
 #grid-container-menu h2 {
   grid-area: menu;
-  font-size: 100px;
   text-align: center;
 }
 
@@ -801,9 +844,6 @@ a.contact:visited {
   width: 90%;
   height: auto;
 }
-
-
-
 
 #grid-map-container {
   position: relative;
@@ -889,15 +929,11 @@ a.contact:visited {
    text-align: center;
 }
 
-#grid-map-container {
-  display: grid;
-  width: 90%;
-  height: auto;
-  justify-content: center;
-}
 
 #map {
-  width: auto;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
