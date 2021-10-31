@@ -1,6 +1,4 @@
-  html {
-  margin: auto;
-}
+
 
 body {
   background-attachment: fixed;
@@ -707,9 +705,7 @@ a.contact:visited {
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media screen and (max-width: 900px) {
 
-html {
-  margin: auto;
-}
+
 
   h1 {
     font-size: 30px;
@@ -721,7 +717,7 @@ html {
   h2 {
     font-family: 'Georgia', serif;
     color: #886750;
-    font-size: 50px;
+    font-size: 3vh;
   }
 
   h3 {
@@ -763,7 +759,7 @@ html {
 
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
-   position: relative;
+    position: relative;
     display: inline-grid;
     background-color: none;
     width: 100%;
@@ -773,10 +769,9 @@ html {
     }
 
     #top, #scroll{
-      background-color: black;
       height: fit-content;
       block-size: fit-content;
-      padding: 25px 25px;
+      padding: 25px;
       min-height: 90px;
       /*width: 100%;*/
       }
@@ -787,12 +782,8 @@ html {
         height: 100px;
       }
 
-
-
-
       header ul {
-        margin-left: 70%;
-        margin-right: 10%;
+        right: 5%;
         margin-top: 5px;
         list-style-type: none;
         padding: 0;
@@ -804,6 +795,11 @@ html {
         margin-right: 5px; /* Åpning mellom menyene*/
         overflow: hidden;
         list-style: none;
+      }
+
+      header a {
+        margin: 0 auto;
+        padding: 0;
       }
 
 
