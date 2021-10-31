@@ -8,7 +8,7 @@ body {
   background-position: center top;
   background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
-  width: 1024px; /* Størrelse på body */
+  max-width: 1024px; /* Størrelse på body */
   margin:0 auto;
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
@@ -122,7 +122,7 @@ img {
 header {
   background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
   background-size: 1024px 300px;
-  max-width: 1024px
+  max-width: 1024px;
   overflow: hidden;
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
   position: fixed; /* fixed posisjon */
@@ -259,7 +259,7 @@ footer img {
   width: 40px;
   height: 40px;
   margin: 10px;
-  filter: gray; /* IE6-9 */
+  filter: grey; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(100%); /*  fint? */
 }
@@ -342,8 +342,8 @@ margin-top: 50px;
  }
 
 
-
- @media screen /*regler når skjerm mindre enn 940 px*/
+/*
+ @media screen regler når skjerm mindre enn 940 px
   and (max-width: 940px){
     #vid{
       display: none;
@@ -366,8 +366,7 @@ margin-top: 50px;
 
     }
      }
-
-
+*/
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
 
@@ -395,7 +394,7 @@ margin-top: 50px;
   grid-area: slideshow;
   width: 100%;
   height: auto;
-  margin 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -403,7 +402,7 @@ margin-top: 50px;
   grid-area: image;
   width: 100%;
   height: auto;
-  margin 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -698,7 +697,7 @@ a.contact:visited {
 
 
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
 
 
   h1 {
@@ -744,12 +743,10 @@ a.contact:visited {
     color: white;
   }
 
-  *{
 
-  box-sizing: border-box;
-  }
 
   body {
+
     background-color: black;
     width: 100%;
     margin:0 auto;
@@ -799,7 +796,7 @@ a.contact:visited {
 
 /* Hjem */
 #grid-container {
-  position: relative;
+
   display: grid;
   grid-template-columns: 90%;
   grid-template-rows: 100%;
@@ -897,13 +894,7 @@ a.contact:visited {
   height: auto;
 }
 
-#grid-map-container {
-  position: relative;
-  display: grid;
-  width: 90%;
-  height: 300px;
-  justify-content: center;
-}
+
 
 #homepage_about_container {
   display: grid;
@@ -983,6 +974,7 @@ a.contact:visited {
 
 
 #map {
+
   display: grid;
   width: 80%;
   margin: 0 auto;
