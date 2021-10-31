@@ -750,23 +750,21 @@ html {
     color: white;
   }
 
-
-
   body {
-
     background-color: black;
     width: 100%;
     margin:0 auto;
   }
 
+
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
    position: relative;
     display: inline-grid;
-    background-color: black;
+    background-color: none;
     width: 100%;
     /*word-break: break-all;*/
-    font-size: 5px;
+    font-size: 15px;
     text-align: right;
     }
 
@@ -774,30 +772,34 @@ html {
       background-color: black;
       height: fit-content;
       block-size: fit-content;
-      padding: 25px 25px
+      padding: 25px 25px;
+      min-height: 90px;
       /*width: 100%;*/
       }
       #top #logo{
-        height: 30px;
+        height: 100px;
       }
       #scroll #logo{
-        height: 30px;
+        height: 100px;
       }
+
+
 
 
       header ul {
         margin-left: 70%;
-        margin-right: 5%;
+        margin-right: 10%;
         margin-top: 5px;
         list-style-type: none;
-        font-size: 5px;
+        padding: 0;
+        display: inline;
       }
 
       header li {
-        display: inline-grid;
+        display: inline;
         margin-right: 5px; /* Åpning mellom menyene*/
-        font-size: 5px;
         overflow: hidden;
+        list-style: none;
       }
 
 
@@ -860,7 +862,7 @@ html {
 #grid-container-menu {
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 35% 30% 35%;
+  grid-template-rows: auto;
   grid-template-areas:   "image1 image2"
                           "menu menu"
                           "image3 image4";
@@ -986,9 +988,7 @@ html {
   margin: 0 auto;
 }
 
-header {
-  width: 100%
-}
+
 
 /*######### Kontakt ######### */
 
