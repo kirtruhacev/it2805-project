@@ -3,7 +3,6 @@
 }
 
 body {
-  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
@@ -66,8 +65,8 @@ p {
 }
 
 img {
-  border-radius: 8px; /* avrunding på hjørnene */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);
+  /*border-radius: 8px; /* avrunding på hjørnene */
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);*/
 }
 
 /* ---------------------------------------- ######### loading side ######### ----------------------------------------*/
@@ -121,6 +120,9 @@ img {
 /* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
+  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
+  background-size: 1024px 300px;
+  max-width: 1024px
   overflow: hidden;
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
   position: fixed; /* fixed posisjon */
@@ -372,45 +374,81 @@ margin-top: 50px;
 /* ---------------------------------------- ######### hjem start ######### ----------------------------------------*/
 /* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 100%;
+  grid-template-areas: "slideshow opening-time image";
+  height: auto;
   padding: 30px 0px;
+  margin: 0 auto;
+  justify-content: center;
+/*  padding: 30px 0px;
   height: 400px;
   display: grid;
   grid-template-columns: 343px 338px 343px;
   color: white;
-  font-size: 25px;
+  font-size: 25px;*/
+}
+
+#slideshow {
+  grid-area: slideshow;
+  width: 100%;
+  height: auto;
+  margin 0;
+  text-align: center;
 }
 
 #grid-container img {
-  height: 400px;
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  margin 0;
   text-align: center;
 }
 
 #grid-container ul{
-  margin: 0;
+  grid-area: opening-time;
+  width: 100%;
+  height: auto;
   padding: 0;
+  color: white;
   list-style-type: none;
   font-size: 25px;
   text-align: center;
+  line-height: 200%;
 
 }
 
-#grid-container li {
-  margin-bottom: 20px;
 
-}
 /* Parallax med bilde av bakgrunn  */
 
 #parallax {
   display: grid;
-  background-image: url("https://scontent.ftrd3-1.fna.fbcdn.net/v/t39.30808-6/237068793_10219139644552884_2994596445181168571_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=AaG9hQ5x0IgAX_4tOC_&_nc_ht=scontent.ftrd3-1.fna&oh=65174d877c78a5f9209db2d5789700dd&oe=617844C6");
-  height: 150px;
+  background-image: url("https://scontent.ftrd3-1.fna.fbcdn.net/v/t39.30808-6/250803399_10220853331946309_1610626561065002027_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=666b5a&_nc_ohc=dW5kkEoWpAwAX84CiH-&_nc_ht=scontent.ftrd3-1.fna&oh=792233f53ed9b261dc3a2b5b6b9aa1fd&oe=6182F780");
+  height: 250px;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   text-align: center;
   font-size: 50px;
-  background-size: 1024px;
+  background-size: auto;
+}
+
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
 }
 
 #grid-container-menu {
@@ -662,6 +700,7 @@ a.contact:visited {
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
 @media only screen and (max-width: 900px) {
 
+
   h1 {
     font-size: 30px;
     font-family: 'Georgia', serif;
@@ -800,6 +839,19 @@ a.contact:visited {
 
 #grid-container li {
   margin-bottom: 20px;
+}
+
+#parallax {
+  display: grid;
+  background-image: url("https://scontent.ftrd3-1.fna.fbcdn.net/v/t39.30808-6/250803399_10220853331946309_1610626561065002027_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=666b5a&_nc_ohc=dW5kkEoWpAwAX84CiH-&_nc_ht=scontent.ftrd3-1.fna&oh=792233f53ed9b261dc3a2b5b6b9aa1fd&oe=6182F780");
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 50px;
+  background-size: auto;
 }
 
 #grid-container-menu {
