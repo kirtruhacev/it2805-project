@@ -463,7 +463,8 @@ margin-top: 50px;
 }
 
 #grid-container-menu img{
-  height: 210px;
+  width: 100%;
+  height: auto;
 }
 
 #grid-container-menu h2 {
@@ -885,6 +886,8 @@ html {
   height: auto;
 }
 
+
+
 #grid-container-menu h2 {
   grid-area: menu;
   text-align: center;
@@ -900,6 +903,21 @@ html {
   grid-area: image4;
   width: 90%;
   height: auto;
+}
+
+
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
 }
 
 

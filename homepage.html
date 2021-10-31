@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="image/beans_nb.png"/>
     <title>Hjem</title>
   </head>
-  <body onload="headerInsert();footerInsert()">
+  <body onload="headerInsert();footerInsert();getPics()">
 
     <div class="load_page">
       <img src="image/logo_nb.png" alt="Logo">
@@ -42,13 +42,17 @@
     <div id ="parallax"></div>
 
     <div id ="grid-container-menu">
-      <img id = "grid-container-menu-image-1" src="./image/bilde5.png" alt="menu image">
+      <img id = "grid-container-menu-image-1" src="./image/bakeoff.jpg" alt="menu image">
+      <img id = "grid-container-menu-image-2" src="./image/kaffe.jpg" alt="menu image">
 
-      <img id = "grid-container-menu-image-2" src="./image/bilde8.png" alt="menu image">
       <h2>Meny</h2>
-      <img id = "grid-container-menu-image-3" src="./image/bilde3.png" alt="menu image">
-      <img id = "grid-container-menu-image-4" src="./image/bilde4.png" alt="menu image">
+      <img id = "grid-container-menu-image-3" src="./image/kaker.jpg" alt="menu image">
+
+      <img id = "grid-container-menu-image-4" src="./image/mat.jpg" alt="menu image">
+
+
     </div>
+      <div id="fullpage" onclick="this.style.display='none';"></div>
 
     <div id="homepage_about_container">
       <img src="./image/image_20.jpg" alt="">
@@ -98,6 +102,7 @@
     <script src="./js/header.js"></script>
     <script src='./js/footer.js'></script>
     <script src='./js/slideshow.js'></script>
+    <script src='./js/full-screen-img.js'></script>
 
   </body>
 </html>
