@@ -427,10 +427,10 @@ margin-top: 50px;
 
 #parallax {
   display: grid;
-  background-image: url("https://scontent.ftrd3-1.fna.fbcdn.net/v/t39.30808-6/250803399_10220853331946309_1610626561065002027_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=666b5a&_nc_ohc=dW5kkEoWpAwAX84CiH-&_nc_ht=scontent.ftrd3-1.fna&oh=792233f53ed9b261dc3a2b5b6b9aa1fd&oe=6182F780");
+  background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 250px;
-  width: 100%;
-  background-attachment: fixed;
+  top: 0;
+  background-attachment: inherit;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -852,7 +852,7 @@ html {
 
 #parallax {
   display: grid;
-  background-image: url("https://scontent.ftrd3-1.fna.fbcdn.net/v/t39.30808-6/250803399_10220853331946309_1610626561065002027_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=666b5a&_nc_ohc=dW5kkEoWpAwAX84CiH-&_nc_ht=scontent.ftrd3-1.fna&oh=792233f53ed9b261dc3a2b5b6b9aa1fd&oe=6182F780");
+  background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 250px;
   background-attachment: fixed;
   background-position: center;
@@ -914,8 +914,8 @@ html {
   position: absolute;
   position: fixed;
   z-index: 1000;
-  left: 13%;
-  right: 13%;
+  left: 14%;
+  right: 14%;
   top: 20%;
   width: 70vw;
   height: 70vh;
