@@ -630,7 +630,7 @@ a flexbox */
 .menyListe{
   padding: 1em;
   box-sizing: border-box;
-  max-width: 200px;
+  min-width: 232px;
   border-radius: 1.5em;
   border-style: solid;
   border-color: #3d2e24;
@@ -639,7 +639,7 @@ a flexbox */
 .menyBilde{
   padding: 1em;
   box-sizing: border-box;
-  max-width: 200px;
+  min-width: 232px;
   border-radius: 1.5em;
   border-style: solid;
   border-color: #3d2e24;
