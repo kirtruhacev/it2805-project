@@ -9,4 +9,5 @@ imgs.forEach(img => {
     page.style.display = 'block';
     document.GetElementById("grid-container-menu").style.display = "none";
   });
+
 });

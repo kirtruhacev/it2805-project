@@ -301,7 +301,6 @@ footer img {
   text-align: center;
   font-family: 'Georgia', serif;
   color: #ffffff;
-  line-height: 45px;
 }
 
 #over{ /*Overskriften over om paragrafen, about.html*/
@@ -343,7 +342,7 @@ margin-top: 50px;
  #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
    margin-bottom: 0px;
-   margin-top: 60px;
+   margin-top: 130px;
    border-radius: 8px;
    width: 500px;
  }
@@ -359,7 +358,10 @@ margin-top: 50px;
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
 
-/* ---------------------------------------- ######### hjem start ######### ----------------------------------------*/
+
+
+
+/* ---------------------------------------- ######### Hjem start ######### ----------------------------------------*/
 /* Grid-container som inneholder to bilder og en liste med åpningstid. */
 #grid-container {
   position: relative;
@@ -371,12 +373,6 @@ margin-top: 50px;
   padding: 30px 0px;
   margin: 0 auto;
   justify-content: center;
-/*  padding: 30px 0px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: 343px 338px 343px;
-  color: white;
-  font-size: 25px;*/
 }
 
 #slideshow {
@@ -522,7 +518,8 @@ list-style-type: none;
 }
 
 #map {
-  width: 1024px;
+  width: 90%;
+  margin: 0 5%;
   height: 300px;
 }
 
@@ -638,7 +635,6 @@ a flexbox */
   background-color: #886750;
   padding: 1em;
   margin: 12px;
-  margin-bottom: 30px;
   max-width: 232px;
   height: 545px;
 
