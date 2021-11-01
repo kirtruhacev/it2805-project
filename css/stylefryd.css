@@ -164,6 +164,7 @@ header li {
 }
 
 header li a { /* styling på headeren */
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff; /* Farge på navigasjon */
   font-family: 'Georgia', serif;
@@ -796,8 +797,8 @@ a.contact:visited {
       header ul {
         margin-right: 10%;
         margin-left: 60%;
-
-        margin-top: 30px;
+        position: absolute;
+        margin-top: 10px;
         list-style-type: none;
         padding: 0;
         display: inline;
@@ -857,7 +858,7 @@ a.contact:visited {
 }
 
 #grid-container li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #parallax {
