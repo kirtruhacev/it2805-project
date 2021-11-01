@@ -717,6 +717,19 @@ a.contact:visited {
 
 
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
+@media only screen
+and (min-width : 900px)
+and (max-width : 1050px) {
+ #vid {
+ display: none;
+ }
+ .flex-containerAbout{
+  flex-direction: column-reverse;
+}
+.aboutpic{
+  width: 500px;
+}
+}
 @media screen and (max-width: 900px) {
 
 
