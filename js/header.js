@@ -66,7 +66,13 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
     likontakt.appendChild(akontakt); //Legger til <a> i <li>
     likontakt.className = 'knapp';
 
-    header.appendChild(ul); //Legger til <ul>
+    const img2 = document.createElement('img'); //Oppretter <img>
+    img2.id = "header-background-img";
+    img2.src = "./image/bilde10.png"; //Legger til src i <img>
+    img2.alt = "Fryd Cafe logo" //Legger til alt-tekst i <img> //Legger til <ul>
+    header.appendChild(img2);
+    img2.style.zIndex = "-1";
+
 }
 
 /* ######### Scrolle-funksjon ######### */

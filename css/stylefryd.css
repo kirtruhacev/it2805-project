@@ -29,7 +29,7 @@ h2 {
 h3 {
   font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 20px;
 }
 
 /* Hovedskriften*/
@@ -127,7 +127,6 @@ img {
 /* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
-  background-image: url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?cs=srgb&dl=pexels-juan-pablo-serrano-arenas-894695.jpg&fm=jpg"); /* bilde øverst i body */
   background-size: 1024px 300px;
   max-width: 1024px;
   overflow: hidden;
@@ -146,6 +145,13 @@ header img {
   position: absolute;
   top: 10px;
   left: 0;
+}
+
+#header-background-img {
+  background-size: ;
+  width: 1024px;
+  height: 300px;
+  height: cover;
 }
 
 header ul {
