@@ -122,7 +122,7 @@ a {
 /* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
-  background-size: 1024px 300px;
+
   max-width: 1024px;
   overflow: hidden;
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -145,7 +145,7 @@ header img {
 }
 
 #header-background-img {
-  width: 1024px;
+  width: 100%;
   height: 300px;
   margin-top: -10px;
 }
@@ -353,31 +353,7 @@ margin-top: 50px;
  }
 
 
-/*
- @media screen regler når skjerm mindre enn 940 px
-  and (max-width: 940px){
-    #vid{
-      display: none;
-    }
-    #aboutOut{
-      display: none;
-    }
-    .flex-containerAbout{
-      flex-direction: column-reverse;
-    }
 
-    #om{
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-    #inside{
-      display: inline-block;
-      max-width: 100%;
-
-    }
-     }
-*/
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
 
 
@@ -516,7 +492,7 @@ margin-top: 50px;
 
 #homepage_contact_container {
   display: grid;
-  grid-template-columns: 35% 40% 25%;
+  grid-template-columns: 30% 40% 30%;
   grid-template-rows: 100%;
   grid-template-areas: "contact image food";
   height: 500px;
@@ -773,7 +749,7 @@ a.contact:visited {
 
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
-    position: relative;
+   position: relative;
     display: inline-grid;
     background-color: none;
     width: 100%;
@@ -983,7 +959,7 @@ a.contact:visited {
                         "image"
                         "contact";
   height: auto;
-  padding: 30px 0px;
+  padding: 30px 0px 0px 0px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -1002,6 +978,7 @@ a.contact:visited {
   width: 80%;
   height: auto;
   margin: 30px auto;
+  padding: 0;
   text-align: center;
 
 }
@@ -1112,5 +1089,6 @@ a.contact:visited {
 #inside{
   display: inline-block;
   max-width: 100%;
+
 }
 }
