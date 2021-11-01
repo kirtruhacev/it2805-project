@@ -71,11 +71,6 @@ a {
   font-weight: bold;
 }
 
-img {
-  /*border-radius: 8px; /* avrunding på hjørnene */
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);*/
-}
-
 /* ---------------------------------------- ######### loading side ######### ----------------------------------------*/
 
 .load_page img{
@@ -148,7 +143,6 @@ header img {
 }
 
 #header-background-img {
-  background-size: ;
   width: 1024px;
   height: 300px;
   height: cover;
