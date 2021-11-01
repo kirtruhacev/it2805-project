@@ -64,6 +64,15 @@ p {
   font-size: 8px;
 }
 
+a {
+  text-decoration: none;
+  font-size: 25px;;
+  line-height: 1.5em;
+  font-family: 'Georgia', serif;
+  color: #886750;
+  font-weight: bold;
+}
+
 img {
   /*border-radius: 8px; /* avrunding på hjørnene */
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(119, 97, 25, 0.904);*/
@@ -763,7 +772,7 @@ html {
 
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
-   position: relative;
+    position: relative;
     display: inline-grid;
     background-color: none;
     width: 100%;
@@ -805,6 +814,13 @@ html {
         overflow: hidden;
         list-style: none;
       }
+
+      header a {
+        font-size: 15px;
+
+      }
+
+
 
 
 /* Hjem */
