@@ -1108,3 +1108,15 @@ and (max-width : 1050px) {
 
 }
 }
+
+@media screen and (max-width: 500px) {
+  /* Header */
+
+ 
+  #menybilder{ /* Div med bildene du trykker på for å komme til menyene */
+    grid-template-columns: repeat(1, 0fr);
+  }
+  #matBilde{
+    height: 70px;
+  }
+}
