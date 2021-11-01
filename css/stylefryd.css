@@ -57,7 +57,7 @@ h6 { /*  fotter sosiale medier*/
 }
 
 p {
-  font-family: 'Calibri Light', sans-serif;
+  font-family: 'Georgia', serif;
   color: #ffffff;
   font-size: 8px;
 }
@@ -300,6 +300,8 @@ footer img {
   margin-bottom: 0;
   font-size: 30px;
   text-align: center;
+  font-family: 'Georgia', serif;
+  color: #ffffff;
 }
 
 #over{ /*Overskriften over om paragrafen, about.html*/
