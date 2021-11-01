@@ -1091,5 +1091,24 @@ a.contact:visited {
 #menybilder h3{
   text-align: center;
 }
+#vid{
+  display: none;
+}
+#aboutOut{
+  display: none;
+}
+.flex-containerAbout{
+  flex-direction: column-reverse;
+}
 
+#om{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 3vh;
+  }
+#inside{
+  display: inline-block;
+  max-width: 100%;
+}
 }
