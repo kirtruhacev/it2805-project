@@ -301,6 +301,7 @@ footer img {
   text-align: center;
   font-family: 'Georgia', serif;
   color: #ffffff;
+  line-height: 45px;
 }
 
 #over{ /*Overskriften over om paragrafen, about.html*/
@@ -342,7 +343,7 @@ margin-top: 50px;
  #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
    height: 350px;
    margin-bottom: 0px;
-   margin-top: 130px;
+   margin-top: 60px;
    border-radius: 8px;
    width: 500px;
  }
@@ -637,6 +638,7 @@ a flexbox */
   background-color: #886750;
   padding: 1em;
   margin: 12px;
+  margin-bottom: 30px;
   max-width: 232px;
   height: 545px;
 
