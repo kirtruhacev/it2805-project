@@ -132,6 +132,8 @@ header {
   z-index: 99;
   font-size: 20px;
   font-weight: bold;
+  padding-top:0;
+
 }
 
 header img {
@@ -146,6 +148,7 @@ header img {
   width: 1024px;
   height: 300px;
   height: cover;
+
 }
 
 header ul {
