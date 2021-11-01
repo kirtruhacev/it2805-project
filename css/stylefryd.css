@@ -362,7 +362,7 @@ margin-top: 50px;
 
 
 /* ---------------------------------------- ######### Hjem start ######### ----------------------------------------*/
-/* Grid-container som inneholder to bilder og en liste med åpningstid. */
+/* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
 #grid-container {
   position: relative;
   display: grid;
@@ -374,7 +374,7 @@ margin-top: 50px;
   margin: 0 auto;
   justify-content: center;
 }
-
+/*Slideshow som er inn i grid-containeren*/
 #slideshow {
   grid-area: slideshow;
   width: 100%;
@@ -382,7 +382,7 @@ margin-top: 50px;
   margin: 0;
   text-align: center;
 }
-
+/*Bilde som er inn i grid-containeren*/
 #grid-container img {
   grid-area: image;
   width: 100%;
@@ -390,7 +390,7 @@ margin-top: 50px;
   margin: 0;
   text-align: center;
 }
-
+/*Åpningstider som er stylet som ul*/
 #grid-container ul{
   grid-area: opening-time;
   width: 100%;
@@ -403,12 +403,7 @@ margin-top: 50px;
   line-height: 200%;
   margin: 0 auto;
 }
-
-
-
-
 /* Parallax med bilde av bakgrunn  */
-
 #parallax {
   display: grid;
   background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -422,7 +417,22 @@ margin-top: 50px;
   font-size: 50px;
   background-size: auto;
 }
-
+/*Grid-container med meny bilder og linken til meny-siden. Containeren består av fem kolonner og ett rad.*/
+#grid-container-menu {
+  padding: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 20px;
+  height: auto;
+  color: white;
+  text-align: center;
+}
+/*Meny bilder*/
+#grid-container-menu img{
+  width: 100%;
+  height: auto;
+}
+/*Meny bilde når man klikker på den og den åpnes i full skjerm*/
 #fullpage {
   display: none;
   position: absolute;
@@ -438,28 +448,13 @@ margin-top: 50px;
   background-position: center center;
   justify-content: center;
 }
-
-#grid-container-menu {
-  padding: 30px 0px;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-gap: 20px;
-  height: auto;
-  color: white;
-  text-align: center;
-}
-
-#grid-container-menu img{
-  width: 100%;
-  height: auto;
-}
-
+/*Linken til menysiden, stylet som h2*/
 #grid-container-menu h2 {
   text-align: center;
   margin: auto auto;
 }
-
-#homepage_about_container {
+/*Grid-container med about infoen. Containeren består av to kolonner, den ene med bilde og den andre med tekst*/
+#homepage-about-container {
   display: grid;
   grid-template-columns: 35% 65%;
   grid-template-rows: 100%;
@@ -467,19 +462,19 @@ margin-top: 50px;
   height: 400px;
   padding: 30px 0px;
 }
-
-#homepage_about_container img {
+/*Bilde til about containeren*/
+#homepage-about-container img {
   height: 100%;
   grid-area: photo;
 }
-
-#homepage_about_container h2 {
+/*Overskrift til about containeren*/
+#homepage-about-container h2 {
   grid-area: about;
   margin-left: 20px;
   left: auto;
 }
-
-#homepage_about_container p {
+/*Paragrafen til about containeren*/
+#homepage-about-container p {
   grid-area: about;
   margin-top: 100px;
   margin-left: 20px;
@@ -487,45 +482,44 @@ margin-top: 50px;
   font-family: 'Georgia', serif;
   line-height: 35px;
 }
-
-#homepage_contact_container {
+/*Grid-container med kontaktinfo. Containeren består av to bilder og en liste med info.*/
+#homepage-contact-container {
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 35% 30% 35%;
   grid-template-rows: 100%;
-  grid-template-areas: "contact image food";
+  grid-template-areas: "image1 contact image2";
   height: 500px;
   padding: 30px 0px;
 }
-
-#homepage_contact_container #homepage-contact-info {
+/*Kontaktinfo til contact-containeren*/
+#homepage-contact-container ul {
 grid-area: contact;
-float: left;
+width: 100%;
+height: auto;
 padding: 0;
+color: white;
 list-style-type: none;
+font-size: 25px;
+text-align: center;
+line-height: 200%;
+margin: 0 auto;
 }
-
-#homepage_contact_container img {
-  grid-area: image;
+/*Det ene bildet til kontakt-containeren*/
+#homepage-contact-container #homepage-contact-container-img1 {
+  grid-area: image1;
   height: 80%;
-
 }
-
-#homepage_contact_container #homepage-some-text {
-  padding: 0;
-  float: right;
-  grid-area: food;
-  list-style-type: none;
+/*Det andre bildet til kontakt-containeren*/
+#homepage-contact-container #homepage-contact-container-img2 {
+  grid-area: image2;
+  height: 80%;
 }
-
+/*Google map*/
 #map {
   width: 90%;
   margin: 0 5%;
   height: 300px;
 }
-
-
-
-
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
@@ -807,8 +801,9 @@ and (max-width : 1050px) {
         font-size: 17px;
       }
 
+      /* ---------------------------------------- ######### Hjem-Media-Query start ######### ----------------------------------------*/
 
-/* Hjem */
+/*Grid-containeren bestående av en kolonne med slideshow, bilde og åpningstider*/
 #grid-container {
   display: grid;
   grid-template-columns: 90%;
@@ -821,23 +816,22 @@ and (max-width : 1050px) {
   margin: 0 auto;
   justify-content: center;
 }
-
+/*Slideshow til grid-containeren*/
 #slideshow {
   grid-area: slideshow;
   width: 100%;
   height: auto;
   margin: 0;
   text-align: center;
-
 }
-
+/*Bilde til grid-containeren*/
 #grid-container  img{
   grid-area: image;
   width: 80%;
   height: auto;
   margin: 30px auto;
 }
-
+/*Liste til grid-containeren*/
 #grid-container ul{
   width: 80%;
   grid-area: opening-time;
@@ -846,11 +840,11 @@ and (max-width : 1050px) {
   font-size: 25px;
   justify-content: center;
 }
-
+/*Gir litt ekstra linjeplass mellom list elementene*/
 #grid-container li {
   margin-bottom: 10px;
 }
-
+/*Parallax*/
 #parallax {
   display: grid;
   background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -863,7 +857,7 @@ and (max-width : 1050px) {
   font-size: 50px;
   background-size: auto;
 }
-
+/*Grid-container med meny bilder, består av to kolonner og tre rad*/
 #grid-container-menu {
   display: grid;
   grid-template-columns: 45% 45%;
@@ -874,42 +868,38 @@ and (max-width : 1050px) {
   padding: 30px 0px;
   margin: 0 10%;
   justify-content: center
-
 }
-
-
+/*Egne id-er til meny bilder for å plassere dem i riktig box*/
+/*Bilde 1*/
 #grid-container-menu-image-1{
   grid-area: image1;
   width: 90%;
   height: auto;
 }
-
+/*Bilde 2*/
 #grid-container-menu-image-2{
   grid-area: image2;
   width: 90%;
   height: auto;
 }
-
-
-
+/*Meny ordet*/
 #grid-container-menu h2 {
   grid-area: menu;
   text-align: center;
 }
-
+/*Bilde 3*/
 #grid-container-menu-image-3{
   grid-area: image3;
   width: 90%;
   height: auto;
 }
-
+/*Bilde 4*/
 #grid-container-menu-image-4{
   grid-area: image4;
   width: 90%;
   height: auto;
 }
-
-
+/*Meny bilde når man klikker på den*/
 #fullpage {
   display: none;
   position: absolute;
@@ -925,9 +915,8 @@ and (max-width : 1050px) {
   background-position: center center;
   justify-content: center;
 }
-
-
-#homepage_about_container {
+/*Grid-container til about delen, består av en kolonne og tre rad*/
+#homepage-about-container {
   display: grid;
   grid-template-columns: 90%;
   grid-template-rows: auto;
@@ -939,22 +928,22 @@ and (max-width : 1050px) {
   margin: 0 auto;
   justify-content: center;
 }
-
-#homepage_about_container img {
+/*Bilde til about containeren*/
+#homepage-about-container img {
   grid-area: image;
   width: 80%;
   height: auto;
   margin: 30px auto;
   text-align: center;
 }
-
-#homepage_about_container h2 {
+/*Forskrift til about-containeren*/
+#homepage-about-container h2 {
   grid-area: title;
   text-align: center;
   margin: auto auto;
 }
-
-#homepage_about_container p {
+/*Paragraf til about containeren*/
+#homepage-about-container p {
   grid-area: about;
   margin: 0 auto;
   width: 80%;
@@ -962,21 +951,21 @@ and (max-width : 1050px) {
   font-family: 'Georgia', serif;
   line-height: 35px;
 }
-
-#homepage_contact_container {
+/*Contact-container, en kolonne og tre rad*/
+#homepage-contact-container {
   display: grid;
   grid-template-columns: 90%;
   grid-template-rows: auto;
-  grid-template-areas: "food"
-                        "image"
-                        "contact";
+  grid-template-areas: "contact"
+                        "image1"
+                        "image2";
   height: auto;
   padding: 30px 0px 0px 0px;
   margin: 0 auto;
   justify-content: center;
 }
-
-#homepage_contact_container #homepage-contact-info {
+/*Liste med kontakt info*/
+#homepage-contact-container ul {
   width: 100%;
   grid-area: contact;
   margin: 0 auto;
@@ -984,35 +973,28 @@ and (max-width : 1050px) {
   font-size: 25px;
   text-align: center;
 }
-
-#homepage_contact_container img {
-  grid-area: image;
+/*Bilde 1 til kontakt-containeren*/
+#homepage-contact-container #homepage-contact-container-img1 {
+  grid-area: image1;
   width: 80%;
   height: auto;
   margin: 30px auto;
   padding: 0;
   text-align: center;
-
 }
-
-#homepage_contact_container #homepage-some-text{
-   width: 100%;
-   grid-area: food;
-   margin: 0 auto;
-   list-style-type: none;
-   font-size: 25px;
-   text-align: center;
+/*Bilde 2 til kontakt-containeren, den "fjernes" slik at det ikke blir for mange bilder*/
+#homepage-contact-container #homepage-contact-container-img2{
+  grid-area: image2;
+  display: none;
 }
-
-
+/*Google map*/
 #map {
-
   display: grid;
   width: 80%;
   margin: 0 auto;
 }
 
-
+/* ---------------------------------------- ######### Hjem-Media-Query slutt ######### ----------------------------------------*/
 
 /*######### Kontakt ######### */
 
@@ -1108,7 +1090,7 @@ and (max-width : 1050px) {
 @media screen and (max-width: 500px) {
   /* Header */
 
- 
+
   #menybilder{ /* Div med bildene du trykker på for å komme til menyene */
     grid-template-columns: repeat(1, 0fr);
   }
