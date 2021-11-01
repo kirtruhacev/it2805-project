@@ -145,7 +145,7 @@ header img {
 #header-background-img {
   width: 1024px;
   height: 300px;
-  height: cover;
+  margin-top: -10px;
 }
 
 header ul {
