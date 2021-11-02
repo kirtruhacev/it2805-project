@@ -305,7 +305,7 @@ footer img {
 
 .flex-containerAbout{ /*flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
