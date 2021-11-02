@@ -7,7 +7,7 @@ body {
   background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
   min-width: 1024px; /* Størrelse på body */
-  margin:0 auto;
+  margin: auto;
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
@@ -109,7 +109,6 @@ a {
 /* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
-
   width: 100%;
   overflow: hidden;
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -135,6 +134,7 @@ header img {
   width: 100%;
   height: 300px;
   margin-top: -10px;
+  object-fit: cover;
 }
 
 header ul {
@@ -700,8 +700,9 @@ and (max-width : 1050px) {
 @media screen and (max-width: 900px) {
 
   body {
-    max-width: 1024px; /* Størrelse på body */
-
+    background-color: black;
+    width: 100%;
+    margin: auto;
   }
 
 
@@ -724,18 +725,6 @@ and (max-width : 1050px) {
     font-size: 30px;
   }
 
-  /* Hovedskriften*/
-  h4 {
-    font-size: 40px;
-    font-family: 'Georgia', serif;
-    color: white;
-    position: absolute; /* Formaterer så hovedskriften kommer under menyen*/
-    text-align: center;
-    padding-top: 10%;
-    left:0; /* For å få hovedskriften i senter */
-    right:0; /* For å få hovedskriften i senter */
-  }
-
   h5 {
     font-size: 10px;
     font-family: 'Georgia', serif;
@@ -747,13 +736,6 @@ and (max-width : 1050px) {
     font-family: 'Georgia', serif;
     color: white;
   }
-
-  body {
-    background-color: black;
-    width: 100%;
-    margin:0 auto;
-  }
-
 
   /* funket ikke helt, noen som vet? */
  header, #top .knapp, #scroll .knapp{
@@ -1018,6 +1000,7 @@ and (max-width : 1050px) {
 /* Får kolonnene til å være over hverandre i kontakt, istedenfor vedsidenav */
 .column {
     width: 100%;
+    float: left;
 }
 
 /* Gjemmer den hvite linja */
