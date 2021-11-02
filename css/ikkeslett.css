@@ -1,0 +1,34 @@
+/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+header {
+    height: 500px;
+  }
+  
+  #header-background-img { /* styling på bakgrunnsbilde */
+    display: none;
+  }
+  
+  header li { /* styling på navbar posisjon utseende */
+    margin-top: -50px;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  #top{
+    height: 200px;
+  }
+
+  #top #logo{
+    height: 60px;
+  }
+
+  #scroll{
+    height: 170px;
+  }
+
+  #scroll #logo{
+    height: 60px;
+  }
+}
+/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
