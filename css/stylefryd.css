@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-attachment: fixed;
@@ -119,10 +121,9 @@ header {
   font-size: 20px;
   font-weight: bold;
   padding-top:0;
-
 }
 
-header img {
+header img { /* styling på logo header */
   height: 140px;
   box-shadow: none;
   position: absolute;
@@ -130,31 +131,26 @@ header img {
   left: 0;
 }
 
-#header-background-img {
+#header-background-img { /* styling på bakgrunnsbilde */
   width: 100%;
   height: 300px;
   margin-top: -10px;
   object-fit: cover;
 }
 
-header ul {
+header ul { /* styling på navbar posisjon */
   position: absolute;
   right: 5%;
-  margin-top: -5px;
-  list-style-type: none;
-  padding-left: 90px;
+  margin-top: -5px; /* flytter teksten lenger mot toppen */
 }
 
-header li {
-  display: inline-grid;
+header li { /* styling på navbar posisjon utseende */
+  display: inline-grid; /* styler så det kommer etter hverandre istedefor over hverandre */
   margin-right: 30px; /* Åpning mellom menyene*/
-  position: relative;
-  overflow: hidden;
 }
 
-header li a { /* styling på headeren */
+header li a { /* styling på navbar tekst */
   font-size: 20px;
-  text-decoration: none;
   color: #ffffff; /* Farge på navigasjon */
   font-family: 'Georgia', serif;
 }
@@ -165,12 +161,12 @@ header li a:after {
   content: '';
   border-bottom: solid 2px #886750;
   transform: scaleX(0);
-  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out; /* effekten av understrekingen, går fra venstre mot høyre og fra midten og innover når man ikke hovrer*/
 }
 
 header li a:hover:after{
   transform: scaleX(1);
-  transform-origin:   0% 100%; /* effekt starter fra venstre */
+  transform-origin: 0% 100%; /* effekt starter fra venstre */
 }
 
 /* ######### Header top (vanlig) ######### */
@@ -207,11 +203,10 @@ header li a:hover:after{
 
 #scroll .knapp{
   font-size: 20px;
-
 }
 
 #logo {
-  transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
+  transition: 0.4s; /* Lager effekten når siden blir scrollet */
 }
 
 /* ---------------------------------------- ######### header slutt ######### ----------------------------------------*/
