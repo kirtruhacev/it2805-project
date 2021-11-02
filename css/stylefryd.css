@@ -6,7 +6,7 @@ body {
   background-position: center top;
   background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
-  max-width: 1024px; /* Størrelse på body */
+  min-width: 1024px; /* Størrelse på body */
   margin:0 auto;
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
@@ -216,9 +216,8 @@ header li a:hover:after{
 
 #scroll .knapp{
   font-size: 20px;
+  
 }
-
-
 
 #logo {
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -516,9 +515,9 @@ margin: 0 auto;
 }
 /*Google map*/
 #map {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
   height: 300px;
+  margin-bottom: 5%;
 }
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
