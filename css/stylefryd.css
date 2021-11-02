@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-attachment: fixed;
@@ -6,46 +8,46 @@ body {
   background-position: center top;
   background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
-  min-width: 1024px; /* Størrelse på body */
-  margin:0 auto;
-  margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
+  width: 100%; /* Størrelse på body */
+  margin: auto;
+  margin-top: 330px; /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
 /* ---------------------------------------- ######### overskrifter ######### ----------------------------------------*/
 
 h1 {
   font-size: 30px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: white;
-
 }
 
 h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #886750;
   font-size: 25px;
 }
 
 h3 {
-  font-family: 'Calibri Light', sans-serif;
+  font-family: "Calibri Light", sans-serif;
   color: #ffffff;
   font-size: 20px;
 }
 
 h5 {
   font-size: 10px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: white;
 }
 
-h6 { /*  fotter sosiale medier*/
+h6 {
+  /*  fotter sosiale medier*/
   font-size: 20px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: white;
 }
 
 p {
-  font-family: 'Georgia', serif;
+  font-family: "Calibri Light", sans-serif;
   color: #ffffff;
   font-size: 8px;
 }
@@ -54,13 +56,13 @@ a {
   text-decoration: none;
   font-size: 25px;
   line-height: 1.5em;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #886750;
 }
 
 /* ---------------------------------------- ######### loading side ######### ----------------------------------------*/
 
-.load_page img{
+.load_page img {
   box-shadow: none;
 }
 
@@ -81,35 +83,33 @@ a {
 
 @-webkit-keyframes load-out {
   from {
-      top: 0;
-      opacity: 1;
+    top: 0;
+    opacity: 1;
   }
 
   to {
-      bottom: 100%;
-      opacity: 0;
+    bottom: 100%;
+    opacity: 0;
   }
 }
 
 @keyframes load-out {
   from {
-      top: 0;
-      opacity: 1;
+    top: 0;
+    opacity: 1;
   }
 
   to {
-      bottom: 100%;
-      opacity: 0;
+    bottom: 100%;
+    opacity: 0;
   }
 }
 
 /* inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
 
-
 /* ---------------------------------------- ######### header start ######### ----------------------------------------*/
 
 header {
-
   width: 100%;
   overflow: hidden;
   transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
@@ -119,11 +119,11 @@ header {
   z-index: 99;
   font-size: 20px;
   font-weight: bold;
-  padding-top:0;
-
+  padding-top: 0;
 }
 
 header img {
+  /* styling på logo header */
   height: 140px;
   box-shadow: none;
   position: absolute;
@@ -132,83 +132,84 @@ header img {
 }
 
 #header-background-img {
+  /* styling på bakgrunnsbilde */
   width: 100%;
-  height: 300px;
+  height: 500px;
   margin-top: -10px;
+  object-fit: cover;
 }
 
 header ul {
+  /* styling på navbar posisjon */
   position: absolute;
   right: 5%;
-  margin-top: -5px;
-  list-style-type: none;
-  padding-left: 90px;
+  margin-top: -5px; /* flytter teksten lenger mot toppen */
 }
 
 header li {
-  display: inline-grid;
+  /* styling på navbar posisjon utseende */
+  display: inline-grid; /* styler så det kommer etter hverandre istedefor over hverandre */
   margin-right: 30px; /* Åpning mellom menyene*/
-  position: relative;
-  overflow: hidden;
 }
 
-header li a { /* styling på headeren */
+header li a {
+  /* styling på navbar tekst */
   font-size: 20px;
-  text-decoration: none;
   color: #ffffff; /* Farge på navigasjon */
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
 }
 
 /* ######### Understrekinga på header ######### */
 header li a:after {
-  display:block;
-  content: '';
+  display: block;
+  content: "";
   border-bottom: solid 2px #886750;
   transform: scaleX(0);
-  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out; /* effekten av understrekingen, går fra venstre mot høyre og fra midten og innover når man ikke hovrer*/
 }
 
-header li a:hover:after{
+header li a:hover:after {
   transform: scaleX(1);
-  transform-origin:   0% 100%; /* effekt starter fra venstre */
+  transform-origin: 0% 100%; /* effekt starter fra venstre */
 }
 
 /* ######### Header top (vanlig) ######### */
-#top{
+#top {
   padding: 80px 0px;
   font-size: 20px;
   font-weight: bold;
   background-color: transparent;
-  height: 140px;
-
+  height: 320px;
 }
-#top #logo{
+#top #logo {
   height: 150px;
 }
-#top .knapp{
+#top .knapp {
   font-size: 20px;
 }
 
 /* ######### Header scroll ######### */
-#scroll{
+#scroll {
   padding: 40px 0px;
   font-size: 15px;
   font-weight: normal;
   background-color: black;
   height: 0px;
 }
+#scroll #header-background-img {
+  display: none;
+}
 
-#scroll #logo{
+#scroll #logo {
   height: 60px;
 }
 
-#scroll .knapp{
+#scroll .knapp {
   font-size: 20px;
-
 }
 
 #logo {
-  transition: 0.4s; /* Lager effekten når siden blir scrollet, burde være samme på header og logo */
+  transition: 0.4s; /* Lager effekten når siden blir scrollet */
 }
 
 /* ---------------------------------------- ######### header slutt ######### ----------------------------------------*/
@@ -224,17 +225,17 @@ footer {
   height: auto;
   list-style-type: none;
   font-size: 20px;
-  
 }
 
 footer p {
   font-size: 18px;
 }
 
-#openstatus{ /* Styler åpningstider-tekst */
-  font-size: 25px;;
+#openstatus {
+  /* Styler åpningstider-tekst */
+  font-size: 25px;
   line-height: 1.5em;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #886750;
   font-weight: bold;
 }
@@ -244,7 +245,7 @@ footer img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  vertical-align:middle;
+  vertical-align: middle;
   box-shadow: none;
 }
 
@@ -253,7 +254,7 @@ footer img {
   margin: auto; /*  fint? */
 }
 
-#footer-item4 img{
+#footer-item4 img {
   width: 40px;
   height: 40px;
   margin: 10px;
@@ -262,18 +263,18 @@ footer img {
   filter: grayscale(100%); /*  fint? */
 }
 
-#footer-item2{
+#footer-item2 {
   display: inline-grid;
   justify-self: center;
   align-items: center;
 }
 
 /*  ######### copyright ######### */
-#copyright{
+#copyright {
   font-size: 10px;
-  font-family: 'Calibri Light', sans-serif;
+  font-family: "Calibri Light", sans-serif;
   width: 100%;
-
+  line-gap-override: 150%;
 }
 
 #line_footer {
@@ -283,16 +284,18 @@ footer img {
 /* ---------------------------------------- ######### footer slutt ######### ----------------------------------------*/
 
 /* ---------------------------------------- ######### om oss start ######### ----------------------------------------*/
-#om{ /* Paragraf om Fryd (om oss), about.html */
+#om {
+  /* Paragraf om Fryd (om oss), about.html */
   color: white;
   margin-bottom: 0;
   font-size: 30px;
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #ffffff;
 }
 
-#over{ /*Overskriften over om paragrafen, about.html*/
+#over {
+  /*Overskriften over om paragrafen, about.html*/
   color: white;
   text-align: center;
   margin-left: 20%;
@@ -300,55 +303,55 @@ footer img {
   width: 60%;
 }
 
-.flex-containerAbout{ /*flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
+.flex-containerAbout {
+  /*flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-.flexbox-item{ /*de ulike items i første flexbox */
+.flexbox-item {
+  /*de ulike items i første flexbox */
   margin: 50px;
   max-width: 500px;
 }
 
-.flexbox-item-1{
+.flexbox-item-1 {
   min-height: 100px;
 }
-.flexbox-item-2{
+.flexbox-item-2 {
   max-height: 200px;
 }
 
-#inside{ /*Bilde av fryd innendørs, about.html */
+#inside {
+  /*Bilde av fryd innendørs, about.html */
   margin-right: 10%;
   max-width: 100%;
   height: auto;
 }
-.aboutpic{ /*Klasse til bildene i about.html */
-margin-right: 20%;
-margin-top: 50px;
- }
+.aboutpic {
+  /*Klasse til bildene i about.html */
+  margin-right: 20%;
+  margin-top: 50px;
+}
 
- #vid{ /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
-   height: 350px;
-   margin-bottom: 0px;
-   margin-top: 130px;
-   border-radius: 8px;
-   width: 500px;
- }
+#vid {
+  /*Video som er lagt ved på om oss siden, bare et forslag, about.html */
+  height: 350px;
+  margin-bottom: 0px;
+  margin-top: 130px;
+  border-radius: 8px;
+  width: 500px;
+}
 
- #aboutOut{ /*Bilde av Fryd utendørs om oss siden, about.html */
+#aboutOut {
+  /*Bilde av Fryd utendørs om oss siden, about.html */
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
- }
-
-
+}
 
 /* ---------------------------------------- ######### om oss slutt ######### ----------------------------------------*/
-
-
-
-
 
 /* ---------------------------------------- ######### Hjem start ######### ----------------------------------------*/
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -360,8 +363,9 @@ margin-top: 50px;
   grid-template-areas: "slideshow opening-time image";
   height: auto;
   padding: 30px 0px;
-  margin: 0 10%;
+  margin: 0 auto;
   justify-content: center;
+  max-width: 1120px;
 }
 /*Slideshow som er inn i grid-containeren*/
 #slideshow {
@@ -380,7 +384,7 @@ margin-top: 50px;
   text-align: center;
 }
 /*Åpningstider som er stylet som ul*/
-#grid-container ul{
+#grid-container ul {
   grid-area: opening-time;
   width: 100%;
   height: auto;
@@ -397,14 +401,12 @@ margin-top: 50px;
   display: grid;
   background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 250px;
-  top: 0;
-  background-attachment: inherit;
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 50px;
-  background-size: auto;
 }
 /*Grid-container med meny bilder og linken til meny-siden. Containeren består av fem kolonner og ett rad.*/
 #grid-container-menu {
@@ -413,11 +415,12 @@ margin-top: 50px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-gap: 20px;
   height: auto;
-  margin: 0 10%;
+  margin: 0 auto;
   text-align: center;
+  max-width: 1120px;
 }
 /*Meny bilder*/
-#grid-container-menu img{
+#grid-container-menu img {
   width: 100%;
   height: auto;
 }
@@ -450,7 +453,8 @@ margin-top: 50px;
   grid-template-areas: "photo about";
   height: 400px;
   padding: 30px 0px;
-  margin: 0 10%;
+  margin: 0 auto;
+  max-width: 1120px;
 }
 /*Bilde til about containeren*/
 #homepage-about-container img {
@@ -468,32 +472,34 @@ margin-top: 50px;
   grid-area: about;
   width: auto;
   margin-top: 100px;
-  padding-left: 20px;;
+  padding-left: 20px;
   font-size: 20px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   line-height: 35px;
 }
 /*Grid-container med kontaktinfo. Containeren består av to bilder og en liste med info.*/
 #homepage-contact-container {
+  position: relative;
   display: grid;
   grid-template-columns: 35% 30% 35%;
   grid-template-rows: 100%;
   grid-template-areas: "image1 contact image2";
   height: 500px;
   padding: 30px 0px;
-  margin: 0 10%;
+  margin: 0 auto;
+  max-width: 1120px;
 }
 /*Kontaktinfo til contact-containeren*/
 #homepage-contact-container ul {
-width: 100%;
-height: auto;
-padding: 0;
-color: white;
-list-style-type: none;
-font-size: 25px;
-text-align: center;
-line-height: 170%;
-margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  font-size: 25px;
+  text-align: center;
+  line-height: 170%;
+  margin: 0 auto;
 }
 /*Det ene bildet til kontakt-containeren*/
 #homepage-contact-container #homepage-contact-container-img1 {
@@ -509,34 +515,32 @@ margin: 0 auto;
 }
 /*Google map*/
 #map {
+  position: relative;
   width: 100%;
   height: 300px;
-  margin-bottom: 5%;
+  margin: 30px 0;
 }
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
-
-#galleri-tittel{
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  letter-spacing: 3px;
-}
-
 
 /* Sentrerer bildene på midten av siden
 
 a flexbox */
 .bilde-rad {
-  height: 500px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
+.lite-galleribilde-samling {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /*Velger første element av klasse bilde-rad og øker marginen så den kommer lenger unna header*/
 .bilde-rad:first-of-type {
-  margin-top: 85px;
+  padding-top: 70px;
 }
 
 /*Velger passende str for de små og store bildene*/
@@ -565,14 +569,13 @@ a flexbox */
   transform: scale(1.5);
 }
 
-
 /*Hvor lang tid skalering ved hover skal ta*/
 #galleri img {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 /*Sentrerer hele galleri-siden mot midten*/
-#galleri{
+#galleri {
   text-align: center;
 }
 
@@ -580,12 +583,12 @@ a flexbox */
 
 /* ---------------------------------------- ######### meny start ######### ----------------------------------------*/
 
-#menyene{
+#menyene {
   color: white;
   display: flex;
 }
 
-.menyListe{
+.menyListe {
   padding: 1em;
   box-sizing: border-box;
   min-width: 232px;
@@ -594,7 +597,7 @@ a flexbox */
   border-color: #3d2e24;
   border-width: 0.25em;
 }
-.menyBilde{
+.menyBilde {
   padding: 1em;
   box-sizing: border-box;
   min-width: 232px;
@@ -604,32 +607,34 @@ a flexbox */
   border-width: 0.25em;
 }
 
-.menyListe ul{
+.menyListe ul {
   padding-left: 2em; /* Mindre padding på liste */
   list-style-type: square;
 }
 
-#menybilder{ /* Div med bildene du trykker på for å komme til menyene */
+#menybilder {
+  /* Div med bildene du trykker på for å komme til menyene */
   display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
 }
 
-#menybilder div img { /* Bilder inne i div-box */
+#menybilder div img {
+  /* Bilder inne i div-box */
   max-width: 100%;
   box-shadow: none;
 }
 
-#menybilder div{
+#menybilder div {
   background-color: #886750;
   padding: 1em;
   margin: 12px;
   max-width: 232px;
   height: 545px;
-
 }
-#menybilder h3{
+#menybilder h3 {
   text-align: center;
 }
-
 
 /* ---------------------------------------- ######### meny slutt ######### ----------------------------------------*/
 
@@ -675,138 +680,117 @@ a.contact:visited {
   left: 50%;
 }
 
+/* Google map */
+#map_contact {
+  width: 100%;
+  height: 400px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
 /* ---------------------------------------- ######### Kontakt slutt ######### ----------------------------------------*/
 
-
 /* Får kolonnene til å være over hverandre, istedenfor vedsidenav */
-@media only screen
-and (min-width : 900px)
-and (max-width : 1050px) {
- #vid {
- display: none;
- }
- .flex-containerAbout{
-  flex-direction: column-reverse;
-}
-.aboutpic{
-  width: 500px;
-}
+@media only screen and (min-width: 900px) and (max-width: 1050px) {
+  #vid {
+    display: none;
+  }
+  .flex-containerAbout {
+    flex-direction: column-reverse;
+  }
+  .aboutpic {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 900px) {
-
   body {
-    max-width: 1024px; /* Størrelse på body */
-
+    background-color: black;
+    width: 100%;
   }
-
 
   h1 {
     font-size: 30px;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     color: white;
-
   }
 
   h2 {
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     color: #886750;
     font-size: 3vh;
   }
 
   h3 {
-    font-family: 'Calibri Light', sans-serif;
+    font-family: "Calibri Light", sans-serif;
     color: #ffffff;
     font-size: 30px;
   }
 
-  /* Hovedskriften*/
-  h4 {
-    font-size: 40px;
-    font-family: 'Georgia', serif;
-    color: white;
-    position: absolute; /* Formaterer så hovedskriften kommer under menyen*/
-    text-align: center;
-    padding-top: 10%;
-    left:0; /* For å få hovedskriften i senter */
-    right:0; /* For å få hovedskriften i senter */
-  }
-
   h5 {
     font-size: 10px;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     color: white;
   }
 
-  h6 { /*  fotter sosiale medier*/
+  h6 {
+    /*  fotter sosiale medier*/
     font-size: 20px;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     color: white;
   }
-
-  body {
-    background-color: black;
-    width: 100%;
-    margin:0 auto;
-  }
-
-
-  /* funket ikke helt, noen som vet? */
- header, #top .knapp, #scroll .knapp{
-   position: relative;
-    display: inline-grid;
-    background-color: none;
-    width: 100%;
-    /*word-break: break-all;*/
-    font-size: 15px;
-    text-align: right;
-    }
-
-    #top, #scroll{
-      height: fit-content;
-      block-size: fit-content;
-      padding: 25px;
-      min-height: 150px;
-      /*width: 100%;*/
-      }
-      #top #logo{
-        height: 100px;
-      }
-      #scroll #logo{
-        height: 100px;
-      }
-
-      header ul {
-        margin-right: 10%;
-        margin-left: 60%;
-        position: absolute;
-        margin-top: 10px;
-        list-style-type: none;
-        padding: 0;
-        display: inline;
-      }
-
-      header li {
-        display: inline;
-        margin-right: 5px; /* Åpning mellom menyene*/
-        overflow: hidden;
-        list-style: none;
-      }
-
-      header a {
-        margin: 0 auto;
-        padding: 0;
-        font-size: 17px;
-      }
 
       /* ------- footer start --------*/
-      
+
       footer, #footer-item1 {
         display: grid;
         grid-template-columns: 100%;
         height: auto;
-        margin: 0 auto; 
+        margin: 0 auto;
         width: 100%;
       }
+
+      /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+
+#header-background-img { /* styling på bakgrunnsbilde */
+  display: none;
+}
+
+header img { /* styling på logo header */
+  margin-top: 10px;
+}
+
+header ul { /* styling på navbar posisjon */
+  margin-top: -60px;
+}
+
+header li a{ /* styling på navbar posisjon utseende */
+  margin: 3px;
+}
+
+header li { /* styling på navbar posisjon utseende */
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+#top{
+  height: 200px;
+
+}
+
+#top #logo{
+  height: 60px;
+}
+
+#scroll{
+  height: 190px;
+}
+
+#scroll #logo{
+  height: 60px;
+}
+
+/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
 
       /* ---------------------------------------- ######### Hjem-Media-Query start ######### ----------------------------------------*/
 
@@ -832,290 +816,383 @@ and (max-width : 1050px) {
   text-align: center;
 }
 
-#slideshow img {
-  width: 100%;
-  height: 100%;
-}
-/*Bilde til grid-containeren*/
-#grid-container  img{
-  grid-area: image;
-  width: 80%;
-  height: auto;
-  margin: 30px auto;
-}
-/*Liste til grid-containeren*/
-#grid-container ul{
-  width: 80%;
-  grid-area: opening-time;
-  margin: 0 auto;
-  list-style-type: none;
-  font-size: 25px;
-  justify-content: center;
-}
-/*Gir litt ekstra linjeplass mellom list elementene*/
-#grid-container li {
-  margin-bottom: 10px;
-}
-/*Parallax*/
-#parallax {
-  display: grid;
-  background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  height: 250px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 50px;
-  background-size: auto;
-}
-/*Grid-container med meny bilder, består av to kolonner og tre rad*/
-#grid-container-menu {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: auto;
-  grid-template-areas:   "image1 image2"
-                          "menu menu"
-                          "image3 image4";
-  padding: 30px 0px;
-  margin: 0 10%;
-  justify-content: center
-}
-/*Egne id-er til meny bilder for å plassere dem i riktig box*/
-/*Bilde 1*/
-#grid-container-menu-image-1{
-  grid-area: image1;
-  width: 90%;
-  height: auto;
-}
-/*Bilde 2*/
-#grid-container-menu-image-2{
-  grid-area: image2;
-  width: 90%;
-  height: auto;
-}
-/*Meny ordet*/
-#grid-container-menu h2 {
-  grid-area: menu;
-  text-align: center;
-}
-/*Bilde 3*/
-#grid-container-menu-image-3{
-  grid-area: image3;
-  width: 90%;
-  height: auto;
-}
-/*Bilde 4*/
-#grid-container-menu-image-4{
-  grid-area: image4;
-  width: 90%;
-  height: auto;
-}
-/*Meny bilde når man klikker på den*/
-#fullpage {
-  display: none;
-  position: absolute;
-  position: fixed;
-  z-index: 1000;
-  left: 5%;
-  right: 5%;
-  top: 5%;
-  width: 90vw;
-  height: 90vh;
-  background-size: contain;
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  justify-content: center;
-}
-/*Grid-container til about delen, består av en kolonne og tre rad*/
-#homepage-about-container {
-  display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: auto;
-  grid-template-areas: "title"
-                        "about"
-                        "image";
-  height: auto;
-  padding: 30px 0px;
-  margin: 0 auto;
-  justify-content: center;
-}
-/*Bilde til about containeren*/
-#homepage-about-container img {
-  grid-area: image;
-  width: 80%;
-  height: auto;
-  margin: 30px auto;
-  text-align: center;
-}
-/*Forskrift til about-containeren*/
-#homepage-about-container h2 {
-  grid-area: title;
-  text-align: center;
-  margin: auto auto;
-}
-/*Paragraf til about containeren*/
-#homepage-about-container p {
-  grid-area: about;
-  margin: 0 auto;
-  width: 80%;
-  font-size: 20px;
-  font-family: 'Georgia', serif;
-  line-height: 35px;
-}
-/*Contact-container, en kolonne og tre rad*/
-#homepage-contact-container {
-  display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: auto;
-  grid-template-areas: "contact"
-                        "image1"
-                        "image2";
-  height: auto;
-  padding: 30px 0px 0px 0px;
-  margin: 0 auto;
-  justify-content: center;
-}
-/*Liste med kontakt info*/
-#homepage-contact-container ul {
-  width: 100%;
-  grid-area: contact;
-  margin: 0 auto;
-  list-style-type: none;
-  font-size: 25px;
-  text-align: center;
-}
-/*Bilde 1 til kontakt-containeren*/
-#homepage-contact-container #homepage-contact-container-img1 {
-  grid-area: image1;
-  width: 80%;
-  height: auto;
-  margin: 30px auto;
-  padding: 0;
-  text-align: center;
-}
-/*Bilde 2 til kontakt-containeren, den "fjernes" slik at det ikke blir for mange bilder*/
-#homepage-contact-container #homepage-contact-container-img2{
-  grid-area: image2;
-  display: none;
-}
-/*Google map*/
-#map {
-  display: grid;
-  width: 80%;
-  margin: 0 auto;
-}
+  #top,
+  #scroll {
+    height: fit-content;
+    block-size: fit-content;
+    padding: 25px;
+    min-height: 150px;
+    /*width: 100%;*/
+  }
+  #top #logo {
+    height: 100px;
+  }
+  #scroll #logo {
+    height: 100px;
+  }
 
-/* ---------------------------------------- ######### Hjem-Media-Query slutt ######### ----------------------------------------*/
+  header ul {
+    margin-right: 10%;
+    margin-left: 60%;
+    position: absolute;
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+  }
 
-/*######### Kontakt ######### */
+  header li {
+    display: inline;
+    margin-right: 5px; /* Åpning mellom menyene*/
+    overflow: hidden;
+    list-style: none;
+  }
 
-/* Får kolonnene til å være over hverandre i kontakt, istedenfor vedsidenav */
-.column {
+  header a {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 17px;
+  }
+
+  /* ------- footer start --------*/
+
+  footer,
+  #footer-item1 {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    margin: 0 auto;
     width: 100%;
-}
+  }
 
-/* Gjemmer den hvite linja */
-.line_contact {
-  display: none;
-}
+  /* ---------------------------------------- ######### Hjem-Media-Query start ######### ----------------------------------------*/
 
-/*####### Galleri #######*/
-.stort-galleribilde {
-  max-width: 50vw;
-  max-height: 50vw;
-  margin: 10px;
-}
-.lite-galleribilde {
-  max-width: 23vw;
-  max-height: 23vw;
-  margin: 10px;
-}
+  /*Grid-containeren bestående av en kolonne med slideshow, bilde og åpningstider*/
+  #grid-container {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "slideshow"
+      "opening-time"
+      "image";
+    height: auto;
+    padding: 30px 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  /*Slideshow til grid-containeren*/
+  #slideshow {
+    grid-area: slideshow;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
 
-/* ####### Meny (mobil) ####### */
+  #slideshow img {
+    width: 100%;
+    height: 100%;
+  }
+  /*Bilde til grid-containeren*/
+  #grid-container img {
+    grid-area: image;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+  }
+  /*Liste til grid-containeren*/
+  #grid-container ul {
+    width: 80%;
+    grid-area: opening-time;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 25px;
+    justify-content: center;
+  }
+  /*Gir litt ekstra linjeplass mellom list elementene*/
+  #grid-container li {
+    margin-bottom: 10px;
+  }
+  /*Parallax*/
+  #parallax {
+    display: grid;
+    background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 50px;
+    background-size: auto;
+  }
+  /*Grid-container med meny bilder, består av to kolonner og tre rad*/
+  #grid-container-menu {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image1 image2"
+      "menu menu"
+      "image3 image4";
+    padding: 30px 0px;
+    margin: 0 10%;
+    justify-content: center;
+  }
+  /*Egne id-er til meny bilder for å plassere dem i riktig box*/
+  /*Bilde 1*/
+  #grid-container-menu-image-1 {
+    grid-area: image1;
+    width: 90%;
+    height: auto;
+  }
+  /*Bilde 2*/
+  #grid-container-menu-image-2 {
+    grid-area: image2;
+    width: 90%;
+    height: auto;
+  }
+  /*Meny ordet*/
+  #grid-container-menu h2 {
+    grid-area: menu;
+    text-align: center;
+  }
+  /*Bilde 3*/
+  #grid-container-menu-image-3 {
+    grid-area: image3;
+    width: 90%;
+    height: auto;
+  }
+  /*Bilde 4*/
+  #grid-container-menu-image-4 {
+    grid-area: image4;
+    width: 90%;
+    height: auto;
+  }
+  /*Meny bilde når man klikker på den*/
+  #fullpage {
+    display: none;
+    position: absolute;
+    position: fixed;
+    z-index: 1000;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    width: 90vw;
+    height: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    justify-content: center;
+  }
+  /*Grid-container til about delen, består av en kolonne og tre rad*/
+  #homepage-about-container {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "about"
+      "image";
+    height: auto;
+    padding: 30px 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  /*Bilde til about containeren*/
+  #homepage-about-container img {
+    grid-area: image;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+  }
+  /*Forskrift til about-containeren*/
+  #homepage-about-container h2 {
+    grid-area: title;
+    text-align: center;
+    margin: auto auto;
+  }
+  /*Paragraf til about containeren*/
+  #homepage-about-container p {
+    grid-area: about;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+    font-family: "Georgia", serif;
+    line-height: 35px;
+  }
+  /*Contact-container, en kolonne og tre rad*/
+  #homepage-contact-container {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "contact"
+      "image1"
+      "image2";
+    height: auto;
+    padding: 30px 0px 0px 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  /*Liste med kontakt info*/
+  #homepage-contact-container ul {
+    width: 100%;
+    grid-area: contact;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 25px;
+    text-align: center;
+  }
+  /*Bilde 1 til kontakt-containeren*/
+  #homepage-contact-container #homepage-contact-container-img1 {
+    grid-area: image1;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    padding: 0;
+    text-align: center;
+  }
+  /*Bilde 2 til kontakt-containeren, den "fjernes" slik at det ikke blir for mange bilder*/
+  #homepage-contact-container #homepage-contact-container-img2 {
+    grid-area: image2;
+    display: none;
+  }
+  /*Google map*/
+  #map {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+  }
 
-#menyene{
-  color: white;
-}
+  /*####### Galleri #######*/
+  .bilde-rad {
+    flex-direction: column;
+    /*margin-left: 10% !important;
+    margin-right: 10% !important;*/
+  }
 
-.menyListe{
-  border-style: none;
-}
+  .bilde-rad:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
 
-.menyListe ul{
-  padding-left: 25px; /* Mindre padding på liste */
-  list-style-type: square;
-  min-width: 200px;
-}
+  .lite-galleribilde-samling {
+    display: flex;
+    flex-direction: row;
+  }
 
-#menybilder{ /* Div med bildene du trykker på for å komme til menyene */
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 0fr);
-  justify-content: center;
-}
+  .stort-galleribilde {
+    max-width: 100vw;
+    max-height: 100vw;
+    margin: 10px;
+  }
+  .lite-galleribilde {
+    max-width: 47.5vw;
+    max-height: 47.5vw;
+  }
 
-#menybilder div img { /* Bilder inne i div-box */
-  display: none;
-  min-width: 350px;
-  box-shadow: none;
-}
+  /* ---------------------------------------- ######### Hjem-Media-Query slutt ######### ----------------------------------------*/
 
-#menybilder div{
-  background-color: transparent;
-  color: white;
-  padding: 1em;
-  margin: 12px;
-  max-width: 232px;
-  margin: 0px 12px 0px
-}
-.menyside div ul{
-  color: #ffffff !important;
-}
+  /*######### Kontakt ######### */
 
-#menybilder h3{
-  text-align: center;
-}
-#vid{
-  display: none;
-}
-#aboutOut{
-  display: none;
-}
-.flex-containerAbout{
-  flex-direction: column-reverse;
-}
+  /* Får kolonnene til å være over hverandre i kontakt, istedenfor vedsidenav */
+  .column {
+    width: 100%;
+    float: left;
+  }
 
-#om{
+  /* Gjemmer den hvite linja */
+  .line_contact {
+    display: none;
+  }
+
+  /* ####### Meny (mobil) ####### */
+
+  #menyene {
+    color: white;
+  }
+
+  .menyListe {
+    border-style: none;
+  }
+
+  .menyListe ul {
+    padding-left: 25px; /* Mindre padding på liste   */
+    list-style-type: square;
+    min-width: 200px;
+  }
+
+  #menybilder {
+    /* Div med bildene du trykker på for å komme til menyene */
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: center;
+  }
+
+  #menybilder div img {
+    /* Bilder inne i div-box */
+    display: none;
+    min-width: 350px;
+    box-shadow: none;
+  }
+
+  #menybilder div {
+    background-color: transparent;
+    color: white;
+    padding: 1em;
+    margin: 12px;
+    max-width: 232px;
+    margin: 0px 12px 0px;
+  }
+  .menyside div ul {
+    color: #ffffff !important;
+  }
+
+  #menybilder h3 {
+    text-align: center;
+  }
+  #vid {
+    display: none;
+  }
+  #aboutOut {
+    display: none;
+  }
+  .flex-containerAbout {
+    flex-direction: column-reverse;
+  }
+
+  #om {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 3vh;
   }
-#inside{
-  display: inline-block;
-  max-width: 100%;
-
-}
+  #inside {
+    display: inline-block;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   /* Header */
   /* Endrer til 1x4 ved smal skjerm */
-  #menybilder{
+  #menybilder {
     grid-template-columns: repeat(1, 0fr);
   }
   /* Endrer høyden på listene for å fjerne tomrom */
-  #kaffeDrikkeListe{
+  #kaffeDrikkeListe {
     max-height: 700px;
   }
-  #matListe{
+  #matListe {
     max-height: 450px;
   }
-  #kakeSøtsakerListe{
+  #kakeSøtsakerListe {
     max-height: 400px;
   }
-  #bakeOffListe{
+  #bakeOffListe {
     max-height: 350px;
   }
 }

@@ -1,0 +1,42 @@
+ /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+
+ #header-background-img { /* styling på bakgrunnsbilde */
+  display: none;
+}
+
+header img { /* styling på logo header */
+  margin-top: 10px;
+}
+
+header ul { /* styling på navbar posisjon */
+  margin-top: -60px;
+}
+
+header li a{ /* styling på navbar posisjon utseende */
+  margin: 3px;
+}
+
+header li { /* styling på navbar posisjon utseende */
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+#top{
+  height: 200px;
+
+}
+
+#top #logo{
+  height: 60px;
+}
+
+#scroll{
+  height: 190px;
+}
+
+#scroll #logo{
+  height: 60px;
+}
+}
+/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
