@@ -516,14 +516,6 @@ margin: 0 auto;
 
 /* ---------------------------------------- ######### galleri start ######### ----------------------------------------*/
 
-#galleri-tittel{
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  letter-spacing: 3px;
-}
-
-
 /* Sentrerer bildene på midten av siden
 
 a flexbox */
@@ -572,7 +564,7 @@ a flexbox */
 }
 
 /*Sentrerer hele galleri-siden mot midten*/
-#galleri{
+#galleri {
   text-align: center;
 }
 
