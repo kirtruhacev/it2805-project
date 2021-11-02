@@ -657,6 +657,13 @@ a flexbox */
   color: white;
 }
 
+/* Styling til icon */
+.contact_img img{
+  width: 17px;
+  height: 17px;
+  margin-bottom: -20px;
+}
+
 /* Styling til link epost, telefon og facebook */
 a.contact:link {
   text-decoration: none;
@@ -674,10 +681,10 @@ a.contact:visited {
 
 /* Styling til strek */
 .line_contact {
-  height: 350px;
+  height: 430px;
   border-left: 2px solid white;
   position: absolute;
-  top: 38.5%;
+  top: 37.5%;
   left: 50%;
 }
 
