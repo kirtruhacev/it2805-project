@@ -739,58 +739,17 @@ a.contact:visited {
     color: white;
   }
 
-      /* ------- footer start --------*/
+  #top #logo{
+    height: 90px;
+  } 
 
-      footer, #footer-item1 {
-        display: grid;
-        grid-template-columns: 100%;
-        height: auto;
-        margin: 0 auto;
-        width: 100%;
-      }
-
-      /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
-
-#header-background-img { /* styling på bakgrunnsbilde */
-  display: none;
-}
-
-header img { /* styling på logo header */
-  margin-top: 10px;
-}
-
-header ul { /* styling på navbar posisjon */
-  margin-top: -60px;
-}
-
-header li a{ /* styling på navbar posisjon utseende */
-  margin: 3px;
-}
-
-header li { /* styling på navbar posisjon utseende */
-  float: none;
-  width: 100%;
-  text-align: center;
-}
-
-#top{
-  height: 200px;
-
-}
-
-#top #logo{
-  height: 60px;
-}
-
-#scroll{
-  height: 190px;
-}
-
-#scroll #logo{
-  height: 60px;
-}
-
-/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+  footer, #footer-item1 {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+   }
 
       /* ---------------------------------------- ######### Hjem-Media-Query start ######### ----------------------------------------*/
 
@@ -815,44 +774,6 @@ header li { /* styling på navbar posisjon utseende */
   margin: 0;
   text-align: center;
 }
-
-  #top,
-  #scroll {
-    height: fit-content;
-    block-size: fit-content;
-    padding: 25px;
-    min-height: 150px;
-    /*width: 100%;*/
-  }
-  #top #logo {
-    height: 100px;
-  }
-  #scroll #logo {
-    height: 100px;
-  }
-
-  header ul {
-    margin-right: 10%;
-    margin-left: 60%;
-    position: absolute;
-    margin-top: 10px;
-    list-style-type: none;
-    padding: 0;
-    display: inline;
-  }
-
-  header li {
-    display: inline;
-    margin-right: 5px; /* Åpning mellom menyene*/
-    overflow: hidden;
-    list-style: none;
-  }
-
-  header a {
-    margin: 0 auto;
-    padding: 0;
-    font-size: 17px;
-  }
 
   /* ------- footer start --------*/
 
@@ -1176,8 +1097,53 @@ header li { /* styling på navbar posisjon utseende */
   }
 }
 
-@media screen and (max-width: 500px) {
-  /* Header */
+@media screen and (max-width: 600px) {
+        /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+
+        #header-background-img { /* styling på bakgrunnsbilde */
+          display: none;
+        }
+        
+        header img { /* styling på logo header */
+          margin-top: -70px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+        }
+        
+        header ul { /* styling på navbar posisjon */
+          margin-top: 30px;
+        }
+        
+        header li { /* styling på navbar posisjon utseende */
+          position: relative;
+          float: none !important;
+          width: 100%;
+          justify-content: center !important;
+          padding: 3px; /* mellomrom mellom kategoriene */
+        }
+        
+        #top{
+          height: 310px;
+        }
+        
+        #top #logo{
+          height: 80px;
+        } 
+        
+        #scroll{
+          margin-top: -50px;
+          height: 270px;
+        }
+        
+        #scroll #logo{
+          display: none;
+        }
+        
+        /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+        
+    /* Header */
   /* Endrer til 1x4 ved smal skjerm */
   #menybilder {
     grid-template-columns: repeat(1, 0fr);
