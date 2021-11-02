@@ -7,7 +7,13 @@ imgs.forEach(img => {
     page.style.backgroundImage = 'url(' + img.src + ')';
     page.style.backgroundColor = "none";
     page.style.display = 'block';
-    document.GetElementById("grid-container-menu").style.display = "none";
+    //document.GetElementById("grid-container-menu").style.display = "none";
   });
-
 });
+
+/* Lager en funksjon som fjerner menyen ved scroll */
+window.addEventListener('scroll', removePic);
+function removePic(){
+  page.style.backgroundImage = 'none';
+  console.log('scroll'); /* KUN TIL FEILTESTING */
+}

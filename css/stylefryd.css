@@ -1089,12 +1089,21 @@ and (max-width : 1050px) {
 
 @media screen and (max-width: 500px) {
   /* Header */
-
-
-  #menybilder{ /* Div med bildene du trykker på for å komme til menyene */
+  /* Endrer til 1x4 ved smal skjerm */
+  #menybilder{
     grid-template-columns: repeat(1, 0fr);
   }
-  #matBilde{
-    height: 70px;
+  /* Endrer høyden på listene for å fjerne tomrom */
+  #kaffeDrikkeListe{
+    max-height: 700px;
+  }
+  #matListe{
+    max-height: 450px;
+  }
+  #kakeSøtsakerListe{
+    max-height: 400px;
+  }
+  #bakeOffListe{
+    max-height: 350px;
   }
 }
