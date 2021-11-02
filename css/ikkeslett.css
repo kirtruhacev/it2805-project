@@ -1,34 +1,42 @@
-/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
-header {
-    height: 500px;
-  }
-  
-  #header-background-img { /* styling på bakgrunnsbilde */
-    display: none;
-  }
-  
-  header li { /* styling på navbar posisjon utseende */
-    margin-top: -50px;
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-top: -30px;
-  }
+ /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
 
-  #top{
-    height: 200px;
-  }
+ #header-background-img { /* styling på bakgrunnsbilde */
+  display: none;
+}
 
-  #top #logo{
-    height: 60px;
-  }
+header img { /* styling på logo header */
+  margin-top: 10px;
+}
 
-  #scroll{
-    height: 170px;
-  }
+header ul { /* styling på navbar posisjon */
+  margin-top: -60px;
+}
 
-  #scroll #logo{
-    height: 60px;
-  }
+header li a{ /* styling på navbar posisjon utseende */
+  margin: 3px;
+}
+
+header li { /* styling på navbar posisjon utseende */
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+#top{
+  height: 200px;
+
+}
+
+#top #logo{
+  height: 60px;
+}
+
+#scroll{
+  height: 190px;
+}
+
+#scroll #logo{
+  height: 60px;
+}
 }
 /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/

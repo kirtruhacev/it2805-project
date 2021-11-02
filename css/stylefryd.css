@@ -701,15 +701,12 @@ and (max-width : 1050px) {
   body {
     background-color: black;
     width: 100%;
-    margin: auto;
   }
-
 
   h1 {
     font-size: 30px;
     font-family: 'Georgia', serif;
     color: white;
-
   }
 
   h2 {
@@ -736,54 +733,6 @@ and (max-width : 1050px) {
     color: white;
   }
 
-  /* funket ikke helt, noen som vet? */
- header, #top .knapp, #scroll .knapp{
-   position: relative;
-    display: inline-grid;
-    background-color: none;
-    width: 100%;
-    /*word-break: break-all;*/
-    font-size: 15px;
-    text-align: right;
-    }
-
-    #top, #scroll{
-      height: fit-content;
-      block-size: fit-content;
-      padding: 25px;
-      min-height: 150px;
-      /*width: 100%;*/
-      }
-      #top #logo{
-        height: 100px;
-      }
-      #scroll #logo{
-        height: 100px;
-      }
-
-      header ul {
-        margin-right: 10%;
-        margin-left: 60%;
-        position: absolute;
-        margin-top: 10px;
-        list-style-type: none;
-        padding: 0;
-        display: inline;
-      }
-
-      header li {
-        display: inline;
-        margin-right: 5px; /* Åpning mellom menyene*/
-        overflow: hidden;
-        list-style: none;
-      }
-
-      header a {
-        margin: 0 auto;
-        padding: 0;
-        font-size: 17px;
-      }
-
       /* ------- footer start --------*/
 
       footer, #footer-item1 {
@@ -793,6 +742,49 @@ and (max-width : 1050px) {
         margin: 0 auto;
         width: 100%;
       }
+
+      /* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
+
+#header-background-img { /* styling på bakgrunnsbilde */
+  display: none;
+}
+
+header img { /* styling på logo header */
+  margin-top: 10px;
+}
+
+header ul { /* styling på navbar posisjon */
+  margin-top: -60px;
+}
+
+header li a{ /* styling på navbar posisjon utseende */
+  margin: 3px;
+}
+
+header li { /* styling på navbar posisjon utseende */
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+#top{
+  height: 200px;
+
+}
+
+#top #logo{
+  height: 60px;
+}
+
+#scroll{
+  height: 190px;
+}
+
+#scroll #logo{
+  height: 60px;
+}
+
+/* ---------------------------------------- ######### liten navbar ######### ----------------------------------------*/
 
       /* ---------------------------------------- ######### Hjem-Media-Query start ######### ----------------------------------------*/
 
