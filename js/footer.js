@@ -41,7 +41,7 @@ function footerInsert(){
     //Åpningstid
     let openStatus = document.createElement('p'); //Oppretter <p>
     openStatus.id = 'openstatus';
-    div4.appendChild(openStatus);
+    div2.appendChild(openStatus);
     openingHours(); //Legger til tekst om åpningstid
 
     const h6 = document.createElement('h6'); //Oppretter <h2>
