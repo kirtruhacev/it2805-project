@@ -45,7 +45,7 @@ h6 { /*  fotter sosiale medier*/
 }
 
 p {
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri Light', sans-serif;
   color: #ffffff;
   font-size: 8px;
 }
@@ -273,7 +273,7 @@ footer img {
   font-size: 10px;
   font-family: 'Calibri Light', sans-serif;
   width: 100%;
-
+  line-gap-override: 150%;
 }
 
 #line_footer {
@@ -671,6 +671,14 @@ a.contact:visited {
   position: absolute;
   top: 38.5%;
   left: 50%;
+}
+
+/* Google map */
+#map_contact {
+  width: 100%;
+  height: 400px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /* ---------------------------------------- ######### Kontakt slutt ######### ----------------------------------------*/
