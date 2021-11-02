@@ -1,5 +1,5 @@
-var imgList = ["./mage/bilde14.png","bilde15.png","bilde10.png","bilde13.png"]
-var time = 1000;
+/* var imgList = ["./mage/bilde14.png","bilde15.png","bilde10.png","bilde13.png"]
+var time = 1000; */
 var index = 0;
 slideshow();
 
