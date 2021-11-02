@@ -81,7 +81,7 @@ window.onscroll = function() {scrollFunction()}; //Kjøres hver gang man scrolle
 
 function scrollFunction() {
 
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { /* effekten skjer når man scroller over 80 */
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { /* effekten skjer når man scroller over 80 */
     header.id = 'scroll';
   } else {
     header.id = 'top';
