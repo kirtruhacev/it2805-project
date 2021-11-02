@@ -396,14 +396,12 @@ margin-top: 50px;
   display: grid;
   background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 250px;
-  top: 0;
-  background-attachment: inherit;
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 50px;
-  background-size: auto;
 }
 /*Grid-container med meny bilder og linken til meny-siden. Containeren består av fem kolonner og ett rad.*/
 #grid-container-menu {
