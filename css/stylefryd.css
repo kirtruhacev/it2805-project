@@ -606,6 +606,8 @@ a flexbox */
 
 #menybilder{ /* Div med bildene du trykker på for å komme til menyene */
   display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
 }
 
 #menybilder div img { /* Bilder inne i div-box */
@@ -674,7 +676,7 @@ a.contact:visited {
 #map_contact {
   width: 100%;
   height: 400px;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 5%;
 }
 
