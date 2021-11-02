@@ -197,6 +197,9 @@ header li a:hover:after{
   background-color: black;
   height: 0px;
 }
+#scroll #header-background-img{
+  display: none;
+}
 
 #scroll #logo{
   height: 60px;
