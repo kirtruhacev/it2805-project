@@ -218,6 +218,7 @@ header li a:hover:after {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - - - - - - - - - - */
 footer {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 30px 20% 0px 20%;
@@ -226,10 +227,26 @@ footer {
   height: auto;
   list-style-type: none;
   font-size: 20px;
+  padding-bottom: 20px;
 }
 
 footer p {
   font-size: 18px;
+}
+
+.copyright_footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 10px !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #FFF;
+    width: 100%;
+    text-align: left;
+    height: 25px;
+    line-height : 2px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 /* Styler åpningstider-tekst */
@@ -269,18 +286,6 @@ footer img {
   display: inline-grid;
   justify-self: center;
   padding-top: 50px;
-}
-
-/*  Copyright */
-#copyright {
-  font-size: 10px;
-  font-family: "Calibri Light", sans-serif;
-  width: 100%;
-}
-
-#line_footer {
-  color: white;
-  width: 100%;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Om oss - - - - - - - - - - - - - - - - - - - - - - - - - */
