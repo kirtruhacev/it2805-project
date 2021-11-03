@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html lang="no">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href="./css/stylefryd.css">
-    <link rel="icon" type="image/png" href="image/beans_nb.png" />
+    <link rel="icon" type="image/png" href="image/beans_nb.png"/>
     <title>Contact</title>
-  </head>
+</head>
 
-  <body onload="headerInsert();footerInsert()">
+<body onload="headerInsert();footerInsert()">
 
     <div class="load_page">
-      <img src="image/logo_nb.png" alt="Logo">
+        <img src="image/logo_nb.png" alt="Logo">
     </div>
 
-    <header id="top">
+    <header id="top"> 
 
     </header> <!-- Header blir hentet fra js-fil -->
+    
+        <div class="row">
+        <div class="column">
 
-    <div class="row">
-      <div class="column">
+            <div class="contact_img">
+                <img src="image/email_nb.png" alt="Epost ikon">
+            </div>
+            <h2>Send oss en epost</h2>
+            <h3><a_contact class="contact" href="mailto:frydcafe@gmail.com">frydcafe@gmail.com</a_contact></h3>
 
-        <div class="contact_img">
-          <img src="image/email_nb.png" alt="Epost ikon">
+            <br>
+
+            <div class="contact_img">
+                <img src="image/phone_nb.png" alt="Telefon icon">
+            </div>
+            <h2>Ring oss</h2>
+            <h3><a_contact class="contact" href="tel:400 45 686">400 45 686</a_contact></h3>
+            
+            <br>
+            
+            <div class="contact_img">
+                <img src="image/fb_nb.png" alt="Facebook ikon">
+            </div>
+            <h2>Facebook</h2>
+            <h3><a_contact class="contact" href="https://www.facebook.com/FrydCafe/" target="_blank">frydcafé</a_contact></h3>
+            
+           </div>
+
+        <div class="line_contact"></div>
+
+        <div class="column">
+
+            <h2>Åpningstider</h2>
+            <h3>Mandag-Fredag</h3>
+            <h3>07:00-19:00</h3>
+            <h3>Lørdag</h3>
+            <h3>08:00-19:00</h3>
+            <h3>Søndag</h3>
+            <h3>10:00-19:00</h3>
+
+            <h2>Adresse</h2>
+            <h3>Nordre gate 15, 7011 Trondheim</h3>
+
+        </div>
         </div>
 
-        <h2>Send oss en epost</h2>
-        <h3><a class="contact" href="mailto:frydcafe@gmail.com">frydcafe@gmail.com</a></h3>
+        <iframe id = "map_contact" src="https://maps.google.com/maps?q=cafe%20fryd&t=&z=13&ie=UTF8&iwloc=&output=embed"> 
+        
+        </iframe>
 
-        <br>
-
-        <div class="contact_img">
-          <img src="image/phone_nb.png" alt="Telefon icon">
-        </div>
-
-        <h2>Ring oss</h2>
-        <h3><a class="contact" href="tel:40045686">400 45 686</a></h3>
-
-        <br>
-
-        <div class="contact_img">
-          <img src="image/fb_nb.png" alt="Facebook ikon">
-        </div>
-
-        <h2>Facebook</h2>
-        <h3><a class="contact" href="https://www.facebook.com/FrydCafe/" target="_blank">frydcafé</a></h3>
-
-      </div>
-
-      <div class="line_contact"></div>
-
-      <div class="column">
-
-        <h2>Åpningstider</h2>
-        <h3>Mandag-Fredag</h3>
-        <h3>07:00-19:00</h3>
-        <h3>Lørdag</h3>
-        <h3>08:00-19:00</h3>
-        <h3>Søndag</h3>
-        <h3>10:00-19:00</h3>
-
-        <br>
-
-        <h2>Adresse</h2>
-        <h3>Nordre gate 15, 7011 Trondheim</h3>
-
-      </div>
-    </div>
-
-    <iframe id="map_contact" src="https://maps.google.com/maps?q=cafe%20fryd&t=&z=13&ie=UTF8&iwloc=&output=embed">
-
-    </iframe>
-
-    <div id="parallax"></div>
-
+        <div id ="parallax"></div>
+        
     <footer id='footer'>
 
-      <div class="copyright_footer">
+    <div class="copyright_footer">
         <p>&#169; Fryd Café (Gruppe 10) 2021</p>
-      </div>
-
+    </div>
+    
     </footer> <!-- Footer blir hentet fra js-fil -->
 
     <script src='./js/footer.js'></script>
     <script src="./js/header.js"></script>
-  </body>
+</body>
 
 </html>
