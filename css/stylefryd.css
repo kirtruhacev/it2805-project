@@ -326,8 +326,8 @@ footer img {
 /* Bilde av fryd innendørs, about.html */
 #inside {
   margin-right: 10%;
-  max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 400px;
 }
 
 /* Klasse til bildene i about.html */
@@ -347,9 +347,16 @@ footer img {
 
 /*Bilde av Fryd utendørs om oss siden, about.html */
 #aboutOut {
-  max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
+}
+/*Bilde nr.2 nederst til høyre, utenfor Fryd */
+#frydoutside2{
+  width: 500px;
+  height: 400px;
+  margin-bottom: 0px;
+  margin-top: 110px;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -705,15 +712,34 @@ a.contact:visited {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - 1050px < Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
-@media only screen and (min-width: 900px) and (max-width: 1050px) {
+/* Regler for About når skjerm mellom 900 og 1050 px */
+@media only screen and (min-width: 900px) and (max-width: 1050px) { 
   #vid {
     display: none;
   }
   .flex-containerAbout {
     flex-direction: column-reverse;
   }
-  .aboutpic {
-    width: 500px;
+  .aboutpic{
+    width: 450px;
+    margin-left: 5%;
+  }
+  
+  #frydoutside2{
+    display: none;
+  }
+  #aboutOut{
+    width: 450px;
+  }
+  #inside{
+    width: 450px;
+    margin-left: 5%;
+  }
+  #om{
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 3vh;
   }
 }
 
@@ -1093,7 +1119,8 @@ a.contact:visited {
   }
 
   #aboutOut {
-    display: none;
+    margin-left: 5%;
+    max-width: 100%;
   }
 
   .flex-containerAbout {
@@ -1101,17 +1128,20 @@ a.contact:visited {
   }
 
   #om {
-    width: 90%;
-    margin-left: 5%;
+    max-width:  90%;
+    margin-left: 0;
     margin-right: 5%;
     font-size: 3vh;
   }
 
   #inside {
-    display: inline-block;
+    margin-left: 5%;
     max-width: 100%;
   }
-}
+  #frydoutside2{
+    display: none;
+  }
+} 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 600px - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media screen and (max-width: 600px) {
