@@ -11,6 +11,35 @@ h2 {
   text-decoration: underline;
 }
 
+p,
+ul {
+  font-size: 20px;
+  font-family: "Calibri Light", sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  color: #e1d9ce;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #e1d9ce;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e1d9ce;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #e1d9ce;
+}
+
+
 header {
   height: 175px;
 }
@@ -60,10 +89,6 @@ margin: 1em 0em 1em;
 border-color: #886750;
 border-width: 5px;
 padding: 1em;
-}
-
-p ,ul {
-font-size: 20px;
 }
 
 footer {
