@@ -1,14 +1,61 @@
 /* https://colorpalettes.net/color-palette-2568/ */
 
-html, body {
-    background-color: #292021;
-    color: #886750;
-    margin: auto;
-    width: 85%;
-    min-width: 650px;
-    position: relative;
-    color:#e1d9ce
-  }
+body {
+  background-color: #292021;
+  padding: 0;
+  margin: auto;
+  width: 85%;
+  min-width: 700px;
+  color: #e1d9ce
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+header {
+  height: 175px;
+}
+
+.header {
+  padding-top: 60px;
+  border-style: none;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #e1d9ce;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 15px 15px 5px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  font-family: 'Georgia', serif;
+}
+
+#navbar a:hover {
+  color: #886750;
+  border-bottom: solid 1px #886750;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  padding-left: 15%;
+  text-align: center;
+}
+
 div {
   border-style: dashed;
   margin: 1em 0em 1em;
@@ -16,26 +63,29 @@ div {
   border-width: 5px;
   padding: 1em;
 }
-img{
-  max-width: 100%;
-}
 
-p ,ul {
+p,
+ul {
   font-size: 20px;
 }
 
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 3px;
+  background-color: #e1d9ce;
+  color: black;
+  font-style: italic;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
-  footer {
-    position: fixed;
-    margin-top: 3em;
-    bottom: 0;
-    background-color: #292021;
-    width: 100%;
-  }
-
-table, td {
+table,
+td {
   border: 1px;
-  border-style:   groove;
+  border-style: groove;
   color: white;
   font-size: 20px;
   margin-left: 5%;
@@ -43,19 +93,20 @@ table, td {
 }
 
 td {
-  margin:0 3px 0 3px;
+  margin: 0 3px 0 3px;
 }
-figure{
-  display: flex;
-  
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
-figure img{
-  height: 400px;
-}
-figure p{
-  padding-right: 1em;
-}
-.figur{
-  text-align: right;
-  margin-right: 3em;
+
+#navbar {
+  height: fit-content;
+  block-size: fit-content;
+  padding: 25px 25px
 }

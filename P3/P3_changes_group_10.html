@@ -1,90 +1,113 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='icon' href="./image/icon.png">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <title>P3 Endringer: Gruppe 10</title>
-</head>
+  </head>
 
-<header>
-  <div class="header">
-    <h1>P3 Endringer: Gruppe 10</h1>
-    <hr>
+  <header>
+    <div class="header">
+      <h1>P3 Endringer: Gruppe 10</h1>
+      <hr>
+    </div>
+  </header>
+
+  <div id="navbar">
+    <a href="#hjem">Hjem</a>
+    <a href="#sec_1">Dokumentdetaljer</a>
+    <a href="#sec_2">Administrative detaljer</a>
+    <a href="#sec_3">Forandringer vi har gjort</a>
+    <a href="#sec_4">Oppdatert Filstruktur</a>
+    <a href="#sec_5">Indicate how </a>
   </div>
-</header>
 
-<div id="navbar">
-  <a href="#hjem">Hjem</a>
-  <a href="#sec_1">Dokumentdetaljer</a>
-  <a href="#sec_2">Administrative detaljer</a>
-  <a href="#sec_3">Forandringer vi har gjort</a>
-  <a href="#sec_4">Oppdatert Filstruktur</a>
-  <a href="#sec_5">Indicate how </a>
-</div>
-
-<body onscroll="makeSticky()" id="hjem">
+  <body onscroll="makeSticky()" id="hjem">
     <section id="sec_1">
-    <div>
+      <div>
         <h2>Dokument-detaljer</h2>
         <h3>P3 Project Requirements</h3>
         <h4>Andreas, Kir, Jonas, Ida & Eva</h4>
         <h4>Sist endret: ..2021</h4>
-    </div>
+      </div>
     </section>
 
     <section id="sec_2">
-    <div>
-      <h2>Administrative detaljer</h2>
-      <h3>Klient: Fryd Cafe</h3>
-      <h3>Daglig leder og kontaktperson: Adison Shaqiri</h3>
-      <h3>Link til vår hjemmeside: </h3>
-    </div>
+      <div>
+        <h2>Administrative detaljer</h2>
+        <h3>Klient: Fryd Cafe</h3>
+        <h3>Daglig leder og kontaktperson: Adison Shaqiri</h3>
+        <h3>Link til vår hjemmeside: </h3>
+      </div>
     </section>
 
     <section id="sec_3">
-    <div>
-      <h2>Forandringer vi har gjort</h2>
-      <p>Vi har beholdt de 5 sidene vi hadde planlagt, men det er gjort en del endringer på navn og styling som er oppsummert under:</p>
-    
-      <h3>Forandinger på homepage.html:</h3>
-      <p></p>
+      <div>
+        <h2>Forandringer vi har gjort</h2>
+        <p>Vi har beholdt de 5 sidene vi hadde planlagt, men det er gjort en del endringer på navn og styling som er oppsummert under:</p>
 
-      <h3>Forandinger på meny.html:</h3>
-      <p></p>
-      
-      <h3>Forandinger på gallery.html:</h3>
-      <p></p>
+        <h3>Forandinger på homepage.html:</h3>
+        <p></p>
 
-      <h3>Forandinger på about.html:</h3>
-      <p></p>
+        <h3>Forandinger på meny.html:</h3>
+        <p></p>
 
-      <h3>Forandinger på contact.html:</h3>
-      <p>Det er ikke mye forandringer på kontaktsiden, men en ting som ble fjernet er ''Lokale'' som var tenkt som en liten 
-        beskrivelse for å komme seg frem ved enkle kjennetegn. Siden vi har med både kart og adresse bestemte vi at det dermed 
-      ikke var nødvendig med dette i tillegg. Ellers er det endret litt utsende angående åpning/luft mellom kart og parallax bilde.</p>
+        <h3>Forandinger på gallery.html:</h3>
+        <p></p>
 
-      <h3>Forandinger på header.js:</h3>
-      <p></p>
-    
-      <h3>Forandinger på footer.js:</h3>
-      <p></p>
+        <h3>Forandinger på about.html:</h3>
+        <p></p>
 
-      <h3>Forandinger på style.css:</h3>
-      <p></p>
-    
-      <h3>Tillegg JavaScript fil meny.js</h3>
-      <p></p>
-    
-      <h3>Minimumskrav:</h3>
-      <p></p>
-    </div>
+        <h3>Forandinger på contact.html:</h3>
+        <p>Det er ikke mye forandringer på kontaktsiden, men en ting som ble fjernet er ''Lokale'' som var tenkt som en liten
+          beskrivelse for å komme seg frem ved enkle kjennetegn. Siden vi har med både kart og adresse bestemte vi at det dermed
+          ikke var nødvendig med dette i tillegg. Ellers er det endret litt utsende angående åpning/luft mellom kart og parallax bilde.
+          Vi valgte å ikke ha et kontaktskjema, men alle overskriftene: telefonnummer, facebook og epost er responsive når man klikker
+          på de.</p>
+
+        <h3>Forandinger på header.js:</h3>
+        <p></p>
+
+        <h3>Forandinger på footer.js (tidligere openingtime.js):</h3>
+        <p></p>
+
+        <h3>Forandinger på style.css:</h3>
+        <p>
+          <ul>
+            <li>Body width:</li>
+            <li>Navbar utseende: Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript.
+              Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra
+              bold til normal. Åpningstidene i navbaren er flyttet til footer. Vi har valgt å fjerne understreking på den nåværende siden
+              man besøker, og kun beholde understreking når man hover over elementet.</li>
+            <li>Shadows: I utgangspunktet hadde vi ikke noen skyggeelementer, men bestemte oss for å legge til skygge på bildene i galleri
+              for å ha en ekstra effekt.</li>
+            <li>Footer: Fjernet oversikten med alle åpningstider fordi de allerede står på forside- og kontaktsiden, og erstattet det
+              med hva åpningstiden er akkurat nå og om de har åpent eller stengt. Vi har lagt til et ekstra sosiale medier: whatsapp.</li>
+            <li>Google maps: endret farge til orginal google farger.</li>
+          </ul>
+        </p>
+
+        <h3>Tillegg JavaScript fil meny.js</h3>
+        <p></p>
+
+        <h3>Tillegg JavaScript fil slideshow.js (tidligere dynamicbanner.js)</h3>
+        <p></p>
+
+        <h3>Minimumskrav:</h3>
+        <p> Vi brukte footer.js, header.js, meny.js og slideshow.js for å fylle minimumkravene. De to førstnevnte er en JavaScript-funksjon
+          som går igjen på alle sidene, som gir alle et likt utseende. meny.js er brukt på menysiden for å skape en effekt når man trykker
+          på 'menyknappene'. slideshow.js er brukt på hovedsiden for en automatisk bildefremvisning.
+        </p>
+
+      </div>
     </section>
 
     <section id="sec_4">
-    <div>
+      <div>
         <h2>Oppdatert Filstruktur</h2>
         <p></p>
 
@@ -95,33 +118,34 @@
           <li>about.html</li>
           <li>contact.html</li>
           <li>img
-              <ul>
-                  <li>img1.png</li>
-                  <li>img2.png</li>
-                  <li>img3.png</li>
-                  <li>img4.png</li>
-                  <li>img5.png</li>
-                  <li>img6.png</li>
-                  <li>img7.png</li>
-                  <li>...</li>
-                  <li>menu1.png</li>
-                  <li>menu2.png</li>
-                  <li>menu3.png</li>
-                  <li>...</li>
-                  <li>decorative1.png</li>
-                  <li>decorative2.png</li>
-                  <li>...</li>
-              </ul>
+            <ul>
+              <li>img1.png</li>
+              <li>img2.png</li>
+              <li>img3.png</li>
+              <li>img4.png</li>
+              <li>img5.png</li>
+              <li>img6.png</li>
+              <li>img7.png</li>
+              <li>...</li>
+              <li>menu1.png</li>
+              <li>menu2.png</li>
+              <li>menu3.png</li>
+              <li>...</li>
+              <li>decorative1.png</li>
+              <li>decorative2.png</li>
+              <li>...</li>
+            </ul>
           </li>
           <li>scripts
             <ul>
-              <li>popupheader.js</li>
-              <li>menufilter.js</li>
-              <li>openingtime.js</li>
-              <li>dynamicbanner.js</li>
+              <li>footer.js</li>
+              <li>full-screen-img.js</li>
+              <li>header.js</li>
+              <li>meny.js</li>
+              <li>slideshow.js</li>
             </ul>
           </li>
-          <li>style.css</li>
+          <li>stylefryd.css</li>
         </ul>
 
         <h2>Oppdatert arbeidsfordeling: How each of the team members fulfilled their minimum requirements. For example:
@@ -134,10 +158,10 @@
           worked on which files, including CSS and JavaScript files, and who produced the
           artwork (banner and button design, etc.).</h2>
 
-          <table>
+        <table>
           <tr>
             <th>Filnavn</th>
-            <th>Beskrivelse/Gjennomførelse</th>
+            <th>Beskrivelse</th>
             <th>Ansvarlig</th>
           </tr>
 
@@ -149,7 +173,38 @@
 
           <tr>
             <td>meny.html</td>
-            <td>Side med meny til fryd</td>
+            <td>Informasjon over Fryd Cafè sine menyer</td>
+            <td>Andreas</td>
+          </tr>
+
+          <tr>
+            <td>gallery.html</td>
+            <td>Fryd Cafè sine bilder</td>
+            <td>Ida</td>
+          </tr>
+
+          <tr>
+            <td>about.html</td>
+            <td>Informasjon om Fryd Cafè sin historie</td>
+            <td>Jonas</td>
+          </tr>
+
+          <tr>
+            <td>contact.html</td>
+            <td>Side med kontaktinformasjon til Fryd </td>
+            <td>Eva</td>
+          </tr>
+
+          <tr>
+            <td>header.js</td>
+            <td>JavaScript som går igjen for alle sidene i header. Samt en kobling mellom alle kategoriene</td>
+            <td>Eva og Andreas</td>
+          </tr>
+
+          <tr>
+            <td>footer.js</td>
+            <td>JavaScript som går igjen for alle sidene i footer. JavaScript som implementerer åpningstider på hovedsiden som
+              oppdaterer seg automatisk.</td>
             <td>Andreas</td>
           </tr>
 
@@ -160,44 +215,21 @@
           </tr>
 
           <tr>
-            <td>gallery.html</td>
-            <td>Side med bilder fra Fryd cafe, produkter osv. I tillegg til
-            bilder fra Fryd sine sosiale medier.</td>
-            <td>Ida</td>
+            <td>slideshow.js</td>
+            <td>JavaScript som ...</td>
+            <td>Kir</td>
           </tr>
 
           <tr>
-            <td>about.html</td>
-            <td>Side med informasjon om Fryd, når de grunnlagt osv.</td>
-            <td>Jonas</td>
-          </tr>
-
-          <tr>
-            <td>contact.html</td>
-            <td>Side med kontaktinformasjon til Fryd, telefonnummeret,
-            link til facebooksiden osv. </td>
-            <td>Eva</td>
-          </tr>
-          
-          <tr>
-            <td>header.js</td>
-            <td>JavaScript som går igjen for alle sidene i header. Javascript som implmenterer å minimere header ved scroll funksjonen og understreking av navigasjonselementene 
-              når valgt. Samt en kobling mellom alle kategoriene</td>
-            <td>Eva og Andreas</td>
-          </tr>
-
-          <tr>
-            <td>footer.js</td>
-            <td>JavaScript som går igjen for alle sidene i footer. JavaScript som implementerer åpningstider på hovedsiden som
-            oppdaterer seg automatisk.</td>
-            <td>Andreas</td>
+            <td>style.css (spesifike elementer)</td>
+            <td>Navbaren når man scroller er laget i CSS, og understreking når man hoover over et element.</td>
+            <td>Andreas og Eva</td>
           </tr>
 
           <tr>
             <td>style.css</td>
             <td>CSS fil som inneholder alle styling til nettsiden.</td>
-            <td>Alle gruppemedlemmer, men Andreas skal kontrollere og implementere
-            CSS slik at den er lik på alle 5 sider.</td>
+            <td>Alle gruppemedlemmer</td>
           </tr>
 
           <tr>
@@ -206,23 +238,23 @@
             <td>Alle gruppemedlemmer</td>
           </tr>
         </table>
-    </div>
+      </div>
     </section>
 
     <section id="sec_5">
-    <div>
-      <h2>Indicate how the modularity requirement was handled and who was responsible for
-      the implementation</h2>
-      <p></p>
-  </div>
-  </section>
+      <div>
+        <h2>Indicate how the modularity requirement was handled and who was responsible for
+          the implementation</h2>
+        <p></p>
+      </div>
+    </section>
 
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 
-  <footer> 
+  <footer>
     <p>Andreas, Kir, Jonas, Ida & Eva</p>
-</footer>
+  </footer>
 
 </html>
