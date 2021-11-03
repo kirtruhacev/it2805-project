@@ -702,6 +702,14 @@ footer img {
 }
 
 /* Styling til link epost, telefon og facebook */
+.contact {
+  font-family: "Calibri Light", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
 a.contact:link {
   text-decoration: none;
   color: white;
@@ -810,6 +818,7 @@ a.contact:visited {
       margin: 0 auto;
       width: 100%;
       text-align: center;
+ }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Grid-containeren bestående av en kolonne med slideshow, bilde og åpningstider */
@@ -1205,8 +1214,9 @@ a.contact:visited {
   } 
 
   #scroll{
-    margin-top: -50px;
-    height: 270px;
+    /*margin-top: -50px;*/
+   /* height: 270px;*/
+    display: none;
   }
 
   #scroll #logo{
