@@ -1,3 +1,11 @@
+
+/* 
+  FILNAVN: './css/stylefryd.css
+  SREVET AV: Kir, Andreas, Jonas, Eva, Ida.
+  Når: November 2021.
+*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Generelle regler - - - - - - - - - - - - - - - - - - - - - - - - - */
 * {
   box-sizing: border-box;
 }
@@ -12,8 +20,6 @@ body {
   margin: auto;
   margin-top: 330px; /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
-
-/* ---------------------------------------- ######### overskrifter ######### ----------------------------------------*/
 
 h1 {
   font-size: 30px;
@@ -39,8 +45,8 @@ h5 {
   color: white;
 }
 
+/* Fotter sosiale medier */
 h6 {
-  /*  fotter sosiale medier*/
   font-size: 20px;
   font-family: "Georgia", serif;
   color: white;

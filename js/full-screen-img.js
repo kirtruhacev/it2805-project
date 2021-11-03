@@ -15,5 +15,4 @@ imgs.forEach(img => {
 window.addEventListener('scroll', removePic);
 function removePic(){
   page.style.backgroundImage = 'none';
-  console.log('scroll'); /* KUN TIL FEILTESTING */
 }
