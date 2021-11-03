@@ -222,7 +222,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 30px 20% 0px 20%;
-  grid-gap: 10px;
+  grid-gap: 30px;
   color: white;
   height: auto;
   list-style-type: none;
@@ -270,7 +270,7 @@ footer img {
 
 #footer-item4 {
   text-align: left;
-  
+  line-height : 0px;
 }
 
 #footer-item4 img {
@@ -283,9 +283,13 @@ footer img {
 }
 
 #footer-item2 {
-  display: inline-grid;
-  justify-self: center;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+#footer-item2 img{
+  height: 50px;
+  object-fit: contain;
+  justify-content: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Om oss - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -557,19 +561,19 @@ footer img {
 
 /* Velger første element av klasse bilde-rad og øker marginen så den kommer lenger unna header */
 .bilde-rad:first-of-type {
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 /* Velger passende str for de små og store bildene */
 .stort-galleribilde {
-  max-width: 340px;
-  max-height: 395px;
+  width: 500px;
+  min-height: 585px;
   margin: 10px;
 }
 
 .lite-galleribilde {
-  max-width: 163px;
-  max-height: 185px;
+  width: 230px;
+  min-height: 278px;
   margin: 10px;
 }
 
