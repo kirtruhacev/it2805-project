@@ -77,34 +77,41 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
 
 /* ######### Scrolle-funksjon ######### */
 
+/* Scroller ned headeren når bruker scroller ned */
 
 function scrollFunction() {
+  header.id = "top";
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { /* effekten skjer når man scroller over 80 */
     header.id = 'scroll';
   } else {
     header.id = 'top';
   }
 }
-
+/* Skjuler headeren når bruker scroller ned */
 function hideHeader() {
     var beforeScroll = window.pageYOffset;
     window.onscroll = function() {
        var afterScroll = window.pageYOffset;
+       var head = document.getElementById("top");
+       if(head != null) {
          if (beforeScroll > afterScroll) {
-           document.getElementById("top").style.top = "0";
+           head.style.top = "0";
          } else {
-           document.getElementById("top").style.top = "-375px";
+           head.style.top = "-375px";
          }
          beforeScroll = afterScroll;
-  }
+       }
+     }
 }
 
+/* Velger hvilken headeren skal brukes, om skjermen er under 600px(mobilenheter),
+skjuler vi headeren. På større skjermer vil scroll-headeren bli brukt. */
 function chooseHeader() {
   if(window.matchMedia("(max-width: 600px)").matches) {
-    hideHeader();
+    window.onscroll = function() {hideHeader()};
   } else {
-    scrollFunction();
+    window.onscroll = function() {scrollFunction()};
   }
 }
-
+/*Lyter på scroll, og kjører funskjonen som velger headeren*/
 window.onscroll = function() {chooseHeader()}; //Kjøres hver gang man scroller
