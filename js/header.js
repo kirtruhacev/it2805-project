@@ -77,10 +77,8 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
 
 /* ######### Scrolle-funksjon ######### */
 
-window.onscroll = function() {scrollFunction()}; //Kjøres hver gang man scroller
 
 function scrollFunction() {
-
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { /* effekten skjer når man scroller over 80 */
     header.id = 'scroll';
   } else {
@@ -88,18 +86,25 @@ function scrollFunction() {
   }
 }
 
-
-if(window.matchMedia("(max-width: 600px)").matches) {
-  var beforeScroll = window.pageYOffset;
-  window.onscroll = function() {
-     if(x.matches){
+function hideHeader() {
+    var beforeScroll = window.pageYOffset;
+    window.onscroll = function() {
        var afterScroll = window.pageYOffset;
          if (beforeScroll > afterScroll) {
-           document.getElementById("scroll").style.top = "0";
+           document.getElementById("top").style.top = "0";
          } else {
-           document.getElementById("scroll").style.top = "-375px";
+           document.getElementById("top").style.top = "-375px";
          }
          beforeScroll = afterScroll;
-     }
   }
 }
+
+function chooseHeader() {
+  if(window.matchMedia("(max-width: 600px)").matches) {
+    hideHeader();
+  } else {
+    scrollFunction();
+  }
+}
+
+window.onscroll = function() {chooseHeader()}; //Kjøres hver gang man scroller
