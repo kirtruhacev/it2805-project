@@ -294,7 +294,7 @@ footer img {
   width: 40px;
   height: 40px;
   margin: -10px 18px 10px 0;
-  filter: invert(43%) sepia(32%) saturate(443%) hue-rotate(342deg) brightness(92%) contrast(90%);
+  filter: invert(43%) sepia(32%) saturate(443%) hue-rotate(342deg) brightness(92%) contrast(90%); /* #886750 farge */
 }
 
 #footer-item2 {
@@ -1164,7 +1164,6 @@ a.contact:visited {
     max-width:  90%;
     margin-left: 0;
     margin-right: 5%;
-
   }
 
   #inside {
