@@ -156,6 +156,7 @@ header ul {
   margin-top: -5px; /* Flytter teksten lenger mot toppen */
   padding: 0;
   padding-left: 200px;
+  text-align: right;
 }
 
 /* Styling på navbar posisjon utseende */
