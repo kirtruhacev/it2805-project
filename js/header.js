@@ -87,14 +87,16 @@ function scrollFunction() {
     header.id = 'top';
   }
 }
-
 var beforeScroll = window.pageYOffset;
+var x = window.matchMedia("(max-width: 600px)")
 window.onscroll = function() {
-var afterScroll = window.pageYOffset;
-  if (beforeScroll > afterScroll) {
-    document.getElementById("top").style.top = "0";
-  } else {
-    document.getElementById("top").style.top = "-375px";
-  }
-  beforeScroll = afterScroll;
+   if(x.matches){
+     var afterScroll = window.pageYOffset;
+       if (beforeScroll > afterScroll) {
+         document.getElementById("top").style.top = "0";
+       } else {
+         document.getElementById("top").style.top = "-375px";
+       }
+       beforeScroll = afterScroll;
+   }
 }
