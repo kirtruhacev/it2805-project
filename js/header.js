@@ -90,26 +90,27 @@ function scrollFunction() {
 /* Skjuler headeren når bruker scroller ned */
 function hideHeader() {
     var beforeScroll = window.pageYOffset;
-    var afterScroll = window.pageYOffset;
     window.onscroll = function() {
-       var headerTop = document.getElementById("top");
-       var headerScroll = document.getElementById("scroll");
-       if(headerTop != null) {
-         if (beforeScroll > afterScroll) {
-           headerTop.style.top = "0";
-         } else {
-           headerTop.style.top = "-375px";
+       var afterScroll = window.pageYOffset;
+       if(header.id == "top") {
+         var head = document.getElementById("top");
+         if(head != null) {
+           if (beforeScroll > afterScroll) {
+             head.style.top = "0";
+           } else {
+             head.style.top = "-375px";
+           }
+           beforeScroll = afterScroll;
          }
-         beforeScroll = afterScroll;
        }
      }
 }
-
 
 /* Velger hvilken headeren skal brukes, om skjermen er under 600px(mobilenheter),
 skjuler vi headeren. På større skjermer vil scroll-headeren bli brukt. */
 function chooseHeader() {
   if(window.matchMedia("(max-width: 600px)").matches) {
+    header.id = "top";
     window.onscroll = function() {hideHeader()};
   } else {
     window.onscroll = function() {scrollFunction()};
