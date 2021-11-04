@@ -102,6 +102,16 @@ function hideHeader() {
            }
            beforeScroll = afterScroll;
          }
+       } else {
+         var head = document.getElementById("scroll");
+         if(head != null) {
+           if (beforeScroll > afterScroll) {
+             head.style.top = "0";
+           } else {
+             head.style.top = "-375px";
+           }
+           beforeScroll = afterScroll;
+         }
        }
      }
 }
@@ -110,7 +120,6 @@ function hideHeader() {
 skjuler vi headeren. På større skjermer vil scroll-headeren bli brukt. */
 function chooseHeader() {
   if(window.matchMedia("(max-width: 600px)").matches) {
-    header.id = "top";
     window.onscroll = function() {hideHeader()};
   } else {
     window.onscroll = function() {scrollFunction()};
