@@ -87,43 +87,6 @@ function scrollFunction() {
     header.id = 'top';
   }
 }
-/* Skjuler headeren når bruker scroller ned */
-function hideHeader() {
-    var beforeScroll = window.pageYOffset;
-    window.onscroll = function() {
-       var afterScroll = window.pageYOffset;
-       if(header.id == "top") {
-         var head = document.getElementById("top");
-         if(head != null) {
-           if (beforeScroll > afterScroll) {
-             head.style.top = "0";
-           } else {
-             head.style.top = "-375px";
-           }
-           beforeScroll = afterScroll;
-         }
-       } else {
-         var head = document.getElementById("scroll");
-         if(head != null) {
-           if (beforeScroll > afterScroll) {
-             head.style.top = "0";
-           } else {
-             head.style.top = "-375px";
-           }
-           beforeScroll = afterScroll;
-         }
-       }
-     }
-}
 
-/* Velger hvilken headeren skal brukes, om skjermen er under 600px(mobilenheter),
-skjuler vi headeren. På større skjermer vil scroll-headeren bli brukt. */
-function chooseHeader() {
-  if(window.matchMedia("(max-width: 600px)").matches) {
-    window.onscroll = function() {hideHeader()};
-  } else {
-    window.onscroll = function() {scrollFunction()};
-  }
-}
 /*Lyter på scroll, og kjører funskjonen som velger headeren*/
-window.onscroll = function() {chooseHeader()}; //Kjøres hver gang man scroller
+window.onscroll = function() {scrollFunction()}; //Kjøres hver gang man scroller
