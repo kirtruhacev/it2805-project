@@ -87,3 +87,14 @@ function scrollFunction() {
     header.id = 'top';
   }
 }
+
+var beforeScroll = window.pageYOffset;
+window.onscroll = function() {
+var afterScroll = window.pageYOffset;
+  if (beforeScroll > afterScroll) {
+    document.getElementById("top").style.top = "0";
+  } else {
+    document.getElementById("top").style.top = "-375px";
+  }
+  beforeScroll = afterScroll;
+}

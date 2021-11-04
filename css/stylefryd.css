@@ -1,5 +1,5 @@
 
-/* 
+/*
   FILNAVN: './css/stylefryd.css
   SKREVET AV: Kir, Andreas, Jonas, Eva, Ida.
   Når: November 2021.
@@ -130,6 +130,7 @@ header {
   font-size: 20px;
   font-weight: bold;
   padding-top: 0;
+
 }
 
 /* Styling på logo header */
@@ -154,6 +155,7 @@ header ul {
   position: absolute;
   right: 5%;
   margin-top: -5px; /* Flytter teksten lenger mot toppen */
+  padding: 0;
 }
 
 /* Styling på navbar posisjon utseende */
@@ -188,7 +190,7 @@ header li a:hover:after {
   padding: 80px 0px;
   font-size: 20px;
   font-weight: bold;
-  background-color: transparent;
+  background-color: black;
   height: 320px;
 }
 #top #logo {
@@ -549,7 +551,7 @@ footer img {
   width: 100%;
   height: auto;
 }
- 
+
 /* Det andre bildet til kontakt-containeren */
 #homepage-contact-container #homepage-contact-container-img2 {
   grid-area: image2;
@@ -743,7 +745,7 @@ a.contact:visited {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - 1050px < Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Regler for About når skjerm mellom 900 og 1050 px */
-@media only screen and (min-width: 900px) and (max-width: 1050px) { 
+@media only screen and (min-width: 900px) and (max-width: 1050px) {
   #vid {
     display: none;
   }
@@ -754,7 +756,7 @@ a.contact:visited {
     width: 450px;
     margin-left: 5%;
   }
-  
+
   #frydoutside2{
     display: none;
   }
@@ -809,7 +811,7 @@ a.contact:visited {
 
   #top #logo{
     height: 90px;
-  } 
+  }
 
   footer, #footer-item1, #footer-item2, #footer-item4{
       display: grid;
@@ -880,7 +882,7 @@ a.contact:visited {
     height: auto;
     margin: 30px auto;
   }
-  
+
   /* Liste til grid-containeren */
   #grid-container ul {
     width: 80%;
@@ -1172,7 +1174,7 @@ a.contact:visited {
   #frydoutside2{
     display: none;
   }
-} 
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 600px - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media screen and (max-width: 600px) {
@@ -1183,7 +1185,7 @@ a.contact:visited {
   }
 
   /* Styling på logo header */
-  header img { 
+  header img {
     margin-top: -70px;
     display: block;
     margin-left: auto;
@@ -1192,12 +1194,12 @@ a.contact:visited {
   }
 
   /* Styling på navbar posisjon */
-  header ul { 
+  header ul {
     margin-top: 30px;
   }
 
   /* styling på navbar posisjon utseende */
-  header li { 
+  header li {
     position: relative;
     float: none !important;
     width: 100%;
@@ -1211,7 +1213,7 @@ a.contact:visited {
 
   #top #logo{
     height: 80px;
-  } 
+  }
 
   #scroll{
     /*margin-top: -50px;*/
