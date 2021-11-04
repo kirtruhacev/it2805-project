@@ -130,7 +130,6 @@ header {
   font-size: 20px;
   font-weight: bold;
   padding-top: 0;
-
 }
 
 /* Styling på logo header */
@@ -156,6 +155,7 @@ header ul {
   right: 5%;
   margin-top: -5px; /* Flytter teksten lenger mot toppen */
   padding: 0;
+  padding-left: 200px;
 }
 
 /* Styling på navbar posisjon utseende */
@@ -1195,6 +1195,8 @@ a.contact:visited {
   /* Styling på navbar posisjon */
   header ul {
     margin-top: 30px;
+    padding-left: 7%;
+    justify-content: center;
   }
 
   /* styling på navbar posisjon utseende */
@@ -1207,7 +1209,7 @@ a.contact:visited {
   }
 
   #top{
-    height: 310px;
+    height: 330px;
   }
 
   #top #logo{
