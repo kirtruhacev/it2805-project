@@ -87,16 +87,19 @@ function scrollFunction() {
     header.id = 'top';
   }
 }
-var beforeScroll = window.pageYOffset;
-var x = window.matchMedia("(max-width: 600px)")
-window.onscroll = function() {
-   if(x.matches){
-     var afterScroll = window.pageYOffset;
-       if (beforeScroll > afterScroll) {
-         document.getElementById("top").style.top = "0";
-       } else {
-         document.getElementById("top").style.top = "-375px";
-       }
-       beforeScroll = afterScroll;
-   }
+
+
+if(window.matchMedia("(max-width: 600px)").matches) {
+  var beforeScroll = window.pageYOffset;
+  window.onscroll = function() {
+     if(x.matches){
+       var afterScroll = window.pageYOffset;
+         if (beforeScroll > afterScroll) {
+           document.getElementById("scroll").style.top = "0";
+         } else {
+           document.getElementById("scroll").style.top = "-375px";
+         }
+         beforeScroll = afterScroll;
+     }
+  }
 }
