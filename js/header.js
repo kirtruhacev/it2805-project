@@ -93,6 +93,7 @@ function hideHeader() {
     window.onscroll = function() {
        var afterScroll = window.pageYOffset;
        var head = document.getElementById("top");
+       var heade = document.getElementById("scroll");
        if(head != null) {
          if (beforeScroll > afterScroll) {
            head.style.top = "0";
@@ -100,11 +101,19 @@ function hideHeader() {
            head.style.top = "-375px";
          }
          beforeScroll = afterScroll;
+       } else {
+         if (beforeScroll > afterScroll) {
+           heade.style.top = "0";
+         } else {
+           heade.style.top = "-375px";
+         }
+         beforeScroll = afterScroll;
        }
      }
 }
 
-/* Velger hvilken headeren skal brukes, om skjermen er under 600px(mobilenheter),
+
+/* Velger hvilken headeren som skal brukes, om skjermen er under 600px(mobilenheter),
 skjuler vi headeren. På større skjermer vil scroll-headeren bli brukt. */
 function chooseHeader() {
   if(window.matchMedia("(max-width: 600px)").matches) {
