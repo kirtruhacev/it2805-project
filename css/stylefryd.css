@@ -45,7 +45,7 @@ h5 {
   color: white;
 }
 
-/* Fotter sosiale medier */
+/* Footer sosiale medier */
 h6 {
   font-size: 20px;
   font-family: "Georgia", serif;
@@ -112,7 +112,7 @@ li {
   }
 }
 
-/* Inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
+/* Inspirasjon: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
@@ -126,7 +126,6 @@ header {
   font-size: 20px;
   font-weight: bold;
   padding-top: 0;
-
 }
 
 /* Styling på logo header */
@@ -1201,14 +1200,15 @@ a.contact:visited {
   }
 
   #scroll{
-    /*margin-top: -50px;*/
-   /* height: 270px;*/
-    display: none;
+    padding-top: 80px;
   }
 
   #scroll #logo{
-    display: none;
+    width: 170px;
+    height: auto;
+    transition: 0.4s;
   }
+
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Endrer til 1x4 ved smal skjerm */
