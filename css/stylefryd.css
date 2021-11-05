@@ -1232,4 +1232,13 @@ a.contact:visited {
   #bakeOffListe {
   max-height: 350px;
   }
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
+.load_page img{ 
+ height: auto;
+  width: 50%;
+  margin-top: 100px;
+  }
 }
+
+
