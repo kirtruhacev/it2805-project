@@ -73,20 +73,16 @@ li {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
-.load_page img {
-  box-shadow: none;
-}
-
 .load_page {
-  position: fixed;
+  position: absolute;
   text-align: center;
   background-color: black;
   height: 100%;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 230px;
   left: 0;
-  z-index: 1;
-  -webkit-animation: load-out 1s;
+  z-index: 99;
+  -webkit-animation: load-out 3s;
   animation: load-out 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -293,7 +289,7 @@ footer img {
   width: 40px;
   height: 40px;
   margin: -10px 18px 10px 0;
-  filter: invert(43%) sepia(32%) saturate(443%) hue-rotate(342deg) brightness(92%) contrast(90%);
+  filter: invert(43%) sepia(32%) saturate(443%) hue-rotate(342deg) brightness(92%) contrast(90%); /* #886750 farge */
 }
 
 #footer-item2 {
@@ -311,9 +307,9 @@ footer img {
 #om {
   color: white;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  font-family: "Georgia", serif;
+  font-family: "Calibri Light", sans-serif;
   color: #ffffff;
 }
 
@@ -359,15 +355,6 @@ footer img {
   margin-top: 50px;
 }
 
-/* Video som er lagt ved på om oss siden, about.html */
-#vid {
-  height: 350px;
-  margin-bottom: 0px;
-  margin-top: 130px;
-  border-radius: 8px;
-  width: 500px;
-}
-
 /*Bilde av Fryd utendørs om oss siden, about.html */
 #aboutOut {
   width: 400px;
@@ -379,7 +366,7 @@ footer img {
   width: 500px;
   height: 400px;
   margin-bottom: 0px;
-  margin-top: 110px;
+  margin-top: 235px;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -684,7 +671,7 @@ footer img {
   box-sizing: border-box;
   float: left;
   width: 50%;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 15px;
 
   /* boks */
@@ -727,7 +714,7 @@ a.contact:visited {
 
 /* Styling til strek */
 .line_contact {
-  height: 430px;
+  height: 470px;
   border-left: 2px solid white;
   position: absolute;
   top: 37.5%;
@@ -1163,7 +1150,6 @@ a.contact:visited {
     max-width:  90%;
     margin-left: 0;
     margin-right: 5%;
-    font-size: 3vh;
   }
 
   #inside {
@@ -1207,7 +1193,7 @@ a.contact:visited {
   }
 
   #top{
-    height: 310px;
+    height: 330px;
   }
 
   #top #logo{
