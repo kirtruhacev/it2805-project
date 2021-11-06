@@ -1043,7 +1043,7 @@ a.contact:visited {
   /* Google map */
   #map {
     display: grid;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
