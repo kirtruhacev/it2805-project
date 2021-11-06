@@ -1048,6 +1048,12 @@ a.contact:visited {
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  #svart-bakgrunn {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
   .bilde-rad {
     flex-direction: column;
   }
@@ -1062,13 +1068,13 @@ a.contact:visited {
   }
 
   .stort-galleribilde {
-    max-width: 100vw;
-    max-height: 100vw;
-    margin: 10px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
   }
   .lite-galleribilde {
-    max-width: 47.5vw;
-    max-height: 47.5vw;
+    width: 60%;
+    height: auto;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -1208,6 +1214,14 @@ a.contact:visited {
     transition: 0.4s;
   }
 
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Endrer til 1x4 ved smal skjerm */
   #menybilder {
@@ -1231,38 +1245,6 @@ a.contact:visited {
   max-height: 350px;
   }
 
-<<<<<<< HEAD
-=======
-   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-   
-  .bilde-rad {
-    flex-direction: column;
-  }
-
-  .bilde-rad:nth-of-type(2) {
-    flex-direction: column-reverse;
-  }
-
-  .lite-galleribilde-samling {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .stort-galleribilde {
-    object-fit: cover;
-    max-width: 100vw;
-    max-height: 100vw;
-    margin: 10px;
-  }
-
-  .lite-galleribilde {
-    object-fit: cover;
-    max-width: 47.5vw;
-    max-height: 47.5vw;
-  }
-
->>>>>>> e1403dce14904c80fb333440ac1c053a8b73b121
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
 .load_page img{
