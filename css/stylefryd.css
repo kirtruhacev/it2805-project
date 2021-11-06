@@ -1240,9 +1240,22 @@ a.contact:visited {
   max-height: 350px;
   }
 
+   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
+  .stort-galleribilde {
+    min-width: 95%;
+    min-height: 95%;
+    object-fit: cover;
+  }
+
+  .lite-galleribilde {
+    min-width: 90%;
+    min-height: 90%;
+    object-fit: cover;
+  }
+
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
-.load_page img{
- height: auto;
+ .load_page img{
+  height: auto;
   width: 50%;
   margin-top: 100px;
   }
