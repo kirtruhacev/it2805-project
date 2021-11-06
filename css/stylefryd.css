@@ -1232,38 +1232,19 @@ a.contact:visited {
   max-height: 350px;
   }
 
-<<<<<<< HEAD
-=======
-   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-   
-  .bilde-rad {
-    flex-direction: column;
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
+  #svart-bakgrunn {
+    padding: 15px;
   }
-
-  .bilde-rad:nth-of-type(2) {
-    flex-direction: column-reverse;
-  }
-
-  .lite-galleribilde-samling {
-    display: flex;
-    flex-direction: row;
-  }
-
+  
   .stort-galleribilde {
-    object-fit: cover;
-    max-width: 100vw;
-    max-height: 100vw;
-    margin: 10px;
+    max-width: 95%;
+    max-height: auto;
   }
-
   .lite-galleribilde {
-    object-fit: cover;
-    max-width: 47.5vw;
-    max-height: 47.5vw;
+    max-width: 90%;
+    max-height: auto;
   }
-
->>>>>>> e1403dce14904c80fb333440ac1c053a8b73b121
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
   .load_page img{
