@@ -1054,7 +1054,7 @@ a.contact:visited {
     margin: 0 auto;
   }
 
-  .lite-galleribilde-samling {
+  #lite-galleribilde-samling1 {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: auto;
@@ -1088,6 +1088,46 @@ a.contact:visited {
 
   #bilde-5{
     grid-area: image5;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+  }
+
+  #lite-galleribilde-samling2 {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image7 image8"
+      "image9 image10";
+    padding: 30px 0px;
+    margin: 0 10%;
+    justify-content: center;
+  }
+  #bilde-7{
+    grid-area: image7;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #bilde-8{
+    grid-area: image8;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #bilde-9{
+    grid-area: image9;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #bilde-10{
+    grid-area: image10;
     width: 90%;
     height: auto;
     margin: 0 auto;
