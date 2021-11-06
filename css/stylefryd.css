@@ -1235,11 +1235,9 @@ a.contact:visited {
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
-.load_page img{ 
+.load_page img{
  height: auto;
   width: 50%;
   margin-top: 100px;
   }
 }
-
-
