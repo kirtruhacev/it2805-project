@@ -1051,7 +1051,7 @@ a.contact:visited {
 
   #svart-bakgrunn {
     width: 80%;
-    height: auto;
+
     margin: 0 auto;
   }
   .bilde-rad {
@@ -1073,8 +1073,8 @@ a.contact:visited {
   }
   .lite-galleribilde {
     width: 80%;
-    height: auto;
-    margin: 5% 5%;
+    height: 80%;
+    margin: 5% 5% 5% 15%;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
