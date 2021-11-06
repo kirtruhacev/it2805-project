@@ -1243,13 +1243,13 @@ a.contact:visited {
    /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
   .stort-galleribilde {
     min-width: 95%;
-    height: auto;
+    min-height: 95%;
     object-fit: cover;
   }
 
   .lite-galleribilde {
     min-width: 90%;
-    height: auto;
+    min-height: 90%;
     object-fit: cover;
   }
 
