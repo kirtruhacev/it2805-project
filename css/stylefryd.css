@@ -1232,6 +1232,8 @@ a.contact:visited {
   max-height: 350px;
   }
 
+<<<<<<< HEAD
+=======
    /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
 
    
@@ -1261,6 +1263,7 @@ a.contact:visited {
     max-height: 47.5vw;
   }
 
+>>>>>>> e1403dce14904c80fb333440ac1c053a8b73b121
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
   .load_page img{
