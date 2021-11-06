@@ -302,72 +302,6 @@ footer img {
   justify-content: center;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Om oss - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Paragraf om Fryd (om oss), about.html */
-#om {
-  color: white;
-  margin-bottom: 0;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Calibri Light", sans-serif;
-  color: #ffffff;
-}
-
-/* Overskriften over om paragrafen, about.html */
-#over {
-  color: white;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  width: 60%;
-}
-
-/* Flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
-.flex-containerAbout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* De ulike items i første flexbox */
-.flexbox-item {
-  margin: 50px;
-  max-width: 500px;
-}
-
-.flexbox-item-1 {
-  min-height: 100px;
-}
-.flexbox-item-2 {
-  max-height: 200px;
-}
-
-/* Bilde av fryd innendørs, about.html */
-#inside {
-  margin-right: 10%;
-  width: 400px;
-  height: 400px;
-}
-
-/* Klasse til bildene i about.html */
-.aboutpic {
-  margin-right: 20%;
-  margin-top: 50px;
-}
-
-/*Bilde av Fryd utendørs om oss siden, about.html */
-#aboutOut {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 20px;
-}
-/*Bilde nr.2 nederst til høyre, utenfor Fryd */
-#frydoutside2{
-  width: 500px;
-  height: 400px;
-  margin-bottom: 0px;
-  margin-top: 235px;
-}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
 #grid-container {
@@ -553,6 +487,64 @@ footer img {
   margin: 30px 0;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
+#menyene {
+  color: white;
+  display: flex;
+}
+
+.menyListe {
+  padding: 1em;
+  box-sizing: border-box;
+  min-width: 232px;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color: #3d2e24;
+  border-width: 0.25em;
+}
+.menyBilde {
+  padding: 1em;
+  box-sizing: border-box;
+  min-width: 232px;
+  border-radius: 1.5em;
+  border-style: solid;
+  border-color: #3d2e24;
+  border-width: 0.25em;
+}
+
+.menyListe ul {
+  padding-left: 2em; /* Mindre padding på liste */
+  list-style-type: square;
+}
+
+/* Div med bildene du trykker på for å komme til menyene */
+#menybilder {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+/* Bilder inne i div-box */
+#menybilder div img {
+  max-width: 100%;
+  box-shadow: none;
+  margin-top: 50%;
+}
+
+#menybilder div {
+  background: radial-gradient(#886750, black);
+  background-size: 800px 100%;
+  background-position: 50% 100%;
+  padding: 1em;
+  margin: 12px;
+  max-width: 232px;
+  height: 545px;
+}
+
+#menybilder h3 {
+  text-align: center;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Sentrerer bildene på midten av siden av flexbox */
 .bilde-rad {
@@ -610,59 +602,71 @@ footer img {
   text-align: center;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
-#menyene {
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Om oss - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Paragraf om Fryd (om oss), about.html */
+#om {
   color: white;
-  display: flex;
+  margin-bottom: 0;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Calibri Light", sans-serif;
+  color: #ffffff;
 }
 
-.menyListe {
-  padding: 1em;
-  box-sizing: border-box;
-  min-width: 232px;
-  border-radius: 1.5em;
-  border-style: solid;
-  border-color: #3d2e24;
-  border-width: 0.25em;
-}
-.menyBilde {
-  padding: 1em;
-  box-sizing: border-box;
-  min-width: 232px;
-  border-radius: 1.5em;
-  border-style: solid;
-  border-color: #3d2e24;
-  border-width: 0.25em;
+/* Overskriften over om paragrafen, about.html */
+#over {
+  color: white;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
 }
 
-.menyListe ul {
-  padding-left: 2em; /* Mindre padding på liste */
-  list-style-type: square;
-}
-
-/* Div med bildene du trykker på for å komme til menyene */
-#menybilder {
+/* Flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
+.flex-containerAbout {
   display: flex;
   justify-content: center;
-  padding-bottom: 2%;
+  align-items: center;
 }
 
-/* Bilder inne i div-box */
-#menybilder div img {
-  max-width: 100%;
-  box-shadow: none;
+/* De ulike items i første flexbox */
+.flexbox-item {
+  margin: 50px;
+  max-width: 500px;
 }
 
-#menybilder div {
-  background-color: #886750;
-  padding: 1em;
-  margin: 12px;
-  max-width: 232px;
-  height: 545px;
+.flexbox-item-1 {
+  min-height: 100px;
+}
+.flexbox-item-2 {
+  max-height: 200px;
 }
 
-#menybilder h3 {
-  text-align: center;
+/* Bilde av fryd innendørs, about.html */
+#inside {
+  margin-right: 10%;
+  width: 400px;
+  height: 400px;
+}
+
+/* Klasse til bildene i about.html */
+.aboutpic {
+  margin-right: 20%;
+  margin-top: 50px;
+}
+
+/*Bilde av Fryd utendørs om oss siden, about.html */
+#aboutOut {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+/*Bilde nr.2 nederst til høyre, utenfor Fryd */
+#frydoutside2{
+  width: 500px;
+  height: 400px;
+  margin-bottom: 0px;
+  margin-top: 235px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -682,7 +686,7 @@ footer img {
   color: white;
 }
 
-/* Styling til icon */
+/* Styling til iconer */
 .contact_img img{
   width: 17px;
   height: 17px;
@@ -767,32 +771,6 @@ a.contact:visited {
   body {
     background-color: black;
     width: 100%;
-  }
-
-  h1 {
-    font-family: "Georgia", serif;
-    color: white;
-  }
-
-  h2 {
-    font-family: "Georgia", serif;
-    color: #886750;
-  }
-
-  h3 {
-    font-family: "Calibri Light", sans-serif;
-    color: #ffffff;
-  }
-
-  h5 {
-    font-family: "Georgia", serif;
-    color: white;
-  }
-
-    /* Fotter sosiale medier */
-  h6 {
-    font-family: "Georgia", serif;
-    color: white;
   }
 
   #top #logo{
