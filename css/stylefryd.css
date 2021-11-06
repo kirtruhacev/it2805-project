@@ -1216,12 +1216,18 @@ a.contact:visited {
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-
-
-
-
-
+  #svart-bakgrunn {
+    width: 80%;
+  }
+  
+  .stort-galleribilde {
+    max-width: 95%;
+    max-height: auto;
+  }
+  .lite-galleribilde {
+    max-width: 90%;
+    max-height: auto;
+  }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Endrer til 1x4 ved smal skjerm */
@@ -1245,23 +1251,6 @@ a.contact:visited {
   #bakeOffListe {
   max-height: 350px;
   }
-
-<<<<<<< HEAD
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
-  #svart-bakgrunn {
-    padding: 15px;
-  }
-  
-  .stort-galleribilde {
-    max-width: 95%;
-    max-height: auto;
-  }
-  .lite-galleribilde {
-    max-width: 90%;
-    max-height: auto;
-  }
-=======
->>>>>>> 35abeb6373677993989e5c79b015f7d174336fb3
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
   .load_page img{
