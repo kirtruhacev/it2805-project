@@ -1050,7 +1050,7 @@ a.contact:visited {
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
 
   #svart-bakgrunn {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
   }
@@ -1068,13 +1068,13 @@ a.contact:visited {
   }
 
   .stort-galleribilde {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
   }
   .lite-galleribilde {
     width: 80%;
     height: auto;
+    margin: 5% 5%;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
