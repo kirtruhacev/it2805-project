@@ -1043,98 +1043,19 @@ a.contact:visited {
   /* Google map */
   #map {
     display: grid;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-  #svart-bakgrunn {
     width: 80%;
     margin: 0 auto;
   }
 
-  #lite-galleribilde-samling1 {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "image2 image3"
-      "image4 image5";
-    padding: 30px 0px;
-    margin: 0 10%;
-    justify-content: center;
-  }
-  #bilde-2{
-    grid-area: image2;
-    width: 90%;
-    height: auto;
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
+  #svart-bakgrunn {
+    width: 80%;
     margin: 0 auto;
-  }
-
-  #bilde-3{
-    grid-area: image3;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #bilde-4{
-    grid-area: image4;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #bilde-5{
-    grid-area: image5;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-
-  }
-
-  #lite-galleribilde-samling2 {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "image7 image8"
-      "image9 image10";
-    padding: 30px 0px;
-    margin: 0 10%;
-    justify-content: center;
-  }
-  #bilde-7{
-    grid-area: image7;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #bilde-8{
-    grid-area: image8;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #bilde-9{
-    grid-area: image9;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #bilde-10{
-    grid-area: image10;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-
   }
   .bilde-rad {
     flex-direction: column;
+    /*margin-left: 10% !important;
+    margin-right: 10% !important;*/
   }
 
   .bilde-rad:nth-of-type(2) {
@@ -1147,13 +1068,14 @@ a.contact:visited {
   }
 
   .stort-galleribilde {
-    width: 80%;
-    height: auto;
+    max-width: 90%;
+    height: 100%;
+    margin: 10px;
+    margin: 0 auto;
   }
   .lite-galleribilde {
-    width: 80%;
-    height: 80%;
-    margin: 5% 5% 5% 15%;
+    max-width: 90%;
+    max-height: 90%;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -1269,11 +1191,10 @@ a.contact:visited {
   /* styling på navbar posisjon utseende */
   header li {
     position: relative;
-    float: none;
+    float: none !important;
     width: 100%;
     justify-content: center !important;
     padding: 3px; /* mellomrom mellom kategoriene */
-    margin-left: -4px;
   }
 
   #top{
@@ -1294,19 +1215,6 @@ a.contact:visited {
     transition: 0.4s;
   }
 
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
-  #svart-bakgrunn {
-    width: 80%;
-  }
-
-  .stort-galleribilde {
-    max-width: 95%;
-    max-height: auto;
-  }
-  .lite-galleribilde {
-    max-width: 90%;
-    max-height: auto;
-  }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Endrer til 1x4 ved smal skjerm */
@@ -1332,9 +1240,9 @@ a.contact:visited {
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
-  .load_page img{
-    height: auto;
-    width: 50%;
-    margin-top: 100px;
+.load_page img{
+ height: auto;
+  width: 50%;
+  margin-top: 100px;
   }
 }
