@@ -533,12 +533,10 @@ footer img {
 
 #menybilder div {
   background: radial-gradient(#886750, black);
-  background-size: 800px 100%;
-  background-position: 50% 100%;
   padding: 1em;
   margin: 12px;
   max-width: 232px;
-  height: 545px;
+  height: 580px;
 }
 
 #menybilder h3 {
@@ -1100,6 +1098,7 @@ a.contact:visited {
   }
 
   #menybilder div {
+    background: none;
     background-color: transparent;
     color: white;
     padding: 1em;
