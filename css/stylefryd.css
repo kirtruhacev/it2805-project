@@ -538,7 +538,7 @@ footer img {
   padding: 1em;
   margin: 12px;
   max-width: 232px;
-  height: 545px;
+  height: 580px;
 }
 
 #menybilder h3 {
@@ -1099,6 +1099,7 @@ a.contact:visited {
   }
 
   #menybilder div {
+    background: none;
     background-color: transparent;
     color: white;
     padding: 1em;
