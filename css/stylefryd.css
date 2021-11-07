@@ -533,8 +533,6 @@ footer img {
 
 #menybilder div {
   background: radial-gradient(#886750, black);
-  background-size: 800px 100%;
-  background-position: 50% 100%;
   padding: 1em;
   margin: 12px;
   max-width: 232px;
