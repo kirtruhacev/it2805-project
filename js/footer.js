@@ -12,7 +12,7 @@ function footerInsert(){
     div1.appendChild(h1); //Legger til <h1> i <div>
 
     const p = document.createElement('p'); //Oppretter <p>
-    p.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'; //Legger til tekst i <p>
+    p.innerText = 'Kaffe, mat og kos.'; //Legger til tekst i <p>
     div1.appendChild(p); //Legger til <p> i <div>
 
     const adresse = document.createElement('p'); //Oppretter <p>
@@ -124,7 +124,7 @@ function openingHours(){ //Endrer
 function openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen nå?
 
     if (day == 1 || day == 0){ //Mandag eller søndag (lik åpningstid)
-        åpningstid = '10.00 - 19.00'; //Åpningstid 
+        åpningstid = '10.00 - 19.00'; //Åpningstid
         if (hour >= 10 && hour <= 18){ //Mellom 10-19
             åpent = true;
         }
@@ -136,7 +136,7 @@ function openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour){ //Er caf
         }
     }
     if (day >= 2 && day <= 5){ //Tirsdag-fredag (lik åpningstid)
-        åpningstid = '07.00 - 19.00';//Åpningstid 
+        åpningstid = '07.00 - 19.00';//Åpningstid
         if (hour >= 7 && hour <= 18){ //Mellom 7-19
             åpent = true;
         }
@@ -149,7 +149,7 @@ function openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour){ //Er caf
     }
 
     if (day == 6){ //Fredag
-        åpningstid = '08.00 - 19.00';//Åpningstid 
+        åpningstid = '08.00 - 19.00';//Åpningstid
         if (hour >= 8 && hour <= 18){ //Mellom 8-19
             åpent = true;
         }
