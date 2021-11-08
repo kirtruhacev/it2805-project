@@ -524,6 +524,11 @@ footer img {
   padding-bottom: 2%;
 }
 
+/* Endrer farge ved hover på meny */
+#menybilder div:hover{
+  background: black;
+}
+
 /* Bilder inne i div-box */
 #menybilder div img {
   max-width: 100%;
