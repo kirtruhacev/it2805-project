@@ -4,7 +4,7 @@ const footer = document.getElementById('footer');
 
 function footerInsert(){
     const div1 = document.createElement('div'); //Oppretter <div>
-    div1.id = "footer-item1"; //Legger til class på <div>
+    div1.id = "footer-item1"; //Legger til id på <div>
     footer.appendChild(div1); //Legger til <div> i <footer>
 
     const h1 = document.createElement('h1'); //Oppretter <h1>
