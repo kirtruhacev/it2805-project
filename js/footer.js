@@ -4,7 +4,7 @@ const footer = document.getElementById('footer');
 
 function footerInsert(){
     const div1 = document.createElement('div'); //Oppretter <div>
-    div1.id = "footer-item1"; //Legger til class på <div>
+    div1.id = "footer-item1"; //Legger til id på <div>
     footer.appendChild(div1); //Legger til <div> i <footer>
 
     const h1 = document.createElement('h1'); //Oppretter <h1>
@@ -101,24 +101,22 @@ function openingHours(){ //Endrer
     let openStatus = document.getElementById('openstatus'); //Definerer <p>-variabel
 
     if (stengerSnart == true){
-        openStatus.innerText = 'Åpent, men stenger snart';
+        openStatus.innerText = 'Åpent, men stenger snart:';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
 
     else if (åpent == true){
-        openStatus.innerText = 'Åpent';
+        openStatus.innerText = 'Åpent i dag:';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
 
     else if (åpentSnart == true){
-        openStatus.innerText = 'Åpner snart';
+        openStatus.innerText = 'Åpner snart:';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
     else{
         openStatus.innerText = 'Stengt';
-        /* openStatus.innerHTML += ('</br>' + åpningstid); */
     }
-    //Skal endre på presentasjon av åpningstider. Men js-funker nå :)
 }
 
 function openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen nå?

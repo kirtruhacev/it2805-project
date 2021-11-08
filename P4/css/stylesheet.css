@@ -19,6 +19,17 @@ ul {
   font-family: "Calibri Light", sans-serif;
 }
 
+/* Endrer diagram-bilder */
+section div img{
+  max-width: 40%;
+  padding-right: 20px;
+}
+
+/* Størrelse diagram-bilder */
+.halvsize{
+  max-width:20%
+}
+
 /* unvisited link */
 a:link {
   color: #e1d9ce;
