@@ -54,10 +54,15 @@
         <p></p>
 
         <h3>Forandinger på meny.html:</h3>
-        <p></p>
+        <p>
+          På Meny-siden så var planen å lage 4 "bolker" med de 4 forskjellige meny-kategoriene. Dette er relativt likt som det ferdige resultatet, men det ble også beskrevet at man skulle ha med en javascript-funksjon som man kunne sortere og filtrere på forskjellige filter på maten. Dette ble kuttet ut fordi det ville være litt unødvendig og uoversiktelig. I stedet ble det lagd en javascript-funksjon som fungerer slik at man får opp menyen ved å trykke på de forskjellige "bolkene". I test-fasen hadde vi ikke noe beskrivelse av dette, eller noe endring ved mus-hover. Det fikk vi tilbakemelding om at ikke var så brukervennlig eller lett å forstå, så det ble endret.
+        </p>
 
         <h3>Forandinger på gallery.html:</h3>
-        <p></p>
+        <p>Gallerisiden er svært lik som planlagt mockup-bilde viser. Bildene er presentert i likt format med ett stort bilde på en side og fire mindre ved siden av. Dette gjentar seg i raden under, bare at det store bildet og de små har byttet side. Den største endringen er at margen ut til enden av nettsiden er gjort større, mest fordi det visuelt ser bedre ut og det gir mer rom for zoom-funksjonen når man hovrer over bildene – det blir ikke unødvendig trangt.</p>
+        <p>Ekstra implementasjoner: Det er videre gjort et bevist valg om kun å bruke bilder fra Fryd sin instagram, slik at alle bilder kan klikkes på og sende deg videre til instagram-profilen og det bestemte bildet. For mindre skjermvindu havner bildene under hverandre (stor : de små : stor : de små.Det var ikke avgjort hvordan dette skulle være i mockup, men vi fant ut at det ville 
+        se best ut for ikke å få alt for små bilder. </p>
+          
 
         <h3>Forandinger på about.html:</h3>
         <p></p>
@@ -70,10 +75,14 @@
           på de.</p>
 
         <h3>Forandinger på header.js:</h3>
-        <p></p>
+        <p>
+          Header.js er for det meste en javascript-funksjon som bygger headeren ved innlastning av side. Men i tillegg så er det en del som endrer id på headeren hvis brukeren har scrollet mer enn en viss lengde. Dette blir gjort for å kunne endre på utseendet til headeren gjennom CSS. Vi lagde da en klasse for når man er på toppen av siden og en klasse for når man scroller. Dermed fikk vi stylet det i css og slapp å gjøre alle endringene med javascript css-styling.
+        </p>
 
         <h3>Forandinger på footer.js (tidligere openingtime.js):</h3>
-        <p></p>
+        <p>
+          Openingtime.js var egentlig tenkt som en funksjon som kun skulle implementeres på footeren. Dette ble gjort, men openingtime.js er ikke en egen fil, men bare en funksjon i footer.js. Så footer.js består av en del som bygger footeren ved innlastning av siden, samt en del som finner ut klokkeslett nå og om kafeen er åpen og da returnerer true/false. Hvis kafeen er åpen (true) så får man opp "åpent" i footeren, samt åpningstiden, mens hvis kafeen er stengt vil man få opp "stengt". Utenom det så er footeren relativt lik som det som var planen, med tekst til venstre, åpningstider/logo i midten og link til SoMe på høyre side. I tillegg til copyright-linje helt i bunn.
+        </p>
 
         <h3>Forandinger på style.css:</h3>
         <p>
@@ -92,7 +101,9 @@
         </p>
 
         <h3>Tillegg JavaScript fil meny.js</h3>
-        <p></p>
+        <p>
+          javascript-funksjonen for meny-siden er ikke helt som vi tenkte. Dette ble beskrevet litt tidligere under "endringer på meny-side". Hovedendringen er at vi gikk bort fra en løsning med filter og søkefunksjon, og heller valgte en lettere og mer oversiktelig løsning med at man viser menyen ved å klikke på de forskjellige "bolkene". Som nevnt tidligere så måtte vi gjøre det tydeligere at man kunne få opp menyen ved å klikke på de forskjellige "bolkene", da flere av test-brukerne ikke forsto dette.
+        </p>
 
         <h3>Tillegg JavaScript fil slideshow.js (tidligere dynamicbanner.js)</h3>
         <p></p>
