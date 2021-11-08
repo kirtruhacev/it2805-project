@@ -1165,6 +1165,11 @@ a.contact:visited {
     box-shadow: none;
   }
 
+  /* Hover */
+  #menybilder div:hover{
+    cursor: default;
+  }
+
   #menybilder div {
     background: none;
     background-color: transparent;
@@ -1174,6 +1179,7 @@ a.contact:visited {
     max-width: 232px;
     margin: 0px 12px 0px;
   }
+
   .menyside div ul {
     color: #ffffff !important;
   }
