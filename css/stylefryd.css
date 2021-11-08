@@ -34,11 +34,18 @@ h2 {
 }
 
 h3 {
-  font-family: "Calibri Light", sans-serif;
+  font-family: 'Calibri light', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: normal;
   color: #ffffff;
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 30px;
+  line-height: 12px;
+}
+
+h4{
+  display: none;
 }
 
 h5 {
@@ -57,10 +64,9 @@ h6 {
 
 p {
   font-size: 16px;
-  font-family: "Georgia", serif;
+  font-family: 'Calibri light', sans-serif;
+  letter-spacing: 0.1em;
   color: white;
-  margin: 0;
-
 }
 
 a {
@@ -72,7 +78,8 @@ a {
 }
 
 li {
-  font-family: "Calibri Light", sans-serif;
+  font-family: 'Calibri light', sans-serif;
+  letter-spacing: 0.1em;
   color: #ffffff;
   font-size: 15px;
   line-height: 19px;
@@ -315,9 +322,11 @@ footer img {
 
 #intro p{
   font-size: 20px;
-  font-family: "Georgia", serif;
+  font-family: 'Calibri light', sans-serif;
+  letter-spacing: 0.1em;
   color: white;
   margin: 0;
+  padding-bottom: 60px;
 }
 
 svg {
@@ -734,8 +743,9 @@ svg text {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Om oss - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Paragraf om Fryd (om oss), about.html */
 #om {
-  font-size: 20px;
-  font-family: "Georgia", serif;
+  font-size: 16px;
+  font-family: 'Calibri light', sans-serif;
+  letter-spacing: 0.1em;
   color: white;
   margin: 0;
   line-height: 40px;
@@ -827,11 +837,11 @@ svg text {
 
 /* Styling til link epost, telefon og facebook */
 .contact {
-  font-family: "Calibri Light", sans-serif;
+  font-family: 'Calibri light', sans-serif;
+  letter-spacing: 0.1em;
   color: #ffffff;
   font-size: 20px;
   line-height: 15px;
-  font-weight: bold;
 }
 
 a.contact:link {
@@ -850,7 +860,7 @@ a.contact:visited {
 
 /* Styling til strek */
 .line_contact {
-  height: 460px;
+  height: 450px;
   border-left: 2px solid white;
   position: absolute;
   top: 560px;
