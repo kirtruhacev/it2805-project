@@ -116,9 +116,7 @@ function openingHours(){ //Endrer
     }
     else{
         openStatus.innerText = 'Stengt';
-        /* openStatus.innerHTML += ('</br>' + åpningstid); */
     }
-    //Skal endre på presentasjon av åpningstider. Men js-funker nå :)
 }
 
 function openNow(åpent,åpningsTid,åpentSnart,stengerSnart,day,hour){ //Er cafeen åpen nå?
