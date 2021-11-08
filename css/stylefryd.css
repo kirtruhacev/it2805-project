@@ -327,12 +327,12 @@ text {
 }
 
 svg text {
+  font-family: "Georgia", serif;
   letter-spacing: 10px;
   stroke: white;
   font-size: 60px;
   font-weight: bold;
   stroke-width: 1;
-  font-family: "Georgia", serif;
   animation: textAnimate 10s infinite alternate;
 }
 
@@ -351,7 +351,7 @@ svg text {
   
 }
 
-/* inspo: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
+/* Inspirasjon: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -404,7 +404,7 @@ svg text {
 #parallax {
   display: grid;
   background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  height: 400px;
+  height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -551,7 +551,7 @@ svg text {
   border-radius: 1.5em;
   border-style: solid;
   border-color: #3d2e24;
-  border-width: 0.25em;
+  border-width: 0.12em;
 }
 .menyBilde {
   padding: 1em;
@@ -777,10 +777,10 @@ a.contact:visited {
 
 /* Styling til strek */
 .line_contact {
-  height: 470px;
+  height: 460px;
   border-left: 2px solid white;
   position: absolute;
-  top: 600px;
+  top: 560px;
   left: 50%;
 }
 
