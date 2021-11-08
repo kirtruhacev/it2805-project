@@ -37,16 +37,15 @@ h3 {
   font-family: "Calibri Light", sans-serif;
   color: #ffffff;
   font-size: 20px;
-}
-
-h4 {
-  display: none;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 h5 {
-  font-size: 10px;
+  font-size: 14px;
   font-family: "Georgia", serif;
   color: white;
+  margin: 0;
 }
 
 /* Footer sosiale medier */
@@ -342,13 +341,13 @@ svg text {
     stroke-dashoffset:  10%;
     fill: #886750;
   }
-  
+
   100% {
     stroke-dasharray: 40% 0;
     stroke-dashoffstet: -10%;
     fill: white;
   }
-  
+
 }
 
 /* Inspirasjon: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
@@ -398,6 +397,34 @@ svg text {
   text-align: center;
   line-height: 170%;
   margin: 0 auto;
+}
+
+#fav-container {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 100%;
+  grid-template-areas: "img parag";
+  height: 500px;
+  padding: 30px 0px;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+#fav-container img {
+  position: relative;
+  grid-area: img;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+#fav-container-stuff {
+  grid-area: parag;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  text-align: left;
 }
 
 /* Parallax med bilde av bakgrunn  */
@@ -1268,7 +1295,7 @@ a.contact:visited {
     display: block;
     padding-top: 50px;
   }
-  
+
   svg {
     display: none;
   }
