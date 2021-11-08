@@ -30,8 +30,12 @@ section div img{
   max-width: 25%
 }
 
+.cake2{
+  max-width: 30%
+}
+
 .stick{
-  max-width: 40%
+  max-width: 45%
 }
 
 .small{
@@ -41,7 +45,6 @@ section div img{
 
 img:hover {
   transform: scale(1.7); /* 170% zoom */
-  
 }
 
 /* unvisited link */
