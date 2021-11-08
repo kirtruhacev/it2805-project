@@ -23,7 +23,6 @@
     <a href="#sec_2">Administrative detaljer</a>
     <a href="#sec_3">Forandringer vi har gjort</a>
     <a href="#sec_4">Oppdatert Filstruktur</a>
-    <a href="#sec_5">Indicate how </a>
   </div>
 
   <body onscroll="makeSticky()" id="hjem">
@@ -60,19 +59,15 @@
 
         <h3>Forandringer på gallery.html:</h3>
         <p>Gallerisiden er svært lik som planlagt mockup-bilde viser. Bildene er presentert i likt format med ett stort bilde på en side og fire mindre ved siden av. Dette gjentar seg i raden under, bare at det store bildet og de små har byttet side. Den største endringen er at margen ut til enden av nettsiden er gjort større, mest fordi det visuelt ser bedre ut og det gir mer rom for zoom-funksjonen når man hovrer over bildene – det blir ikke unødvendig trangt.</p>
-        <p>Ekstra implementasjoner: Det er videre gjort et bevist valg om kun å bruke bilder fra Fryd sin instagram, slik at alle bilder kan klikkes på og sende deg videre til instagram-profilen og det bestemte bildet. For mindre skjermvindu havner bildene under hverandre (stor : de små : stor : de små.Det var ikke avgjort hvordan dette skulle være i mockup, men vi fant ut at det ville 
-        se best ut for ikke å få alt for små bilder. </p>
-          
+        <p>Ekstra implementasjoner: Det er videre gjort et bevist valg om kun å bruke bilder fra Fryd sin instagram, slik at alle bilder kan klikkes på og sende deg videre til instagram-profilen og det bestemte bildet. For mindre skjermvindu havner bildene under hverandre (stor : de små : stor : de små.Det var ikke avgjort hvordan dette skulle være i mockup, men vi fant ut at det ville
+          se best ut for ikke å få alt for små bilder. </p>
+
 
         <h3>Forandringer på about.html:</h3>
         <p></p>
 
         <h3>Forandringer på contact.html:</h3>
-        <p>Det er ikke mye forandringer på kontaktsiden, men en ting som ble fjernet er ''Lokale'' som var tenkt som en liten
-          beskrivelse for å komme seg frem ved enkle kjennetegn. Siden vi har med både kart og adresse bestemte vi at det dermed
-          ikke var nødvendig med dette i tillegg. Ellers er det endret litt utsende angående åpning/luft mellom kart og parallax bilde.
-          Vi valgte å ikke ha et kontaktskjema, men alle overskriftene: telefonnummer, facebook og epost er responsive når man klikker
-          på de.</p>
+        <p>Det er ikke mye forandringer på kontaktsiden, men en ting som ble fjernet er ''Lokale'' som var tenkt som en liten beskrivelse for å komme seg frem ved enkle kjennetegn. Siden vi har med både kart og adresse bestemte vi at det dermed ikke var nødvendig med dette i tillegg. Ellers er det endret litt utsende angående åpning/luft mellom kart og parallax bilde. Vi valgte å ikke ha et kontaktskjema, men alle overskriftene: telefonnummer, facebook og epost er responsive når man klikker på de.</p>
 
         <h3>Forandringer på header.js:</h3>
         <p>
@@ -88,14 +83,9 @@
         <p>
           <ul>
             <li>Body width:</li>
-            <li>Navbar utseende: Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript.
-              Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra
-              bold til normal. Åpningstidene i navbaren er flyttet til footer. Vi har valgt å fjerne understreking på den nåværende siden
-              man besøker, og kun beholde understreking når man hover over elementet.</li>
-            <li>Shadows: I utgangspunktet hadde vi ikke noen skyggeelementer, men bestemte oss for å legge til skygge på bildene i galleri
-              for å ha en ekstra effekt.</li>
-            <li>Footer: Fjernet oversikten med alle åpningstider fordi de allerede står på forside- og kontaktsiden, og erstattet det
-              med hva åpningstiden er akkurat nå og om de har åpent eller stengt. Vi har lagt til et ekstra sosiale medier: whatsapp.</li>
+            <li>Navbar utseende: Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript. Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra bold til normal. Åpningstidene i navbaren er flyttet til footer. Vi har valgt å fjerne understreking på den nåværende siden man besøker, og kun beholde understreking når man hover over elementet.</li>
+            <li>Shadows: I utgangspunktet hadde vi ikke noen skyggeelementer, men bestemte oss for å legge til skygge på bildene i galleri for å ha en ekstra effekt.</li>
+            <li>Footer: Fjernet oversikten med alle åpningstider fordi de allerede står på forside- og kontaktsiden, og erstattet det med hva åpningstiden er akkurat nå og om de har åpent eller stengt. Vi har lagt til et ekstra sosiale medier: whatsapp.</li>
             <li>Google maps: endret farge til orginal google farger.</li>
           </ul>
         </p>
@@ -112,6 +102,19 @@
         <p> Vi brukte åpningstider i footer.js, navigasjonsbar i header.js, meny.js og slideshow.js for å fylle minimumkravene. De to førstnevnte er en JavaScript-funksjon som går igjen på alle sidene, som gir alle et likt utseende. meny.js er brukt på menysiden for å skape en effekt når man trykker på 'menyknappene'. slideshow.js er brukt på hovedsiden for en automatisk bildefremvisning.
         </p>
 
+        <h3>Indicate how the modularity requirement was handled and who was responsible for
+          the implementation:</h3>
+        <p> </p>
+
+        <h3>Kommentarer:</h3>
+        <p>Vi har gjort noen endringer etter vi utførte undersøkelsen og hadde møte med vår student assistent. Vi fikk noen nye ideer som kunne gjøre siden bedre som gjelder alle sider. Dette gjelder overskrift med en beskrivende tekst på alle sidene, utenom homepage.html.</p>
+
+        <p>Vi er klar over ulike elementer som ikke er like responsive i alle nettlesere, og er ikke noe vi kan gjøre noe med:
+          <ul>
+            <li>Headeren er tregere i spesielt Safari.</li>
+          </ul>
+        </p>
+
       </div>
     </section>
 
@@ -126,26 +129,67 @@
           <li>gallery.html</li>
           <li>about.html</li>
           <li>contact.html</li>
-          <li>img
+          <li>image/
             <ul>
-              <li>img1.png</li>
-              <li>img2.png</li>
-              <li>img3.png</li>
-              <li>img4.png</li>
-              <li>img5.png</li>
-              <li>img6.png</li>
-              <li>img7.png</li>
+
+              <ul>
+                <li>kontakt</li>
+                <ul>
+                  <li>bakeOff.png</li>
+                  <li>kaffeDrikke.png</li>
+                  <li>kakeSøtsaker.png</li>
+                  <li>mat.png</li>
+                </ul>
+              </ul>
+
+              <ul>
+                <li>menyBilder</li>
+                <ul>
+                  <li>bakeOff.png</li>
+                  <li>kaffeDrikke.png</li>
+                  <li>kakeSøtsaker.png</li>
+                  <li>mat.png</li>
+                </ul>
+              </ul>
+
+              <ul>
+                <li>slideshow</li>
+                <ul>
+                  <li>bilde1.png</li>
+                  <li>bilde2.png</li>
+                  <li>bilde3.png</li>
+                  <li>bilde4.png</li>
+                </ul>
+              </ul>
+
+              <li>beans_nb.png</li>
+              <li>beans.jpg</li>
+              
+              <li>bilde1.png</li>
+              <li>bilde2.png</li>
               <li>...</li>
-              <li>menu1.png</li>
-              <li>menu2.png</li>
-              <li>menu3.png</li>
-              <li>...</li>
-              <li>decorative1.png</li>
-              <li>decorative2.png</li>
-              <li>...</li>
+              <li>bilde17.png</li>
+
+              <li>facebook.png</li>
+              <li>header_img.jpg</li>
+              <li>instagram.png</li>
+              <li>logo_nb.png</li>
+              <li>logotrans.png</li>
+              <li>whatsapp.png</li>
             </ul>
           </li>
-          <li>scripts
+
+          <li>modularity/??????????????????????????????????????+
+            <ul>
+              <li>footer.js</li>
+              <li>full-screen-img.js</li>
+              <li>header.js</li>
+              <li>meny.js</li>
+              <li>slideshow.js</li>
+            </ul>
+          </li>
+          
+          <li>javascripts/
             <ul>
               <li>footer.js</li>
               <li>full-screen-img.js</li>
@@ -212,8 +256,7 @@
 
           <tr>
             <td>footer.js</td>
-            <td>JavaScript som går igjen for alle sidene i footer. JavaScript som implementerer åpningstider på hovedsiden som
-              oppdaterer seg automatisk.</td>
+            <td>JavaScript som går igjen for alle sidene i footer. JavaScript som implementerer åpningstider på hovedsiden som oppdaterer seg automatisk.</td>
             <td>Andreas</td>
           </tr>
 
@@ -247,14 +290,6 @@
             <td>Alle gruppemedlemmer</td>
           </tr>
         </table>
-      </div>
-    </section>
-
-    <section id="sec_5">
-      <div>
-        <h2>Indicate how the modularity requirement was handled and who was responsible for
-          the implementation</h2>
-        <p></p>
       </div>
     </section>
 

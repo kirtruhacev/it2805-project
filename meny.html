@@ -1,153 +1,154 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href="./css/stylefryd.css">
-    <link rel="icon" type="image/png" href="image/beans_nb.png"/>
+    <link rel="icon" type="image/png" href="image/beans_nb.png" />
     <title>Meny</title>
-</head>
-<body onload="headerInsert();footerInsert()">
+  </head>
+
+  <body onload="headerInsert();footerInsert()">
 
     <div class="load_page">
-        <img src="./image/logo_nb.png" alt="Logo">
+      <img src="./image/logo_nb.png" alt="Logo">
     </div>
-        
+
     <header id='top'></header> <!-- Header blir hentet fra js-fil -->
 
-      <svg>
-
-        <text x="50%" y="60%">
-          Meny
-        </text>
-  
-        <div id="intro">
-            <h4>Meny</h4>
-            <p id='menyTekst'></p>
-        </div>
-  
-      </svg>
+    <svg>
+      <text x="50%" y="60%">
+        Meny
+      </text>
+    </svg>
+    
+    <div id="intro">
+      <h4>Meny</h4>
+      <p id='menyTekst'></p>
+    </div>
 
     <div id='menybilder'>
 
-        <div class='menyBilde' id='kaffeDrikkeBilde'>
-            <h3>Kaffe og drikke</h3>
-            <img src="./image/menyBilder/kaffeDrikke.png" alt="Kaffe og drikke">
-        </div>
+      <div class='menyBilde' id='kaffeDrikkeBilde'>
+        <h3>Kaffe og drikke</h3>
+        <img src="./image/menyBilder/kaffeDrikke.png" alt="Kaffe og drikke">
+      </div>
 
-        <div class='menyListe' id='kaffeDrikkeListe' style="display: none;"> 
-            <h3>Kaffe og drikke</h3>
-            <ul>
-                <li>Svart Kaffe</li>
-                <li>Espresso</li>
-                <li>Espresso Dobbel</li>
-                <li>Americano</li>
-                <li>Machiatto</li>
-                <li>Capuccino</li>
-                <li>Caffe Latte</li>
-                <li>Cortado</li>
-                <li>Cortado Dobbel</li>
-                <li>Caffe Mokka</li>
-                <li>Søt Chilli</li>
-                <li>Cafe Au Lait</li>
-                <li>Frappe</li>
-                <li>Islatte</li>
-                <li>Islatte Karamell/Sjokolade</li>
-                <li>Varm Sjokolade</li>
-                <li>Milkshake (Sjokolade, Oreo Karamell)</li>
-                <li>Dagens Iste</li>
-                <li>Dagens Smoothie</li>
-                <li>Juice</li>
-                <li>Solrik</li>
-                <li>Brus</li>
-                <li>Mineralvann</li>
-            </ul>
-        </div>
+      <div class='menyListe' id='kaffeDrikkeListe' style="display: none;">
+        <h3>Kaffe og drikke</h3>
+        <ul>
+          <li>Svart Kaffe</li>
+          <li>Espresso</li>
+          <li>Espresso Dobbel</li>
+          <li>Americano</li>
+          <li>Machiatto</li>
+          <li>Capuccino</li>
+          <li>Caffe Latte</li>
+          <li>Cortado</li>
+          <li>Cortado Dobbel</li>
+          <li>Caffe Mokka</li>
+          <li>Søt Chilli</li>
+          <li>Cafe Au Lait</li>
+          <li>Frappe</li>
+          <li>Islatte</li>
+          <li>Islatte Karamell/Sjokolade</li>
+          <li>Varm Sjokolade</li>
+          <li>Milkshake (Sjokolade, Oreo Karamell)</li>
+          <li>Dagens Iste</li>
+          <li>Dagens Smoothie</li>
+          <li>Juice</li>
+          <li>Solrik</li>
+          <li>Brus</li>
+          <li>Mineralvann</li>
+        </ul>
+      </div>
 
-        <div class='menyBilde' id='matBilde'>
-            <h3>Mat</h3>
-            <img src="./image/menyBilder/mat.png" alt="mat">
-        </div>
+      <div class='menyBilde' id='matBilde'>
+        <h3>Mat</h3>
+        <img src="./image/menyBilder/mat.png" alt="mat">
+      </div>
 
-        <div class='menyListe' id='matListe' style="display: none;">
-            <h3>Mat</h3>
-            <ul>
-                <li>Baguette Reke</li>
-                <li>Baguette Kylling</li>
-                <li>Baguette Ost & Skinke</li>
-                <li>Baguette Vegetar</li>
-                <li>Baguette Vegan</li>
-                <li>Longbread Cheddarost & Skinke</li>
-                <li>Longbread Kylling Mango Chillimajo</li>
-                <li>Bagel Salami & Brie</li>
-                <li>Bagel Laks & Kremost</li>
-                <li>Panini Ost & Skinke</li>
-                <li>Panini Chorizo</li>
-                <li>Trekantbrød Reker</li>
-                <li>Stor Toast Ost & Skinke</li>
-                <li>Toast Cheddar & Skinke</li>
-                <li>Focaccia Kylling & Pesto</li>
-                <li>Focaccia Ost & Skinke</li>
-                <li>Premium Crossaint Ost & Skinke</li>
-            </ul>
-        </div>
+      <div class='menyListe' id='matListe' style="display: none;">
+        <h3>Mat</h3>
+        <ul>
+          <li>Baguette Reke</li>
+          <li>Baguette Kylling</li>
+          <li>Baguette Ost & Skinke</li>
+          <li>Baguette Vegetar</li>
+          <li>Baguette Vegan</li>
+          <li>Longbread Cheddarost & Skinke</li>
+          <li>Longbread Kylling Mango Chillimajo</li>
+          <li>Bagel Salami & Brie</li>
+          <li>Bagel Laks & Kremost</li>
+          <li>Panini Ost & Skinke</li>
+          <li>Panini Chorizo</li>
+          <li>Trekantbrød Reker</li>
+          <li>Stor Toast Ost & Skinke</li>
+          <li>Toast Cheddar & Skinke</li>
+          <li>Focaccia Kylling & Pesto</li>
+          <li>Focaccia Ost & Skinke</li>
+          <li>Premium Crossaint Ost & Skinke</li>
+        </ul>
+      </div>
 
-        <div class='menyBilde' id='kakerSøtsakerBilde'>
-            <h3>Kake og søtsaker</h3>
-            <img src="./image/menyBilder/kakeSøtsaker.png" alt="Kaker og søtsaker">
-        </div>
+      <div class='menyBilde' id='kakerSøtsakerBilde'>
+        <h3>Kake og søtsaker</h3>
+        <img src="./image/menyBilder/kakeSøtsaker.png" alt="Kaker og søtsaker">
+      </div>
 
-        <div class='menyListe' id='kakeSøtsakerListe' style="display: none;" >
-            <h3>Kake og søtsaker</h3>
-            <ul>
-                <li>Bringebær/Sjokolade Bavarois</li>
-                <li>Raspberry/Chocolate Delight</li>
-                <li>Jordbær Vegan</li>
-                <li>Jordbær & Mandarin Glutenfri</li>
-                <li>Eplekake</li>
-                <li>Ostekake New York</li>
-                <li>American Chocolate</li>
-                <li>Brownie Chrunch/Oreo</li>
-                <li>Amerikansk Gulrotkake</li>
-                <li>Napoleonskake</li>
-                <li>Belgisk Mousse</li>
-                <li>Sjokolade/Karamell Fondant</li>
-                <li>Bringebær/Sjokolade Tartless</li>
-                <li>Makroner 6 pk</li>
-            </ul>
-        </div>
+      <div class='menyListe' id='kakeSøtsakerListe' style="display: none;">
+        <h3>Kake og søtsaker</h3>
+        <ul>
+          <li>Bringebær/Sjokolade Bavarois</li>
+          <li>Raspberry/Chocolate Delight</li>
+          <li>Jordbær Vegan</li>
+          <li>Jordbær & Mandarin Glutenfri</li>
+          <li>Eplekake</li>
+          <li>Ostekake New York</li>
+          <li>American Chocolate</li>
+          <li>Brownie Chrunch/Oreo</li>
+          <li>Amerikansk Gulrotkake</li>
+          <li>Napoleonskake</li>
+          <li>Belgisk Mousse</li>
+          <li>Sjokolade/Karamell Fondant</li>
+          <li>Bringebær/Sjokolade Tartless</li>
+          <li>Makroner 6 pk</li>
+        </ul>
+      </div>
 
-        <div class='menyBilde' id='bakeOffBilde'>
-            <h3>Bake-off</h3>
-            <img src="./image/menyBilder/bakeOff.png" alt="Bake-off">
-        </div>
+      <div class='menyBilde' id='bakeOffBilde'>
+        <h3>Bake-off</h3>
+        <img src="./image/menyBilder/bakeOff.png" alt="Bake-off">
+      </div>
 
-        <div class='menyListe' id='bakeOffListe' style="display: none;">
-            <h3>Bake-off</h3>
-            <ul>
-                <li>Luksus Kanelsnurr</li>
-                <li>Stor Kanelsnutt</li>
-                <li>Flettbakst Kanel/Pistasj</li>
-                <li>Scones</li>
-                <li>Crossaint Plain/Vanilje/Sjokolade</li>
-                <li>Belgisk Vaffel med/uten Sjokolade</li>
-                <li>Cookie Mørk/Lys Sjokolade</li>
-                <li>Vaffel med ost</li>
-            </ul>
-        </div>
-        
+      <div class='menyListe' id='bakeOffListe' style="display: none;">
+        <h3>Bake-off</h3>
+        <ul>
+          <li>Luksus Kanelsnurr</li>
+          <li>Stor Kanelsnutt</li>
+          <li>Flettbakst Kanel/Pistasj</li>
+          <li>Scones</li>
+          <li>Crossaint Plain/Vanilje/Sjokolade</li>
+          <li>Belgisk Vaffel med/uten Sjokolade</li>
+          <li>Cookie Mørk/Lys Sjokolade</li>
+          <li>Vaffel med ost</li>
+        </ul>
+      </div>
+
     </div>
-    <div id ="parallax"></div>
+    <div id="parallax"></div>
 
     <footer id='footer'>
-        <div class="copyright_footer">
-            <p>&#169; Fryd Café (Gruppe 10) 2021</p>
-        </div>
-      </footer>  <!-- Footer blir hentet fra js-fil -->
-    
+      <div class="copyright_footer">
+        <p>&#169; Fryd Café (Gruppe 10) 2021</p>
+      </div>
+    </footer> <!-- Footer blir hentet fra js-fil -->
+
     <script src='./js/footer.js'></script>
     <script src='./js/header.js'></script>
-    <script src= './js/meny.js'></script>
-</body>
+    <script src='./js/meny.js'></script>
+  </body>
+
 </html>
