@@ -101,17 +101,17 @@ function openingHours(){ //Endrer
     let openStatus = document.getElementById('openstatus'); //Definerer <p>-variabel
 
     if (stengerSnart == true){
-        openStatus.innerText = 'Åpent, men stenger snart';
+        openStatus.innerText = 'Åpent, men stenger snart:';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
 
     else if (åpent == true){
-        openStatus.innerText = 'Åpent i dag';
+        openStatus.innerText = 'Åpent i dag:';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
 
     else if (åpentSnart == true){
-        openStatus.innerText = 'Åpner snart';
+        openStatus.innerText = 'Åpner snart:';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
     else{
