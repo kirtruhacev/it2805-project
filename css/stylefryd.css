@@ -56,9 +56,10 @@ h6 {
 }
 
 p {
-  font-family: "Calibri Light", sans-serif;
-  color: #ffffff;
-  font-size: 8px;
+  font-size: 16px;
+  font-family: "Georgia", serif;
+  color: white;
+  margin: 0;
 }
 
 a {
@@ -313,7 +314,9 @@ footer img {
 
 #intro p{
   font-size: 20px;
-  font-family: "Calibri Light", sans-serif;
+  font-family: "Georgia", serif;
+  color: white;
+  margin: 0;
 }
 
 svg {
@@ -730,12 +733,11 @@ svg text {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Om oss - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Paragraf om Fryd (om oss), about.html */
 #om {
-  color: white;
-  margin-bottom: 0;
   font-size: 20px;
-  text-align: center;
-  font-family: "Calibri Light", sans-serif;
-  color: #ffffff;
+  font-family: "Georgia", serif;
+  color: white;
+  margin: 0;
+  line-height: 40px;
 }
 
 /* Overskriften over om paragrafen, about.html */
