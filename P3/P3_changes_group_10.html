@@ -72,7 +72,7 @@
 
         <h3>Forandringer på header.js:</h3>
         <p>
-          Header.js er for det meste en javascript-funksjon som bygger headeren ved innlastning av side. Men i tillegg så er det en del som endrer id på headeren hvis brukeren har scrollet mer enn en viss lengde. Dette blir gjort for å kunne endre på utseendet til headeren gjennom CSS. Vi lagde da en klasse for når man er på toppen av siden og en klasse for når man scroller. Dermed fikk vi stylet det i css og slapp å gjøre alle endringene med javascript css-styling.
+          Header.js er for det meste en javascript-funksjon som bygger headeren ved innlastning av side. 
         </p>
 
         <h3>Forandringer på footer.js (tidligere openingtime.js):</h3>
@@ -84,16 +84,21 @@
         <p>
           <ul>
             <li>Body width:</li>
-            <li>Navbar utseende: Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript. Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra bold til normal. Åpningstidene i navbaren er flyttet til footer. Vi har valgt å fjerne understreking på den nåværende siden man besøker, og kun beholde understreking når man hover over elementet.</li>
+            <li>Navbar utseende: Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript. Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra bold til normal. Åpningstidene i navbaren er flyttet til footer. Vi har valgt å fjerne understreking på den nåværende siden man besøker, og kun beholde understreking når man hover over elementet.
+              <br>
+              Vi har også valgt å flytte overskriften for hvilken side du er på under headerbilde.
+            </li>
             <li>Footer: Fjernet oversikten med alle åpningstider fordi de allerede står på forside- og kontaktsiden, og erstattet det med hva åpningstiden er akkurat nå og om de har åpent eller stengt. Vi har lagt til et ekstra sosiale medier: whatsapp.</li>
             <li>Linker: Vi valgte å ha samme farge på linker før og etter klikk.</li>
             <li>Footer: Her valgte vi også å flytte åpningstiden for i dag, og også legge til bilde av kaffebønne fra logoen deres.</li>
+            <li>Padding er endret ut fra hva som passet best til hver side, med tanke på grid og andre elementer, men alle sidene skal ha en god margin på hver sin side slik som i mock upen.</li>
             <li>Media Querie:</li>
             <ul>
               <li>Navbar utseende liten skjerm: Våre orginale tanke fungerte ikke på liten skjerm, så vi endre det til en meny som blir listet underhverandre. Siden den tar mye av skjermen, bestemte vi at når man scroller forsvinner navbaren så kun logoen vises øverst. Alt dukker opp igjen om man scroller tilbake til toppen.</li>
               <li>Logo: På liten skjerm passet det best at den var plassert på toppen over navbaren.</li>
+              <li>Innhold: Alt av tekst og innhold er endret så siden er responsive til stor og liten skjerm.</li>
             </ul>
-            <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene.</li>
+            <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene for å enklere vise og plassere innhold.</li>
           </ul>
         </p>
 
@@ -102,6 +107,9 @@
           javascript-funksjonen for meny-siden er ikke helt som vi tenkte. Dette ble beskrevet litt tidligere under "endringer på meny-side". Hovedendringen er at vi gikk bort fra en løsning med filter og søkefunksjon, og heller valgte en lettere og mer oversiktelig løsning med at man viser menyen ved å klikke på de forskjellige "bolkene". Som nevnt tidligere så måtte vi gjøre det tydeligere at man kunne få opp menyen ved å klikke på de forskjellige "bolkene", da flere av test-brukerne ikke forsto dette.
         </p>
 
+        <h3>Tillegg JavaScript fil scroll.js (tidligere en del av header.js)</h3>
+        <p>Valgt å separere disse for ordens skyld. Den endrer høyden på headeren hvis brukeren har scrollet mer enn en viss lengde. Dette blir gjort for å kunne endre på utseendet til headeren gjennom CSS. Vi lagde da en klasse for når man er på toppen av siden og en klasse for når man scroller. Dermed fikk vi stylet det i css og slapp å gjøre alle endringene med javascript css-styling.</p>
+        
         <h3>Tillegg JavaScript fil slideshow.js (tidligere dynamicbanner.js)</h3>
         <p></p>
 
@@ -162,8 +170,7 @@
                 <li>slideshow</li>
                 <ul>
                   <li>bilde1.png</li>
-                  <li>bilde2.png</li>
-                  <li>bilde3.png</li>
+                  <li>...</li>
                   <li>bilde4.png</li>
                 </ul>
               </ul>
@@ -172,7 +179,6 @@
               <li>beans.jpg</li>
 
               <li>bilde1.png</li>
-              <li>bilde2.png</li>
               <li>...</li>
               <li>bilde17.png</li>
 
@@ -185,21 +191,11 @@
             </ul>
           </li>
 
-          <li>modularity/??????????????????????????????????????+
-            <ul>
-              <li>footer.js</li>
-              <li>full-screen-img.js</li>
-              <li>header.js</li>
-              <li>meny.js</li>
-              <li>slideshow.js</li>
-            </ul>
-          </li>
-
           <li>javascripts/
             <ul>
               <li>footer.js</li>
-              <li>full-screen-img.js</li>
               <li>header.js</li>
+              <li>scroll.js</li>
               <li>meny.js</li>
               <li>slideshow.js</li>
             </ul>
@@ -255,16 +251,17 @@
           </tr>
 
           <tr>
+            <td>footer.js</td>
+            <td>JavaScript som går igjen for alle sidene i footer. JavaScript som implementerer åpningstider på hovedsiden som oppdaterer seg automatisk.</td>
+            <td>Andreas</td>
+          </tr>
+          
+          <tr>
             <td>header.js</td>
             <td>JavaScript som går igjen for alle sidene i header. Samt en kobling mellom alle kategoriene</td>
             <td>Eva og Andreas</td>
           </tr>
 
-          <tr>
-            <td>footer.js</td>
-            <td>JavaScript som går igjen for alle sidene i footer. JavaScript som implementerer åpningstider på hovedsiden som oppdaterer seg automatisk.</td>
-            <td>Andreas</td>
-          </tr>
 
           <tr>
             <td>meny.js</td>
@@ -273,21 +270,27 @@
           </tr>
 
           <tr>
+            <td>scroll.js</td>
+            <td>JavaScript som gjør at navigasjonsbaren holder seg på toppen selv om man scroller nedover.</td>
+            <td>Eva</td>
+          </tr>
+          
+          <tr>
             <td>slideshow.js</td>
             <td>JavaScript som virker som automatisk slideshow som viser utvalgte bilder av Fryd sine besøkende. Det kan legges til flere bilder i slideshowen etterhvert uten å endre js. funksjonen.</td>
             <td>Kir</td>
           </tr>
 
           <tr>
-            <td>style.css (spesifike elementer)</td>
-            <td>Navbaren når man scroller er laget i CSS, og understreking når man hoover over et element.</td>
-            <td>Andreas og Eva</td>
-          </tr>
-
-          <tr>
             <td>style.css</td>
             <td>CSS fil som inneholder alle styling til nettsiden.</td>
             <td>Alle gruppemedlemmer</td>
+          </tr>
+          
+          <tr>
+            <td>style.css (spesifike elementer)</td>
+            <td>Navbaren når man scroller er laget i CSS, og understreking når man hoover over et element.</td>
+            <td>Andreas og Eva</td>
           </tr>
 
           <tr>
