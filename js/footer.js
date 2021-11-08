@@ -106,7 +106,7 @@ function openingHours(){ //Endrer
     }
 
     else if (åpent == true){
-        openStatus.innerText = 'Åpent';
+        openStatus.innerText = 'Åpent i dag';
         openStatus.innerHTML += ('</br>' + åpningstid);
     }
 
