@@ -21,13 +21,27 @@ ul {
 
 /* Endrer diagram-bilder */
 section div img{
-  max-width: 40%;
-  padding-right: 20px;
+  max-width: 30%;
+  padding-right: 10px;
 }
 
 /* Størrelse diagram-bilder */
-.halvsize{
-  max-width:20%
+.cake{
+  max-width: 25%
+}
+
+.stick{
+  max-width: 40%
+}
+
+.small{
+  max-width: 10%;
+  margin-bottom: 75px;
+}
+
+img:hover {
+  transform: scale(1.7); /* 170% zoom */
+  
 }
 
 /* unvisited link */
