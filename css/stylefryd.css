@@ -527,6 +527,7 @@ footer img {
 /* Endrer farge ved hover på meny */
 #menybilder div:hover{
   background: black;
+  cursor: pointer;
 }
 
 /* Bilder inne i div-box */
