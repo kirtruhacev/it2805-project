@@ -6,7 +6,8 @@ body {
   background-position: center top;
   background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
-  max-width: 1024px; /* Størrelse på body */
+
+  width: 100%;
   margin:0 auto;
   margin-top: 330px;  /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
