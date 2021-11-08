@@ -15,6 +15,7 @@
     //Generelt
     const menyBilde = document.querySelectorAll('.menyBilde');
     const menyListe = document.querySelectorAll('.menyListe');
+    const menyTekst = document.getElementById('menyTekst');
     let endret = false //Sjekker om man re-sizer "fra" liten til stor bredde
 
 //Funksjon som tar inn object og om den skal vises
@@ -64,6 +65,7 @@ function showObject(object){
             kaffeDrikkeBilde.style.display = 'none';
             kaffeDrikkeListe.style.display = 'inline';
         }
+        menyTekst.innerText = 'Velkommen til vår café, vi kan friste deg med god mat og drikke. Trykk på bildene under for å se hele menyene!';
     }
     else{
         matBilde.style.display = 'none';
@@ -75,6 +77,7 @@ function showObject(object){
         kaffeDrikkeBilde.style.display = 'none';
         kaffeDrikkeListe.style.display = 'inline';
         endret = true //Liten bredde
+        menyTekst.innerText = 'Velkommen til vår café, vi kan friste deg med god mat og drikke.';
     }
 }
 
