@@ -39,12 +39,8 @@ h3 {
   font-size: 20px;
 }
 
-/* Intro overskrift*/
 h4 {
-  font-family: "Georgia", serif;
-  color: #ffffff;
-  font-size: 40px;
-  letter-spacing: 5px;
+  display: none;
 }
 
 h5 {
@@ -124,56 +120,6 @@ li {
 /* Inspirasjon: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - - - - - - - - - - */
-#intro{
-  text-align: center;
-  padding: 10px 0px 40px 0px;
-}
-
-#intro p{
-  font-size: 20px;
-  font-family: "Calibri Light", sans-serif;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-text {
-  text-anchor: middle;
-}
-
-svg text {
-  letter-spacing: 10px;
-  stroke: #886750;
-  font-size: 60px;
-  font-weight: 1000;
-  stroke-width: 2;
- 
-  animation: textAnimate 5s infinite alternate;
-
-}
-
-@keyframes textAnimate {
-  0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset:  20%;
-    fill: white;
-
-  }
-  
-  100% {
-    stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
-    fill: #886750
-  }
-  
-}
-
-/* inspo: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
-
-
-
 header {
   width: 100%;
   overflow: hidden;
@@ -360,6 +306,53 @@ footer img {
   justify-content: center;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Intro - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#intro{
+  text-align: center;
+}
+
+#intro p{
+  font-size: 20px;
+  font-family: "Calibri Light", sans-serif;
+}
+
+svg {
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+text {
+  text-anchor: middle;
+}
+
+svg text {
+  letter-spacing: 10px;
+  stroke: white;
+  font-size: 60px;
+  font-weight: bold;
+  stroke-width: 1;
+  font-family: "Georgia", serif;
+  animation: textAnimate 10s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 40%;
+    stroke-dashoffset:  10%;
+    fill: #886750;
+  }
+  
+  100% {
+    stroke-dasharray: 40% 0;
+    stroke-dashoffstet: -10%;
+    fill: white;
+  }
+  
+}
+
+/* inspo: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
 #grid-container {
@@ -411,7 +404,7 @@ footer img {
 #parallax {
   display: grid;
   background-image: url("https://images.pexels.com/photos/531754/pexels-photo-531754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  height: 250px;
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1261,6 +1254,22 @@ a.contact:visited {
     transition: 0.4s;
   }
 
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Intro - - - - - - - - - - - - - - - - - - - - - - - - - */
+  h4 {
+    font-family: "Georgia", serif;
+    color: white;
+    font-size: 40px;
+    display: block;
+    padding-top: 50px;
+  }
+  
+  svg {
+    display: none;
+  }
+
+  svg text {
+    display: none;
+  }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Endrer til 1x4 ved smal skjerm */
