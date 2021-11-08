@@ -4,7 +4,7 @@
 
 function scrollFunction() {
     header.id = "top";
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { /* effekten skjer når man scroller over 80 */
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) { /* effekten skjer når man scroller over 90 */
       header.id = 'scroll';
     } else {
       header.id = 'top';
