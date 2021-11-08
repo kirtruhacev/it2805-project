@@ -116,6 +116,10 @@ li {
 /* Inspirasjon: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - - - - - - - - - - */
+#intro{
+  font-size: 20px;
+}
+
 header {
   width: 100%;
   overflow: hidden;
