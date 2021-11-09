@@ -383,7 +383,7 @@ body.light-mode {
   color: black;
 }
 
-.light-mode h4, li, {
+.light-mode h4, li{
   color: black;
 }
 
@@ -438,6 +438,18 @@ body.light-mode {
 .light-mode #menybilder div {
   background: radial-gradient(#886750, white);
 }
+
+.light-mode .menyListe li{
+  color: black
+}
+
+/* Endrer bakgrunn ved bredde < 900px */
+@media screen and (max-width: 900px) {
+  .light-mode #menybilder div {
+    background: #e1d9ce;
+  }
+}
+
 
 .light-mode #menybilder div:hover {
   background: #e1d9ce;
@@ -616,6 +628,10 @@ body.light-mode {
 .menyListe ul {
   padding-left: 2em; /* Mindre padding på liste */
   list-style-type: square;
+}
+
+.menyListe li{
+  color: white;
 }
 
 /* Div med bildene du trykker på for å komme til menyene */
