@@ -639,15 +639,6 @@ svg text {
   line-height: 40px;
 }
 
-/* Overskriften over om paragrafen, about.html */
-#over {
-  color: white;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  width: 60%;
-}
-
 /* Flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
 .flex-containerAbout {
   display: flex;
@@ -673,6 +664,7 @@ svg text {
   margin-right: 10%;
   width: 400px;
   height: 400px;
+  object-fit: cover;
 }
 
 /* Klasse til bildene i about.html */
@@ -687,6 +679,7 @@ svg text {
   height: 400px;
   margin-bottom: 20px;
 }
+
 /*Bilde nr.2 nederst til høyre, utenfor Fryd */
 #frydoutside2{
   width: 500px;
@@ -1065,6 +1058,7 @@ a.contact:visited {
     margin-left: 0;
     margin-right: 5%;
     text-align: center;
+    font-size: 16px;
   }
 
   #inside {
