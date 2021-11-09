@@ -8,8 +8,13 @@
     <link rel="icon" type="image/png" href="image/beans_nb.png"/>
     <title>Hjem</title>
   </head>
-  <body onscroll = "scrollFunction()" onload="headerInsert();footerInsert()">
 
+  <body onload="headerInsert();footerInsert();onload()">
+    
+    <button class="nav-item">
+      <a role="button" onclick="darkmode()">Klikk for lys modus</a>
+    </button>
+    
     <div class="load_page">
       <img src="image/logo_nb.png" alt="Logo">
       </div>
@@ -90,5 +95,6 @@
     <script src='./js/footer.js'></script>
     <script src='./js/slideshow.js'></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/darkmode.js"></script>
   </body>
 </html>

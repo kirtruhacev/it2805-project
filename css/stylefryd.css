@@ -19,6 +19,7 @@ body {
   width: 100%; /* Størrelse på body */
   margin: auto;
   margin-top: 330px; /* Skyver ned bodyen så headeren ikke blokkerer*/
+  color: white;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h3 {
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
   font-weight: normal;
-  color: #ffffff;
+  color: yellow;
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -80,7 +81,7 @@ a {
 li {
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: white;
   font-size: 15px;
   line-height: 19px;
 }
@@ -368,6 +369,49 @@ svg text {
 }
 
 /* Inspirasjon: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Darkmode - - - - - - - - - - - - - - - - - - - - - - - - - */
+.nav-item {
+  border: none;
+  background-color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+
+.dark-mode p, li, h1, h3, h4, h5, h6{
+  color: black;
+}
+
+.dark-mode .line_contact{
+  border-left: 2px solid black;
+
+}
+
+.dark-mode .copyright_footer{
+
+  border-top-color: black;
+}
+
+.dark-mode #intro p{
+
+  color: black;
+}
+
+.dark-mode .contact{
+
+  color: black;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -700,9 +744,6 @@ svg text {
   width: 50%;
   padding-top: 20px;
   padding-bottom: 15px;
-
-  /* boks */
-  background-color: black;
 
   /* tekst */
   text-align: center;
