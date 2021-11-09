@@ -12,7 +12,7 @@
 
   <body onload="headerInsert();footerInsert();onload()">
     
-    <button class="nav-item">
+    <button class="button">
       <a role="button" onclick="darkmode()">Klikk for lys modus</a>
     </button>
 
@@ -20,6 +20,7 @@
       <img src="image/logo_nb.png" alt="Logo">
     </div>
 
+    <header id="top"></header> <!-- Header blir hentet fra js-fil -->
 
     <svg>
       <text x="50%" y="60%">
@@ -98,7 +99,7 @@
     <script src="./js/header.js"></script>
     <script src='./js/footer.js'></script>
     <script src="./js/scroll.js"></script>
-    <script src="./js/darkmode.js"></script>
+    <script src="./js/lightmode.js"></script>
   </body>
 
 </html>

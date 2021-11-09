@@ -10,3 +10,6 @@ function darkmode() {
   function onload() {
     document.body.classList.toggle('light-mode', !darkMode); // localStorage.getItem('darkmode') === 'true');
   }
+
+
+
