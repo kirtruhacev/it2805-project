@@ -416,14 +416,15 @@ svg text {
   margin: 0 auto;
 }
 
+/*Gjør slideshowen bilder større*/
 #slideshow img:hover {
   transform: scale(1.2);
 }
-
+/*Gjør bilder større*/
 #grid-container img:hover {
   transform: scale(1.2);
 }
-
+/*Containereen med to koloner, favorites og et bilde*/
 #fav-container {
   display: grid;
   grid-template-columns: 45% 55%;
@@ -434,7 +435,7 @@ svg text {
   margin: 0 auto;
   max-width: 1120px;
 }
-
+/*Bilde til fav-containeren*/
 #fav-container img {
   position: relative;
   grid-area: img;
@@ -443,7 +444,7 @@ svg text {
   margin: 0;
   text-align: center;
 }
-
+/*Tektblokk til favcontaineren*/
 #fav-container-stuff {
   grid-area: parag;
   width: 100%;
@@ -451,11 +452,11 @@ svg text {
   margin: 0;
   text-align: left;
 }
-
+/*Gjør bilde inn i fav-containeren større*/
 #fav-container img:hover {
   transform: scale(1.2);
 }
-
+/*Containerer med tilbud, to kolonner*/
 #offers-container {
   display: grid;
   grid-template-columns: 55% 45%;
@@ -466,7 +467,7 @@ svg text {
   margin: 0 auto;
   max-width: 1120px;
 }
-
+/*Bilde som hører til tilbud-contianeren*/
 #offers-container img {
   position: relative;
   grid-area: img;
@@ -475,7 +476,7 @@ svg text {
   margin: 0;
   text-align: center;
 }
-
+/*Blokka med tilbud*/
 #offers {
   grid-area: offers;
   width: 100%;
@@ -483,7 +484,7 @@ svg text {
   margin: 0;
   text-align: left;
 }
-
+/*Forstørrer bilde som er inn i det blokka*/
 #offers-container img:hover {
   transform: scale(1.2);
 }
