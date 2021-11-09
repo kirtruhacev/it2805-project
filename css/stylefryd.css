@@ -2,7 +2,7 @@
 /*
   FILNAVN: './css/stylefryd.css
   SKREVET AV: Kir, Andreas, Jonas, Eva, Ida.
-  Når: November 2021.
+  Når: 11. November 2021.
 */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Generelle regler - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -16,6 +16,7 @@ body {
   background-position: center top;
   background-size: 1024px 300px; /* Størrelse på bilde*/
   background-color: black;
+  color: white;
   width: 100%; /* Størrelse på body */
   margin: auto;
   margin-top: 330px; /* Skyver ned bodyen så headeren ikke blokkerer*/
@@ -24,7 +25,6 @@ body {
 h1 {
   font-size: 30px;
   font-family: "Georgia", serif;
-  color: white;
 }
 
 h2 {
@@ -37,7 +37,6 @@ h3 {
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
   font-weight: normal;
-  color: #ffffff;
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -51,22 +50,21 @@ h4{
 h5 {
   font-size: 16px;
   font-family: "Georgia", serif;
-  color: white;
   margin: 0;
+  color: white;
 }
 
 /* Footer sosiale medier */
 h6 {
   font-size: 20px;
   font-family: "Georgia", serif;
-  color: white;
+  
 }
 
 p {
   font-size: 16px;
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
-  color: white;
 }
 
 a {
@@ -80,7 +78,6 @@ a {
 li {
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
-  color: #ffffff;
   font-size: 15px;
   line-height: 19px;
 }
@@ -174,7 +171,7 @@ header li {
 /* Styling på navbar tekst */
 header li a {
   font-size: 20px;
-  color: #ffffff; /* Farge på navigasjon */
+  color: white; /* Farge på navigasjon */
   font-family: "Georgia", serif;
 }
 
@@ -197,12 +194,13 @@ header li a:hover:after {
   padding: 80px 0px;
   font-size: 20px;
   font-weight: bold;
-  background-color: black;
   height: 320px;
 }
+
 #top #logo {
   height: 150px;
 }
+
 #top .knapp {
   font-size: 20px;
 }
@@ -215,6 +213,7 @@ header li a:hover:after {
   background-color: black;
   height: 0px;
 }
+
 #scroll #header-background-img {
   display: none;
 }
@@ -248,16 +247,16 @@ footer {
 footer p {
   font-size: 20px;
   line-height : 20px;
+  color: white;
 }
 
 /* Styler copyright i footer */
 .copyright_footer {
     position: absolute;
     bottom: 0;
-    font-size: 10px !important;
+    font-size: 10px;
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: #FFF;
     width: 100%;
     text-align: left;
     height: 25px;
@@ -328,7 +327,6 @@ footer img {
   font-size: 20px;
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
-  color: white;
   margin: 0;
   padding-bottom: 60px;
 }
@@ -345,7 +343,6 @@ text {
 svg text {
   font-family: "Georgia", serif;
   letter-spacing: 10px;
-  stroke: white;
   font-size: 60px;
   font-weight: bold;
   stroke-width: 1;
@@ -368,6 +365,100 @@ svg text {
 }
 
 /* Inspirasjon: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Lightmode - - - - - - - - - - - - - - - - - - - - - - - - - */
+#button{
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #886750;
+}
+
+#button a{
+  font-size: 10px;
+  color: white;
+}
+
+body.light-mode {
+  background-color:#e1d9ce;
+  color: black;
+}
+
+.light-mode h4, li{
+  color: black;
+}
+
+.light-mode intro p {
+  color: black;
+}
+
+.light-mode svg text {
+  stroke: black;
+}
+
+.light-mode #om {
+  stroke: black;
+}
+
+.light-mode .line_contact {
+  border-left: solid black;
+}
+
+.light-mode a.contact:link {
+  color: black;
+}
+
+.light-mode .copyright_footer {
+  border-top-color: black;
+}
+
+.light-mode h6 {
+  color: black;
+}
+
+.light-mode h5 {
+  color: black;
+}
+
+.light-mode h3 {
+  color: black;
+}
+
+.light-mode h1 {
+  color: black;
+}
+
+.light-mode footer p {
+  color: black;
+}
+
+.light-mode ul {
+  color: black;
+}
+
+.light-mode #menybilder div {
+  background: radial-gradient(#886750, white);
+}
+
+.light-mode .menyListe li{
+  color: black
+}
+
+/* Endrer bakgrunn ved bredde < 900px */
+@media screen and (max-width: 900px) {
+  .light-mode #menybilder div {
+    background: #e1d9ce;
+  }
+}
+
+
+.light-mode #menybilder div:hover {
+  background: #e1d9ce;
+}
+
+.light-mode #button a {
+  color: black;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -408,12 +499,12 @@ svg text {
   width: 100%;
   height: auto;
   padding: 0;
-  color: white;
   list-style-type: none;
   font-size: 25px;
   text-align: center;
   line-height: 170%;
   margin: 0 auto;
+  color: white;
 }
 
 /*Gjør slideshowen bilder større*/
@@ -543,6 +634,10 @@ svg text {
   list-style-type: square;
 }
 
+.menyListe li{
+  color: white;
+}
+
 /* Div med bildene du trykker på for å komme til menyene */
 #menybilder {
   display: flex;
@@ -638,7 +733,6 @@ svg text {
   font-size: 16px;
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
-  color: white;
   margin: 0;
   line-height: 40px;
 }
@@ -710,12 +804,8 @@ svg text {
   padding-top: 20px;
   padding-bottom: 15px;
 
-  /* boks */
-  background-color: black;
-
   /* tekst */
   text-align: center;
-  color: white;
 }
 
 /* Styling til iconer */
@@ -729,7 +819,6 @@ svg text {
 .contact {
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
-  color: #ffffff;
   font-size: 20px;
   line-height: 15px;
 }
@@ -753,7 +842,7 @@ a.contact:visited {
   height: 450px;
   border-left: 2px solid white;
   position: absolute;
-  top: 560px;
+  top: 580px;
   left: 50%;
 }
 

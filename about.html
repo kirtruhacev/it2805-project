@@ -10,8 +10,12 @@
     <title>Om oss</title>
   </head>
 
-  <body onload="headerInsert();footerInsert()">
-
+  <body onload="headerInsert();footerInsert();onload()">
+    
+    <button class="button">
+      <a role="button" onclick="darkmode()">Klikk for lys modus</a>
+    </button>
+    
     <svg>
       <text x="50%" y="60%">
         Om oss
@@ -55,6 +59,7 @@
     <script src='./js/footer.js'></script>
     <script src="./js/header.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/lightmode.js"></script>
   </body>
 
 </html>
