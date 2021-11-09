@@ -387,14 +387,6 @@ body.light-mode {
   color: black;
 }
 
-.light-mode #scroll {
-  background-color: white;
-}
-
-.light-mode header li a {
-  color: black;
-}
-
 .light-mode intro p {
   color: black;
 }
@@ -409,6 +401,10 @@ body.light-mode {
 
 .light-mode .line_contact {
   border-left: solid black;
+}
+
+.light-mode a.contact:link {
+  color: black;
 }
 
 .light-mode .copyright_footer {
@@ -821,7 +817,7 @@ a.contact:visited {
   height: 450px;
   border-left: 2px solid white;
   position: absolute;
-  top: 560px;
+  top: 580px;
   left: 50%;
 }
 

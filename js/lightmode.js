@@ -12,4 +12,16 @@ function darkmode() {
   }
 
 
+/* 
+const button = document.getElementById("button");
 
+button.addEventListener("click", ()=>{
+
+    if(button.innerText === "Klikk for lys modus"){
+        button.innerText = "Klikk for mørk modus";
+    }else{
+        button.innerText= "Klikk for lys modus";
+    }
+)}
+
+*/
