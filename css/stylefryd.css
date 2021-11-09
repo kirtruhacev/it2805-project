@@ -419,11 +419,15 @@ svg text {
 /*Gjør slideshowen bilder større*/
 #slideshow img:hover {
   transform: scale(1.2);
+  transition: transform 0.2s;
 }
+
 /*Gjør bilder større*/
 #grid-container img:hover {
   transform: scale(1.2);
+  transition: transform 0.2s;
 }
+
 /*Containereen med to koloner, favorites og et bilde*/
 #fav-container {
   display: grid;
@@ -644,6 +648,11 @@ svg text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-containerAbout img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
 }
 
 /* De ulike items i første flexbox */
