@@ -304,6 +304,10 @@ footer img {
   filter: invert(43%) sepia(32%) saturate(443%) hue-rotate(342deg) brightness(92%) contrast(90%); /* #886750 farge */
 }
 
+#footer-item4 img:hover {
+  opacity: 0.7;
+}
+
 #footer-item2 {
   padding-top: 30px;
 }
@@ -494,123 +498,6 @@ svg text {
   background-size: cover;
   text-align: center;
   font-size: 50px;
-}
-
-/* Grid-container med meny bilder og linken til meny-siden. Containeren består av fem kolonner og ett rad. */
-#grid-container-menu {
-  padding: 30px 0px;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-gap: 20px;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 1120px;
-}
-
-/* Meny bilder */
-#grid-container-menu img {
-  width: 100%;
-  height: auto;
-}
-
-/* Meny bilde når man klikker på den og den åpnes i full skjerm */
-#fullpage {
-  display: none;
-  position: absolute;
-  position: fixed;
-  z-index: 1000;
-  left: 9%;
-  right: 9%;
-  top: 11%;
-  width: 80vw;
-  height: 80vh;
-  background-size: contain;
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  justify-content: center;
-}
-
-/* Linken til menysiden, stylet som h2 */
-#grid-container-menu h2 {
-  text-align: center;
-  margin: auto auto;
-}
-
-/* Grid-container med about infoen. Containeren består av to kolonner, den ene med bilde og den andre med tekst */
-#homepage-about-container {
-  display: grid;
-  grid-template-columns: 1fr fit-content(65%);
-  grid-template-rows: 100%;
-  grid-template-areas: "photo about";
-  height: 400px;
-  padding: 30px 0px;
-  margin: 0 auto;
-  max-width: 1120px;
-}
-
-/* Bilde til about containeren */
-#homepage-about-container img {
-  height: 100%;
-  grid-area: photo;
-}
-
-/* Overskrift til about containeren */
-#homepage-about-container h2 {
-  grid-area: about;
-  margin-left: 20px;
-  left: auto;
-}
-
-/* Paragrafen til about containeren */
-#homepage-about-container p {
-  grid-area: about;
-  width: auto;
-  margin-top: 100px;
-  padding-left: 20px;
-  font-size: 20px;
-  font-family: "Georgia", serif;
-  line-height: 35px;
-}
-
-/* Grid-container med kontaktinfo. Containeren består av to bilder og en liste med info. */
-#homepage-contact-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 35% 30% 35%;
-  grid-template-rows: 100%;
-  grid-template-areas: "image1 contact image2";
-  height: 500px;
-  padding: 30px 0px;
-  margin: 0 auto;
-  max-width: 1120px;
-}
-
-/* Kontaktinfo til contact-containeren */
-#homepage-contact-container ul {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  color: white;
-  list-style-type: none;
-  font-size: 25px;
-  text-align: center;
-  line-height: 170%;
-  margin: 0 auto;
-}
-
-/* Det ene bildet til kontakt-containeren */
-#homepage-contact-container #homepage-contact-container-img1 {
-  grid-area: image1;
-  width: 100%;
-  height: auto;
-}
-
-/* Det andre bildet til kontakt-containeren */
-#homepage-contact-container #homepage-contact-container-img2 {
-  grid-area: image2;
-  width: 100%;
-  height: auto;
 }
 
 /* Google map */
