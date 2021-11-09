@@ -868,7 +868,7 @@ a.contact:visited {
   #grid-container li {
     margin-bottom: 10px;
   }
-
+  /*Containeren med favoritter, en kolonne med to rad*/
   #fav-container {
     display: grid;
     grid-template-columns: 90%;
@@ -881,7 +881,7 @@ a.contact:visited {
     justify-content: center;
 
   }
-
+  /*Bilde som hører til containeren med favoritter*/
   #fav-container img {
     position: relative;
     grid-area: img;
@@ -890,7 +890,7 @@ a.contact:visited {
     margin: 30px auto;
     text-align: center;
   }
-
+  /*Teksten som hører til containeren med favoritter*/
   #fav-container-stuff {
     grid-area: parag;
     width: 80%;
@@ -898,7 +898,7 @@ a.contact:visited {
     margin: 30px auto;
     text-align: center;
   }
-
+  /*Containeren med tilbud, en kolonne med to rad*/
   #offers-container {
     display: grid;
     grid-template-columns: 90%;
@@ -911,7 +911,7 @@ a.contact:visited {
     margin: 0 auto;
     justify-content: center;
   }
-
+  /*Bilde som hører til containeren med tilbud*/
   #offers-container img {
     position: relative;
     grid-area: img;
@@ -920,7 +920,7 @@ a.contact:visited {
     margin: 30px auto;
     text-align: center;
   }
-
+  /*Tilbudtekst*/
   #offers {
     grid-area: offers;
     width: 80%;
@@ -941,149 +941,6 @@ a.contact:visited {
     text-align: center;
     font-size: 50px;
     background-size: auto;
-  }
-
-  /* Grid-container med meny bilder, består av to kolonner og tre rad */
-  #grid-container-menu {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "image1 image2"
-      "menu menu"
-      "image3 image4";
-    padding: 30px 0px;
-    margin: 0 10%;
-    justify-content: center;
-  }
-
-  /* Egne id-er til meny bilder for å plassere dem i riktig box */
-  /* Bilde 1 */
-  #grid-container-menu-image-1 {
-    grid-area: image1;
-    width: 90%;
-    height: auto;
-  }
-  /* Bilde 2 */
-  #grid-container-menu-image-2 {
-    grid-area: image2;
-    width: 90%;
-    height: auto;
-  }
-  /* Meny-ordet */
-  #grid-container-menu h2 {
-    grid-area: menu;
-    text-align: center;
-  }
-  /* Bilde 3 */
-  #grid-container-menu-image-3 {
-    grid-area: image3;
-    width: 90%;
-    height: auto;
-  }
-  /* Bilde 4 */
-  #grid-container-menu-image-4 {
-    grid-area: image4;
-    width: 90%;
-    height: auto;
-  }
-  /* Meny-bilde når man klikker på det */
-  #fullpage {
-    display: none;
-    position: absolute;
-    position: fixed;
-    z-index: 1000;
-    left: 5%;
-    right: 5%;
-    top: 5%;
-    width: 90vw;
-    height: 90vh;
-    background-size: contain;
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    justify-content: center;
-  }
-
-  /* Grid-container til about delen, består av en kolonne og tre rader */
-  #homepage-about-container {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "title"
-      "about"
-      "image";
-    height: auto;
-    padding: 30px 0px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  /* Bilde til about containeren */
-  #homepage-about-container img {
-    grid-area: image;
-    width: 80%;
-    height: auto;
-    margin: 30px auto;
-    text-align: center;
-  }
-
-  /* Forskrift til about-containere n*/
-  #homepage-about-container h2 {
-    grid-area: title;
-    text-align: center;
-    margin: auto auto;
-  }
-
-  /* Paragraf til about containeren */
-  #homepage-about-container p {
-    grid-area: about;
-    margin: 0 auto;
-    width: 80%;
-    font-size: 20px;
-    font-family: "Georgia", serif;
-    line-height: 35px;
-  }
-
-  /* Contact-container, en kolonne og tre rader */
-  #homepage-contact-container {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "contact"
-      "image1"
-      "image2";
-    height: auto;
-    padding: 30px 0px 0px 0px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  /* Liste med kontaktinfo */
-  #homepage-contact-container ul {
-    width: 100%;
-    grid-area: contact;
-    margin: 0 auto;
-    list-style-type: none;
-    font-size: 25px;
-    text-align: center;
-  }
-
-  /* Bilde 1 til kontakt-containeren */
-  #homepage-contact-container #homepage-contact-container-img1 {
-    grid-area: image1;
-    width: 80%;
-    height: auto;
-    margin: 30px auto;
-    padding: 0;
-    text-align: center;
-  }
-
-  /* Bilde 2 til kontakt-containeren, den "fjernes" slik at det ikke blir for mange bilder */
-  #homepage-contact-container #homepage-contact-container-img2 {
-    grid-area: image2;
-    display: none;
   }
 
   /* Google map */
