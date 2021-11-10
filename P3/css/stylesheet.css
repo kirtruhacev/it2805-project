@@ -35,6 +35,9 @@ a:hover {
   text-decoration: underline;
 }
 
+.hide {
+  list-style-type: none;
+}
 /* selected link */
 a:active {
   color: #e1d9ce;

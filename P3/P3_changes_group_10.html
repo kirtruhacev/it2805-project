@@ -10,12 +10,7 @@
     <title>P3 Endringer: Gruppe 10</title>
   </head>
 
-  <header>
-    <div class="header">
-      <h1>P3 Endringer: Gruppe 10</h1>
-      <hr>
-    </div>
-  </header>
+
 
   <body onscroll="makeSticky()" id="hjem">
 
@@ -94,7 +89,7 @@
         </p>
 
         <h3>Forandringer på style.css:</h3>
-        <p>
+
           <ul>
             <li>Margin og padding: Disse er litt forskjellige fra hvilken html fil som er lagt, men tatt i betrakning at det meste skal se likt ut.</li>
             <li>Navbar utseende:
@@ -109,23 +104,30 @@
             <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene for å enklere vise og plassere innhold.</li>
             <li>Lightmode: Hvis bruker ønsker å endre siden til en lysere versjon, blir svart tekst/elementer endret til hvit og bakgrunnsbilde til #e1d9ce</li>
             <li>Image: De blir noe forstørret når man hover over de.</li>
+            <li class = "hide">
             <ul>
               <li>På menysiden er hjørnene endret fra avrundt innover til border-radius: 1em.</li>
             </ul>
+            </li>
             <li>Parallax: Høyden er økt til 300px;</li>
             <li>Footer: Copyright har endret farge fra #886750 til svart. </li>
             <li>Media Querie:</li>
+            <li class = "hide">
             <ul>
               <li>Navbar utseende liten skjerm:
                 <ul>
                   <li>Våre orginale tanke fungerte ikke på liten skjerm, så vi endre det til en meny som blir listet under hverandre. Siden den tar mye av skjermen, bestemte vi at når man scroller forsvinner navbaren så kun logoen vises øverst. Alt dukker opp igjen om man scroller tilbake til toppen.</li>
                   <li>Light mode er orginalt plassert øverst i høyre hjørne, men knappen forsvinner når man scroller.</li>
                 </ul>
+              </li>
               <li>Logo: På liten skjerm passet det best at den var plassert på toppen over navbaren.</li>
               <li>Innhold: Alt av tekst og innhold er endret så siden er responsive til stor og liten skjerm.</li>
             </ul>
+          </li>
+
+
           </ul>
-        </p>
+
 
         <h3>Tillegg JavaScript fil lightmode.js</h3>
         <p>
@@ -173,7 +175,6 @@
     <section id="sec_4">
       <div>
         <h2>Oppdatert Filstruktur</h2>
-        <p></p>
 
         <ul>
           <li>homepage.html</li>
@@ -183,35 +184,44 @@
           <li>contact.html</li>
           <li>image/
             <ul>
-
+              <li class = "hide">
               <ul>
                 <li>kontakt</li>
+                <li class = "hide">
                 <ul>
                   <li>bakeOff.png</li>
                   <li>kaffeDrikke.png</li>
                   <li>kakeSøtsaker.png</li>
                   <li>mat.png</li>
                 </ul>
+                </li>
               </ul>
-
+              </li>
+            <li class = "hide">
               <ul>
                 <li>menyBilder</li>
+                <li class = "hide">
                 <ul>
                   <li>bakeOff.png</li>
                   <li>kaffeDrikke.png</li>
                   <li>kakeSøtsaker.png</li>
                   <li>mat.png</li>
                 </ul>
+                </li>
               </ul>
-
+            </li>
+            <li class ="hide">
               <ul>
                 <li>slideshow</li>
+                <li class = "hide">
                 <ul>
                   <li>bilde1.png</li>
                   <li>...</li>
                   <li>bilde4.png</li>
                 </ul>
+                </li>
               </ul>
+            </li>
 
               <li>beans_nb.png</li>
               <li>beans.jpg</li>
@@ -333,12 +343,9 @@
       </div>
     </section>
 
+    <footer>
+      <p>Andreas, Kir, Jonas, Ida & Eva</p>
+    </footer>
     <script src="js/main.js"></script>
-
   </body>
-
-  <footer>
-    <p>Andreas, Kir, Jonas, Ida & Eva</p>
-  </footer>
-
 </html>
