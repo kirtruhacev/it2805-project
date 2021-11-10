@@ -1,3 +1,5 @@
+  /* Gjøre siden lysere */
+
 let darkMode = true;
 
 function darkmode() {
@@ -11,8 +13,7 @@ function darkmode() {
     document.body.classList.toggle('light-mode', !darkMode); // localStorage.getItem('darkmode') === 'true');
   }
 
-
-  /* Inspirasjon: https://codepen.io/mattmarquise/details/MWbrNWe */
+/* Inspirasjon: https://codepen.io/mattmarquise/details/MWbrNWe */
 
 /* 
 const button = document.getElementById("button");

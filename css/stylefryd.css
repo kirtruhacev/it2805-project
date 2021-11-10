@@ -141,7 +141,6 @@ header {
 /* Styling på logo header */
 header img {
   height: 140px;
-  box-shadow: none;
   position: absolute;
   top: 10px;
   left: 0;
@@ -288,7 +287,6 @@ footer img {
   margin-right: auto;
   width: 100%;
   vertical-align: middle;
-  box-shadow: none;
 }
 
 #footer-item4 {
@@ -368,19 +366,24 @@ svg text {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Lightmode - - - - - - - - - - - - - - - - - - - - - - - - - */
 #button{
+  cursor: pointer;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #886750;
+  border: transparent;
 }
 
-#button a{
-  font-size: 10px;
-  color: white;
+#button img{
+  height: 40px;
+  width: auto;
 }
 
 body.light-mode {
   background-color:#e1d9ce;
   color: black;
+}
+
+.light-mode #button{
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .light-mode h4, li{
@@ -654,7 +657,6 @@ body.light-mode {
 /* Bilder inne i div-box */
 #menybilder div img {
   max-width: 100%;
-  box-shadow: none;
   margin-top: 50%;
 }
 
@@ -1111,7 +1113,6 @@ a.contact:visited {
   #menybilder div img {
     display: none;
     min-width: 350px;
-    box-shadow: none;
   }
 
   /* Hover */

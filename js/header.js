@@ -6,6 +6,16 @@ const header = document.getElementById('top'); //Henter id på header
 
 function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
 
+   /* //Lager lightmode-knapp
+    const a1 = document.createElement('a'); //Oppretter <a>
+    const img1 = document.createElement('img'); //Oppretter <img>
+    img1.src = "./image/lightmode.png"; //Legger til src i <img>
+    img1.alt = "Light mode og dark mode knapp" //Legger til alt-tekst i <img>
+    img1.id = "button"; //lager id på bilde i headeren
+    document.getElementById("button").onclick = function() {darkmode()};
+    a1.appendChild(img1); //Legger til <img> i <a>
+    header.appendChild(a1); //Legger til <a> i <header> */
+
     //Lager logoen
     const a = document.createElement('a'); //Oppretter <a>
     const img = document.createElement('img'); //Oppretter <img>
