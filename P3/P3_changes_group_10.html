@@ -10,12 +10,16 @@
     <title>P3 Endringer: Gruppe 10</title>
   </head>
 
+  <body>
 
-
-  <body onscroll="makeSticky()" id="hjem">
+    <header>
+      <div class="header">
+        <h1>P3 Endringer: Gruppe 10</h1>
+        <hr>
+      </div>
+    </header>
 
     <div id="navbar">
-      <a href="#hjem">Hjem</a>
       <a href="#sec_1">Dokumentdetaljer</a>
       <a href="#sec_2">Administrative detaljer</a>
       <a href="#sec_3">Forandringer vi har gjort</a>
@@ -90,29 +94,29 @@
 
         <h3>Forandringer på style.css:</h3>
 
-          <ul>
-            <li>Margin og padding: Disse er litt forskjellige fra hvilken html fil som er lagt, men tatt i betrakning at det meste skal se likt ut.</li>
-            <li>Navbar utseende:
-              <ul>
-                <li>Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript. Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra bold til normal. </li>
-                <li>Vi har også valgt å flytte overskriften for hvilken side du er på under headerbilde. Den har også fått en animasjon som endrer farge fra #886750 til hvit, med hvit stroke rundt bokstavene </li>
-                <li>Lagt til box shadow navbaren for bedre å skille den fra bodyen med fargen #353535;</li>
-              </ul>
-            </li>
-            <li>Linker: Vi valgte å ha samme farge på linker før og etter klikk.</li>
-            <li>Padding er endret ut fra hva som passet best til hver side, med tanke på grid og andre elementer, men alle sidene skal ha en god margin på hver sin side slik som i mock upen.</li>
-            <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene for å enklere vise og plassere innhold.</li>
-            <li>Lightmode: Hvis bruker ønsker å endre siden til en lysere versjon, blir svart tekst/elementer endret til hvit og bakgrunnsbilde til #e1d9ce</li>
-            <li>Image: De blir noe forstørret når man hover over de.</li>
-            <li class = "hide">
+        <ul>
+          <li>Margin og padding: Disse er litt forskjellige fra hvilken html fil som er lagt, men tatt i betrakning at det meste skal se likt ut.</li>
+          <li>Navbar utseende:
+            <ul>
+              <li>Pop-up headeren som nevnt i P2 ble erstattet med en CSS versjon istedefor JavaScript. Navbaren er stylet slik at den klir krympet når man blar nedover siden, der teksten går fra bold til normal. </li>
+              <li>Vi har også valgt å flytte overskriften for hvilken side du er på under headerbilde. Den har også fått en animasjon som endrer farge fra #886750 til hvit, med hvit stroke rundt bokstavene </li>
+              <li>Lagt til box shadow navbaren for bedre å skille den fra bodyen med fargen #353535;</li>
+            </ul>
+          </li>
+          <li>Linker: Vi valgte å ha samme farge på linker før og etter klikk.</li>
+          <li>Padding er endret ut fra hva som passet best til hver side, med tanke på grid og andre elementer, men alle sidene skal ha en god margin på hver sin side slik som i mock upen.</li>
+          <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene for å enklere vise og plassere innhold.</li>
+          <li>Lightmode: Hvis bruker ønsker å endre siden til en lysere versjon, blir svart tekst/elementer endret til hvit og bakgrunnsbilde til #e1d9ce</li>
+          <li>Image: De blir noe forstørret når man hover over de.</li>
+          <li class="hide">
             <ul>
               <li>På menysiden er hjørnene endret fra avrundt innover til border-radius: 1em.</li>
             </ul>
-            </li>
-            <li>Parallax: Høyden er økt til 300px;</li>
-            <li>Footer: Copyright har endret farge fra #886750 til svart. </li>
-            <li>Media Querie:</li>
-            <li class = "hide">
+          </li>
+          <li>Parallax: Høyden er økt til 300px;</li>
+          <li>Footer: Copyright har endret farge fra #886750 til svart. </li>
+          <li>Media Querie:</li>
+          <li class="hide">
             <ul>
               <li>Navbar utseende liten skjerm:
                 <ul>
@@ -124,10 +128,7 @@
               <li>Innhold: Alt av tekst og innhold er endret så siden er responsive til stor og liten skjerm.</li>
             </ul>
           </li>
-
-
-          </ul>
-
+        </ul>
 
         <h3>Tillegg JavaScript fil lightmode.js</h3>
         <p>
@@ -136,9 +137,7 @@
 
         <h3>Tillegg JavaScript fil slideshow.js (tidligere dynamicbanner.js)</h3>
         <p>
-          Javascript funskjonen som virker som slideshow som kjøres automatisk. Slideshowen inneholder 4 bilder, vi kunne sette inn flere bilder, men tenkte at det kunne vært greit å ha slideshowen som skal
-          inneholder bilder med sammet "tema", i det tilfelle Fryd sine besøkende. Slideshowen har samme funksjon slik som vi tenkte helt fra starten av, bortsett fra at vi ednret navnet til funksjonen til slideshow.js, da den
-          beskriver bedre den faktiske "virkemåten" til js funksjonen.
+          Javascript funskjonen som virker som slideshow som kjøres automatisk. Slideshowen inneholder 4 bilder, vi kunne sette inn flere bilder, men tenkte at det kunne vært greit å ha slideshowen som skal inneholder bilder med sammet "tema", i det tilfelle Fryd sine besøkende. Slideshowen har samme funksjon slik som vi tenkte helt fra starten av, bortsett fra at vi ednret navnet til funksjonen til slideshow.js, da den beskriver bedre den faktiske "virkemåten" til js funksjonen.
         </p>
 
         <h3>Tillegg JavaScript fil meny.js</h3>
@@ -184,44 +183,44 @@
           <li>contact.html</li>
           <li>image/
             <ul>
-              <li class = "hide">
-              <ul>
-                <li>kontakt</li>
-                <li class = "hide">
+              <li class="hide">
                 <ul>
-                  <li>bakeOff.png</li>
-                  <li>kaffeDrikke.png</li>
-                  <li>kakeSøtsaker.png</li>
-                  <li>mat.png</li>
+                  <li>kontakt</li>
+                  <li class="hide">
+                    <ul>
+                      <li>bakeOff.png</li>
+                      <li>kaffeDrikke.png</li>
+                      <li>kakeSøtsaker.png</li>
+                      <li>mat.png</li>
+                    </ul>
+                  </li>
                 </ul>
-                </li>
-              </ul>
               </li>
-            <li class = "hide">
-              <ul>
-                <li>menyBilder</li>
-                <li class = "hide">
+              <li class="hide">
                 <ul>
-                  <li>bakeOff.png</li>
-                  <li>kaffeDrikke.png</li>
-                  <li>kakeSøtsaker.png</li>
-                  <li>mat.png</li>
+                  <li>menyBilder</li>
+                  <li class="hide">
+                    <ul>
+                      <li>bakeOff.png</li>
+                      <li>kaffeDrikke.png</li>
+                      <li>kakeSøtsaker.png</li>
+                      <li>mat.png</li>
+                    </ul>
+                  </li>
                 </ul>
-                </li>
-              </ul>
-            </li>
-            <li class ="hide">
-              <ul>
-                <li>slideshow</li>
-                <li class = "hide">
+              </li>
+              <li class="hide">
                 <ul>
-                  <li>bilde1.png</li>
-                  <li>...</li>
-                  <li>bilde4.png</li>
+                  <li>slideshow</li>
+                  <li class="hide">
+                    <ul>
+                      <li>bilde1.png</li>
+                      <li>...</li>
+                      <li>bilde4.png</li>
+                    </ul>
+                  </li>
                 </ul>
-                </li>
-              </ul>
-            </li>
+              </li>
 
               <li>beans_nb.png</li>
               <li>beans.jpg</li>
@@ -346,6 +345,9 @@
     <footer>
       <p>Andreas, Kir, Jonas, Ida & Eva</p>
     </footer>
+
     <script src="js/main.js"></script>
+
   </body>
+
 </html>

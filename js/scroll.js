@@ -1,5 +1,3 @@
-/* ######### Scrolle-funksjon ######### */
-
 /* Scroller ned headeren når bruker scroller ned */
 
 function scrollFunction() {
