@@ -81,49 +81,6 @@ li {
   line-height: 19px;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
-.load_page {
-  position: absolute;
-  text-align: center;
-  background-color: black;
-  background-size: fill;
-  height: 100%;
-  width: 100%;
-  margin-top: auto;
-  left: 0;
-  z-index: 10000;
-  -webkit-animation: load-out 3s;
-  animation: load-out 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes load-out {
-  from {
-    top: 30%;
-    opacity: 1;
-  }
-
-  to {
-    bottom: 100%;
-    opacity: 0;
-  }
-}
-
-@keyframes load-out {
-  from {
-    top: 30%;
-    opacity: 1;
-  }
-
-  to {
-    bottom: 100%;
-    opacity: 0;
-  }
-}
-
-/* Inspirasjon: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
   width: 100%;
@@ -841,11 +798,6 @@ body.light-mode {
   z-index: 999;
 }
 
-/* Intro */
-.light-mode .load_page {
-  background-color: #e1d9ce;
-}
-
 /* Meny */
 .light-mode #menybilder div {
   background: radial-gradient(#886750, white);
@@ -1378,13 +1330,6 @@ body.light-mode {
     min-width: 90%;
     min-height: 90%;
     object-fit: cover;
-  }
-
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - Loading side - - - - - - - - - - - - - - - - - - - - - - - - - */
- .load_page img{
-  height: auto;
-  width: 50%;
-  margin-top: 100px;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
