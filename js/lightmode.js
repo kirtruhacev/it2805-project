@@ -1,16 +1,37 @@
+let lightMode = localStorage.getItem('lightMode');
+const body = document.querySelector('body');
+
+function enableLightMode (){
+  body.className = 'light-mode';
+  localStorage.setItem('lightMode','on');
+}
+
+function diableLightMode (){
+  body.className = 'off' ;
+  localStorage.setItem('lightMode', 'off' );
+}
+
+
+
 /* Gjøre siden lysere */
 
-let darkMode = true;
-
 function darkmode() {
-    const wasDarkmode = darkMode; 
-    darkMode = !darkMode; 
-    const element = document.body;
-    element.classList.toggle('light-mode', wasDarkmode);
+  lightMode = localStorage.getItem('lightMode');
+  if (lightMode !== 'on'){
+    enableLightMode();
   }
-
-  function onload() {
-    document.body.classList.toggle('light-mode', !darkMode); 
+  else {
+    diableLightMode();
   }
+}
 
-/* Inspirasjon: https://codepen.io/mattmarquise/details/MWbrNWe */
+function onload() {
+  lightMode = localStorage.getItem('lightMode');
+  if (lightMode == 'on'){
+    enableLightMode();
+    console.log('loading');
+  }
+  else if ( lightMode === 'off') {
+    diableLightMode();
+  }
+}
