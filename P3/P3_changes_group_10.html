@@ -92,26 +92,33 @@
             <li>Linker: Vi valgte å ha samme farge på linker før og etter klikk.</li>
             <li>Footer: Her valgte vi også å flytte åpningstiden for i dag, og også legge til bilde av kaffebønne fra logoen deres.</li>
             <li>Padding er endret ut fra hva som passet best til hver side, med tanke på grid og andre elementer, men alle sidene skal ha en god margin på hver sin side slik som i mock upen.</li>
+            <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene for å enklere vise og plassere innhold.</li>
+            <li>Lightmode: Hvis bruker ønsker å endre siden til en lysere versjon, blir svart tekst/elementer endret til hvit eller fargen #e1d9ce</li>
             <li>Media Querie:</li>
             <ul>
               <li>Navbar utseende liten skjerm: Våre orginale tanke fungerte ikke på liten skjerm, så vi endre det til en meny som blir listet underhverandre. Siden den tar mye av skjermen, bestemte vi at når man scroller forsvinner navbaren så kun logoen vises øverst. Alt dukker opp igjen om man scroller tilbake til toppen.</li>
               <li>Logo: På liten skjerm passet det best at den var plassert på toppen over navbaren.</li>
               <li>Innhold: Alt av tekst og innhold er endret så siden er responsive til stor og liten skjerm.</li>
             </ul>
-            <li>Grid: Vi laget flere grider gjennom prosjektet for mange av sidene for å enklere vise og plassere innhold.</li>
           </ul>
         </p>
 
+        <h3>Tillegg JavaScript fil lightmode.js</h3>
+        <p>
+          Denne endrer så brukeren kan velge mellom å ha light-mode eller dark-mode. Etter tilbakemeldingene var det flere som kommenterte at siden var for mørk, men dette var et krav fra vår kunde. Likevel tenkte vi at å legge til en mulighet til å endre til en lysere versjon, ville også gjøre flere av brukerene førnøyde, siden alle har ulike preferanser. 
+        </p>
+
+        <h3>Tillegg JavaScript fil slideshow.js (tidligere dynamicbanner.js)</h3>
+        <p>
+        </p>
+        
         <h3>Tillegg JavaScript fil meny.js</h3>
         <p>
-          javascript-funksjonen for meny-siden er ikke helt som vi tenkte. Dette ble beskrevet litt tidligere under "endringer på meny-side". Hovedendringen er at vi gikk bort fra en løsning med filter og søkefunksjon, og heller valgte en lettere og mer oversiktelig løsning med at man viser menyen ved å klikke på de forskjellige "bolkene". Som nevnt tidligere så måtte vi gjøre det tydeligere at man kunne få opp menyen ved å klikke på de forskjellige "bolkene", da flere av test-brukerne ikke forsto dette.
+          Javascript-funksjonen for meny-siden er ikke helt som vi tenkte. Dette ble beskrevet litt tidligere under "endringer på meny-side". Hovedendringen er at vi gikk bort fra en løsning med filter og søkefunksjon, og heller valgte en lettere og mer oversiktelig løsning med at man viser menyen ved å klikke på de forskjellige "bolkene". Som nevnt tidligere så måtte vi gjøre det tydeligere at man kunne få opp menyen ved å klikke på de forskjellige "bolkene", da flere av test-brukerne ikke forsto dette.
         </p>
 
         <h3>Tillegg JavaScript fil scroll.js (tidligere en del av header.js)</h3>
         <p>Valgt å separere disse for ordens skyld. Den endrer høyden på headeren hvis brukeren har scrollet mer enn en viss lengde. Dette blir gjort for å kunne endre på utseendet til headeren gjennom CSS. Vi lagde da en klasse for når man er på toppen av siden og en klasse for når man scroller. Dermed fikk vi stylet det i css og slapp å gjøre alle endringene med javascript css-styling.</p>
-
-        <h3>Tillegg JavaScript fil slideshow.js (tidligere dynamicbanner.js)</h3>
-        <p></p>
 
         <h3>Minimumskrav:</h3>
         <p> Vi brukte åpningstider i footer.js, navigasjonsbar i header.js, meny.js og slideshow.js for å fylle minimumkravene. De to førstnevnte er en JavaScript-funksjon som går igjen på alle sidene, som gir alle et likt utseende. meny.js er brukt på menysiden for å skape en effekt når man trykker på 'menyknappene'. slideshow.js er brukt på hovedsiden for en automatisk bildefremvisning.
@@ -195,8 +202,9 @@
             <ul>
               <li>footer.js</li>
               <li>header.js</li>
-              <li>scroll.js</li>
+              <li>lightmode.js</li>
               <li>meny.js</li>
+              <li>scroll.js</li>
               <li>slideshow.js</li>
             </ul>
           </li>
@@ -254,6 +262,11 @@
             <td>Eva og Andreas</td>
           </tr>
 
+          <tr>
+            <td>lightmode.js</td>
+            <td>JavaScript som endrer hele siden til en lysere versjon.</td>
+            <td>Eva</td>
+          </tr>
 
           <tr>
             <td>meny.js</td>
