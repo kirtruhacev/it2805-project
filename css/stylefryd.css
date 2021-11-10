@@ -1373,8 +1373,8 @@ body.light-mode {
 
  /*- - - - - - - - - - - - - - - - - - - - - - - - - - - About - - - - - - - - - - - - - - - - - - - - - - - - - - */
  #aboutOut {
-  margin-left: 30%;
-  max-width: 60%;
+  margin-left: 15%;
+  width: 70%;
   margin-right: 10%;
   margin-top: 0;
   height: auto;
@@ -1388,13 +1388,13 @@ body.light-mode {
   max-width:  70%;
   margin-left: 15%;
   margin-right: 15%;
-  font-size: 13px;
+  font-size: 16px;
   margin-bottom: 0%;
 } 
 
 #inside {
-  margin-left: 30%;
-  max-width: 60%;
+  margin-left: 15%;
+  width: 70%;
   margin-right: 10%;
   height: auto;
 } 
