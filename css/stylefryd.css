@@ -1334,6 +1334,11 @@ body.light-mode {
 .light-mode #top{
   box-shadow: 0px 0px 8px 2px #CEC0AE; /* Legger til skygge på undersiden */
   }
+
+  .light-mode #top #button{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
   
 .light-mode #scroll #button {
   display: none;
