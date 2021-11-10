@@ -417,8 +417,8 @@ body.light-mode {
   background-color: #e1d9ce;
 }
 
-.light-mode #top .knapp{
-  color: red;
+.light-mode #scroll li a{
+  color: black;
 }
 
 /* Footer */
