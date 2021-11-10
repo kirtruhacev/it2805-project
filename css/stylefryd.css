@@ -1,8 +1,7 @@
-
 /*
   FILNAVN: './css/stylefryd.css
   SKREVET AV: Kir, Andreas, Jonas, Eva, Ida.
-  Når: 11. November 2021.
+  Dato: 11. November 2021.
 */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Generelle regler - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -207,7 +206,7 @@ header li a:hover:after {
   font-weight: normal;
   background-color: black;
   height: 0px;
-  box-shadow: 0px 0px 8px 2px #353535;
+  box-shadow: 0px 0px 8px 2px #353535; /* Legger til skygge på undersiden */
 }
 
 #scroll #header-background-img {
@@ -356,162 +355,6 @@ svg text {
 }
 
 /* Inspirasjon: https://codepen.io/ANAMAFLA/pen/eYJbGpd */
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Lightmode - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Knapp */
-#button{
-  cursor: pointer;
-  background-color: transparent;
-  border: transparent;
-  position: relative;
-  top: -30px;
-}
-
-#button img{
-  height: 30px;
-  width: auto;
-}
-
-.light-mode #scroll #button{
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-/* Generelt */
-body.light-mode {
-  background-color:#e1d9ce;
-  color: black;
-}
-
-.light-mode h4, li{
-  color: black;
-}
-
-.light-mode intro p {
-  color: black;
-}
-
-.light-mode h1 {
-  color: black;
-}
-
-.light-mode h3 {
-  color: black;
-}
-
-.light-mode h5 {
-  color: black;
-}
-
-.light-mode h6 {
-  color: black;
-}
-
-.light-mode ul {
-  color: black;
-}
-
-.light-mode .contact a {
-  color: black;
-}
-
-/* Header */
-.light-mode #scroll {
-  background-color: #e1d9ce;
-}
-
-.light-mode #scroll li a{
-  color: black;
-}
-
-.light-mode #scroll {
-  box-shadow: 0px 0px 8px 2px #CEC0AE;
-}
-
-.light-mode #header-background-img{
-  filter: brightness(110%);
-}
-
-/* Footer */
-.light-mode footer p {
-  color: black;
-}
-
-.light-mode .copyright_footer {
-  border-top-color: black;
-}
-
-/* Intro */
-.light-mode svg text {
-  stroke: black;
-}
-
-/* Meny */
-.light-mode #menybilder div {
-  background: radial-gradient(#886750, white);
-}
-
-.light-mode .menyListe li{
-  color: black
-}
-
-/* Om oss */
-.light-mode #om {
-  stroke: black;
-}
-
-/* Kontakt */
-.light-mode .line_contact {
-  border-left: solid black;
-}
-
-.light-mode a.contact:link {
-  color: black;
-}
-
-.light-mode a.contact {
-  color: black;
-}
-
-.light-mode .contact_img img {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-.light-mode #facebook-knapp{
-  color:black
-}
-
-/* Endrer bakgrunn ved bredde < 900px */
-@media screen and (max-width: 900px) {
-
-/* Meny */
-.light-mode #menybilder div {
-    background: #e1d9ce;
-  }
-
-.light-mode #menybilder div:hover {
-  background: #e1d9ce;
-}
-
-.light-mode #button a {
-  color: black;
-}
-}
-@media screen and (max-width: 600px) {
-/* Header */
-.light-mode header li a{
-  color: black;
-}
-
-.light-mode #top{
-  box-shadow: 0px 0px 8px 2px #CEC0AE;
-}
-
-.light-mode #scroll #button {
-  display: none;
-}
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Grid-container med slideshow, åpningstider og et bilde. Containeren består av tre kolonner og ett rad */
@@ -906,6 +749,131 @@ a.contact:visited {
   margin-bottom: 4%;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Lightmode - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Knapp */
+#button{
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  position: relative;
+  top: -30px;
+}
+
+#button img{
+  height: 30px;
+  width: auto;
+}
+
+.light-mode #scroll #button{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/* Generelt */
+body.light-mode {
+  background-color:#e1d9ce;
+  color: black;
+}
+
+.light-mode h4, li{
+  color: black;
+}
+
+.light-mode intro p {
+  color: black;
+}
+
+.light-mode h1 {
+  color: black;
+}
+
+.light-mode h3 {
+  color: black;
+}
+
+.light-mode h5 {
+  color: black;
+}
+
+.light-mode h6 {
+  color: black;
+}
+
+.light-mode ul {
+  color: black;
+}
+
+.light-mode .contact a {
+  color: black;
+}
+
+/* Header */
+.light-mode #scroll {
+  background-color: #e1d9ce;
+}
+
+.light-mode #scroll li a{
+  color: black;
+}
+
+.light-mode #scroll {
+  box-shadow: 0px 0px 8px 2px #CEC0AE; /* Legger til skygge på undersiden */
+}
+
+.light-mode #header-background-img{
+  filter: brightness(110%);
+}
+
+/* Footer */
+.light-mode footer p {
+  color: black;
+}
+
+.light-mode .copyright_footer {
+  border-top-color: black;
+}
+
+/* Intro */
+.light-mode svg text {
+  stroke: black;
+}
+
+/* Meny */
+.light-mode #menybilder div {
+  background: radial-gradient(#886750, white);
+}
+
+.light-mode .menyListe li{
+  color: black
+}
+
+/* Om oss */
+.light-mode #om {
+  stroke: black;
+}
+
+/* Kontakt */
+.light-mode .line_contact {
+  border-left: solid black;
+}
+
+.light-mode a.contact:link {
+  color: black;
+}
+
+.light-mode a.contact {
+  color: black;
+}
+
+.light-mode .contact_img img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.light-mode #facebook-knapp{
+  color:black
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - 1050px < Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Regler for About når skjerm mellom 900 og 1050 px */
 @media only screen and (min-width: 900px) and (max-width: 1050px) {
@@ -940,7 +908,7 @@ a.contact:visited {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media screen and (max-width: 900px) {
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - Genrelle regler - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Generelle regler - - - - - - - - - - - - - - - - - - - - - - - - - */
   body {
     background-color: black;
     width: 100%;
@@ -957,7 +925,7 @@ a.contact:visited {
       margin: 0 auto;
       width: 100%;
       text-align: center;
- }
+  }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Grid-containeren bestående av en kolonne med slideshow, bilde og åpningstider */
@@ -1217,6 +1185,20 @@ a.contact:visited {
   #frydoutside2{
     display: none;
   }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* Meny */
+.light-mode #menybilder div {
+  background: #e1d9ce;
+  } 
+
+.light-mode #menybilder div:hover {
+  background: #e1d9ce;
+  }
+
+.light-mode #button a {
+  color: black;
+  }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 600px - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -1252,7 +1234,7 @@ a.contact:visited {
 
   #top{
     height: 330px;
-    box-shadow: 0px 0px 8px 2px #353535;
+    box-shadow: 0px 0px 8px 2px #353535; /* Legger til skygge på undersiden */
   }
 
   #top #logo{
@@ -1339,5 +1321,19 @@ a.contact:visited {
   height: auto;
   width: 50%;
   margin-top: 100px;
+  }
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* Header */
+  .light-mode header li a{
+  color: black;
+  }
+
+  .light-mode #top{
+  box-shadow: 0px 0px 8px 2px #CEC0AE; /* Legger til skygge på undersiden */
+  }
+
+  .light-mode #scroll #button {
+  display: none;
   }
 }
