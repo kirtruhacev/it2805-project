@@ -86,20 +86,21 @@ li {
   position: absolute;
   text-align: center;
   background-color: black;
+  background-size: fill;
   height: 100%;
   width: 100%;
-  margin-top: 230px;
+  margin-top: auto;
   left: 0;
-  z-index: 99;
+  z-index: 10000;
   -webkit-animation: load-out 3s;
-  animation: load-out 2s;
+  animation: load-out 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes load-out {
   from {
-    top: 0;
+    top: 30%;
     opacity: 1;
   }
 
@@ -111,7 +112,7 @@ li {
 
 @keyframes load-out {
   from {
-    top: 0;
+    top: 30%;
     opacity: 1;
   }
 
@@ -837,6 +838,12 @@ body.light-mode {
 /* Intro */
 .light-mode svg text {
   stroke: black;
+  z-index: 999;
+}
+
+/* Intro */
+.light-mode .load_page {
+  background-color: #e1d9ce;
 }
 
 /* Meny */
@@ -1362,7 +1369,8 @@ body.light-mode {
 
   .light-mode #scroll #button {
   display: none;
- }
+  }
+
  /*- - - - - - - - - - - - - - - - - - - - - - - - - - - About - - - - - - - - - - - - - - - - - - - - - - - - - - */
  #aboutOut {
   margin-left: 30%;
@@ -1393,7 +1401,6 @@ body.light-mode {
 #frydoutside2{
   display: none;
 } 
-
 }
 
 
