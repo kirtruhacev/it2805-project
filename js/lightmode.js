@@ -12,6 +12,8 @@ function darkmode() {
   }
 
 
+  /* Inspirasjon: https://codepen.io/mattmarquise/details/MWbrNWe */
+
 /* 
 const button = document.getElementById("button");
 
