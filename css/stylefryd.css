@@ -837,75 +837,46 @@ body.light-mode {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - 1050px < Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Regler for About når skjerm mellom 900 og 1050 px */
 @media only screen and (min-width: 900px) and (max-width: 1050px) {
- /* #vid {
-    display: none;
-  }*/
-  /*.flex-containerAbout {
-    flex-shrink: 1;
-  }
   .aboutpic{
-    width: 450px;
     margin-left: 5%;
     display: flex;
   }
 
   #frydoutside2{
-    display: flex;
-  }
-  #aboutOut{
-    width: 450px;
-  }
-  #inside{
-    width: 450px;
-    margin-left: 5%;
-  }
-  #om{
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .aboutpic{
-    margin-left: 5%;
-    display: flex;
-  }*/
-
-  #frydoutside2{
     display: none;
-    width: 60%;
-    margin-left: 0%;
-    margin-right: 20%;
-    margin-top: 0%;
-    max-height: 150px;
   }
   #aboutOut{
-    width: 60%;
-    margin-left: 30%;
+    width: 35%;
+    margin-left: 60%;
     margin-right: 0%;
-    margin-top: 0;
-    height: auto;
+    margin-top: -414px;
+    height: 400px;
   }
   #inside{
-    width: 60%;
-    margin-left: 30%;
-    margin-right: 0%;
+    width: 35%;
+    margin-left: 10%;
     margin-top: 0px;
     margin-bottom: 10px;
-    height: auto;
+    height: 400px;
 
   }
-  #om{width: 80%;
-    margin-left: 0%;
-    margin-right: 10%;
-    margin-top: -20px;
+  #om{width: 85%;
+    margin-left: 10%;
+    margin-right: 5%;
     font-size: 20px;
-    margin-bottom: 20px;
   }
  
   .flexbox-item{
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 100%;
+    max-width: 100%;
 
   }
+  .flex-containerAbout{
+    flex-direction: column-reverse;
+  }
+  
+  
+  
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -1166,41 +1137,40 @@ body.light-mode {
 
   #frydoutside2{
     display: none;
-    width: 60%;
-    margin-left: 0%;
-    margin-right: 20%;
-    margin-top: 0%;
-    max-height: 150px;
   }
   #aboutOut{
-    width: 60%;
-    margin-left: 30%;
+    width: 35%;
+    margin-left: 60%;
     margin-right: 0%;
-    margin-top: 0;
-    height: auto;
+    margin-top: -317px;
+    height: 300px;
   }
   #inside{
-    width: 60%;
-    margin-left: 30%;
-    margin-right: 0%;
+    width: 35%;
+    margin-left: 10%;
     margin-top: 0px;
     margin-bottom: 10px;
-    height: auto;
+    height: 300px;
 
   }
-  #om{width: 80%;
-    margin-left: 0%;
-    margin-right: 10%;
-    margin-top: -20px;
+  #om{width: 85%;
+    margin-left: 10%;
+    margin-right: 5%;
     font-size: 20px;
-    margin-bottom: 20px;
   }
  
   .flexbox-item{
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 100%;
+    max-width: 100%;
 
   }
+  .flex-containerAbout{
+    flex-direction: column-reverse;
+  }
+  
+  
+  
+  
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Meny */
@@ -1348,9 +1318,11 @@ body.light-mode {
 
  /*- - - - - - - - - - - - - - - - - - - - - - - - - - - About - - - - - - - - - - - - - - - - - - - - - - - - - - */
  #aboutOut {
-  margin-left: 5%;
-  max-width: 90%;
-  margin-right: 5%;
+  margin-left: 30%;
+  max-width: 60%;
+  margin-right: 10%;
+  margin-top: 0;
+  height: auto;
 }
 
 .flex-containerAbout {
@@ -1358,21 +1330,29 @@ body.light-mode {
 }
 
 #om {
-  max-width:  90%;
-  margin-left: 0%;
-  margin-right: 5%;
-  text-align: center;
-  font-size: 12px;
+  max-width:  70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 13px;
+  margin-bottom: 0%;
 } 
 
 #inside {
-  margin-left: 5%;
-  max-width: 90%;
-  margin-right: 5%;
+  margin-left: 30%;
+  max-width: 60%;
+  margin-right: 10%;
+  height: auto;
 } 
 #frydoutside2{
   display: none;
 } 
 }
+
+
+
+
+
+
+
 
  
