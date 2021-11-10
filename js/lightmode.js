@@ -14,17 +14,3 @@ function darkmode() {
   }
 
 /* Inspirasjon: https://codepen.io/mattmarquise/details/MWbrNWe */
-
-/* 
-const button = document.getElementById("button");
-
-button.addEventListener("click", ()=>{
-
-    if(button.innerText === "Klikk for lys modus"){
-        button.innerText = "Klikk for mørk modus";
-    }else{
-        button.innerText= "Klikk for lys modus";
-    }
-)}
-
-*/
