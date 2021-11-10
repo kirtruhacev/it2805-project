@@ -1,4 +1,3 @@
-
 let lightMode = localStorage.getItem('lightMode');
 const body = document.querySelector('body');
 

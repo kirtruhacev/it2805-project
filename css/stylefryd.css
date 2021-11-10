@@ -207,6 +207,7 @@ header li a:hover:after {
   font-weight: normal;
   background-color: black;
   height: 0px;
+  box-shadow: 0px 0px 8px 2px #353535;
 }
 
 #scroll #header-background-img {
@@ -362,15 +363,18 @@ svg text {
   cursor: pointer;
   background-color: transparent;
   border: transparent;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 99;
+  position: relative;
+  top: -30px;
 }
 
 #button img{
-  height: 40px;
+  height: 30px;
   width: auto;
+}
+
+.light-mode #scroll #button{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 /* Generelt */
@@ -418,6 +422,14 @@ body.light-mode {
 
 .light-mode #scroll li a{
   color: black;
+}
+
+.light-mode #scroll {
+  box-shadow: 0px 0px 8px 2px #CEC0AE;
+}
+
+.light-mode #header-background-img{
+  filter: brightness(110%);
 }
 
 /* Footer */
@@ -472,17 +484,11 @@ body.light-mode {
 
 /* Endrer bakgrunn ved bredde < 900px */
 @media screen and (max-width: 900px) {
-/* Knapp */
-.light-mode #button{
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
 
 /* Meny */
 .light-mode #menybilder div {
     background: #e1d9ce;
   }
-}
 
 .light-mode #menybilder div:hover {
   background: #e1d9ce;
@@ -490,6 +496,21 @@ body.light-mode {
 
 .light-mode #button a {
   color: black;
+}
+}
+@media screen and (max-width: 600px) {
+/* Header */
+.light-mode header li a{
+  color: black;
+}
+
+.light-mode #top{
+  box-shadow: 0px 0px 8px 2px #CEC0AE;
+}
+
+.light-mode #scroll #button {
+  display: none;
+}
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -873,7 +894,7 @@ a.contact:visited {
   height: 450px;
   border-left: 2px solid white;
   position: absolute;
-  top: 580px;
+  top: 560px;
   left: 50%;
 }
 
@@ -1231,6 +1252,7 @@ a.contact:visited {
 
   #top{
     height: 330px;
+    box-shadow: 0px 0px 8px 2px #353535;
   }
 
   #top #logo{
@@ -1245,6 +1267,18 @@ a.contact:visited {
     width: 170px;
     height: auto;
     transition: 0.4s;
+  }
+
+  /* Knapp */
+  #button{
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+    right: -20px;
+  }
+
+  #scroll #button{
+    display: none;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Intro - - - - - - - - - - - - - - - - - - - - - - - - - */
