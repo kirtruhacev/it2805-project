@@ -466,6 +466,9 @@ body.light-mode {
   filter: invert(100%);
 }
 
+.light-mode #facebook-knapp{
+  color:black
+}
 
 /* Endrer bakgrunn ved bredde < 900px */
 @media screen and (max-width: 900px) {
