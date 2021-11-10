@@ -349,7 +349,7 @@ svg text {
 
   100% {
     stroke-dasharray: 40% 0;
-    stroke-dashoffstet: -10%;
+    stroke-dashoffset: -10%;
     fill: white;
   }
 }
@@ -510,7 +510,7 @@ svg text {
   padding: 1em;
   box-sizing: border-box;
   min-width: 232px;
-  border-radius: 1.5em;
+  border-radius: 1em;
   border-style: solid;
   border-color: #3d2e24;
   border-width: 0.12em;
@@ -519,7 +519,7 @@ svg text {
   padding: 1em;
   box-sizing: border-box;
   min-width: 232px;
-  border-radius: 1.5em;
+  border-radius: 1em;
   border-style: solid;
   border-color: #3d2e24;
   border-width: 0.12em;
@@ -630,6 +630,7 @@ svg text {
   letter-spacing: 0.1em;
   margin: 0;
   line-height: 40px;
+  font-size: 20px;
 }
 
 /* Flexbox container for #inside-bilde + overskrift og paragraf (#over, #om) */
@@ -902,7 +903,6 @@ body.light-mode {
     max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 3vh;
   }
 }
 
