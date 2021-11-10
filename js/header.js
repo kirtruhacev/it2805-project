@@ -76,6 +76,7 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
     likontakt.appendChild(akontakt); //Legger til <a> i <li>
     likontakt.className = 'knapp';
 
+    //Bakgrunnsbilde
     const img2 = document.createElement('img'); //Oppretter <img>
     img2.id = "header-background-img";
     img2.src = "./image/header_img.jpg"; //Legger til src i <img>
@@ -83,4 +84,15 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
     header.appendChild(img2);
     img2.style.zIndex = "-1";
 
+    //Knapp for lys/mørk side
+    const img3 = document.createElement('img');
+    const a3 = document.createElement('a');
+    const button = document.createElement('button');
+    img3.src = "image/lightmode.png";
+    img3.alt = "Light mode og dark mode knapp";
+    a3.appendChild(img3);
+    button.appendChild(a3);
+    button.id = 'button';
+    button.onclick = darkmode;
+    header.appendChild(button);
 }
