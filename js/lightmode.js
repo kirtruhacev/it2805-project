@@ -1,4 +1,4 @@
-  /* Gjøre siden lysere */
+/* Gjøre siden lysere */
 
 let darkMode = true;
 
