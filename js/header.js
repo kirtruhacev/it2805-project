@@ -93,6 +93,6 @@ function headerInsert(){ //Funksjonen bli kjørt ved innlastning av side
     a3.appendChild(img3);
     button.appendChild(a3);
     button.id = 'button';
-    button.onclick = darkmode();
-    header.appendChild(button);
+    a3.onclick = darkmode;
+    ul.appendChild(button);
 }
