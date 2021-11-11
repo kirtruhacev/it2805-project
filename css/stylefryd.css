@@ -18,7 +18,7 @@ body {
   color: white;
   width: 100%; /* Størrelse på body */
   margin: auto;
-  margin-top: 330px; /* Skyver ned bodyen så headeren ikke blokkerer*/
+  margin-top: 320px; /* Skyver ned bodyen så headeren ikke blokkerer*/
 }
 
 h1 {
@@ -43,7 +43,7 @@ h3 {
   color: white;
 }
 
-h4{
+h4 {
   display: none;
 }
 
@@ -57,7 +57,7 @@ h5 {
 /* Footer sosiale medier */
 h6 {
   font-size: 20px;
-  font-family: "Georgia", serif; 
+  font-family: "Georgia", serif;
 }
 
 p {
@@ -195,26 +195,26 @@ footer {
 
 footer p {
   font-size: 20px;
-  line-height : 20px;
+  line-height: 20px;
   color: white;
 }
 
 /* Styler copyright i footer */
 .copyright_footer {
-    position: absolute;
-    bottom: 0;
-    font-size: 10px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    width: 100%;
-    text-align: left;
-    height: 25px;
-    line-height : 2px;
-    padding-left: 5px;
-    padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  width: 100%;
+  text-align: left;
+  height: 25px;
+  line-height: 2px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
-.copyright_footer p{
+.copyright_footer p {
   font-size: 10px;
   padding-left: 5px;
   padding-bottom: 3px;
@@ -259,7 +259,7 @@ footer img {
   padding-top: 30px;
 }
 
-#footer-item2 img{
+#footer-item2 img {
   height: 50px;
   object-fit: contain;
   justify-content: center;
@@ -267,11 +267,11 @@ footer img {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Intro - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-#intro{
+#intro {
   text-align: center;
 }
 
-#intro p{
+#intro p {
   font-size: 20px;
   font-family: 'Calibri light', sans-serif;
   letter-spacing: 0.1em;
@@ -301,7 +301,7 @@ svg text {
 @keyframes textAnimate {
   0% {
     stroke-dasharray: 0 40%;
-    stroke-dashoffset:  10%;
+    stroke-dashoffset: 10%;
     fill: #886750;
   }
 
@@ -373,7 +373,7 @@ svg text {
   transition: transform 0.2s;
 }
 
-/*Containereen med to koloner, favorites og et bilde*/
+/*Containeren med to koloner, favorites og et bilde*/
 #fav-container {
   display: grid;
   grid-template-columns: 45% 55%;
@@ -384,6 +384,7 @@ svg text {
   margin: 0 auto;
   max-width: 1120px;
 }
+
 /*Bilde til fav-containeren*/
 #fav-container img {
   position: relative;
@@ -393,7 +394,8 @@ svg text {
   margin: 0;
   text-align: center;
 }
-/*Tektblokk til favcontaineren*/
+
+/*Tekstblokk til favcontaineren*/
 #fav-container-stuff {
   grid-area: parag;
   width: 100%;
@@ -401,10 +403,12 @@ svg text {
   margin: 0;
   text-align: center;
 }
+
 /*Gjør bilde inn i fav-containeren større*/
 #fav-container img:hover {
   transform: scale(1.2);
 }
+
 /*Containerer med tilbud, to kolonner*/
 #offers-container {
   display: grid;
@@ -416,6 +420,7 @@ svg text {
   margin: 0 auto;
   max-width: 1120px;
 }
+
 /*Bilde som hører til tilbud-containeren*/
 #offers-container img {
   position: relative;
@@ -425,6 +430,7 @@ svg text {
   margin: 0;
   text-align: center;
 }
+
 /*Blokka med tilbud*/
 #offers {
   grid-area: offers;
@@ -433,10 +439,12 @@ svg text {
   margin: 0;
   text-align: center;
 }
+
 /*Forstørrer bilde som er inn i det blokka*/
 #offers-container img:hover {
   transform: scale(1.2);
 }
+
 /* Parallax med bilde av bakgrunn  */
 #parallax {
   display: grid;
@@ -473,6 +481,7 @@ svg text {
   border-color: #3d2e24;
   border-width: 0.12em;
 }
+
 .menyBilde {
   padding: 1em;
   box-sizing: border-box;
@@ -488,7 +497,7 @@ svg text {
   list-style-type: square;
 }
 
-.menyListe li{
+.menyListe li {
   color: white;
 }
 
@@ -500,7 +509,7 @@ svg text {
 }
 
 /* Endrer farge ved hover på meny */
-#menybilder div:hover{
+#menybilder div:hover {
   background: black;
   cursor: pointer;
 }
@@ -612,6 +621,7 @@ svg text {
 .flexbox-item-1 {
   min-height: 100px;
 }
+
 .flexbox-item-2 {
   max-height: 200px;
 }
@@ -637,7 +647,7 @@ svg text {
 }
 
 /*Bilde nr.2 nederst til høyre, utenfor Fryd */
-#frydoutside2{
+#frydoutside2 {
   width: 500px;
   height: 400px;
   margin-bottom: 0px;
@@ -646,7 +656,7 @@ svg text {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* To kolonner som flyter ved siden av hverandre */
-.row{
+.row {
   padding-bottom: 20px;
 }
 
@@ -661,8 +671,8 @@ svg text {
   text-align: center;
 }
 
-/* Styling til iconer */
-.contact_img img{
+/* Styling til ikoner */
+.contact_img img {
   width: 17px;
   height: 17px;
   margin-bottom: -20px;
@@ -709,7 +719,7 @@ a.contact:visited {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Lightmode - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Knapp */
-#button{
+#button {
   cursor: pointer;
   background-color: transparent;
   border: transparent;
@@ -717,23 +727,24 @@ a.contact:visited {
   top: -30px;
 }
 
-#button img{
+#button img {
   height: 30px;
   width: auto;
 }
 
-.light-mode #scroll #button{
+.light-mode #scroll #button {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 /* Generelt */
 body.light-mode {
-  background-color:#e1d9ce;
+  background-color: #e1d9ce;
   color: black;
 }
 
-.light-mode h4, li{
+.light-mode h4,
+li {
   color: black;
 }
 
@@ -770,7 +781,7 @@ body.light-mode {
   background-color: #e1d9ce;
 }
 
-.light-mode #scroll li a{
+.light-mode #scroll li a {
   color: black;
 }
 
@@ -778,7 +789,7 @@ body.light-mode {
   box-shadow: 0px 0px 8px 2px #CEC0AE; /* Legger til skygge på undersiden */
 }
 
-.light-mode #header-background-img{
+.light-mode #header-background-img {
   filter: brightness(110%);
 }
 
@@ -802,7 +813,7 @@ body.light-mode {
   background: radial-gradient(#886750, white);
 }
 
-.light-mode .menyListe li{
+.light-mode .menyListe li {
   color: black
 }
 
@@ -829,8 +840,8 @@ body.light-mode {
   filter: invert(100%);
 }
 
-.light-mode #facebook-knapp{
-  color:black
+.light-mode #facebook-knapp {
+  color: black
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - 1050px < Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -859,14 +870,14 @@ body.light-mode {
     margin-top: 0px;
     margin-bottom: 10px;
     height: 400px;
-
   }
+
   #om {
     width: 85%;
     margin-left: 10%;
     margin-right: 5%;
   }
- 
+
   .flexbox-item {
     min-width: 100%;
     max-width: 100%;
@@ -879,23 +890,27 @@ body.light-mode {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 900px - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media screen and (max-width: 900px) {
+
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Generelle regler - - - - - - - - - - - - - - - - - - - - - - - - - */
   body {
     background-color: black;
     width: 100%;
   }
 
-  #top #logo{
+  #top #logo {
     height: 90px;
   }
 
-  footer, #footer-item1, #footer-item2, #footer-item4{
-      display: grid;
-      grid-template-columns: 100%;
-      height: auto;
-      margin: 0 auto;
-      width: 100%;
-      text-align: center;
+  footer,
+  #footer-item1,
+  #footer-item2,
+  #footer-item4 {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Hjem - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -950,19 +965,20 @@ body.light-mode {
   #grid-container li {
     margin-bottom: 10px;
   }
+
   /*Containeren med favoritter, en kolonne med to rad*/
   #fav-container {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: auto;
     grid-template-areas: "img"
-                        "parag";
+      "parag";
     height: auto;
     padding: 30px 0px;
     margin: 0 auto;
     justify-content: center;
-
   }
+
   /*Bilde som hører til containeren med favoritter*/
   #fav-container img {
     position: relative;
@@ -972,6 +988,7 @@ body.light-mode {
     margin: 30px auto;
     text-align: center;
   }
+
   /*Teksten som hører til containeren med favoritter*/
   #fav-container-stuff {
     grid-area: parag;
@@ -980,19 +997,21 @@ body.light-mode {
     margin: 30px auto;
     text-align: center;
   }
+
   /*Containeren med tilbud, en kolonne med to rad*/
   #offers-container {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: auto;
     grid-template-areas:
-                          "img"
-                          "offers";
+      "img"
+      "offers";
     height: auto;
     padding: 30px 0px;
     margin: 0 auto;
     justify-content: center;
   }
+
   /*Bilde som hører til containeren med tilbud*/
   #offers-container img {
     position: relative;
@@ -1002,7 +1021,8 @@ body.light-mode {
     margin: 30px auto;
     text-align: center;
   }
-  /*Tilbudtekst*/
+
+  /*Tilbudstekst*/
   #offers {
     grid-area: offers;
     width: 80%;
@@ -1057,13 +1077,14 @@ body.light-mode {
     margin: 10px;
     margin: 0 auto;
   }
+
   .lite-galleribilde {
     max-width: 90%;
     max-height: 90%;
   }
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Kontakt - - - - - - - - - - - - - - - - - - - - - - - - - */
-  /* Får kolonnene til å være over hverandre i kontakt, istedenfor vedsidenav */
+  /* Får kolonnene til å være over hverandre i kontakt, istedenfor ved siden av */
   .column {
     width: 100%;
     float: left;
@@ -1084,7 +1105,8 @@ body.light-mode {
   }
 
   .menyListe ul {
-    padding-left: 25px; /* Mindre padding på liste   */
+    padding-left: 25px;
+    /* Mindre padding på liste   */
     list-style-type: square;
     min-width: 200px;
   }
@@ -1104,7 +1126,7 @@ body.light-mode {
   }
 
   /* Hover */
-  #menybilder div:hover{
+  #menybilder div:hover {
     cursor: default;
   }
 
@@ -1135,6 +1157,7 @@ body.light-mode {
   #frydoutside2 {
     display: none;
   }
+
   #aboutOut {
     width: 35%;
     margin-left: 60%;
@@ -1142,46 +1165,48 @@ body.light-mode {
     margin-top: -317px;
     height: 300px;
   }
+
   #inside {
     width: 35%;
     margin-left: 10%;
     margin-top: 0px;
     margin-bottom: 10px;
     height: 300px;
-
   }
+
   #om {
     width: 85%;
     margin-left: 10%;
     margin-right: 5%;
   }
- 
+
   .flexbox-item {
     min-width: 100%;
     max-width: 100%;
-
   }
-  .flex-containerAbout{
+
+  .flex-containerAbout {
     flex-direction: column-reverse;
   }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Meny */
-.light-mode #menybilder div {
-  background: #e1d9ce;
-  } 
-
-.light-mode #menybilder div:hover {
-  background: #e1d9ce;
+  .light-mode #menybilder div {
+    background: #e1d9ce;
   }
 
-.light-mode #button a {
-  color: black;
+  .light-mode #menybilder div:hover {
+    background: #e1d9ce;
+  }
+
+  .light-mode #button a {
+    color: black;
   }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - Bredde < 600px - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media screen and (max-width: 600px) {
+
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Liten navbar - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Styling på bakgrunnsbilde */
   #header-background-img {
@@ -1205,40 +1230,41 @@ body.light-mode {
   /* styling på navbar posisjon utseende */
   header li {
     position: relative;
-    float: none !important;
+    float: none;
     width: 100%;
-    justify-content: center !important;
+    justify-content: center;
     padding: 3px; /* mellomrom mellom kategoriene */
+    left: -5px;
   }
 
-  #top{
+  #top {
     height: 330px;
     box-shadow: 0px 0px 8px 2px #353535; /* Legger til skygge på undersiden */
   }
 
-  #top #logo{
+  #top #logo {
     height: 80px;
   }
 
-  #scroll{
+  #scroll {
     padding-top: 80px;
   }
 
-  #scroll #logo{
+  #scroll #logo {
     width: 170px;
     height: auto;
     transition: 0.4s;
   }
 
   /* Knapp */
-  #button{
+  #button {
     cursor: pointer;
     position: absolute;
     top: -50px;
     right: -20px;
   }
 
-  #scroll #button{
+  #scroll #button {
     display: none;
   }
 
@@ -1262,27 +1288,27 @@ body.light-mode {
   /* - - - - - - - - - - - - - - - - - - - - - - - - - Meny - - - - - - - - - - - - - - - - - - - - - - - - - */
   /* Endrer til 1x4 ved smal skjerm */
   #menybilder {
-  grid-template-columns: repeat(1, 0fr);
+    grid-template-columns: repeat(1, 0fr);
   }
 
   /* Endrer høyden på listene for å fjerne tomrom */
   #kaffeDrikkeListe {
-  max-height: 700px;
+    max-height: 700px;
   }
 
   #matListe {
-  max-height: 550px;
+    max-height: 550px;
   }
 
   #kakeSøtsakerListe {
-  max-height: 500px;
+    max-height: 500px;
   }
 
   #bakeOffListe {
-  max-height: 350px;
+    max-height: 350px;
   }
 
-   /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Galleri - - - - - - - - - - - - - - - - - - - - - - - - - */
   .stort-galleribilde {
     min-width: 95%;
     min-height: 95%;
@@ -1295,61 +1321,54 @@ body.light-mode {
     object-fit: cover;
   }
 
- /*- - - - - - - - - - - - - - - - - - - - - - - - - - - About - - - - - - - - - - - - - - - - - - - - - - - - - - */
- #aboutOut {
-  margin-left: 15%;
-  width: 70%;
-  margin-right: 10%;
-  margin-top: 0;
-  height: auto;
-}
-
-.flex-containerAbout {
-  flex-direction: column-reverse;
-}
-
-#om {
-  max-width:  70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 0%;
-} 
-
-#inside {
-  margin-left: 15%;
-  width: 70%;
-  margin-right: 10%;
-  height: auto;
-} 
-#frydoutside2{
-  display: none;
-} 
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Header */
-.light-mode header li a{
-  color: black;
-    }
-  
-.light-mode #top{
-  box-shadow: 0px 0px 8px 2px #CEC0AE; /* Legger til skygge på undersiden */
+  /*- - - - - - - - - - - - - - - - - - - - - - - - - - - About - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  #aboutOut {
+    margin-left: 15%;
+    width: 70%;
+    margin-right: 10%;
+    margin-top: 0;
+    height: auto;
   }
 
-  .light-mode #top #button{
+  .flex-containerAbout {
+    flex-direction: column-reverse;
+  }
+
+  #om {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0%;
+  }
+
+  #inside {
+    margin-left: 15%;
+    width: 70%;
+    margin-right: 10%;
+    height: auto;
+  }
+
+  #frydoutside2 {
+    display: none;
+  }
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - Light mode - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* Header */
+  .light-mode header li a {
+    color: black;
+  }
+
+  .light-mode #top {
+    box-shadow: 0px 0px 8px 2px #CEC0AE;
+    /* Legger til skygge på undersiden */
+  }
+
+  .light-mode #top #button {
     -webkit-filter: invert(100%);
     filter: invert(100%);
   }
-  
-.light-mode #scroll #button {
-  display: none;
+
+  .light-mode #scroll #button {
+    display: none;
   }
 }
-
-
-
-
-
-
-
-
- 
