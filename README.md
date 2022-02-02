@@ -4,4 +4,4 @@ Dette repoet inneholder vårt prosjekt i IT2805, Webteknologi. Prosjektet gikk u
 
 For å kjøre nettsiden: pull repoet -> åpne Project mappen -> åpne et av .html filene i nettleseren.
 
-I evalueringen fikk prosjekte A.
+I evalueringen fikk prosjekten karakter A.
